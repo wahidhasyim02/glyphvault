@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -32,6 +32,17 @@ jobs:
 
       - name: Build static site
         run: npm run generate
+
+      - name: Commit bundled icons.json back to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/icons.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: auto-bundle public/icons.json [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
