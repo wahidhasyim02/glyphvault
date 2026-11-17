@@ -144,14 +144,23 @@ function isBBoxInside(inner: BBox | null, outer: BBox | null, margin = 0.5): boo
   );
 }
 
+function isTrulyClosedPathString(d: string): boolean {
+  if (!d) return false;
+  const subpaths = d.trim().split(/(?=[Mm])/).filter(Boolean);
+  if (subpaths.length === 0) return false;
+  // If ANY subpath does not have Z or z, it contains open stroke segments.
+  // Filling such paths with stroke="none" deletes the open strokes (like anchor stem)
+  // or creates ugly blob fills (like ampersand).
+  return subpaths.every((sp) => /[zZ]/.test(sp));
+}
+
 function isLikelyClosedPath(el: Element): boolean {
   const tag = el.tagName.toLowerCase();
   if (tag === 'circle' || tag === 'rect' || tag === 'ellipse' || tag === 'polygon') {
     return true;
   }
   if (tag === 'path') {
-    const d = (el.getAttribute('d') || '').trim();
-    return /[zZ]\s*$/.test(d) || /[zZ]/.test(d);
+    return isTrulyClosedPathString(el.getAttribute('d') || '');
   }
   return false;
 }
@@ -229,7 +238,7 @@ function parseIconShapesFallback(rawSvg: string): { viewBox: string; shapes: Par
     while ((m = attrRegex.exec(t)) !== null) {
       attrs[m[1]] = m[2];
     }
-    const isClosed = tag === 'circle' || tag === 'rect' || tag === 'ellipse' || tag === 'polygon' || (tag === 'path' && /[zZ]/.test(attrs.d || ''));
+    const isClosed = tag === 'circle' || tag === 'rect' || tag === 'ellipse' || tag === 'polygon' || (tag === 'path' && isTrulyClosedPathString(attrs.d || ''));
     let bbox: BBox | null = null;
     if (tag === 'circle') {
       const cx = parseFloat(attrs.cx || '0'), cy = parseFloat(attrs.cy || '0'), r = parseFloat(attrs.r || '0');
