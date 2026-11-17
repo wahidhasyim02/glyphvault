@@ -616,17 +616,17 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3 16H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M10.9641 21.7942L16.4641 12.2679\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M19.9641 17.7942L14.4641 8.26795\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21 8L10 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13.0359 2.20577L7.53589 11.7321\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M4.03592 6.2058L9.53592 15.7321\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "app-window-mac-1",
-      "category": "Interface",
+      "name": "apple",
+      "category": "Weather & Nature",
       "tags": [
         "glyph",
-        "interface",
-        "app",
-        "window",
-        "mac",
-        "1"
+        "apple",
+        "fruit",
+        "food",
+        "nature",
+        "brand"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0544 7.39025C9.87362 5.78049 4.2051 3.87805 2.45909 8.70732C0.830841 13.2109 3.8899 17.8895 6.26035 20.2634C7.08409 21.0883 8.34511 21.084 9.45089 20.7148C10.9113 20.2273 12.8593 19.9575 14.7439 20.6924C15.5814 21.019 16.5255 21.2299 17.2661 20.7204C21.122 18.0673 24.2365 9.28598 19.905 6.5122C17.1036 4.7182 13.799 6.07317 12.0544 7.39025ZM12.0544 7.39025V3L13.3628 3.43902\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path data-duotone=\"accent\" d=\"M12.0543 7.39025V3L13.3628 3.43902\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path data-duotone=\"base\" d=\"M2.45909 8.70732C0.830841 13.2109 3.8899 17.8895 6.26035 20.2634C7.08409 21.0883 8.34511 21.084 9.45089 20.7148C10.9113 20.2273 12.8593 19.9575 14.7439 20.6924C15.5814 21.019 16.5255 21.2299 17.2661 20.7204C21.122 18.0673 24.2365 9.28598 19.905 6.5122C17.1036 4.71821 13.799 6.07318 12.0544 7.39025C9.87362 5.78049 4.2051 3.87805 2.45909 8.70732Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "arrow-big-down",
@@ -1070,6 +1070,21 @@
         "close"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9 14.6569L11.8284 11.8284M11.8284 11.8284L14.6569 9M11.8284 11.8284L9 9M11.8284 11.8284L14.6569 14.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "mac",
+      "category": "Devices & Hardware",
+      "tags": [
+        "glyph",
+        "mac",
+        "window",
+        "apple",
+        "os",
+        "app",
+        "desktop",
+        "interface"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path data-duotone=\"base\" d=\"M22 7V17C22 18.6569 20.6569 20 19 20H6C4.34315 20 3 18.6569 3 17L3 7C3 5.34315 4.34315 4 6 4L19 4C20.6569 4 22 5.34315 22 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M7.00012 8H7.00002\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M11.0001 8H11\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M15.0001 8H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "sirine",
