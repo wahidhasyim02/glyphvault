@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: wahidhasyim02/glyphvault
+  branch: main
+
+media_folder: "public/assets/icons"
+public_folder: "/assets/icons"
+
+collections:
+  - name: "icons_db"
+    label: "Icon Database"
+    files:
+      - file: "public/icons.json"
+        name: "icons"
+        label: "All Icons"
+        fields:
+          - label: "Icons List"
+            name: "icons"
+            widget: "list"
+            fields:
+              - { label: "Icon Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Tags", name: "tags", widget: "list" }
+              - { label: "SVG Markup", name: "svg", widget: "text" }
