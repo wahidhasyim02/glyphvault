@@ -616,6 +616,21 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3 16H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M10.9641 21.7942L16.4641 12.2679\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M19.9641 17.7942L14.4641 8.26795\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21 8L10 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13.0359 2.20577L7.53589 11.7321\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M4.03592 6.2058L9.53592 15.7321\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "app-mac",
+      "category": "Devices & Hardware",
+      "tags": [
+        "glyph",
+        "mac",
+        "window",
+        "apple",
+        "os",
+        "app",
+        "desktop",
+        "interface"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 7V17C22 18.6569 20.6569 20 19 20H6C4.34315 20 3 18.6569 3 17L3 7C3 5.34315 4.34315 4 6 4L19 4C20.6569 4 22 5.34315 22 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"7.5\" cy=\"8.5\" r=\"0.5\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"11.5\" cy=\"8.5\" r=\"0.5\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"15.5\" cy=\"8.5\" r=\"0.5\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "apple",
       "category": "Weather & Nature",
       "tags": [
@@ -1070,21 +1085,6 @@
         "close"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9 14.6569L11.8284 11.8284M11.8284 11.8284L14.6569 9M11.8284 11.8284L9 9M11.8284 11.8284L14.6569 14.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "mac",
-      "category": "Devices & Hardware",
-      "tags": [
-        "glyph",
-        "mac",
-        "window",
-        "apple",
-        "os",
-        "app",
-        "desktop",
-        "interface"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path data-duotone=\"base\" d=\"M22 7V17C22 18.6569 20.6569 20 19 20H6C4.34315 20 3 18.6569 3 17L3 7C3 5.34315 4.34315 4 6 4L19 4C20.6569 4 22 5.34315 22 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M7.00012 8H7.00002\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M11.0001 8H11\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path data-duotone=\"accent\" d=\"M15.0001 8H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "sirine",
