@@ -12,20 +12,36 @@ export default defineNuxtConfig({
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       htmlAttrs: {
-        lang: 'en',
+        lang: 'id',
         class: 'dark',
       },
       title: 'GlyphVault — SVG Icon Studio',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5' },
         {
           name: 'description',
           content:
-            'Dark-mode SVG icon browser supporting Linear, Solid, Dualtone, and Dualtone Linear styles with live stroke, opacity, color, zoom, and instant SVG/PNG export.',
+            'Studio icon SVG modern: Linear, Solid, Dualtone, dan Dualtone Linear dengan live stroke, opacity, color picker, zoom, dan export SVG/React/Vue/PNG instan.',
+        },
+        { name: 'theme-color', content: '#090B0E' },
+        { property: 'og:title', content: 'GlyphVault — SVG Icon Studio' },
+        {
+          property: 'og:description',
+          content:
+            'Studio icon SVG modern: Linear, Solid, Dualtone, dan Dualtone Linear dengan live stroke, opacity, dan export instan.',
+        },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://glyphvault.conime.id' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'GlyphVault — SVG Icon Studio' },
+        {
+          name: 'twitter:description',
+          content: 'Studio icon SVG modern dengan live styling Linear, Solid, Dualtone, dan export.',
         },
       ],
       link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {

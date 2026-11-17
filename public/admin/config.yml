@@ -5,6 +5,11 @@ backend:
 
 media_folder: "public/assets/icons"
 public_folder: "/assets/icons"
+favicon: favicon.svg
+
+logo:
+  src: favicon.svg
+  show_in_header: true
 
 collections:
   - name: "icons_db"
@@ -17,6 +22,7 @@ collections:
           - label: "Icons List"
             name: "icons"
             widget: "list"
+            summary: "{{fields.name}} — {{fields.category}}"
             fields:
               - { label: "Icon Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }

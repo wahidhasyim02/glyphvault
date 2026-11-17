@@ -62,7 +62,7 @@ icons.sort((a, b) => a.name.localeCompare(b.name));
 
 console.log(`Generated ${icons.length} icon definitions.`);
 
-// Write directly to public/icons.json
+// Write directly to public/icons.json as an object with "icons" list (Sveltia CMS & Nuxt compatible)
 const outputPath = path.resolve(__dirname, '../public/icons.json');
-fs.writeFileSync(outputPath, JSON.stringify(icons, null, 2), 'utf-8');
+fs.writeFileSync(outputPath, JSON.stringify({ icons }, null, 2), 'utf-8');
 console.log(`Successfully written to ${outputPath}`);

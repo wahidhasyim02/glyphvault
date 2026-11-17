@@ -228,18 +228,6 @@
 
         <button
           type="button"
-          @click="$emit('toggle-theme')"
-          :title="theme === 'dark' ? 'Switch to Light mode' : 'Switch to Dark mode'"
-          :aria-label="theme === 'dark' ? 'Switch to Light mode' : 'Switch to Dark mode'"
-          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B] text-slate-700 dark:text-[#CBD5E1] hover:text-slate-900 dark:hover:text-[#F1F5F9] hover:border-slate-300 dark:hover:border-[#2C3545] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
-        >
-          <Sun v-if="theme === 'dark'" class="w-3.5 h-3.5 text-amber-400" />
-          <Moon v-else class="w-3.5 h-3.5 text-slate-700" />
-          <span class="hidden md:inline">{{ theme === 'dark' ? 'Light' : 'Dark' }}</span>
-        </button>
-
-        <button
-          type="button"
           @click="$emit('reset-settings')"
           title="Reset size, stroke, opacity, and colors"
           class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] hover:border-slate-300 dark:hover:border-[#2C3545] transition-colors whitespace-nowrap shrink-0 cursor-pointer"

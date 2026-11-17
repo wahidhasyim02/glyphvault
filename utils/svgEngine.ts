@@ -646,13 +646,22 @@ export async function svgToPngBlob(svgString: string, targetPx = 256): Promise<B
 }
 
 export function validateIconsJson(data: unknown): { valid: boolean; icons: IconEntry[]; error?: string } {
-  if (!Array.isArray(data)) {
-    return { valid: false, icons: [], error: 'Root JSON value must be an array of icon objects.' };
+  let list: unknown[] = [];
+  if (Array.isArray(data)) {
+    list = data;
+  } else if (data && typeof data === 'object' && Array.isArray((data as Record<string, unknown>).icons)) {
+    list = (data as Record<string, unknown>).icons as unknown[];
+  } else {
+    return {
+      valid: false,
+      icons: [],
+      error: 'Root JSON value must be an array of icon objects or an object with an "icons" array.',
+    };
   }
 
   const parsed: IconEntry[] = [];
-  for (let i = 0; i < data.length; i++) {
-    const item = data[i];
+  for (let i = 0; i < list.length; i++) {
+    const item = list[i];
     if (!item || typeof item !== 'object') {
       return { valid: false, icons: [], error: `Item at index ${i} is not an object.` };
     }

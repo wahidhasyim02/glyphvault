@@ -3,9 +3,11 @@
     <!-- Top Navbar -->
     <TopBar
       :active-section="activeSection"
+      :theme="theme"
       @change-section="activeSection = $event"
       @open-json-studio="handleOpenJsonStudio"
       @reset-all="handleResetAll"
+      @toggle-theme="handleToggleTheme"
     />
 
     <!-- Style Guide View -->

@@ -1,0 +1,11 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .logo-teal { fill: #0D9488; }
+  .logo-contrast { fill: #F1F5F9; }
+  @media (prefers-color-scheme: light) {
+    .logo-contrast { fill: #0F172A; }
+  }
+</style>
+<path d="M33.9231 16.1538H16.1538V25.8462H42V42H0V0H33.9231V16.1538Z" class="logo-teal"/>
+<rect x="25.8462" y="19.3846" width="16.1538" height="22.6154" class="logo-contrast"/>
+</svg>
