@@ -1,0 +1,13 @@
+{
+  "name": "arrow-big-right",
+  "category": "Arrows",
+  "tags": [
+    "glyph",
+    "arrows",
+    "arrow",
+    "big",
+    "right",
+    "direction"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.75 8.56016V3.4L21 12.0602L12.75 20.7203V15.5602H5C4.44772 15.5602 4 15.1124 4 14.5602V9.56016C4 9.00787 4.44772 8.56016 5 8.56016H12.75Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "anvil",
+  "category": "Objects & Geometry",
+  "tags": [
+    "glyph",
+    "objects & geometry",
+    "anvil"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 8.8V6C6 4.89543 6.89543 4 8 4H21.1111C21.602 4 22 4.39797 22 4.88889C22 8.81625 18.8162 12 14.8889 12H9.2C7.43269 12 6 10.5673 6 8.8Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M5 20.5556C5 18.5919 6.59188 17 8.55556 17H16.4444C18.4081 17 20 18.5919 20 20.5556C20 20.801 19.801 21 19.5556 21H5.44444C5.19898 21 5 20.801 5 20.5556Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 17H15V12H10V17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 6.44444V5.55556C2 5.24873 2.24873 5 2.55556 5H5C5.55228 5 6 5.44772 6 6V9.55556C6 9.80102 5.80102 10 5.55556 10C3.59188 10 2 8.40812 2 6.44444Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+}

@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev --port 3000 --host 0.0.0.0",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
+    "bundle": "node ./scripts/bundle-icons.mjs",
+    "dev": "node ./scripts/bundle-icons.mjs && nuxt dev --port 3000 --host 0.0.0.0",
+    "build": "node ./scripts/bundle-icons.mjs && nuxt build",
+    "generate": "node ./scripts/bundle-icons.mjs && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "node ./scripts/use-rollup-wasm.js && nuxt prepare"
   },

@@ -1,0 +1,11 @@
+{
+  "name": "app-window",
+  "category": "Interface",
+  "tags": [
+    "glyph",
+    "interface",
+    "app",
+    "window"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 7V17C22 18.6569 20.6569 20 19 20H6C4.34315 20 3 18.6569 3 17L3 7C3 5.34315 4.34315 4 6 4L19 4C20.6569 4 22 5.34315 22 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3 8L22 8\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M7 4L7 8\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M11 4L11 8\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+}

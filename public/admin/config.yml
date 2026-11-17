@@ -12,19 +12,36 @@ logo:
   show_in_header: true
 
 collections:
-  - name: "icons_db"
-    label: "Icon Database"
-    files:
-      - file: "public/icons.json"
-        name: "icons"
-        label: "All Icons"
-        fields:
-          - label: "Icons List"
-            name: "icons"
-            widget: "list"
-            summary: "{{fields.name}} — {{fields.category}}"
-            fields:
-              - { label: "Icon Name", name: "name", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
-              - { label: "Tags", name: "tags", widget: "list" }
-              - { label: "SVG Markup", name: "svg", widget: "text" }
+  - name: "icons"
+    label: "Icons"
+    label_singular: "Icon"
+    folder: "data/icons"
+    create: true
+    format: "json"
+    extension: "json"
+    slug: "{{slug}}"
+    identifier_field: "name"
+    summary: "{{name}} ({{category}})"
+    sortable_fields: ["name", "category"]
+    fields:
+      - { label: "Icon Name", name: "name", widget: "string", hint: "Contoh: ambulance, bell, search (huruf kecil & tanda strip)" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Arrows & Chevrons"
+          - "Communication & Social"
+          - "Design & Tools"
+          - "Development & Code"
+          - "Devices & Hardware"
+          - "E-Commerce & Finance"
+          - "Emergency & Alerts"
+          - "Files & Folders"
+          - "General UI"
+          - "Media & Audio"
+          - "Security & System"
+          - "Shapes & Badges"
+          - "Time & Location"
+          - "Weather & Nature"
+      - { label: "Tags", name: "tags", widget: "list", default: ["glyph"] }
+      - { label: "SVG Markup", name: "svg", widget: "text", hint: "Paste kode SVG langsung dari Figma" }

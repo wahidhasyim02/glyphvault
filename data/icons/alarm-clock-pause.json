@@ -1,0 +1,13 @@
+{
+  "name": "alarm-clock-pause",
+  "category": "Time & Alarms",
+  "tags": [
+    "glyph",
+    "time & alarms",
+    "alarm",
+    "clock",
+    "pause",
+    "time"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"13\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 5.5L5.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 5.5L18.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"7.5\" y=\"9\" width=\"3\" height=\"8\" rx=\"1.5\" stroke-width=\"2\" stroke=\"black\"/>\n<rect x=\"13.5\" y=\"9\" width=\"3\" height=\"8\" rx=\"1.5\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+}

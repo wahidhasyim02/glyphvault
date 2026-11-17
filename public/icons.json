@@ -4,7 +4,7 @@
       "name": "a-arrow-down",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "a",
         "arrow",
@@ -17,7 +17,7 @@
       "name": "a-arrow-up",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "a",
         "arrow",
@@ -30,7 +30,7 @@
       "name": "a-large-small",
       "category": "General",
       "tags": [
-        "inalix",
+        "glyph",
         "general",
         "a",
         "large",
@@ -42,7 +42,7 @@
       "name": "accessibility",
       "category": "Interface & Health",
       "tags": [
-        "inalix",
+        "glyph",
         "interface & health",
         "accessibility"
       ],
@@ -52,7 +52,7 @@
       "name": "activity",
       "category": "Interface & Health",
       "tags": [
-        "inalix",
+        "glyph",
         "interface & health",
         "activity"
       ],
@@ -62,7 +62,7 @@
       "name": "air-vent",
       "category": "Devices & Tech",
       "tags": [
-        "inalix",
+        "glyph",
         "devices & tech",
         "air",
         "vent"
@@ -73,7 +73,7 @@
       "name": "air-vent-off",
       "category": "Devices & Tech",
       "tags": [
-        "inalix",
+        "glyph",
         "devices & tech",
         "air",
         "vent",
@@ -85,7 +85,7 @@
       "name": "airplay",
       "category": "Devices & Tech",
       "tags": [
-        "inalix",
+        "glyph",
         "devices & tech",
         "airplay"
       ],
@@ -95,7 +95,7 @@
       "name": "alarm-clock",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -107,7 +107,7 @@
       "name": "alarm-clock-check",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -120,7 +120,7 @@
       "name": "alarm-clock-minus",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -133,7 +133,7 @@
       "name": "alarm-clock-off",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -146,7 +146,7 @@
       "name": "alarm-clock-off2",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -159,7 +159,7 @@
       "name": "alarm-clock-off2-1",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -173,7 +173,7 @@
       "name": "alarm-clock-pause",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -186,7 +186,7 @@
       "name": "alarm-clock-play",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -199,7 +199,7 @@
       "name": "alarm-clock-plus",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "clock",
@@ -212,7 +212,7 @@
       "name": "alarm-smoke",
       "category": "Time & Alarms",
       "tags": [
-        "inalix",
+        "glyph",
         "time & alarms",
         "alarm",
         "smoke",
@@ -224,7 +224,7 @@
       "name": "align-center-horizontal",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "center",
@@ -237,7 +237,7 @@
       "name": "align-center-vertical",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "center",
@@ -250,7 +250,7 @@
       "name": "align-end-horizontal",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "end",
@@ -263,7 +263,7 @@
       "name": "align-end-vertical",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "end",
@@ -276,7 +276,7 @@
       "name": "align-horizontal-distribute-center",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -290,7 +290,7 @@
       "name": "align-horizontal-distribute-end",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -304,7 +304,7 @@
       "name": "align-horizontal-distribute-start",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -318,7 +318,7 @@
       "name": "align-horizontal-distribute-start-1",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -333,7 +333,7 @@
       "name": "align-horizontal-justify-end",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -347,7 +347,7 @@
       "name": "align-horizontal-justify-start",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -361,7 +361,7 @@
       "name": "align-horizontal-space-around",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -375,7 +375,7 @@
       "name": "align-horizontal-space-between",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "horizontal",
@@ -389,7 +389,7 @@
       "name": "align-start-horizontal",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "start",
@@ -402,7 +402,7 @@
       "name": "align-start-vertical",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "start",
@@ -415,7 +415,7 @@
       "name": "align-vertical-distribute-center",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -429,7 +429,7 @@
       "name": "align-vertical-distribute-end",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -443,7 +443,7 @@
       "name": "align-vertical-distribute-end-1",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -458,7 +458,7 @@
       "name": "align-vertical-justify-center",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -472,7 +472,7 @@
       "name": "align-vertical-justify-end",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -486,7 +486,7 @@
       "name": "align-vertical-justify-start",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -500,7 +500,7 @@
       "name": "align-vertical-space-around",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -514,7 +514,7 @@
       "name": "align-vertical-space-between",
       "category": "Alignment",
       "tags": [
-        "inalix",
+        "glyph",
         "alignment",
         "align",
         "vertical",
@@ -528,7 +528,7 @@
       "name": "ambulance",
       "category": "Emergency & Alerts",
       "tags": [
-        "inalix",
+        "glyph",
         "emergency & alerts",
         "ambulance"
       ],
@@ -538,7 +538,7 @@
       "name": "ampersand",
       "category": "Typography",
       "tags": [
-        "inalix",
+        "glyph",
         "typography",
         "ampersand"
       ],
@@ -548,7 +548,7 @@
       "name": "ampersands",
       "category": "Typography",
       "tags": [
-        "inalix",
+        "glyph",
         "typography",
         "ampersands"
       ],
@@ -558,7 +558,7 @@
       "name": "amphora",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "amphora"
       ],
@@ -568,7 +568,7 @@
       "name": "anchor",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "anchor"
       ],
@@ -578,7 +578,7 @@
       "name": "angle",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "angle"
       ],
@@ -588,7 +588,7 @@
       "name": "angle-1",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "angle",
         "1"
@@ -599,7 +599,7 @@
       "name": "anvil",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "anvil"
       ],
@@ -609,7 +609,7 @@
       "name": "aperture",
       "category": "Objects & Geometry",
       "tags": [
-        "inalix",
+        "glyph",
         "objects & geometry",
         "aperture"
       ],
@@ -619,7 +619,7 @@
       "name": "app-window",
       "category": "Interface",
       "tags": [
-        "inalix",
+        "glyph",
         "interface",
         "app",
         "window"
@@ -630,7 +630,7 @@
       "name": "app-window-mac",
       "category": "Interface",
       "tags": [
-        "inalix",
+        "glyph",
         "interface",
         "app",
         "window",
@@ -642,7 +642,7 @@
       "name": "app-window-mac-1",
       "category": "Interface",
       "tags": [
-        "inalix",
+        "glyph",
         "interface",
         "app",
         "window",
@@ -655,7 +655,7 @@
       "name": "arrow-big-down",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -668,7 +668,7 @@
       "name": "arrow-big-down-dash",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -682,7 +682,7 @@
       "name": "arrow-big-down-dash-1",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -697,7 +697,7 @@
       "name": "arrow-big-left",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -710,7 +710,7 @@
       "name": "arrow-big-left-dash",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -724,7 +724,7 @@
       "name": "arrow-big-right",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -737,7 +737,7 @@
       "name": "arrow-big-right-dash",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -751,7 +751,7 @@
       "name": "arrow-big-up",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "big",
@@ -764,7 +764,7 @@
       "name": "arrow-down",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "down",
@@ -776,7 +776,7 @@
       "name": "arrow-down-left",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "down",
@@ -789,7 +789,7 @@
       "name": "arrow-down-left-1",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "down",
@@ -803,7 +803,7 @@
       "name": "arrow-down-right",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "down",
@@ -816,7 +816,7 @@
       "name": "arrow-down-right-1",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "down",
@@ -830,7 +830,7 @@
       "name": "arrow-left",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "left",
@@ -842,7 +842,7 @@
       "name": "arrow-right",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "right",
@@ -854,7 +854,7 @@
       "name": "arrow-up",
       "category": "Arrows",
       "tags": [
-        "inalix",
+        "glyph",
         "arrows",
         "arrow",
         "up",
@@ -866,7 +866,7 @@
       "name": "chevron-down",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "down",
@@ -878,7 +878,7 @@
       "name": "chevron-first",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "first",
@@ -890,7 +890,7 @@
       "name": "chevron-last",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "last",
@@ -902,7 +902,7 @@
       "name": "chevron-left",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "left",
@@ -914,7 +914,7 @@
       "name": "chevron-right",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "right",
@@ -926,7 +926,7 @@
       "name": "chevron-up",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevron",
         "up",
@@ -938,7 +938,7 @@
       "name": "chevrons-down",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "down",
@@ -950,7 +950,7 @@
       "name": "chevrons-down-up",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "down",
@@ -963,7 +963,7 @@
       "name": "chevrons-left",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "left",
@@ -975,7 +975,7 @@
       "name": "chevrons-left-right",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "left",
@@ -988,7 +988,7 @@
       "name": "chevrons-left-right-ellipsis",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "left",
@@ -1002,7 +1002,7 @@
       "name": "chevrons-right",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "right",
@@ -1014,7 +1014,7 @@
       "name": "chevrons-right-left",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "right",
@@ -1027,7 +1027,7 @@
       "name": "chevrons-up",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "up",
@@ -1039,7 +1039,7 @@
       "name": "chevrons-up-down",
       "category": "Navigation",
       "tags": [
-        "inalix",
+        "glyph",
         "navigation",
         "chevrons",
         "up",
@@ -1052,7 +1052,7 @@
       "name": "circle-check",
       "category": "Shapes & Badges",
       "tags": [
-        "inalix",
+        "glyph",
         "shapes & badges",
         "circle",
         "check"
@@ -1063,7 +1063,7 @@
       "name": "circle-dot",
       "category": "Shapes & Badges",
       "tags": [
-        "inalix",
+        "glyph",
         "shapes & badges",
         "circle",
         "dot"
@@ -1071,26 +1071,26 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"12\" cy=\"12\" r=\"1\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "sirine",
-      "category": "Emergency & Alerts",
-      "tags": [
-        "inalix",
-        "emergency & alerts",
-        "sirine"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 22H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M4 22H20V15C20 11.134 16.866 8 13 8H11C7.13401 8 4 11.134 4 15V22Z\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"12\" cy=\"16.5\" r=\"1.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 2V5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 18L12 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.1213 4.2384L18 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 4.2384L5.12132 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 11.2875C14.3282 11.4193 14.5807 11.5315 14.8343 11.6627C15.3595 11.9345 15.832 12.3088 16.1896 12.7798C16.4767 13.158 16.6485 13.4996 16.8285 13.9801\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
       "name": "circle-x",
       "category": "Shapes & Badges",
       "tags": [
-        "inalix",
+        "glyph",
         "shapes & badges",
         "circle",
         "x",
         "close"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9 14.6569L11.8284 11.8284M11.8284 11.8284L14.6569 9M11.8284 11.8284L9 9M11.8284 11.8284L14.6569 14.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "sirine",
+      "category": "Emergency & Alerts",
+      "tags": [
+        "glyph",
+        "emergency & alerts",
+        "sirine"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 22H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M4 22H20V15C20 11.134 16.866 8 13 8H11C7.13401 8 4 11.134 4 15V22Z\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"12\" cy=\"16.5\" r=\"1.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 2V5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 18L12 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.1213 4.2384L18 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 4.2384L5.12132 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 11.2875C14.3282 11.4193 14.5807 11.5315 14.8343 11.6627C15.3595 11.9345 15.832 12.3088 16.1896 12.7798C16.4767 13.158 16.6485 13.4996 16.8285 13.9801\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     }
   ]
 }
