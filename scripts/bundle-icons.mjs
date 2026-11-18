@@ -19,8 +19,23 @@ if (!fs.existsSync(dataIconsDir)) {
 // ----------------------------------------------------
 if (fs.existsSync(svgDir)) {
   const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
-  let syncedCount = 0;
+  const validNames = new Set(svgFiles.map((f) => f.replace(/^glyph_/, '').replace(/\.svg$/, '')));
 
+  // Remove any stale JSON files whose SVG was deleted or renamed
+  const existingJsons = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
+  let removedCount = 0;
+  for (const jsonFile of existingJsons) {
+    const baseName = jsonFile.replace(/\.json$/, '');
+    if (!validNames.has(baseName)) {
+      fs.unlinkSync(path.join(dataIconsDir, jsonFile));
+      removedCount++;
+    }
+  }
+  if (removedCount > 0) {
+    console.log(`🧹 Cleaned up ${removedCount} stale JSON files from data/icons/`);
+  }
+
+  let syncedCount = 0;
   for (const svgFile of svgFiles) {
     const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
     const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
