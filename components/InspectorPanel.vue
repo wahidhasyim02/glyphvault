@@ -335,7 +335,7 @@ const codeOutput = computed(() => {
     return buildReactComponentCode(props.icon.name, styledSvg.value);
   }
   if (codeTab.value === 'tag') {
-    return `<gv-icon name="${props.icon.name}" style="${props.styleVariant}" size="${props.settings.size}"></gv-icon>`;
+    return `<gv-icon name="${props.icon.name}" variant="${props.styleVariant}" size="${props.settings.size}"></gv-icon>`;
   }
   return `<!-- ${props.icon.name}.svg -->\n${formatPrettySvg(styledSvg.value)}`;
 });

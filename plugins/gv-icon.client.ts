@@ -14,7 +14,19 @@ export default defineNuxtPlugin(async () => {
     if (!customElements.get('gv-icon')) {
       class GvIcon extends HTMLElement {
         static get observedAttributes() {
-          return ['name', 'size', 'variant', 'style', 'stroke', 'color', 'secondary', 'opacity'];
+          return [
+            'name',
+            'size',
+            'variant',
+            'style',
+            'stroke',
+            'stroke-width',
+            'color',
+            'primary',
+            'secondary',
+            'secondary-color',
+            'opacity',
+          ];
         }
 
         connectedCallback() {

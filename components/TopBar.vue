@@ -37,8 +37,9 @@
         aria-label="Primary navigation"
         class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium"
       >
+   <!-- Keduanya sekarang SAMA-SAMA BISA! -->
+<gv-icon name="a-arrow-up" variant="duotone-linear" size="28"></gv-icon>
 <gv-icon name="circle-plus" style="duotone-linear" size="28"></gv-icon>
-<gv-icon name="apple" size="24"></gv-icon>
         <button
           type="button"
           @click="$emit('change-section', 'browse')"

@@ -123,51 +123,95 @@
         svg.setAttribute('height', size);
 
         const elements = svg.querySelectorAll('path, circle, rect, polygon, ellipse, line');
-        elements.forEach((el, index) => {
-          const role = el.getAttribute('data-duotone') || (index === 0 ? 'base' : 'accent');
-          const isClosed = el.tagName.toLowerCase() !== 'line' && (
-            el.tagName.toLowerCase() === 'circle' || 
-            el.tagName.toLowerCase() === 'rect' || 
-            (el.getAttribute('d') && /z\s*$/i.test(el.getAttribute('d').trim()))
-          );
+        if (candidate === 'solid') {
+          // Cari container bentuk tertutup terbesar dan bagian dalam (cutout)
+          const isClosedFn = (e) => {
+            const tag = e.tagName.toLowerCase();
+            return tag === 'circle' || tag === 'rect' || (e.getAttribute('d') && /z\s*$/i.test(e.getAttribute('d').trim()));
+          };
+          const closedShape = Array.from(elements).find(isClosedFn);
+          const cutouts = Array.from(elements).filter(e => e !== closedShape);
 
-          if (candidate === 'solid') {
-            if (isClosed) {
-              el.setAttribute('fill', 'currentColor');
-              el.removeAttribute('stroke');
-            } else {
-              el.setAttribute('fill', 'none');
-              el.setAttribute('stroke', 'currentColor');
-              el.setAttribute('stroke-width', stroke);
+          if (closedShape && cutouts.length > 0) {
+            const maskId = 'gv-mask-' + Math.random().toString(36).slice(2, 9);
+            const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
+            mask.setAttribute('id', maskId);
+
+            const maskBg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            maskBg.setAttribute('width', '100%');
+            maskBg.setAttribute('height', '100%');
+            maskBg.setAttribute('fill', 'white');
+            mask.appendChild(maskBg);
+
+            cutouts.forEach(c => {
+              const clone = c.cloneNode(true);
+              clone.setAttribute('fill', 'black');
+              clone.setAttribute('stroke', 'black');
+              clone.setAttribute('stroke-width', stroke);
+              clone.setAttribute('stroke-linecap', 'round');
+              clone.setAttribute('stroke-linejoin', 'round');
+              mask.appendChild(clone);
+              c.remove(); // Hapus dari svg utama, dipindah ke dalam mask pemotong
+            });
+
+            let defs = svg.querySelector('defs');
+            if (!defs) {
+              defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+              svg.insertBefore(defs, svg.firstChild);
             }
-          } else if (candidate === 'duotone') {
-            if (role === 'base' && isClosed) {
-              el.setAttribute('fill', 'currentColor');
-              el.setAttribute('fill-opacity', opacity);
-              el.removeAttribute('stroke');
-            } else {
-              el.setAttribute('fill', 'none');
-              el.setAttribute('stroke', 'currentColor');
-              el.setAttribute('stroke-width', stroke);
-            }
-          } else if (candidate === 'duotone-linear') {
-            if (role === 'base' && isClosed) {
-              el.setAttribute('fill', 'currentColor');
-              el.setAttribute('fill-opacity', opacity);
-              el.setAttribute('stroke', 'currentColor');
-              el.setAttribute('stroke-width', stroke);
-            } else {
-              el.setAttribute('fill', 'none');
-              el.setAttribute('stroke', 'currentColor');
-              el.setAttribute('stroke-width', stroke);
-            }
+            defs.appendChild(mask);
+
+            closedShape.setAttribute('fill', 'currentColor');
+            closedShape.setAttribute('mask', `url(#${maskId})`);
+            closedShape.removeAttribute('stroke');
+          } else if (closedShape) {
+            closedShape.setAttribute('fill', 'currentColor');
+            closedShape.removeAttribute('stroke');
           } else {
-            // linear (default)
-            el.setAttribute('fill', 'none');
-            el.setAttribute('stroke', 'currentColor');
-            el.setAttribute('stroke-width', stroke);
+            elements.forEach(el => {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            });
           }
-        });
+        } else {
+          elements.forEach((el, index) => {
+            const role = el.getAttribute('data-duotone') || (index === 0 ? 'base' : 'accent');
+            const isClosed = el.tagName.toLowerCase() !== 'line' && (
+              el.tagName.toLowerCase() === 'circle' || 
+              el.tagName.toLowerCase() === 'rect' || 
+              (el.getAttribute('d') && /z\s*$/i.test(el.getAttribute('d').trim()))
+            );
+
+            if (candidate === 'duotone') {
+              if (role === 'base' && isClosed) {
+                el.setAttribute('fill', 'currentColor');
+                el.setAttribute('fill-opacity', opacity);
+                el.removeAttribute('stroke');
+              } else {
+                el.setAttribute('fill', 'none');
+                el.setAttribute('stroke', 'currentColor');
+                el.setAttribute('stroke-width', stroke);
+              }
+            } else if (candidate === 'duotone-linear') {
+              if (role === 'base' && isClosed) {
+                el.setAttribute('fill', 'currentColor');
+                el.setAttribute('fill-opacity', opacity);
+                el.setAttribute('stroke', 'currentColor');
+                el.setAttribute('stroke-width', stroke);
+              } else {
+                el.setAttribute('fill', 'none');
+                el.setAttribute('stroke', 'currentColor');
+                el.setAttribute('stroke-width', stroke);
+              }
+            } else {
+              // linear (default)
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            }
+          });
+        }
 
         this.innerHTML = svg.outerHTML;
         this.style.display = 'inline-flex';
