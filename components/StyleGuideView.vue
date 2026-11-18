@@ -119,7 +119,7 @@ const STYLE_CARDS: {
   },
 ];
 
-// Curated set of iconic, visually rich glyphs to showcase the 4 style variants
+// Curated set of iconic, visually rich glyphs to showcase the 5 style variants
 const CURATED_SHOWCASE = [
   'circle-plus',
   'apple',

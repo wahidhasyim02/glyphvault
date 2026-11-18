@@ -210,30 +210,50 @@
         <!-- Tabs Bar -->
         <div class="flex items-center justify-between px-2 gap-1 p-0.5 rounded-md bg-slate-100 dark:bg-[#12161E] border border-slate-200 dark:border-[#1E2430] w-full">
           <button
-            v-for="tab in (['svg', 'vue', 'react', 'tag', 'html'] as CodeTab[])"
+            v-for="tab in (['svg', 'nuxt', 'vue', 'react', 'tag'] as CodeTab[])"
             :key="tab"
             type="button"
             @click="codeTab = tab"
-            class="px-4 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer"
+            class="px-3 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer whitespace-nowrap"
             :class="codeTab === tab
               ? 'bg-white dark:bg-[#1D2430] text-slate-900 dark:text-[#F1F5F9] shadow-2xs dark:shadow-none'
               : 'text-slate-500 dark:text-[#64748B] hover:text-slate-900 dark:hover:text-[#CBD5E1]'"
           >
-            {{ tab === 'svg' ? 'SVG' : tab === 'vue' ? 'Vue 3' : tab === 'react' ? 'React' : tab === 'tag' ? '<gv-icon>' : 'HTML' }}
+            {{ tab === 'svg' ? 'SVG' : tab === 'nuxt' ? 'Nuxt' : tab === 'vue' ? 'Vue 3' : tab === 'react' ? 'React' : '<gv-icon>' }}
           </button>
         </div>
 
         <!-- Integrated Code Box with Copy Header -->
         <div class="rounded-lg bg-slate-900 dark:bg-[#090B0E] border border-slate-800 dark:border-[#1A2029] overflow-hidden">
           <div class="flex items-center justify-between px-3 py-1.5 bg-slate-800/50 dark:bg-[#11141A] border-b border-slate-800 dark:border-[#1A2029] text-[11px]">
-            <span class="text-slate-400 dark:text-[#64748B] font-mono text-[10px] uppercase tracking-wider">
-              {{ codeTab === 'svg' ? 'SVG' : codeTab === 'vue' ? 'Vue 3 Component' : codeTab === 'react' ? 'React TSX' : codeTab === 'tag' ? 'Web Component' : 'HTML Code' }}
-            </span>
+            <div class="flex items-center gap-2">
+              <span class="text-slate-400 dark:text-[#64748B] font-mono text-[10px] uppercase tracking-wider">
+                {{ codeTab === 'svg' ? 'SVG' : codeTab === 'nuxt' ? 'Nuxt Component' : codeTab === 'vue' ? 'Vue 3 Component' : codeTab === 'react' ? 'React TSX' : '<gv-icon>' }}
+              </span>
+              <div v-if="codeTab === 'nuxt'" class="inline-flex items-center p-0.5 rounded bg-slate-800 dark:bg-[#1A202A] text-[10px]">
+                <button
+                  type="button"
+                  @click="nuxtFlavor = 'uicon'"
+                  class="px-1.5 py-0.5 rounded transition-colors cursor-pointer"
+                  :class="nuxtFlavor === 'uicon' ? 'bg-teal-500/20 text-teal-300 font-semibold' : 'text-slate-400 hover:text-slate-200'"
+                >
+                  &lt;UIcon&gt;
+                </button>
+                <button
+                  type="button"
+                  @click="nuxtFlavor = 'icon'"
+                  class="px-1.5 py-0.5 rounded transition-colors cursor-pointer"
+                  :class="nuxtFlavor === 'icon' ? 'bg-teal-500/20 text-teal-300 font-semibold' : 'text-slate-400 hover:text-slate-200'"
+                >
+                  &lt;Icon&gt;
+                </button>
+              </div>
+            </div>
             <button
               type="button"
               @click="handleCopyCodeTab"
               class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800 hover:bg-teal-600 dark:bg-[#181D26] dark:hover:bg-[#2DD4BF] text-slate-200 dark:text-[#CBD5E1] hover:text-white dark:hover:text-[#090B0E] text-[11px] font-medium transition-all cursor-pointer shadow-xs"
-              :title="'Copy ' + (codeTab === 'svg' ? 'SVG' : codeTab === 'tag' ? '<gv-icon>' : codeTab) + ' to clipboard'"
+              :title="'Copy ' + (codeTab === 'svg' ? 'SVG' : codeTab === 'tag' ? '<gv-icon>' : codeTab === 'nuxt' ? (nuxtFlavor === 'uicon' ? '<UIcon>' : '<Icon>') : codeTab) + ' to clipboard'"
             >
               <Check v-if="recentAction === 'copy-code'" class="w-3.5 h-3.5 text-teal-400 dark:text-[#090B0E]" />
               <Copy v-else class="w-3.5 h-3.5" />
@@ -315,14 +335,15 @@ const emit = defineEmits<{
 const backdrop = ref<PreviewBackdrop>(props.theme === 'light' ? 'light' : 'dark');
 const previewZoom = ref<number>(2);
 const codeTab = ref<CodeTab>('svg');
+const nuxtFlavor = ref<'uicon' | 'icon'>('uicon');
 const recentAction = ref<string | null>(null);
 
 const VARIANT_LIST: { id: IconStyleVariant; label: string }[] = [
-  { id: 'linear', label: 'Linear' },
-  { id: 'line-duotone', label: 'Line Duo' },
-  { id: 'solid', label: 'Solid' },
   { id: 'duotone', label: 'Dualtone' },
   { id: 'duotone-linear', label: 'Duo Linear' },
+  { id: 'line-duotone', label: 'Line Duo' },
+  { id: 'linear', label: 'Linear' },
+  { id: 'solid', label: 'Solid' },
 ];
 
 const styledSvg = computed(() => {
@@ -336,6 +357,12 @@ const codeOutput = computed(() => {
   if (!props.icon || !styledSvg.value) return '';
   if (codeTab.value === 'svg') {
     return formatPrettySvg(styledSvg.value);
+  }
+  if (codeTab.value === 'nuxt') {
+    if (nuxtFlavor.value === 'uicon') {
+      return `<UIcon name="i-glyph-${props.icon.name}" class="w-6 h-6" />`;
+    }
+    return `<Icon name="glyph:${props.icon.name}" size="${props.settings.size}" />`;
   }
   if (codeTab.value === 'vue') {
     return buildVueComponentCode(props.icon.name, styledSvg.value);
@@ -491,7 +518,11 @@ const handleCopyCodeTab = async () => {
   try {
     await navigator.clipboard.writeText(codeOutput.value);
     markAction('copy-code');
-    emit('notify', `Copied ${codeTab.value.toUpperCase()} snippet`);
+    const label =
+      codeTab.value === 'nuxt'
+        ? (nuxtFlavor.value === 'uicon' ? '<UIcon> component' : '<Icon> component')
+        : `${codeTab.value.toUpperCase()} snippet`;
+    emit('notify', `Copied ${label}`);
   } catch {
     emit('notify', 'Clipboard access blocked', 'error');
   }

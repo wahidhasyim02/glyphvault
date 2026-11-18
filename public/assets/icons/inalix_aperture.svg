@@ -2,9 +2,9 @@
 <rect width="24" height="24" fill="white" fill-opacity="0.2"/>
 <circle cx="12" cy="12" r="10" stroke-width="2" stroke="black"/>
 <path d="M3 16H14" stroke-width="2" stroke-linecap="round" stroke="black"/>
-<path d="M10.9641 21.7942L16.4641 12.2679" stroke-width="2" stroke-linecap="round" stroke="black"/>
-<path d="M19.9641 17.7942L14.4641 8.26795" stroke-width="2" stroke-linecap="round" stroke="black"/>
+<path d="M10.9641 21.7942L16.4641 12.268" stroke-width="2" stroke-linecap="round" stroke="black"/>
+<path d="M19.9641 17.7942L14.4641 8.26794" stroke-width="2" stroke-linecap="round" stroke="black"/>
 <path d="M21 8L10 8" stroke-width="2" stroke-linecap="round" stroke="black"/>
-<path d="M13.0359 2.20577L7.53589 11.7321" stroke-width="2" stroke-linecap="round" stroke="black"/>
+<path d="M13.0359 2.20576L7.53589 11.732" stroke-width="2" stroke-linecap="round" stroke="black"/>
 <path d="M4.03589 6.2058L9.53589 15.7321" stroke-width="2" stroke-linecap="round" stroke="black"/>
 </svg>

@@ -221,15 +221,16 @@
 
           <div class="space-y-2">
             <span class="text-xs font-medium text-slate-600 dark:text-[#94A3B8]">
-              Live 4-Variant Preview
+              Live 5-Variant Preview
             </span>
-            <div class="grid grid-cols-4 gap-2">
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
               <div
                 v-for="v in [
-                  { id: 'linear', label: 'Linear' },
-                  { id: 'solid', label: 'Solid' },
                   { id: 'duotone', label: 'Dualtone' },
                   { id: 'duotone-linear', label: 'Dualtone Linear' },
+                  { id: 'line-duotone', label: 'Line Duotone' },
+                  { id: 'linear', label: 'Linear' },
+                  { id: 'solid', label: 'Solid' },
                 ]"
                 :key="v.id"
                 class="py-3 px-2 rounded-lg bg-slate-50 dark:bg-[#090B0E] border border-slate-200 dark:border-[#1B212B] flex flex-col items-center gap-1.5"

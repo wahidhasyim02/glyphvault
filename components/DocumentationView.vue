@@ -279,7 +279,7 @@
                     <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Recommended</span>
                   </div>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Create a single plugin file <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> in your Nuxt project. Iconify automatically loads all 130+ GlyphVault icons directly from the <code class="font-mono text-teal-600">/glyph.json</code> endpoint:
+                    Create a single plugin file <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> in your Nuxt project. Iconify automatically loads all {{ milestoneCount }} GlyphVault icons directly from the <code class="font-mono text-teal-600">/glyph.json</code> endpoint:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_UI_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt client plugin recipe')" />
@@ -491,7 +491,7 @@
                 <span>Figma &amp; Icon Design Guidelines</span>
               </h2>
               <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                Rules and best practices for authoring glyphs in Figma to ensure perfect rendering across all 4 style variants.
+                Rules and best practices for authoring glyphs in Figma to ensure perfect rendering across all 5 style variants.
               </p>
             </div>
 

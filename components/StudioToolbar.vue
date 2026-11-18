@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <!-- 4-Style Variant Switcher -->
+      <!-- 5-Style Variant Switcher -->
       <div
         role="tablist"
         aria-label="Icon style variant"

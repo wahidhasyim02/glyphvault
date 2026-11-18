@@ -17,4 +17,4 @@ export interface IconSettings {
 
 export type PreviewBackdrop = 'dark' | 'light' | 'checker';
 
-export type CodeTab = 'svg' | 'vue' | 'react' | 'tag' | 'html';
+export type CodeTab = 'svg' | 'nuxt' | 'vue' | 'react' | 'tag' | 'html';
