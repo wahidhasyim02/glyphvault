@@ -1,0 +1,12 @@
+{
+  "name": "circle-minus",
+  "category": "Shapes & Badges",
+  "tags": [
+    "glyph",
+    "circle",
+    "minus",
+    "subtract",
+    "shapes & badges"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" fill=\"white\" fill-opacity=\"0.2\"/>\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M8 12H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}
