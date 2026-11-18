@@ -1,6 +1,6 @@
 {
   "prefix": "glyph",
-  "lastModified": 1795008217,
+  "lastModified": 1795008971,
   "width": 24,
   "height": 24,
   "icons": {
@@ -325,15 +325,6 @@
     "laptop": {
       "body": "<path d=\"M21.5613 20.6838L20.4558 17.3675C20.1836 16.5509 19.4193 16 18.5585 16H5.44152C4.58066 16 3.81638 16.5509 3.54415 17.3675L2.43874 20.6838C2.2229 21.3313 2.70487 22 3.38743 22H20.6126C21.2951 22 21.7771 21.3313 21.5613 20.6838Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M20 5V14C20 15.1046 19.1046 16 18 16H6C4.89543 16 4 15.1046 4 14V5C4 3.89543 4.89543 3 6 3H18C19.1046 3 20 3.89543 20 5Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M10 19.5L14 19.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>"
     },
-    "laptop-minimal": {
-      "body": "<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>"
-    },
-    "laptop-minimal-2": {
-      "body": "<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>\n<path d=\"M9 16L15 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>"
-    },
-    "laptop-minimal-check": {
-      "body": "<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>\n<path d=\"M15 9L11.1176 13L9 10.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>"
-    },
     "laptop-minimalis": {
       "body": "<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"currentColor\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"currentColor\"/>"
     },
@@ -568,7 +559,7 @@
   },
   "info": {
     "name": "GlyphVault",
-    "total": 187,
+    "total": 184,
     "license": {
       "title": "MIT"
     }
