@@ -136,16 +136,22 @@
             const maskId = 'gv-mask-' + Math.random().toString(36).slice(2, 9);
             const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
             mask.setAttribute('id', maskId);
+            mask.setAttribute('maskUnits', 'userSpaceOnUse');
 
             const maskBg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            maskBg.setAttribute('width', '100%');
-            maskBg.setAttribute('height', '100%');
+            maskBg.setAttribute('width', '24');
+            maskBg.setAttribute('height', '24');
             maskBg.setAttribute('fill', 'white');
             mask.appendChild(maskBg);
 
             cutouts.forEach(c => {
               const clone = c.cloneNode(true);
-              clone.setAttribute('fill', 'black');
+              const isClosed = c.tagName.toLowerCase() !== 'line' && (
+                c.tagName.toLowerCase() === 'circle' ||
+                c.tagName.toLowerCase() === 'rect' ||
+                (c.getAttribute('d') && /z\s*$/i.test(c.getAttribute('d').trim()))
+              );
+              clone.setAttribute('fill', isClosed ? 'black' : 'none');
               clone.setAttribute('stroke', 'black');
               clone.setAttribute('stroke-width', stroke);
               clone.setAttribute('stroke-linecap', 'round');

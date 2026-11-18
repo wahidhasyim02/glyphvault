@@ -208,13 +208,13 @@
       <!-- Code Output Block with Integrated Header & Copy Button -->
       <div class="space-y-2">
         <!-- Tabs Bar -->
-        <div class="flex items-center gap-1 p-0.5 rounded-md bg-slate-100 dark:bg-[#12161E] border border-slate-200 dark:border-[#1E2430] w-fit">
+        <div class="flex items-center justify-between px-2 gap-1 p-0.5 rounded-md bg-slate-100 dark:bg-[#12161E] border border-slate-200 dark:border-[#1E2430] w-full">
           <button
             v-for="tab in (['svg', 'vue', 'react', 'tag', 'html'] as CodeTab[])"
             :key="tab"
             type="button"
             @click="codeTab = tab"
-            class="px-2.5 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer"
+            class="px-4 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer"
             :class="codeTab === tab
               ? 'bg-white dark:bg-[#1D2430] text-slate-900 dark:text-[#F1F5F9] shadow-2xs dark:shadow-none'
               : 'text-slate-500 dark:text-[#64748B] hover:text-slate-900 dark:hover:text-[#CBD5E1]'"

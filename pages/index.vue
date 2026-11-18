@@ -66,6 +66,48 @@
           @inspect-only="handleInspectOnly"
           @reset-filters="handleResetFilters"
         />
+
+        <!-- Discreet Footer -->
+        <footer class="mt-auto px-6 py-6 border-t border-slate-200 dark:border-[#1D222B] text-xs text-slate-500 dark:text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="font-medium text-slate-700 dark:text-[#94A3B8]">GlyphVault</span>
+            <span>&copy; {{ new Date().getFullYear() }}</span>
+            <span>&middot;</span>
+            <span>Open SVG Icon System</span>
+          </div>
+
+          <div class="flex items-center gap-4 text-xs">
+            <button
+              type="button"
+              @click="handleOpenJsonStudio('embed')"
+              class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors cursor-pointer"
+            >
+              Documentation
+            </button>
+            <a
+              href="/icons.json"
+              target="_blank"
+              class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
+            >
+              icons.json
+            </a>
+            <a
+              href="/admin/"
+              target="_blank"
+              class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
+            >
+              CMS Admin
+            </a>
+            <button
+              type="button"
+              @click="handleOpenJsonStudio('add')"
+              class="text-slate-400 dark:text-[#475569] hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors cursor-pointer flex items-center gap-1"
+              title="Maintainer SVG Live Tester & Generator"
+            >
+              <span>SVG Live Lab</span>
+            </button>
+          </div>
+        </footer>
       </main>
 
       <InspectorPanel

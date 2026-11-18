@@ -37,9 +37,6 @@
         aria-label="Primary navigation"
         class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium"
       >
-   <!-- Keduanya sekarang SAMA-SAMA BISA! -->
-<gv-icon name="a-arrow-up" variant="duotone-linear" size="28"></gv-icon>
-<gv-icon name="circle-plus" style="duotone-linear" size="28"></gv-icon>
         <button
           type="button"
           @click="$emit('change-section', 'browse')"
@@ -62,22 +59,26 @@
         </button>
         <button
           type="button"
-          @click="$emit('open-json-studio', 'guide')"
+          @click="$emit('open-json-studio', 'embed')"
           class="py-1 whitespace-nowrap shrink-0 border-b-2 border-transparent text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] transition-colors cursor-pointer"
         >
-          JSON Schema
-        </button>
-        <button
-          type="button"
-          @click="$emit('open-json-studio', 'import')"
-          class="py-1 whitespace-nowrap shrink-0 border-b-2 border-transparent text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] transition-colors cursor-pointer"
-        >
-          Maintainer Studio
+          Documentation
         </button>
       </nav>
 
       <!-- Zone 3: Global Actions (Theme Toggle, Embed button & Mobile Hamburger) -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Discreet SVG Live Lab / Tester (For testing newly designed SVGs) -->
+        <button
+          type="button"
+          @click="$emit('open-json-studio', 'add')"
+          title="SVG Live Lab / Tester"
+          aria-label="SVG Live Lab / Tester"
+          class="p-2 rounded-lg bg-slate-100 dark:bg-[#11141A] border border-slate-200 dark:border-[#1D222B] text-slate-500 dark:text-[#94A3B8] hover:text-teal-600 dark:hover:text-[#2DD4BF] hover:border-slate-300 dark:hover:border-[#2C3545] transition-colors shrink-0 cursor-pointer"
+        >
+          <FlaskConical class="w-4 h-4" />
+        </button>
+
         <!-- Global Theme Toggle (Always visible in Header) -->
         <button
           type="button"
@@ -147,27 +148,20 @@
 
       <button
         type="button"
-        @click="handleJsonClick('guide')"
-        class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E] transition-colors cursor-pointer"
-      >
-        <span>JSON Schema Reference</span>
-      </button>
-
-      <button
-        type="button"
-        @click="handleJsonClick('import')"
-        class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E] transition-colors cursor-pointer"
-      >
-        <span>Maintainer Studio</span>
-      </button>
-
-      <button
-        type="button"
         @click="handleJsonClick('embed')"
-        class="w-full mt-2 flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-lg bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors cursor-pointer"
+        class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E] transition-colors cursor-pointer"
       >
-        <Code2 class="w-3.5 h-3.5" />
-        <span>Use &lt;gv-icon&gt; HTML Tag</span>
+        <span>Documentation &amp; Embed</span>
+        <Code2 class="w-3.5 h-3.5 text-teal-600 dark:text-[#2DD4BF]" />
+      </button>
+
+      <button
+        type="button"
+        @click="handleJsonClick('add')"
+        class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E] transition-colors cursor-pointer"
+      >
+        <span>SVG Live Lab / Tester</span>
+        <FlaskConical class="w-3.5 h-3.5 text-slate-400" />
       </button>
     </div>
   </header>
@@ -175,7 +169,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { Code2, Sun, Moon, Menu, X } from 'lucide-vue-next';
+import { Code2, Sun, Moon, Menu, X, FlaskConical } from 'lucide-vue-next';
 
 interface Props {
   activeSection: 'browse' | 'guide';

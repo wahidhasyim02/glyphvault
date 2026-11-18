@@ -381,12 +381,16 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
           const mId = 'gv-m-' + Math.random().toString(36).slice(2, 8);
           const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
           mask.setAttribute('id', mId);
-          mask.innerHTML = '<rect width=\"100%\" height=\"100%\" fill=\"white\"/>';
+          mask.setAttribute('maskUnits', 'userSpaceOnUse');
+          mask.innerHTML = '<rect width=\"24\" height=\"24\" fill=\"white\"/>';
           cutouts.forEach(c => {
             const clone = c.cloneNode(true);
-            clone.setAttribute('fill', 'black');
+            const isClosed = clone.tagName !== 'line' && (clone.tagName !== 'path' || /z\\s*$/i.test(clone.getAttribute('d') || ''));
+            clone.setAttribute('fill', isClosed ? 'black' : 'none');
             clone.setAttribute('stroke', 'black');
             clone.setAttribute('stroke-width', '2');
+            clone.setAttribute('stroke-linecap', 'round');
+            clone.setAttribute('stroke-linejoin', 'round');
             mask.appendChild(clone);
             c.remove();
           });
