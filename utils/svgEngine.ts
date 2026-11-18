@@ -254,11 +254,20 @@ function parseIconShapesFallback(rawSvg: string): { viewBox: string; shapes: Par
 
   const hasExplicitRoles = rawElements.some((el) => 'data-duotone' in el.attrs);
   const closedShapes = rawElements.filter((e) => e.isClosed && e.bbox && e.bbox.area > 0);
-  const container = closedShapes.length > 0
+  let container = closedShapes.length > 0
     ? closedShapes.reduce((max, cur) => (cur.bbox!.area > max.bbox!.area ? cur : max), closedShapes[0])
     : null;
 
-  let inferredBaseAssigned = false;
+  // If container is just a small dot while there is a much larger frame (e.g. monitor-dot where monitor has a cut)
+  if (container && container.bbox && container.bbox.area < 50) {
+    const largeFrame = rawElements.find(
+      (item) => item.bbox && item.bbox.area > 120 && item.bbox.width >= 12 && item.bbox.height >= 10
+    );
+    if (largeFrame) {
+      container = largeFrame;
+    }
+  }
+
   const shapes: ParsedShape[] = rawElements.map((el, index) => {
     const { tag, attrs, isClosed, bbox } = el;
     const isDot = attrs['data-dot'] === 'true';
@@ -269,13 +278,8 @@ function parseIconShapesFallback(rawSvg: string): { viewBox: string; shapes: Par
     let role: 'base' | 'accent' = 'accent';
     if (hasExplicitRoles) {
       role = attrs['data-duotone'] === 'base' ? 'base' : 'accent';
-    } else if (closedShapes.length > 0) {
-      if (!inferredBaseAssigned && isClosed) {
-        role = 'base';
-        inferredBaseAssigned = true;
-      } else {
-        role = 'accent';
-      }
+    } else if (container) {
+      role = el === container ? 'base' : 'accent';
     } else {
       role = rawElements.length >= 2 && index === 0 ? 'base' : 'accent';
     }
@@ -363,11 +367,20 @@ function parseIconShapes(rawSvg: string): { viewBox: string; shapes: ParsedShape
 
   // Find container shape (largest closed shape) for inner cutout detection
   const closedContainers = elementInfos.filter((item) => item.isClosed && item.bbox && item.bbox.area > 0);
-  const container = closedContainers.length > 0
+  let container = closedContainers.length > 0
     ? closedContainers.reduce((max, cur) => (cur.bbox!.area > max.bbox!.area ? cur : max), closedContainers[0])
     : null;
 
-  let inferredBaseAssigned = false;
+  // If container is just a small dot while there is a much larger frame (e.g. monitor-dot where monitor has a cut)
+  if (container && container.bbox && container.bbox.area < 50) {
+    const largeFrame = elementInfos.find(
+      (item) => item.bbox && item.bbox.area > 120 && item.bbox.width >= 12 && item.bbox.height >= 10
+    );
+    if (largeFrame) {
+      container = largeFrame;
+    }
+  }
+
   const shapes: ParsedShape[] = elementInfos.map(({ el, index, isClosed, bbox }) => {
     const tag = el.tagName.toLowerCase();
     const isDot = el.getAttribute('data-dot') === 'true';
@@ -381,13 +394,8 @@ function parseIconShapes(rawSvg: string): { viewBox: string; shapes: ParsedShape
     let role: 'base' | 'accent' = 'accent';
     if (hasExplicitRoles) {
       role = el.getAttribute('data-duotone') === 'base' ? 'base' : 'accent';
-    } else if (closedContainers.length > 0) {
-      if (!inferredBaseAssigned && isClosed) {
-        role = 'base';
-        inferredBaseAssigned = true;
-      } else {
-        role = 'accent';
-      }
+    } else if (container) {
+      role = container.index === index ? 'base' : 'accent';
     } else {
       // Multi-stroke icon with no closed shapes: assign first path as base so Dualtone uses both colors
       role = rawElements.length >= 2 && index === 0 ? 'base' : 'accent';
