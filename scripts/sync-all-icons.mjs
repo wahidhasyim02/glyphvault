@@ -29,7 +29,7 @@ const modifiedMap = {
   'circle-check.json': 'glyph_circle-check.svg',
   'save-all.json': 'glyph_save-all.svg',
   'save-off.json': 'glyph_save-off.svg',
-  'siren.json': 'glyph_sirine.svg',
+  'siren.json': 'glyph_siren.svg',
 };
 
 for (const [jsonFile, assetSvg] of Object.entries(modifiedMap)) {

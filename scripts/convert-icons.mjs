@@ -18,7 +18,7 @@ function getCategory(name) {
   if (name.startsWith('circle-')) return 'Shapes & Badges';
   if (name.startsWith('air-') || name.startsWith('airplay')) return 'Devices & Tech';
   if (name.startsWith('ampersand')) return 'Typography';
-  if (['ambulance', 'sirine'].includes(name)) return 'Emergency & Alerts';
+  if (['ambulance', 'siren'].includes(name)) return 'Emergency & Alerts';
   if (['accessibility', 'activity'].includes(name)) return 'Interface & Health';
   if (['amphora', 'anchor', 'anvil', 'angle', 'angle-1', 'aperture'].includes(name)) return 'Objects & Geometry';
   return 'General';

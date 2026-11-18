@@ -9,7 +9,13 @@
     "alert",
     "remove",
     "delete",
-    "unsubscribe"
+    "unsubscribe",
+    "bell-minus",
+    "alarm",
+    "reminder",
+    "chime",
+    "ring",
+    "exclude"
   ],
   "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 4C15.868 3.68742 15.7369 3.42382 15.5942 3.2003C14.6992 1.79798 12.6636 2 11 2H10.8932C8.36447 2 6.57755 4.32335 6.55736 6.85205C6.55439 7.22332 6.53921 7.59612 6.51182 7.97732C6.34262 10.3319 5.42493 12.5543 4.29455 14.6267C3.71122 15.6961 4.48526 17 5.70344 17H18.4336C19.5901 17 20.3248 15.7622 19.7711 14.747L18.6377 12.6691C18.2155 11.8951 17.9177 11.0573 17.7942 10.1843\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M15 7H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }
