@@ -121,7 +121,7 @@ const CURATED_SHOWCASE = [
   'anchor',
   'alarm-clock-plus',
   'circle-check',
-  'app-window-mac',
+  'app-window',
 ];
 
 const previewSet = computed(() => {
