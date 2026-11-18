@@ -26,7 +26,7 @@ function getCategory(name) {
 
 function getTags(name, category) {
   const parts = name.split(/[^a-zA-Z0-9]+/).filter(Boolean);
-  const tagSet = new Set(['inalix', category.toLowerCase(), ...parts]);
+  const tagSet = new Set(['glyph', category.toLowerCase(), ...parts]);
   if (name.includes('arrow') || name.includes('chevron')) {
     tagSet.add('direction');
   }
@@ -45,7 +45,7 @@ for (const file of files) {
   const filePath = path.join(iconsDir, file);
   // Read exact content without altering points or coordinates
   const rawSvg = fs.readFileSync(filePath, 'utf-8').trim();
-  const cleanName = file.replace(/^inalix_/, '').replace(/\.svg$/, '');
+  const cleanName = file.replace(/^glyph_/, '').replace(/\.svg$/, '');
   const category = getCategory(cleanName);
   const tags = getTags(cleanName, category);
 
