@@ -23,7 +23,7 @@
       border: 1px solid #1D222B;
       border-radius: 16px;
       padding: 32px;
-      max-width: 600px;
+      max-width: 680px;
       width: 100%;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
@@ -42,7 +42,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       gap: 16px;
       margin: 24px 0;
     }
@@ -62,9 +62,17 @@
       transform: translateY(-2px);
     }
     .icon-name {
-      font-size: 12px;
+      font-size: 11px;
       font-family: monospace;
       color: #CBD5E1;
+      text-align: center;
+    }
+    .badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #252D3B;
+      color: #94A3B8;
     }
     .teal { color: #2DD4BF; }
     .amber { color: #F59E0B; }
@@ -81,7 +89,7 @@
     }
   </style>
 
-  <!-- 1. Panduan Resmi: Loader script sekali pasang -->
+  <!-- 1. Panduan Loader Web Component dengan Dukungan Variant (Linear, Solid, Duotone, Duotone-Linear) -->
   <script type="module">
     const res = await fetch('/icons.json');
     const data = await res.json();
@@ -89,14 +97,81 @@
     const map = new Map(list.map(i => [i.name, i.svg]));
 
     class GvIcon extends HTMLElement {
-      connectedCallback() {
+      static get observedAttributes() {
+        return ['name', 'size', 'variant', 'style', 'stroke', 'opacity'];
+      }
+      connectedCallback() { this.render(); }
+      attributeChangedCallback() { this.render(); }
+
+      render() {
         const name = this.getAttribute('name');
-        const size = this.getAttribute('size') || '24';
+        if (!name) return;
         const raw = map.get(name);
         if (!raw) return;
-        this.innerHTML = raw
-          .replace('<svg ', `<svg width="${size}" height="${size}" `)
-          .replace(/stroke="[^"]*"/g, 'stroke="currentColor"');
+
+        const size = this.getAttribute('size') || '24';
+        const stroke = this.getAttribute('stroke') || '2';
+        const opacity = this.getAttribute('opacity') || '0.25';
+        const candidate = (this.getAttribute('variant') || this.getAttribute('mode') || this.getAttribute('style') || '').trim();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(raw, 'image/svg+xml');
+        const svg = doc.querySelector('svg');
+        if (!svg) return;
+
+        svg.setAttribute('width', size);
+        svg.setAttribute('height', size);
+
+        const elements = svg.querySelectorAll('path, circle, rect, polygon, ellipse, line');
+        elements.forEach((el, index) => {
+          const role = el.getAttribute('data-duotone') || (index === 0 ? 'base' : 'accent');
+          const isClosed = el.tagName.toLowerCase() !== 'line' && (
+            el.tagName.toLowerCase() === 'circle' || 
+            el.tagName.toLowerCase() === 'rect' || 
+            (el.getAttribute('d') && /z\s*$/i.test(el.getAttribute('d').trim()))
+          );
+
+          if (candidate === 'solid') {
+            if (isClosed) {
+              el.setAttribute('fill', 'currentColor');
+              el.removeAttribute('stroke');
+            } else {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            }
+          } else if (candidate === 'duotone') {
+            if (role === 'base' && isClosed) {
+              el.setAttribute('fill', 'currentColor');
+              el.setAttribute('fill-opacity', opacity);
+              el.removeAttribute('stroke');
+            } else {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            }
+          } else if (candidate === 'duotone-linear') {
+            if (role === 'base' && isClosed) {
+              el.setAttribute('fill', 'currentColor');
+              el.setAttribute('fill-opacity', opacity);
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            } else {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            }
+          } else {
+            // linear (default)
+            el.setAttribute('fill', 'none');
+            el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-width', stroke);
+          }
+        });
+
+        this.innerHTML = svg.outerHTML;
+        this.style.display = 'inline-flex';
+        this.style.verticalAlign = 'middle';
       }
     }
     customElements.define('gv-icon', GvIcon);
@@ -106,39 +181,50 @@
 
   <div class="card">
     <h1>
-      <gv-icon name="apple" size="24" class="teal"></gv-icon>
-      Uji Coba Langsung &lt;gv-icon&gt;
+      <gv-icon name="apple" variant="duotone-linear" size="28" class="teal"></gv-icon>
+      Uji Coba Langsung &lt;gv-icon&gt; (4 Varian)
     </h1>
     <p>
-      Halaman ini adalah HTML murni yang menguji persis panduan dari website. 
-      Cukup panggil nama icon di tag <code>&lt;gv-icon&gt;</code>, warna mengikuti CSS <code>color</code>, dan ukurannya fleksibel!
+      Gunakan atribut <code>variant="..."</code> (atau <code>style="..."</code>) untuk memilih varian: 
+      <code>linear</code>, <code>solid</code>, <code>duotone</code>, atau <code>duotone-linear</code>.
     </p>
 
-    <!-- 2. Pemanggilan Icon Langsung -->
+    <!-- 2. Pemanggilan Icon dalam 4 Gaya Berbeda -->
     <div class="grid">
       <div class="icon-box">
-        <gv-icon name="apple" size="32" class="teal"></gv-icon>
-        <span class="icon-name">apple</span>
-      </div>
-      <div class="icon-box">
-        <gv-icon name="ambulance" size="32" class="rose"></gv-icon>
-        <span class="icon-name">ambulance</span>
-      </div>
-      <div class="icon-box">
-        <gv-icon name="mac" size="32" class="sky"></gv-icon>
-        <span class="icon-name">mac</span>
-      </div>
-      <div class="icon-box">
-        <gv-icon name="circle-plus" size="32" class="amber"></gv-icon>
+        <gv-icon name="circle-plus" variant="linear" size="32" class="teal"></gv-icon>
         <span class="icon-name">circle-plus</span>
+        <span class="badge">linear</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="circle-plus" variant="solid" size="32" class="sky"></gv-icon>
+        <span class="icon-name">circle-plus</span>
+        <span class="badge">solid</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="circle-plus" variant="duotone" size="32" class="amber"></gv-icon>
+        <span class="icon-name">circle-plus</span>
+        <span class="badge">duotone</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="circle-plus" variant="duotone-linear" size="32" class="rose"></gv-icon>
+        <span class="icon-name">circle-plus</span>
+        <span class="badge">duotone-linear</span>
       </div>
     </div>
 
-    <p style="margin-bottom: 8px; font-weight: 600;">Contoh Kode HTML yang Dipakai di Atas:</p>
-    <pre><code>&lt;gv-icon name="apple" size="32" class="teal"&gt;&lt;/gv-icon&gt;
-&lt;gv-icon name="ambulance" size="32" class="rose"&gt;&lt;/gv-icon&gt;
-&lt;gv-icon name="mac" size="32" class="sky"&gt;&lt;/gv-icon&gt;
-&lt;gv-icon name="circle-plus" size="32" class="amber"&gt;&lt;/gv-icon&gt;</code></pre>
+    <p style="margin-bottom: 8px; font-weight: 600;">Contoh Kode:</p>
+    <pre><code>&lt;!-- Linear (Bawaan) --&gt;
+&lt;gv-icon name="circle-plus" variant="linear" size="28"&gt;&lt;/gv-icon&gt;
+
+&lt;!-- Solid --&gt;
+&lt;gv-icon name="circle-plus" variant="solid" size="28"&gt;&lt;/gv-icon&gt;
+
+&lt;!-- Duotone --&gt;
+&lt;gv-icon name="circle-plus" variant="duotone" size="28"&gt;&lt;/gv-icon&gt;
+
+&lt;!-- Duotone-Linear (Bisa pakai variant="..." atau style="...") --&gt;
+&lt;gv-icon name="circle-plus" variant="duotone-linear" size="28"&gt;&lt;/gv-icon&gt;</code></pre>
   </div>
 
 </body>

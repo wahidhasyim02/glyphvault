@@ -349,7 +349,7 @@ const SCHEMA_EXAMPLE = `[
   }
 ]`;
 
-const EMBED_TAG_EXAMPLE = `<!-- 1. Include this tiny loader script once in your HTML -->
+const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML -->
 <script type="module">
   const res = await fetch('https://glyphvault.conime.id/icons.json');
   const data = await res.json();
@@ -360,20 +360,51 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this tiny loader script once in your 
     connectedCallback() {
       const name = this.getAttribute('name');
       const size = this.getAttribute('size') || '24';
+      const variant = (this.getAttribute('variant') || this.getAttribute('style') || 'linear').trim();
       const raw = map.get(name);
       if (!raw) return;
-      this.innerHTML = raw
-        .replace('<svg ', \`<svg width="\${size}" height="\${size}" \`)
-        .replace(/stroke="[^"]*"/g, 'stroke="currentColor"');
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(raw, 'image/svg+xml');
+      const svg = doc.querySelector('svg');
+      if (!svg) return;
+      svg.setAttribute('width', size);
+      svg.setAttribute('height', size);
+
+      svg.querySelectorAll('path, circle, rect, polygon').forEach((el, idx) => {
+        const isClosed = el.tagName !== 'line' && (el.tagName !== 'path' || /z\\s*$/i.test(el.getAttribute('d') || ''));
+        const isBase = el.getAttribute('data-duotone') === 'base' || idx === 0;
+
+        if (variant === 'solid' && isClosed) {
+          el.setAttribute('fill', 'currentColor');
+          el.removeAttribute('stroke');
+        } else if (variant === 'duotone' && isBase && isClosed) {
+          el.setAttribute('fill', 'currentColor');
+          el.setAttribute('fill-opacity', '0.25');
+          el.removeAttribute('stroke');
+        } else if (variant === 'duotone-linear' && isBase && isClosed) {
+          el.setAttribute('fill', 'currentColor');
+          el.setAttribute('fill-opacity', '0.25');
+          el.setAttribute('stroke', 'currentColor');
+        } else {
+          el.setAttribute('fill', 'none');
+          el.setAttribute('stroke', 'currentColor');
+        }
+      });
+
+      this.innerHTML = svg.outerHTML;
+      this.style.display = 'inline-flex';
+      this.style.verticalAlign = 'middle';
     }
   }
   customElements.define('gv-icon', GvIcon);
 <\/script>
 
-<!-- 2. Call any icon anywhere just like Google Fonts! -->
-<gv-icon name="apple" size="24"></gv-icon>
-<gv-icon name="ambulance" size="24"></gv-icon>
-<gv-icon name="mac" size="24"></gv-icon>`;
+<!-- 2. Call icons in any style: linear, solid, duotone, or duotone-linear! -->
+<gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
 
 const SAMPLE_NEW_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><rect data-duotone="base" x="3" y="4" width="18" height="16" rx="4"/><path data-duotone="accent" data-cutout="true" d="M8.5 12L11 14.5L15.5 9.5"/></svg>';
