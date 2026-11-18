@@ -18,14 +18,22 @@ const icons = [];
 
 for (const file of files) {
   try {
-    const raw = fs.readFileSync(path.join(dataIconsDir, file), 'utf-8');
+    const filePath = path.join(dataIconsDir, file);
+    const raw = fs.readFileSync(filePath, 'utf-8');
     const parsed = JSON.parse(raw);
     if (parsed.name && parsed.svg) {
+      // Auto-strip any accidental Figma canvas background rectangle
+      const cleanedSvg = parsed.svg.replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '').trim();
+      if (cleanedSvg !== parsed.svg.trim()) {
+        parsed.svg = cleanedSvg;
+        fs.writeFileSync(filePath, JSON.stringify(parsed, null, 2) + '\n', 'utf-8');
+      }
+
       icons.push({
         name: parsed.name.trim(),
         category: (parsed.category || 'General').trim(),
         tags: Array.isArray(parsed.tags) ? parsed.tags : [],
-        svg: parsed.svg.trim(),
+        svg: cleanedSvg,
       });
     }
   } catch (err) {
