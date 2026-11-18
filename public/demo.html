@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlyphVault — Live Test &lt;gv-icon&gt;</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #090B0E;
+      color: #F1F5F9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+    }
+    .card {
+      background: #11141A;
+      border: 1px solid #1D222B;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 20px;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #2DD4BF;
+    }
+    p {
+      color: #94A3B8;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .icon-box {
+      background: #181D25;
+      border: 1px solid #252D3B;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+    .icon-box:hover {
+      border-color: #2DD4BF;
+      transform: translateY(-2px);
+    }
+    .icon-name {
+      font-size: 12px;
+      font-family: monospace;
+      color: #CBD5E1;
+    }
+    .teal { color: #2DD4BF; }
+    .amber { color: #F59E0B; }
+    .rose { color: #F43F5E; }
+    .sky { color: #38BDF8; }
+    pre {
+      background: #090B0E;
+      border: 1px solid #1D222B;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 12px;
+      color: #E2E8F0;
+      overflow-x: auto;
+    }
+  </style>
+
+  <!-- 1. Panduan Resmi: Loader script sekali pasang -->
+  <script type="module">
+    const res = await fetch('/icons.json');
+    const data = await res.json();
+    const list = Array.isArray(data) ? data : (data.icons || []);
+    const map = new Map(list.map(i => [i.name, i.svg]));
+
+    class GvIcon extends HTMLElement {
+      connectedCallback() {
+        const name = this.getAttribute('name');
+        const size = this.getAttribute('size') || '24';
+        const raw = map.get(name);
+        if (!raw) return;
+        this.innerHTML = raw
+          .replace('<svg ', `<svg width="${size}" height="${size}" `)
+          .replace(/stroke="[^"]*"/g, 'stroke="currentColor"');
+      }
+    }
+    customElements.define('gv-icon', GvIcon);
+  </script>
+</head>
+<body>
+
+  <div class="card">
+    <h1>
+      <gv-icon name="apple" size="24" class="teal"></gv-icon>
+      Uji Coba Langsung &lt;gv-icon&gt;
+    </h1>
+    <p>
+      Halaman ini adalah HTML murni yang menguji persis panduan dari website. 
+      Cukup panggil nama icon di tag <code>&lt;gv-icon&gt;</code>, warna mengikuti CSS <code>color</code>, dan ukurannya fleksibel!
+    </p>
+
+    <!-- 2. Pemanggilan Icon Langsung -->
+    <div class="grid">
+      <div class="icon-box">
+        <gv-icon name="apple" size="32" class="teal"></gv-icon>
+        <span class="icon-name">apple</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="ambulance" size="32" class="rose"></gv-icon>
+        <span class="icon-name">ambulance</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="mac" size="32" class="sky"></gv-icon>
+        <span class="icon-name">mac</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="circle-plus" size="32" class="amber"></gv-icon>
+        <span class="icon-name">circle-plus</span>
+      </div>
+    </div>
+
+    <p style="margin-bottom: 8px; font-weight: 600;">Contoh Kode HTML yang Dipakai di Atas:</p>
+    <pre><code>&lt;gv-icon name="apple" size="32" class="teal"&gt;&lt;/gv-icon&gt;
+&lt;gv-icon name="ambulance" size="32" class="rose"&gt;&lt;/gv-icon&gt;
+&lt;gv-icon name="mac" size="32" class="sky"&gt;&lt;/gv-icon&gt;
+&lt;gv-icon name="circle-plus" size="32" class="amber"&gt;&lt;/gv-icon&gt;</code></pre>
+  </div>
+
+</body>
+</html>

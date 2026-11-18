@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   modules: ['@nuxtjs/tailwindcss'],
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith('gv-'),
+    },
+  },
   tailwindcss: {
     viewer: false,
   },

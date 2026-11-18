@@ -351,8 +351,9 @@ const SCHEMA_EXAMPLE = `[
 
 const EMBED_TAG_EXAMPLE = `<!-- 1. Include this tiny loader script once in your HTML -->
 <script type="module">
-  const res = await fetch('/icons.json');
-  const list = await res.json();
+  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const data = await res.json();
+  const list = Array.isArray(data) ? data : (data.icons || []);
   const map = new Map(list.map(i => [i.name, i.svg]));
 
   class GvIcon extends HTMLElement {
@@ -370,8 +371,9 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this tiny loader script once in your 
 <\/script>
 
 <!-- 2. Call any icon anywhere just like Google Fonts! -->
-<gv-icon name="home" size="24"></gv-icon>
-<gv-icon name="bell" size="24"></gv-icon>`;
+<gv-icon name="apple" size="24"></gv-icon>
+<gv-icon name="ambulance" size="24"></gv-icon>
+<gv-icon name="mac" size="24"></gv-icon>`;
 
 const SAMPLE_NEW_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><rect data-duotone="base" x="3" y="4" width="18" height="16" rx="4"/><path data-duotone="accent" data-cutout="true" d="M8.5 12L11 14.5L15.5 9.5"/></svg>';
