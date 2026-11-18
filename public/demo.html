@@ -168,11 +168,15 @@
             defs.appendChild(mask);
 
             closedShape.setAttribute('fill', 'currentColor');
+            closedShape.setAttribute('stroke', 'currentColor');
+            closedShape.setAttribute('stroke-width', stroke);
+            closedShape.setAttribute('stroke-linejoin', 'round');
             closedShape.setAttribute('mask', `url(#${maskId})`);
-            closedShape.removeAttribute('stroke');
           } else if (closedShape) {
             closedShape.setAttribute('fill', 'currentColor');
-            closedShape.removeAttribute('stroke');
+            closedShape.setAttribute('stroke', 'currentColor');
+            closedShape.setAttribute('stroke-width', stroke);
+            closedShape.setAttribute('stroke-linejoin', 'round');
           } else {
             elements.forEach(el => {
               el.setAttribute('fill', 'none');
@@ -189,7 +193,18 @@
               (el.getAttribute('d') && /z\s*$/i.test(el.getAttribute('d').trim()))
             );
 
-            if (candidate === 'duotone') {
+            if (candidate === 'line-duotone' || candidate === 'line-dualtone') {
+              if (role === 'base') {
+                el.setAttribute('fill', 'none');
+                el.setAttribute('stroke', 'currentColor');
+                el.setAttribute('stroke-opacity', opacity);
+                el.setAttribute('stroke-width', stroke);
+              } else {
+                el.setAttribute('fill', 'none');
+                el.setAttribute('stroke', 'currentColor');
+                el.setAttribute('stroke-width', stroke);
+              }
+            } else if (candidate === 'duotone') {
               if (role === 'base' && isClosed) {
                 el.setAttribute('fill', 'currentColor');
                 el.setAttribute('fill-opacity', opacity);
@@ -232,19 +247,24 @@
   <div class="card">
     <h1>
       <gv-icon name="apple" variant="duotone-linear" size="28" class="teal"></gv-icon>
-      Uji Coba Langsung &lt;gv-icon&gt; (4 Varian)
+      Uji Coba Langsung &lt;gv-icon&gt; (5 Varian)
     </h1>
     <p>
-      Gunakan atribut <code>variant="..."</code> (atau <code>style="..."</code>) untuk memilih varian: 
-      <code>linear</code>, <code>solid</code>, <code>duotone</code>, atau <code>duotone-linear</code>.
+      Gunakan atribut <code>variant="..."</code> untuk memilih varian: 
+      <code>linear</code>, <code>line-duotone</code>, <code>solid</code>, <code>duotone</code>, atau <code>duotone-linear</code>.
     </p>
 
-    <!-- 2. Pemanggilan Icon dalam 4 Gaya Berbeda -->
-    <div class="grid">
+    <!-- 2. Pemanggilan Icon dalam 5 Gaya Berbeda -->
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
       <div class="icon-box">
         <gv-icon name="circle-plus" variant="linear" size="32" class="teal"></gv-icon>
         <span class="icon-name">circle-plus</span>
         <span class="badge">linear</span>
+      </div>
+      <div class="icon-box">
+        <gv-icon name="circle-plus" variant="line-duotone" size="32" class="teal"></gv-icon>
+        <span class="icon-name">circle-plus</span>
+        <span class="badge">line-duotone</span>
       </div>
       <div class="icon-box">
         <gv-icon name="circle-plus" variant="solid" size="32" class="sky"></gv-icon>
@@ -267,13 +287,16 @@
     <pre><code>&lt;!-- Linear (Bawaan) --&gt;
 &lt;gv-icon name="circle-plus" variant="linear" size="28"&gt;&lt;/gv-icon&gt;
 
+&lt;!-- Line Duotone (2 Warna Garis Tanpa Fill) --&gt;
+&lt;gv-icon name="circle-plus" variant="line-duotone" size="28"&gt;&lt;/gv-icon&gt;
+
 &lt;!-- Solid --&gt;
 &lt;gv-icon name="circle-plus" variant="solid" size="28"&gt;&lt;/gv-icon&gt;
 
 &lt;!-- Duotone --&gt;
 &lt;gv-icon name="circle-plus" variant="duotone" size="28"&gt;&lt;/gv-icon&gt;
 
-&lt;!-- Duotone-Linear (Bisa pakai variant="..." atau style="...") --&gt;
+&lt;!-- Duotone-Linear --&gt;
 &lt;gv-icon name="circle-plus" variant="duotone-linear" size="28"&gt;&lt;/gv-icon&gt;</code></pre>
   </div>
 

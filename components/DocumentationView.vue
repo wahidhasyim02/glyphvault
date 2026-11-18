@@ -573,7 +573,7 @@ const generatedTagSnippet = computed(() => {
 });
 
 // Snippets
-const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this tiny loader once in your HTML -->
+const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this loader script once in your HTML -->
 <script type="module">
   const res = await fetch('https://glyphvault.conime.id/icons.json');
   const data = await res.json();
@@ -584,6 +584,7 @@ const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this tiny loader once in your HTM
     connectedCallback() {
       const name = this.getAttribute('name');
       const size = this.getAttribute('size') || '24';
+      const stroke = this.getAttribute('stroke') || '2';
       const variant = (this.getAttribute('variant') || 'linear').trim();
       const raw = map.get(name);
       if (!raw) return;
@@ -594,7 +595,74 @@ const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this tiny loader once in your HTM
       if (!svg) return;
       svg.setAttribute('width', size);
       svg.setAttribute('height', size);
-      // ... variants & masks applied automatically ...
+
+      const elements = svg.querySelectorAll('path, circle, rect, polygon, ellipse, line');
+      if (variant === 'solid') {
+        const isClosed = (e) => e.tagName.toLowerCase() !== 'line' && (e.tagName.toLowerCase() === 'circle' || e.tagName.toLowerCase() === 'rect' || (e.getAttribute('d') && /z\\s*$/i.test(e.getAttribute('d').trim())));
+        const closed = Array.from(elements).find(isClosed);
+        const cutouts = Array.from(elements).filter(e => e !== closed);
+        if (closed && cutouts.length > 0) {
+          const mId = 'gv-m-' + Math.random().toString(36).slice(2, 8);
+          const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
+          mask.setAttribute('id', mId);
+          mask.setAttribute('maskUnits', 'userSpaceOnUse');
+          mask.innerHTML = '<rect width="24" height="24" fill="white"/>';
+          cutouts.forEach(c => {
+            const clone = c.cloneNode(true);
+            const closedCutout = isClosed(c);
+            clone.setAttribute('fill', closedCutout ? 'black' : 'none');
+            clone.setAttribute('stroke', 'black');
+            clone.setAttribute('stroke-width', stroke);
+            clone.setAttribute('stroke-linecap', 'round');
+            clone.setAttribute('stroke-linejoin', 'round');
+            mask.appendChild(clone);
+            c.remove();
+          });
+          const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+          defs.appendChild(mask);
+          svg.prepend(defs);
+          closed.setAttribute('fill', 'currentColor');
+          closed.setAttribute('stroke', 'currentColor');
+          closed.setAttribute('stroke-width', stroke);
+          closed.setAttribute('mask', 'url(#' + mId + ')');
+        } else if (closed) {
+          closed.setAttribute('fill', 'currentColor');
+          closed.setAttribute('stroke', 'currentColor');
+          closed.setAttribute('stroke-width', stroke);
+        }
+      } else {
+        elements.forEach((el, idx) => {
+          const isClosed = el.tagName.toLowerCase() !== 'line' && (el.tagName.toLowerCase() === 'circle' || el.tagName.toLowerCase() === 'rect' || (el.getAttribute('d') && /z\\s*$/i.test(el.getAttribute('d').trim())));
+          const isBase = el.getAttribute('data-duotone') === 'base' || idx === 0;
+
+          if (variant === 'line-duotone') {
+            if (isBase) {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-opacity', '0.35');
+              el.setAttribute('stroke-width', stroke);
+            } else {
+              el.setAttribute('fill', 'none');
+              el.setAttribute('stroke', 'currentColor');
+              el.setAttribute('stroke-width', stroke);
+            }
+          } else if (variant === 'duotone' && isBase && isClosed) {
+            el.setAttribute('fill', 'currentColor');
+            el.setAttribute('fill-opacity', '0.25');
+            el.removeAttribute('stroke');
+          } else if (variant === 'duotone-linear' && isBase && isClosed) {
+            el.setAttribute('fill', 'currentColor');
+            el.setAttribute('fill-opacity', '0.25');
+            el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-width', stroke);
+          } else {
+            el.setAttribute('fill', 'none');
+            el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-width', stroke);
+          }
+        });
+      }
+
       this.innerHTML = svg.outerHTML;
       this.style.display = 'inline-flex';
       this.style.verticalAlign = 'middle';
@@ -605,6 +673,7 @@ const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this tiny loader once in your HTM
 
 const CALL_TAGS_SNIPPET = `<!-- 2. Call anywhere with your desired variant -->
 <gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="line-duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
@@ -640,7 +709,7 @@ import React from 'react';
 
 interface GlyphIconProps {
   name: string;
-  variant?: 'linear' | 'solid' | 'duotone' | 'duotone-linear';
+  variant?: 'linear' | 'line-duotone' | 'solid' | 'duotone' | 'duotone-linear';
   size?: number | string;
   stroke?: number | string;
   className?: string;
@@ -659,7 +728,7 @@ const VANILLA_HTML_SNIPPET = `<!DOCTYPE html>
 </head>
 <body>
   <div style="color: #0d9488;">
-    <gv-icon name="siren" variant="duotone-linear" size="32"></gv-icon>
+    <gv-icon name="siren" variant="line-duotone" size="32"></gv-icon>
     <span>System Active</span>
   </div>
 
@@ -669,11 +738,11 @@ const VANILLA_HTML_SNIPPET = `<!DOCTYPE html>
 
 const ATTRIBUTES_TABLE = [
   { name: 'name', type: 'string', default: 'Required', description: 'The semantic icon identifier matching icons.json (e.g. circle-plus, apple).' },
-  { name: 'variant', type: 'string', default: '"linear"', description: 'Styling mode: linear (outline), solid (fill), duotone (two-tone), or duotone-linear.' },
+  { name: 'variant', type: 'string', default: '"linear"', description: 'Styling mode: linear, line-duotone (two-tone outline), solid (fill), duotone, or duotone-linear.' },
   { name: 'size', type: 'number | string', default: '"24"', description: 'Pixel dimension applied to both SVG width and height.' },
   { name: 'stroke', type: 'number | string', default: '"2"', description: 'Stroke thickness applied to paths, lines, and outlines.' },
   { name: 'class', type: 'string', default: '—', description: 'Standard CSS class name. Colors inherit automatically via currentColor.' },
-  { name: 'opacity', type: 'number | string', default: '"0.25"', description: 'Secondary layer opacity for duotone and duotone-linear variants (0.0 to 1.0).' },
+  { name: 'opacity', type: 'number | string', default: '"0.25"', description: 'Secondary layer opacity for duotone and line-duotone variants (0.0 to 1.0).' },
 ];
 
 const FIGMA_RULES = [

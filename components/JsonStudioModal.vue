@@ -398,18 +398,27 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
           defs.appendChild(mask);
           svg.prepend(defs);
           closed.setAttribute('fill', 'currentColor');
+          closed.setAttribute('stroke', 'currentColor');
+          closed.setAttribute('stroke-width', '2');
+          closed.setAttribute('stroke-linejoin', 'round');
           closed.setAttribute('mask', 'url(#' + mId + ')');
-          closed.removeAttribute('stroke');
         } else if (closed) {
           closed.setAttribute('fill', 'currentColor');
-          closed.removeAttribute('stroke');
+          closed.setAttribute('stroke', 'currentColor');
+          closed.setAttribute('stroke-width', '2');
+          closed.setAttribute('stroke-linejoin', 'round');
         }
       } else {
         elements.forEach((el, idx) => {
           const isClosed = el.tagName !== 'line' && (el.tagName !== 'path' || /z\\s*$/i.test(el.getAttribute('d') || ''));
           const isBase = el.getAttribute('data-duotone') === 'base' || idx === 0;
 
-          if (variant === 'duotone' && isBase && isClosed) {
+          if (variant === 'line-duotone' && isBase) {
+            el.setAttribute('fill', 'none');
+            el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-opacity', '0.35');
+            el.setAttribute('stroke-width', '2');
+          } else if (variant === 'duotone' && isBase && isClosed) {
             el.setAttribute('fill', 'currentColor');
             el.setAttribute('fill-opacity', '0.25');
             el.removeAttribute('stroke');
@@ -417,9 +426,11 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
             el.setAttribute('fill', 'currentColor');
             el.setAttribute('fill-opacity', '0.25');
             el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-width', '2');
           } else {
             el.setAttribute('fill', 'none');
             el.setAttribute('stroke', 'currentColor');
+            el.setAttribute('stroke-width', '2');
           }
         });
       }
@@ -432,8 +443,9 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
   customElements.define('gv-icon', GvIcon);
 <\/script>
 
-<!-- 2. Call icons in any style: linear, solid, duotone, or duotone-linear! -->
+<!-- 2. Call icons in any style: linear, line-duotone, solid, duotone, or duotone-linear! -->
 <gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="line-duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
