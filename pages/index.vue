@@ -219,6 +219,7 @@ const LIGHT_DEFAULT_SETTINGS: IconSettings = {
 
 const VALID_STYLES = new Set<IconStyleVariant>([
   'linear',
+  'line-duotone',
   'solid',
   'duotone',
   'duotone-linear',

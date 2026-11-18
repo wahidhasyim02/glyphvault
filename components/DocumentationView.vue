@@ -184,7 +184,7 @@
                   <!-- Variant Selector -->
                   <div class="space-y-1.5">
                     <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Style Variant (variant)</span>
-                    <div class="grid grid-cols-4 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-1.5">
                       <button
                         v-for="v in VARIANTS"
                         :key="v"
@@ -195,7 +195,7 @@
                           ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] font-bold shadow-xs'
                           : 'bg-slate-100 dark:bg-[#141822] text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#1B2230]'"
                       >
-                        {{ v }}
+                        {{ v === 'line-duotone' ? 'Line Duo' : v === 'duotone-linear' ? 'Duo Line' : v }}
                       </button>
                     </div>
                   </div>
@@ -559,7 +559,7 @@ const DOC_TABS = [
 
 // Interactive Sandbox State
 const SAMPLE_ICON_NAMES = ['circle-plus', 'apple', 'siren', 'ambulance', 'anchor', 'air-vent', 'alarm-clock-snooze', 'arrow-big-up-dash'];
-const VARIANTS: IconStyleVariant[] = ['linear', 'solid', 'duotone', 'duotone-linear'];
+const VARIANTS: IconStyleVariant[] = ['linear', 'line-duotone', 'solid', 'duotone', 'duotone-linear'];
 
 const sandboxIcon = ref('circle-plus');
 const sandboxVariant = ref<IconStyleVariant>('duotone-linear');

@@ -287,13 +287,17 @@ const SAMPLE_GLYPH_SVG =
 
 const STYLE_OPTIONS: { id: IconStyleVariant; label: string }[] = [
   { id: 'linear', label: 'Linear' },
+  { id: 'line-duotone', label: 'Line Duotone' },
   { id: 'solid', label: 'Solid' },
   { id: 'duotone', label: 'Dualtone' },
   { id: 'duotone-linear', label: 'Dualtone Linear' },
 ];
 
 const isDuotoneMode = computed(
-  () => props.styleVariant === 'duotone' || props.styleVariant === 'duotone-linear'
+  () =>
+    props.styleVariant === 'duotone' ||
+    props.styleVariant === 'duotone-linear' ||
+    props.styleVariant === 'line-duotone'
 );
 const isStrokeApplicable = computed(() => props.styleVariant !== 'solid');
 

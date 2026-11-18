@@ -109,18 +109,18 @@
         </div>
       </div>
 
-      <!-- 4-Variant Strip -->
+      <!-- 5-Variant Strip -->
       <div class="space-y-2">
         <div class="text-xs font-medium text-slate-600 dark:text-[#94A3B8]">
           Style Variants
         </div>
-        <div class="grid grid-cols-4 gap-2">
+        <div class="grid grid-cols-5 gap-1.5">
           <button
             v-for="variant in VARIANT_LIST"
             :key="variant.id"
             type="button"
             @click="$emit('style-change', variant.id)"
-            class="py-2.5 px-1.5 rounded-lg border flex flex-col items-center justify-center gap-1.5 transition-colors cursor-pointer"
+            class="py-2 px-1 rounded-lg border flex flex-col items-center justify-center gap-1.5 transition-colors cursor-pointer"
             :class="styleVariant === variant.id
               ? 'bg-teal-50/70 dark:bg-[#141D26] border-teal-600/60 dark:border-[#2DD4BF]/60 text-slate-900 dark:text-[#F1F5F9]'
               : 'bg-slate-50 dark:bg-[#101319] border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:border-slate-300 dark:hover:border-[#2B3342] hover:text-slate-900 dark:hover:text-[#E2E8F0]'"
@@ -129,10 +129,10 @@
               :raw-svg="icon.svg"
               :style-variant="variant.id"
               :settings="settings"
-              :override-size="22"
+              :override-size="20"
             />
-            <span class="text-[10px] font-medium leading-none truncate max-w-full">
-              {{ variant.label === 'Dualtone Linear' ? 'Duo Line' : variant.label }}
+            <span class="text-[9px] font-medium leading-none truncate max-w-full">
+              {{ variant.label }}
             </span>
           </button>
         </div>
@@ -319,9 +319,10 @@ const recentAction = ref<string | null>(null);
 
 const VARIANT_LIST: { id: IconStyleVariant; label: string }[] = [
   { id: 'linear', label: 'Linear' },
+  { id: 'line-duotone', label: 'Line Duo' },
   { id: 'solid', label: 'Solid' },
   { id: 'duotone', label: 'Dualtone' },
-  { id: 'duotone-linear', label: 'Dualtone Linear' },
+  { id: 'duotone-linear', label: 'Duo Linear' },
 ];
 
 const styledSvg = computed(() => {

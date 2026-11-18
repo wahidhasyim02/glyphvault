@@ -52,8 +52,10 @@ export default defineNuxtPlugin(async () => {
             ''
           ).trim();
 
-          if (candidate === 'solid') {
+          if (candidate === 'solid' || candidate === 'bold') {
             variant = 'solid';
+          } else if (candidate === 'line-duotone' || candidate === 'line-dualtone') {
+            variant = 'line-duotone';
           } else if (candidate === 'duotone' || candidate === 'dualtone') {
             variant = 'duotone';
           } else if (candidate === 'duotone-linear' || candidate === 'dualtone-linear') {

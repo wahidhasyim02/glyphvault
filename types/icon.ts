@@ -1,4 +1,4 @@
-export type IconStyleVariant = 'linear' | 'solid' | 'duotone' | 'duotone-linear';
+export type IconStyleVariant = 'linear' | 'line-duotone' | 'solid' | 'duotone' | 'duotone-linear';
 
 export interface IconEntry {
   name: string;

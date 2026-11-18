@@ -484,6 +484,29 @@ export function buildStyledSvg(
       continue;
     }
 
+    if (style === 'line-duotone') {
+      if (s.role === 'base') {
+        if (s.isDot || s.isFilledOnly) {
+          parts.push(
+            `<${s.tag} ${baseAttrs} fill="${secondary}" fill-opacity="${opacity}" stroke="none" />`
+          );
+        } else {
+          parts.push(
+            `<${s.tag} ${baseAttrs} fill="none" stroke="${secondary}" stroke-opacity="${opacity}" stroke-width="${stroke}" stroke-linecap="round" stroke-linejoin="round" />`
+          );
+        }
+      } else {
+        if (s.isDot || s.isFilledOnly) {
+          parts.push(`<${s.tag} ${baseAttrs} fill="${primary}" stroke="none" />`);
+        } else {
+          parts.push(
+            `<${s.tag} ${baseAttrs} fill="none" stroke="${primary}" stroke-width="${stroke}" stroke-linecap="round" stroke-linejoin="round" />`
+          );
+        }
+      }
+      continue;
+    }
+
     if (style === 'solid') {
       if (s.isCutout && hasBaseShape) {
         // Rendered inside the mask to carve negative space
@@ -492,9 +515,13 @@ export function buildStyledSvg(
 
       if (s.role === 'base' && s.isClosed && !s.isFilledOnly) {
         const maskAttr = needsMask ? ` mask="url(#${maskId})"` : '';
-        parts.push(`<${s.tag} ${baseAttrs} fill="${primary}" stroke="none"${maskAttr} />`);
+        parts.push(
+          `<${s.tag} ${baseAttrs} fill="${primary}" stroke="${primary}" stroke-width="${stroke}" stroke-linejoin="round"${maskAttr} />`
+        );
       } else if (s.isClosed) {
-        parts.push(`<${s.tag} ${baseAttrs} fill="${primary}" stroke="none" />`);
+        parts.push(
+          `<${s.tag} ${baseAttrs} fill="${primary}" stroke="${primary}" stroke-width="${stroke}" stroke-linejoin="round" />`
+        );
       } else {
         const boldStroke = Math.min(3.5, Number((stroke + 0.65).toFixed(2)));
         parts.push(

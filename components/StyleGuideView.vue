@@ -2,12 +2,12 @@
   <div class="p-6 lg:p-10 max-w-6xl mx-auto space-y-8">
     <div class="space-y-2 border-b border-slate-200 dark:border-[#1D222B] pb-6">
       <h1 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9]">
-        Four Adaptive Icon Variants from One Source
+        Five Coordinated Icon Variants from One Source
       </h1>
       <p class="text-sm text-slate-600 dark:text-[#94A3B8] max-w-2xl leading-relaxed">
         Every glyph stored in
         <code class="font-mono text-teal-700 dark:text-[#2DD4BF]">icons.json</code> renders
-        dynamically across four coordinated styles, responding live to size, stroke width, primary color, secondary color, and tone opacity.
+        dynamically across five coordinated styles, responding live to size, stroke width, primary color, secondary color, and tone opacity.
       </p>
     </div>
 
@@ -88,6 +88,13 @@ const STYLE_CARDS: {
     description:
       'Crisp single-weight geometric outlines with adjustable stroke thickness and round end-caps for clean technical interfaces.',
     spec: 'Stroke-driven · Adjustable stroke width',
+  },
+  {
+    id: 'line-duotone',
+    title: 'Line Duotone',
+    description:
+      'Pure wireframe elegance pairing 100% crisp accent strokes with subtle, translucent 35% base outlines — zero fills.',
+    spec: 'Two-tone stroke · Pure outline wireframe',
   },
   {
     id: 'solid',
