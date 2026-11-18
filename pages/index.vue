@@ -53,6 +53,7 @@
           :click-to-copy="clickToCopy"
           :selected-category="selectedCategory"
           :group-by-category="groupByCategory"
+          :show-labels="showLabels"
           @toggle-theme="handleToggleTheme"
           @search-change="searchQuery = $event"
           @style-change="styleVariant = $event"
@@ -62,6 +63,7 @@
           @toggle-click-to-copy="clickToCopy = !clickToCopy"
           @open-mobile-categories="mobileSidebarOpen = true"
           @view-mode-change="groupByCategory = $event"
+          @toggle-labels="showLabels = !showLabels"
         />
 
         <IconGrid
@@ -75,6 +77,7 @@
           :copied-icon-name="copiedIconName"
           :group-by-category="groupByCategory && selectedCategory === 'All' && !searchQuery.trim()"
           :selected-category="selectedCategory"
+          :show-labels="showLabels"
           @icon-click="handleIconClick"
           @inspect-only="handleInspectOnly"
           @reset-filters="handleResetFilters"
@@ -103,6 +106,14 @@
               class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
             >
               icons.json
+            </a>
+            <a
+              href="/glyph.json"
+              target="_blank"
+              class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
+              title="Official Iconify Collection for Nuxt UI & @nuxt/icon"
+            >
+              glyph.json (Nuxt)
             </a>
             <a
               href="/admin/"
@@ -248,6 +259,7 @@ const settings = ref<IconSettings>({ ...DARK_DEFAULT_SETTINGS });
 const gridZoom = ref<number>(2);
 const clickToCopy = ref<boolean>(true);
 const groupByCategory = ref<boolean>(false); // Default: flat alphabetical grid (campur urut abjad)
+const showLabels = ref<boolean>(true); // Default: show icon name labels
 
 const selectedIcon = ref<IconEntry | null>(null);
 const copiedIconName = ref<string | null>(null);

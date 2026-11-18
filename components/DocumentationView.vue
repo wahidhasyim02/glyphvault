@@ -255,19 +255,55 @@
             </div>
 
             <!-- Framework Tabs -->
-            <div class="flex items-center gap-2 border-b border-slate-200 dark:border-[#1D222B] pb-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 dark:border-[#1D222B] pb-3 overflow-x-auto">
               <button
-                v-for="fw in ['vue', 'react', 'vanilla']"
+                v-for="fw in ['nuxt', 'vue', 'react', 'vanilla']"
                 :key="fw"
                 type="button"
                 @click="frameworkTab = fw"
-                class="px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
+                class="px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap shrink-0"
                 :class="frameworkTab === fw
                   ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312]'
                   : 'text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E]'"
               >
-                {{ fw === 'vue' ? 'Vue 3 / Nuxt 3' : fw === 'react' ? 'React / Next.js' : 'Vanilla HTML / CMS' }}
+                {{ fw === 'nuxt' ? 'Nuxt UI & @nuxt/icon' : fw === 'vue' ? 'Vue 3 / <gv-icon>' : fw === 'react' ? 'React / Next.js' : 'Vanilla HTML / CMS' }}
               </button>
+            </div>
+
+            <!-- Nuxt UI & @nuxt/icon Guide -->
+            <div v-if="frameworkTab === 'nuxt'" class="space-y-6">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Opsi 1: Otomatis via Remote Collection (Tanpa Copy File)</h3>
+                    <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Rekomendasi</span>
+                  </div>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    Cukup buat 1 file plugin <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> di project Nuxt Anda. Iconify otomatis memuat seluruh 100+ icon GlyphVault langsung dari endpoint <code class="font-mono text-teal-600">/glyph.json</code>:
+                  </p>
+                </div>
+                <CodeBlock :code="NUXT_UI_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt client plugin recipe')" />
+              </div>
+
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Pemanggilan di Komponen &lt;UIcon&gt; Nuxt UI</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    Panggil icon apa pun dengan prefix <code class="font-mono text-teal-600">i-glyph-[name]</code>. Warna icon otomatis mengikuti class warna Tailwind CSS:
+                  </p>
+                </div>
+                <CodeBlock :code="NUXT_UI_USAGE_SNIPPET" lang="html" @copied="$emit('notify', 'Copied Nuxt UI usage snippet')" />
+              </div>
+
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Opsi 2: Offline via Nuxt customCollections</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    Jika ingin menyimpan file SVG secara lokal di project Anda, gunakan konfigurasi bawaan <code class="font-mono text-teal-600">@nuxt/icon</code> di <code class="font-mono text-teal-600">nuxt.config.ts</code>:
+                  </p>
+                </div>
+                <CodeBlock :code="NUXT_CUSTOM_COLLECTION_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied customCollections snippet')" />
+              </div>
             </div>
 
             <!-- Vue 3 / Nuxt 3 Guide -->
@@ -391,21 +427,46 @@
               </p>
             </div>
 
-            <!-- CDN Endpoint Card -->
-            <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Public CDN Endpoint</span>
-                <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded">HTTP GET · 200 OK</span>
+            <!-- CDN Endpoints Card -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">GlyphVault Studio Endpoint</span>
+                  <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Studio Data</span>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
+                  <span class="text-slate-900 dark:text-[#F1F5F9] truncate">/icons.json</span>
+                  <a
+                    href="/icons.json"
+                    target="_blank"
+                    class="shrink-0 ml-2 px-2.5 py-1 rounded bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] text-[11px] font-semibold hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors"
+                  >
+                    View
+                  </a>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-[#64748B]">
+                  Full dataset dengan kategori, tag pencarian, dan markup SVG mentah.
+                </p>
               </div>
-              <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
-                <span class="text-slate-900 dark:text-[#F1F5F9] truncate">https://glyphvault.conime.id/icons.json</span>
-                <a
-                  href="/icons.json"
-                  target="_blank"
-                  class="shrink-0 ml-2 px-2.5 py-1 rounded bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] text-[11px] font-semibold hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors"
-                >
-                  View JSON
-                </a>
+
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Nuxt UI &amp; Iconify Endpoint</span>
+                  <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Iconify Spec</span>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
+                  <span class="text-slate-900 dark:text-[#F1F5F9] truncate">/glyph.json</span>
+                  <a
+                    href="/glyph.json"
+                    target="_blank"
+                    class="shrink-0 ml-2 px-2.5 py-1 rounded bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] text-[11px] font-semibold hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors"
+                  >
+                    View
+                  </a>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-[#64748B]">
+                  Format standar Iconify dengan <code class="font-mono text-teal-600">currentColor</code> otomatis untuk Nuxt &amp; UIcon.
+                </p>
               </div>
             </div>
 
@@ -547,7 +608,7 @@ defineEmits<{
 }>();
 
 const activeTab = ref<'web-component' | 'frameworks' | 'attributes' | 'api' | 'figma'>('web-component');
-const frameworkTab = ref<'vue' | 'react' | 'vanilla'>('vue');
+const frameworkTab = ref<'nuxt' | 'vue' | 'react' | 'vanilla'>('nuxt');
 
 const DOC_TABS = [
   { id: 'web-component', label: 'Web Component (<gv-icon>)', icon: Code2 },
@@ -677,6 +738,49 @@ const CALL_TAGS_SNIPPET = `<!-- 2. Call anywhere with your desired variant -->
 <gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
+
+const NUXT_UI_PLUGIN_SNIPPET = `// plugins/glyph.client.ts (di project Nuxt kantor Mas Reiza)
+import { defineNuxtPlugin } from '#app';
+import { addCollection } from '@iconify/vue';
+
+export default defineNuxtPlugin(async () => {
+  try {
+    // Memuat seluruh icon GlyphVault langsung dari endpoint CDN
+    const res = await fetch('https://glyphvault.conime.id/glyph.json');
+    if (res.ok) {
+      const collection = await res.json();
+      addCollection(collection);
+    }
+  } catch (err) {
+    console.error('Failed to load GlyphVault collection:', err);
+  }
+});`;
+
+const NUXT_UI_USAGE_SNIPPET = `<!-- Panggil di komponen Vue Nuxt UI mana pun -->
+<template>
+  <div class="flex items-center gap-4">
+    <!-- Menggunakan Nuxt UI <UIcon> dengan class Tailwind -->
+    <UIcon name="i-glyph-ambulance" class="w-6 h-6 text-red-500" />
+    <UIcon name="i-glyph-save-pen" class="w-5 h-5 text-teal-400" />
+    <UIcon name="i-glyph-pen" class="w-5 h-5 text-indigo-400" />
+
+    <!-- Menggunakan @nuxt/icon biasa -->
+    <Icon name="glyph:alarm-clock-check" size="24" class="text-emerald-400" />
+  </div>
+</template>`;
+
+const NUXT_CUSTOM_COLLECTION_SNIPPET = `// nuxt.config.ts (Alternatif Offline via customCollections)
+export default defineNuxtConfig({
+  modules: ['@nuxt/icon'],
+  icon: {
+    customCollections: [
+      {
+        prefix: 'glyph',
+        dir: './assets/icons/glyph' // Letakkan SVG dari GlyphVault di sini
+      }
+    ]
+  }
+});`;
 
 const NUXT_CONFIG_SNIPPET = `// nuxt.config.ts
 export default defineNuxtConfig({

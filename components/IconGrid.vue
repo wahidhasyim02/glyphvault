@@ -83,7 +83,7 @@
               </div>
 
               <span
-                v-if="currentZoom.showName"
+                v-if="currentZoom.showName && (showLabels ?? true)"
                 class="w-full px-1 text-center font-mono text-[11px] leading-tight text-slate-500 dark:text-[#8492A6] group-hover:text-slate-900 dark:group-hover:text-[#CBD5E1] truncate"
               >
                 {{ icon.name }}
@@ -133,6 +133,7 @@ interface Props {
   copiedIconName: string | null;
   groupByCategory: boolean;
   selectedCategory?: string;
+  showLabels?: boolean;
 }
 
 const props = defineProps<Props>();

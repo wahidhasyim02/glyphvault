@@ -36,6 +36,43 @@ for (const file of files) {
 // Sort alphabetically by name
 icons.sort((a, b) => a.name.localeCompare(b.name));
 
-// Write to public/icons.json (both with "icons" list and root array support)
+// 1. Write to public/icons.json (GlyphVault Studio format)
 fs.writeFileSync(outputPath, JSON.stringify({ icons }, null, 2), 'utf-8');
 console.log(`✅ Bundled ${icons.length} individual icons into ${outputPath}`);
+
+// 2. Write to public/glyph.json (Official Iconify Collection format for Nuxt & UIcon)
+const iconifyIcons = {};
+for (const icon of icons) {
+  const body = icon.svg
+    .replace(/<svg[^>]*>/i, '')
+    .replace(/<\/svg>/i, '')
+    .replace(/<rect\s+width="24"\s+height="24"[^>]*\/>/gi, '')
+    .replace(/stroke="black"/gi, 'stroke="currentColor"')
+    .replace(/stroke="#000000"/gi, 'stroke="currentColor"')
+    .replace(/fill="black"/gi, 'fill="currentColor"')
+    .replace(/fill="#000000"/gi, 'fill="currentColor"')
+    .trim();
+
+  iconifyIcons[icon.name] = {
+    body,
+  };
+}
+
+const iconifyCollection = {
+  prefix: 'glyph',
+  lastModified: Math.floor(Date.now() / 1000),
+  width: 24,
+  height: 24,
+  icons: iconifyIcons,
+  info: {
+    name: 'GlyphVault',
+    total: icons.length,
+    license: {
+      title: 'MIT',
+    },
+  },
+};
+
+const iconifyOutputPath = path.resolve(__dirname, '../public/glyph.json');
+fs.writeFileSync(iconifyOutputPath, JSON.stringify(iconifyCollection, null, 2), 'utf-8');
+console.log(`✅ Generated Iconify collection (${icons.length} icons) into ${iconifyOutputPath}`);

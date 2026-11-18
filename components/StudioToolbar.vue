@@ -196,44 +196,94 @@
 
       <!-- Right Controls: View Mode + Grid Zoom + Click-to-Copy + Theme Toggle + Reset -->
       <div class="flex items-center gap-2.5 ml-auto">
-        <!-- View Mode: Flat Grid (Alphabetical) vs Grouped by Category -->
+        <!-- View Mode & Label Toggle Pill: Flat Grid, Grouped by Category, Divider, Tag Toggle -->
         <div
           class="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B]"
           role="group"
-          aria-label="Grid layout mode"
+          aria-label="Grid layout and label mode"
         >
+          <!-- Flat Grid (Ungrouped / All icons A-Z) -->
+          <div class="relative group/tip inline-flex">
+            <button
+              type="button"
+              @click="$emit('view-mode-change', false)"
+              aria-label="Flat grid view sorted alphabetically"
+              class="p-1.5 rounded-md transition-colors cursor-pointer"
+              :class="!groupByCategory
+                ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
+                : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="18" rx="2" />
+                <rect x="14" y="3" width="7" height="7" rx="2" />
+                <rect x="14" y="14" width="7" height="7" rx="2" />
+              </svg>
+            </button>
+            <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
+              Flat grid (A-Z)
+            </div>
+          </div>
+
+          <!-- Grouped by Category -->
+          <div class="relative group/tip inline-flex">
+            <button
+              type="button"
+              @click="$emit('view-mode-change', true)"
+              aria-label="Grouped by category view"
+              class="p-1.5 rounded-md transition-colors cursor-pointer"
+              :class="groupByCategory
+                ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
+                : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="15" y2="12" />
+                <line x1="4" y1="18" x2="9" y2="18" />
+              </svg>
+            </button>
+            <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
+              Grouped by category
+            </div>
+          </div>
+
+          <!-- Divider | -->
+          <div class="h-3.5 w-px bg-slate-200 dark:bg-[#232B39] mx-0.5" />
+
+          <!-- Tag (Show/Hide Names) -->
+          <div class="relative group/tip inline-flex">
+            <button
+              type="button"
+              @click="$emit('toggle-labels')"
+              aria-label="Toggle icon names"
+              class="p-1.5 rounded-md transition-colors cursor-pointer"
+              :class="showLabels
+                ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
+                : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+                <circle cx="7.5" cy="7.5" r=".75" fill="currentColor" />
+              </svg>
+            </button>
+            <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
+              {{ showLabels ? 'Hide icon names' : 'Show icon names' }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset Button beside pill, exactly matching screenshot -->
+        <div class="relative group/tip inline-flex">
           <button
             type="button"
-            @click="$emit('view-mode-change', false)"
-            title="Flat Grid (Campur &amp; Urut Abjad A-Z)"
-            aria-label="Flat grid view sorted alphabetically"
-            class="p-1.5 rounded-md transition-colors cursor-pointer"
-            :class="!groupByCategory
-              ? 'bg-white dark:bg-[#1A222D] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
-              : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+            @click="$emit('reset-settings')"
+            aria-label="Reset settings"
+            class="p-1.5 rounded-lg bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B] text-slate-500 dark:text-[#8492A6] hover:text-slate-900 dark:hover:text-[#F1F5F9] hover:border-slate-300 dark:hover:border-[#2C3545] transition-colors cursor-pointer"
           >
-            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="7" height="18" rx="2" />
-              <rect x="14" y="3" width="7" height="7" rx="2" />
-              <rect x="14" y="14" width="7" height="7" rx="2" />
-            </svg>
+            <RotateCcw class="w-3.5 h-3.5" />
           </button>
-          <button
-            type="button"
-            @click="$emit('view-mode-change', true)"
-            title="Grouped by Category (Dikelompokkan per Kategori)"
-            aria-label="Grouped by category view"
-            class="p-1.5 rounded-md transition-colors cursor-pointer"
-            :class="groupByCategory
-              ? 'bg-white dark:bg-[#1A222D] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
-              : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
-          >
-            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="6" x2="20" y2="6" />
-              <line x1="4" y1="12" x2="15" y2="12" />
-              <line x1="4" y1="18" x2="9" y2="18" />
-            </svg>
-          </button>
+          <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
+            Reset settings
+          </div>
         </div>
 
         <div class="h-4 w-px bg-slate-200 dark:border-[#1D222B] dark:bg-[#1D222B]" />
@@ -267,16 +317,6 @@
           <CopyCheck class="w-3.5 h-3.5" />
           <span>Click to Copy</span>
         </button>
-
-        <button
-          type="button"
-          @click="$emit('reset-settings')"
-          title="Reset size, stroke, opacity, and colors"
-          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] hover:border-slate-300 dark:hover:border-[#2C3545] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
-        >
-          <RotateCcw class="w-3.5 h-3.5" />
-          <span class="hidden sm:inline">Reset</span>
-        </button>
       </div>
     </div>
   </div>
@@ -308,6 +348,7 @@ interface Props {
   clickToCopy: boolean;
   selectedCategory: string;
   groupByCategory?: boolean;
+  showLabels?: boolean;
 }
 
 const props = defineProps<Props>();
@@ -322,6 +363,7 @@ defineEmits<{
   'toggle-click-to-copy': [];
   'open-mobile-categories': [];
   'view-mode-change': [grouped: boolean];
+  'toggle-labels': [];
 }>();
 
 const searchInputRef = ref<HTMLInputElement | null>(null);
