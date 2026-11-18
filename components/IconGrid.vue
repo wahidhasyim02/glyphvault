@@ -44,7 +44,10 @@
     <!-- Grouped / Filtered icons list -->
     <div v-else class="p-4 lg:p-6 space-y-8">
       <section v-for="(categoryIcons, categoryName) in groupedIcons" :key="categoryName" class="space-y-3">
-        <div class="flex items-baseline justify-between border-b border-slate-200 dark:border-[#181D26] pb-2">
+        <div
+          v-if="groupByCategory || (selectedCategory && selectedCategory !== 'All')"
+          class="flex items-baseline justify-between border-b border-slate-200 dark:border-[#181D26] pb-2"
+        >
           <h2 class="font-display text-sm font-semibold text-slate-700 dark:text-[#CBD5E1]">
             {{ categoryName }}
           </h2>
@@ -129,6 +132,7 @@ interface Props {
   selectedIconName: string | null;
   copiedIconName: string | null;
   groupByCategory: boolean;
+  selectedCategory?: string;
 }
 
 const props = defineProps<Props>();
@@ -176,7 +180,11 @@ const renderSize = computed(() =>
 
 const groupedIcons = computed<Record<string, IconEntry[]>>(() => {
   if (!props.groupByCategory) {
-    return { Results: props.icons };
+    const label =
+      props.selectedCategory && props.selectedCategory !== 'All'
+        ? props.selectedCategory
+        : 'All Icons';
+    return { [label]: props.icons };
   }
   const result: Record<string, IconEntry[]> = {};
   for (const item of props.icons) {

@@ -194,8 +194,50 @@
         </div>
       </div>
 
-      <!-- Right Controls: Grid Zoom + Click-to-Copy + Theme Toggle + Reset -->
+      <!-- Right Controls: View Mode + Grid Zoom + Click-to-Copy + Theme Toggle + Reset -->
       <div class="flex items-center gap-2.5 ml-auto">
+        <!-- View Mode: Flat Grid (Alphabetical) vs Grouped by Category -->
+        <div
+          class="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B]"
+          role="group"
+          aria-label="Grid layout mode"
+        >
+          <button
+            type="button"
+            @click="$emit('view-mode-change', false)"
+            title="Flat Grid (Campur &amp; Urut Abjad A-Z)"
+            aria-label="Flat grid view sorted alphabetically"
+            class="p-1.5 rounded-md transition-colors cursor-pointer"
+            :class="!groupByCategory
+              ? 'bg-white dark:bg-[#1A222D] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
+              : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+          >
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="18" rx="2" />
+              <rect x="14" y="3" width="7" height="7" rx="2" />
+              <rect x="14" y="14" width="7" height="7" rx="2" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            @click="$emit('view-mode-change', true)"
+            title="Grouped by Category (Dikelompokkan per Kategori)"
+            aria-label="Grouped by category view"
+            class="p-1.5 rounded-md transition-colors cursor-pointer"
+            :class="groupByCategory
+              ? 'bg-white dark:bg-[#1A222D] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
+              : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
+          >
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="15" y2="12" />
+              <line x1="4" y1="18" x2="9" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="h-4 w-px bg-slate-200 dark:border-[#1D222B] dark:bg-[#1D222B]" />
+
         <label class="flex items-center gap-2 whitespace-nowrap" title="Zoom icon grid">
           <ZoomIn class="w-3.5 h-3.5 text-slate-500 dark:text-[#94A3B8]" />
           <span class="text-slate-600 dark:text-[#94A3B8] hidden sm:inline">Zoom</span>
@@ -265,6 +307,7 @@ interface Props {
   gridZoom: number;
   clickToCopy: boolean;
   selectedCategory: string;
+  groupByCategory?: boolean;
 }
 
 const props = defineProps<Props>();
@@ -278,6 +321,7 @@ defineEmits<{
   'grid-zoom-change': [zoom: number];
   'toggle-click-to-copy': [];
   'open-mobile-categories': [];
+  'view-mode-change': [grouped: boolean];
 }>();
 
 const searchInputRef = ref<HTMLInputElement | null>(null);

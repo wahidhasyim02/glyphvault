@@ -52,6 +52,7 @@
           :grid-zoom="gridZoom"
           :click-to-copy="clickToCopy"
           :selected-category="selectedCategory"
+          :group-by-category="groupByCategory"
           @toggle-theme="handleToggleTheme"
           @search-change="searchQuery = $event"
           @style-change="styleVariant = $event"
@@ -60,6 +61,7 @@
           @grid-zoom-change="gridZoom = $event"
           @toggle-click-to-copy="clickToCopy = !clickToCopy"
           @open-mobile-categories="mobileSidebarOpen = true"
+          @view-mode-change="groupByCategory = $event"
         />
 
         <IconGrid
@@ -71,7 +73,8 @@
           :grid-zoom="gridZoom"
           :selected-icon-name="selectedIcon?.name ?? null"
           :copied-icon-name="copiedIconName"
-          :group-by-category="selectedCategory === 'All' && !searchQuery.trim()"
+          :group-by-category="groupByCategory && selectedCategory === 'All' && !searchQuery.trim()"
+          :selected-category="selectedCategory"
           @icon-click="handleIconClick"
           @inspect-only="handleInspectOnly"
           @reset-filters="handleResetFilters"
@@ -244,6 +247,7 @@ const styleVariant = ref<IconStyleVariant>('duotone-linear');
 const settings = ref<IconSettings>({ ...DARK_DEFAULT_SETTINGS });
 const gridZoom = ref<number>(2);
 const clickToCopy = ref<boolean>(true);
+const groupByCategory = ref<boolean>(false); // Default: flat alphabetical grid (campur urut abjad)
 
 const selectedIcon = ref<IconEntry | null>(null);
 const copiedIconName = ref<string | null>(null);
@@ -312,7 +316,7 @@ const categories = computed(() => {
 
 const filteredIcons = computed(() => {
   const q = searchQuery.value.trim().toLowerCase();
-  return icons.value.filter((icon) => {
+  const list = icons.value.filter((icon) => {
     if (selectedCategory.value !== 'All' && icon.category !== selectedCategory.value) {
       return false;
     }
@@ -327,6 +331,7 @@ const filteredIcons = computed(() => {
     }
     return icon.tags.some((t) => t.toLowerCase().includes(q));
   });
+  return list.sort((a, b) => a.name.localeCompare(b.name));
 });
 
 const handleUpdateSettings = (patch: Partial<IconSettings>) => {

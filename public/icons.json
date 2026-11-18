@@ -28,10 +28,12 @@
     },
     {
       "name": "a-large-small",
-      "category": "General",
+      "category": "Typography",
       "tags": [
         "glyph",
-        "general",
+        "typography",
+        "font size",
+        "text",
         "a",
         "large",
         "small"
@@ -192,6 +194,7 @@
         "snooze",
         "z",
         "sleep",
+        "alarm-clock-sleep",
         "time"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"13\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.17157 10.1716H15L9.17157 16H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 5.5L5.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 5.5L18.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
@@ -207,6 +210,8 @@
         "x",
         "cancel",
         "remove",
+        "alarm-clock-off2",
+        "alarm-off",
         "time"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"13\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.17157 15.8284L12 13M12 13L14.8284 10.1716M12 13L9.17157 10.1716M12 13L14.8284 15.8284\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 5.5L5.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 5.5L18.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
@@ -288,6 +293,8 @@
         "divider",
         "separator",
         "split",
+        "align-horizontal-justify-center",
+        "justify-center",
         "layout"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 20H6C7.10457 20 8 19.1046 8 18V6C8 4.89543 7.10457 4 6 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18 17H20C21.1046 17 22 16.1046 22 15V9C22 7.89543 21.1046 7 20 7H18C16.8954 7 16 7.89543 16 9V15C16 16.1046 16.8954 17 18 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M12 2L12 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
@@ -621,7 +628,7 @@
     },
     {
       "name": "app-window",
-      "category": "Devices & Hardware",
+      "category": "Devices & Tech",
       "tags": [
         "glyph",
         "app",
@@ -634,7 +641,7 @@
     },
     {
       "name": "app-window-mac",
-      "category": "Devices & Hardware",
+      "category": "Devices & Tech",
       "tags": [
         "glyph",
         "mac",
@@ -870,12 +877,14 @@
     },
     {
       "name": "case-sensitive",
-      "category": "General UI",
+      "category": "Typography",
       "tags": [
         "glyph",
-        "case sesitive",
+        "case sensitive",
         "text",
-        "typography"
+        "typography",
+        "font",
+        "capital"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" fill=\"white\" fill-opacity=\"0.2\"/>\n<path d=\"M9.66929 14.0429L6.5 7L3.33071 14.0429M9.66929 14.0429L11 17M9.66929 14.0429H3.33071M2 17L3.33071 14.0429\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.0555 16.9513C20.5901 15.0892 21.1967 12.6938 20.6298 10.4346C20.063 8.1754 16.906 8.10722 15.0441 10.4346\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6299 11.8308C18.3025 13.6927 15.4699 11.8308 15.0442 14.6237C14.5532 17.8448 18.2627 17.4166 20.6299 15.5546\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -1134,6 +1143,36 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9 14.6569L11.8284 11.8284M11.8284 11.8284L14.6569 9M11.8284 11.8284L9 9M11.8284 11.8284L14.6569 14.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "pen",
+      "category": "Design & Tools",
+      "tags": [
+        "glyph",
+        "design & tools",
+        "pen",
+        "edit",
+        "draw",
+        "write",
+        "author",
+        "tool"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM6.57966 20.208L6.21526 19.2767L6.57966 20.208ZM6.51097 13.3316L7.21281 14.044L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L5.80912 12.6193L6.51097 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM21.3909 6.97742L20.6891 6.26509L9.92718 16.8687L10.629 17.581L11.3309 18.2933L22.0928 7.68975L21.3909 6.97742ZM6.57966 20.208L6.21526 19.2767L1.6356 21.0688L2 22L2.3644 22.9312L6.94406 21.1392L6.57966 20.208ZM2 22L2.93124 22.3644L4.68946 17.8712L3.75821 17.5068L2.82697 17.1424L1.06876 21.6356L2 22ZM10.629 17.581L9.92718 16.8687C8.86575 17.9145 7.6029 18.7337 6.21526 19.2767L6.57966 20.208L6.94406 21.1392C8.58399 20.4975 10.0765 19.5293 11.3309 18.2933L10.629 17.581ZM6.51097 13.3316L5.80912 12.6193C4.50845 13.9008 3.49234 15.442 2.82697 17.1424L3.75821 17.5068L4.68946 17.8712C5.25246 16.4324 6.11225 15.1283 7.21281 14.044L6.51097 13.3316Z\" fill=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "pencil",
+      "category": "Design & Tools",
+      "tags": [
+        "glyph",
+        "design & tools",
+        "pencil",
+        "edit",
+        "draw",
+        "write",
+        "draft",
+        "tool"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM6.57966 20.208L6.21526 19.2767L6.57966 20.208ZM6.51097 13.3316L7.21281 14.044L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L5.80912 12.6193L6.51097 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM21.3909 6.97742L20.6891 6.26509L9.92718 16.8687L10.629 17.581L11.3309 18.2933L22.0928 7.68975L21.3909 6.97742ZM6.57966 20.208L6.21526 19.2767L1.6356 21.0688L2 22L2.3644 22.9312L6.94406 21.1392L6.57966 20.208ZM2 22L2.93124 22.3644L4.68946 17.8712L3.75821 17.5068L2.82697 17.1424L1.06876 21.6356L2 22ZM10.629 17.581L9.92718 16.8687C8.86575 17.9145 7.6029 18.7337 6.21526 19.2767L6.57966 20.208L6.94406 21.1392C8.58399 20.4975 10.0765 19.5293 11.3309 18.2933L10.629 17.581ZM6.51097 13.3316L5.80912 12.6193C4.50845 13.9008 3.49234 15.442 2.82697 17.1424L3.75821 17.5068L4.68946 17.8712C5.25246 16.4324 6.11225 15.1283 7.21281 14.044L6.51097 13.3316Z\" fill=\"black\"/>\n<path d=\"M14.8088 5.00696C16.1008 7.11454 17.0393 8.02778 19.0515 9.2496\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "save",
       "category": "Files & Folders",
       "tags": [
@@ -1145,6 +1184,81 @@
         "document"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" fill=\"white\" fill-opacity=\"0.2\"/>\n<path d=\"M21 10.5204V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18L3 6C3 4.34315 4.34315 3 6 3L14.5228 3C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M6.5 21V16C6.5 14.8954 7.39543 14 8.5 14H15.5C16.6046 14 17.5 14.8954 17.5 16V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "save-all",
+      "category": "Files & Folders",
+      "tags": [
+        "glyph",
+        "files & folders",
+        "save-all",
+        "save",
+        "disk",
+        "floppy",
+        "document",
+        "batch"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 4L2 19C2 20.6569 3.34315 22 5 22H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M22 8.79814V15C22 16.6569 20.6569 18 19 18H9C7.34315 18 6 16.6569 6 15L6 5C6 3.34315 7.34315 2 9 2L16.0784 2C17.0098 2 17.8883 2.43261 18.4562 3.17087L21.3779 6.96901C21.7813 7.49344 22 8.13651 22 8.79814Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.10999 17.8903V13.6667C9.10999 12.5621 10.0054 11.6667 11.11 11.6667H16.89C17.9946 11.6667 18.89 12.5621 18.89 13.6667V17.8903\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M9.55554 5.55554H14.8889\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "save-check",
+      "category": "Files & Folders",
+      "tags": [
+        "glyph",
+        "files & folders",
+        "save-check",
+        "save",
+        "check",
+        "disk",
+        "done",
+        "success"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13 21H6C4.34315 21 3 19.6569 3 18L3 6C3 4.34315 4.34315 3 6 3L14.5228 3C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.5 21V16C6.5 14.8954 7.39543 14 8.5 14H15.5C16.6046 14 17.5 14.8954 17.5 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M22 17L18.1176 21L16 18.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "save-off",
+      "category": "Files & Folders",
+      "tags": [
+        "glyph",
+        "files & folders",
+        "save-off",
+        "save",
+        "disable",
+        "off",
+        "cancel",
+        "disk"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4L3 18C3 19.6569 4.34315 21 6 21H20M8 3L14.5228 3C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.5 21V16C6.5 14.8954 7.39543 14 8.5 14L13.5 14M17.5 21V18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "save-pen",
+      "category": "Files & Folders",
+      "tags": [
+        "glyph",
+        "files & folders",
+        "save-pen",
+        "save",
+        "edit",
+        "pen",
+        "disk",
+        "rename"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 21H6C4.34315 21 3 19.6569 3 18L3 6C3 4.34315 4.34315 3 6 3L14.5228 3C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3903 8.70738C20.7856 9.22133 21 9.85157 21 10.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.5 21V16C6.5 14.8954 7.39543 14 8.5 14H12.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13.2678 22.0459L13.9073 18.1368C13.9411 17.9301 14.039 17.7392 14.1871 17.5911L17.864 13.9142C18.645 13.1332 19.9114 13.1332 20.6924 13.9142L21.3995 14.6213C22.1806 15.4024 22.1806 16.6687 21.3995 17.4497L17.7226 21.1266C17.5745 21.2747 17.3837 21.3726 17.177 21.4064L13.2678 22.0459Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "save-plus",
+      "category": "Files & Folders",
+      "tags": [
+        "glyph",
+        "files & folders",
+        "save-plus",
+        "save",
+        "add",
+        "new",
+        "disk",
+        "create"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13 21H6C4.34315 21 3 19.6569 3 18L3 6C3 4.34315 4.34315 3 6 3L14.5228 3C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.5 21V16C6.5 14.8954 7.39543 14 8.5 14H14.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M14 18H22M18 14V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "siren",
