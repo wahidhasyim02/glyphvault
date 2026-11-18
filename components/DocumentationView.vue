@@ -9,7 +9,7 @@
             <span>Developer &amp; Integration Guide</span>
           </span>
           <span class="text-xs font-mono text-slate-500 dark:text-[#64748B]">
-            v1.0 &middot; 88+ Vector Glyphs
+            v1.0 &middot; {{ milestoneCount }} Vector Glyphs
           </span>
         </div>
 
@@ -75,7 +75,7 @@
               <span>Explore All Icons</span>
             </div>
             <p class="text-[11px] text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-              Looking for a specific glyph? Browse our complete 88+ icon catalog with instant copy &amp; search.
+              Looking for a specific glyph? Browse our complete {{ milestoneCount }} icon catalog ({{ totalCount }} glyphs) with instant copy &amp; search.
             </p>
             <button
               type="button"
@@ -528,6 +528,7 @@ import {
   Palette,
 } from 'lucide-vue-next';
 import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
+import { formatIconMilestone } from '~/utils/svgEngine';
 import CodeBlock from '~/components/CodeBlock.vue';
 
 interface Props {
@@ -535,7 +536,10 @@ interface Props {
   settings?: IconSettings;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const totalCount = computed(() => props.icons?.length ?? 88);
+const milestoneCount = computed(() => formatIconMilestone(totalCount.value));
 
 defineEmits<{
   'notify': [message: string];

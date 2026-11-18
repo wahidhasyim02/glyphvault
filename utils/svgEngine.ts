@@ -693,3 +693,23 @@ export function validateIconsJson(data: unknown): { valid: boolean; icons: IconE
 
   return { valid: true, icons: parsed };
 }
+
+/**
+ * Format total icon count into a rounded marketing tier (e.g. 88 -> "80+", 101 -> "100+", 1301 -> "1,300+")
+ * - < 10: exact count (e.g. "9")
+ * - 10..99: nearest 10 (e.g. 88 -> "80+")
+ * - 100..999: nearest 100 (e.g. 101 -> "100+", 250 -> "200+")
+ * - >= 1000: nearest 100 (e.g. 1001 -> "1,000+", 1301 -> "1,300+", 1311 -> "1,300+")
+ */
+export function formatIconMilestone(count: number): string {
+  if (!count || count <= 0) return '0+';
+  if (count < 10) return `${count}`;
+  if (count < 100) {
+    return `${Math.floor(count / 10) * 10}+`;
+  }
+  if (count < 1000) {
+    return `${Math.floor(count / 100) * 100}+`;
+  }
+  const rounded = Math.floor(count / 100) * 100;
+  return `${rounded.toLocaleString('en-US')}+`;
+}
