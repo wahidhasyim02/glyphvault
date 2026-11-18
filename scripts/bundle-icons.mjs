@@ -13,104 +13,105 @@ const glyphJsonPath = path.resolve(__dirname, '../public/glyph.json');
 if (!fs.existsSync(dataIconsDir)) {
   fs.mkdirSync(dataIconsDir, { recursive: true });
 }
+if (!fs.existsSync(svgDir)) {
+  fs.mkdirSync(svgDir, { recursive: true });
+}
 
 // ----------------------------------------------------
-// Step 1: Auto-sync SVGs from public/assets/icons/ -> data/icons/
+// Step 1: Two-Way Sync between public/assets/icons/ and data/icons/
 // ----------------------------------------------------
-if (fs.existsSync(svgDir)) {
-  const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
-  const validNames = new Set(svgFiles.map((f) => f.replace(/^glyph_/, '').replace(/\.svg$/, '')));
 
-  // Remove any stale JSON files whose SVG was deleted or renamed
-  const existingJsons = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
-  let removedCount = 0;
-  for (const jsonFile of existingJsons) {
-    const baseName = jsonFile.replace(/\.json$/, '');
-    if (!validNames.has(baseName)) {
-      fs.unlinkSync(path.join(dataIconsDir, jsonFile));
-      removedCount++;
-    }
-  }
-  if (removedCount > 0) {
-    console.log(`🧹 Cleaned up ${removedCount} stale JSON files from data/icons/`);
-  }
+// 1A. Sync from data/icons/*.json -> public/assets/icons/glyph_*.svg
+// (Ensures icons added or edited in Decap CMS are exported as SVGs)
+const jsonFiles = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
+for (const jsonFile of jsonFiles) {
+  try {
+    const rawJson = fs.readFileSync(path.join(dataIconsDir, jsonFile), 'utf-8');
+    const parsed = JSON.parse(rawJson);
+    const iconName = (parsed.name || jsonFile.replace(/\.json$/, '')).trim();
+    if (parsed.svg) {
+      const cleanedSvg = parsed.svg
+        .replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '')
+        .trim();
 
-  let syncedCount = 0;
-  for (const svgFile of svgFiles) {
-    const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
-    const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
-
-    const rawSvg = fs.readFileSync(path.join(svgDir, svgFile), 'utf-8');
-    const cleanedSvg = rawSvg
-      .replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '')
-      .trim();
-
-    // Clean SVG file itself if it still had the Figma canvas background
-    if (rawSvg !== cleanedSvg) {
-      fs.writeFileSync(path.join(svgDir, svgFile), cleanedSvg + '\n', 'utf-8');
-    }
-
-    let jsonData;
-    if (fs.existsSync(jsonPath)) {
-      try {
-        jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
-      } catch {
-        jsonData = { name: iconName, category: 'General', tags: [] };
+      const targetSvgPath = path.join(svgDir, `glyph_${iconName}.svg`);
+      if (!fs.existsSync(targetSvgPath)) {
+        fs.writeFileSync(targetSvgPath, cleanedSvg + '\n', 'utf-8');
+        console.log(`✨ Generated SVG from CMS for ${iconName}`);
       }
-    } else {
-      let category = 'General';
-      if (iconName.startsWith('arrow') || iconName.startsWith('chevron')) category = 'Arrows';
-      else if (iconName.startsWith('monitor') || iconName.startsWith('laptop') || iconName.startsWith('tv') || iconName.startsWith('tablet') || iconName.startsWith('smartphone') || iconName.startsWith('pc')) category = 'Devices';
-      else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design';
-      else if (iconName.startsWith('align')) category = 'Layout';
-      else if (iconName.startsWith('bell') || iconName.startsWith('alarm')) category = 'Notifications';
-      else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'System';
-      else if (iconName.startsWith('save')) category = 'Files';
-      else if (iconName.startsWith('video') || iconName.startsWith('camera') || iconName.startsWith('speaker')) category = 'Media';
-
-      jsonData = {
-        name: iconName,
-        category,
-        tags: iconName.split('-'),
-      };
     }
+  } catch (err) {
+    console.error(`⚠️ Error reading ${jsonFile}:`, err.message);
+  }
+}
 
-    // Auto-tag plus -> add, minus -> remove
-    const tagSet = new Set(Array.isArray(jsonData.tags) ? jsonData.tags : []);
-    if (iconName.includes('plus')) tagSet.add('add');
-    if (iconName.includes('minus')) tagSet.add('remove');
-    jsonData.tags = Array.from(tagSet);
+// 1B. Sync from public/assets/icons/glyph_*.svg -> data/icons/*.json
+// (Ensures SVGs copied from Figma are cataloged in data/icons/)
+const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
+for (const svgFile of svgFiles) {
+  const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
+  const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
 
-    if (jsonData.svg !== cleanedSvg || !jsonData.tags.includes('add') && iconName.includes('plus')) {
-      jsonData.svg = cleanedSvg;
-      fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 2) + '\n', 'utf-8');
-      syncedCount++;
-    }
+  const rawSvg = fs.readFileSync(path.join(svgDir, svgFile), 'utf-8');
+  const cleanedSvg = rawSvg
+    .replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '')
+    .trim();
+
+  if (rawSvg !== cleanedSvg) {
+    fs.writeFileSync(path.join(svgDir, svgFile), cleanedSvg + '\n', 'utf-8');
   }
 
-  if (syncedCount > 0) {
-    console.log(`🔄 Synced ${syncedCount} SVG files to data/icons/*.json`);
+  let jsonData;
+  if (fs.existsSync(jsonPath)) {
+    try {
+      jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+    } catch {
+      jsonData = { name: iconName, category: 'General', tags: [] };
+    }
+  } else {
+    let category = 'General';
+    if (iconName.startsWith('arrow') || iconName.startsWith('chevron')) category = 'Arrows';
+    else if (iconName.startsWith('monitor') || iconName.startsWith('laptop') || iconName.startsWith('tv') || iconName.startsWith('tablet') || iconName.startsWith('smartphone') || iconName.startsWith('pc')) category = 'Devices';
+    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design';
+    else if (iconName.startsWith('align')) category = 'Layout';
+    else if (iconName.startsWith('bell') || iconName.startsWith('alarm')) category = 'Notifications';
+    else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'System';
+    else if (iconName.startsWith('save')) category = 'Files';
+    else if (iconName.startsWith('video') || iconName.startsWith('camera') || iconName.startsWith('speaker')) category = 'Media';
+    else if (iconName.startsWith('mirror')) category = 'Objects & Geometry';
+
+    jsonData = {
+      name: iconName,
+      category,
+      tags: iconName.split('-'),
+    };
+  }
+
+  // Auto-tag plus -> add, minus -> remove
+  const tagSet = new Set(Array.isArray(jsonData.tags) ? jsonData.tags : []);
+  if (iconName.includes('plus')) tagSet.add('add');
+  if (iconName.includes('minus')) tagSet.add('remove');
+  jsonData.tags = Array.from(tagSet);
+
+  if (jsonData.svg !== cleanedSvg || (!jsonData.tags.includes('add') && iconName.includes('plus'))) {
+    jsonData.svg = cleanedSvg;
+    fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 2) + '\n', 'utf-8');
   }
 }
 
 // ----------------------------------------------------
 // Step 2: Bundle all data/icons/*.json into public/icons.json & public/glyph.json
 // ----------------------------------------------------
-const files = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
+const finalFiles = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
 const icons = [];
 
-for (const file of files) {
+for (const file of finalFiles) {
   try {
     const filePath = path.join(dataIconsDir, file);
     const raw = fs.readFileSync(filePath, 'utf-8');
     const parsed = JSON.parse(raw);
     if (parsed.name && parsed.svg) {
       const cleanedSvg = parsed.svg.replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '').trim();
-      if (cleanedSvg !== parsed.svg.trim()) {
-        parsed.svg = cleanedSvg;
-        fs.writeFileSync(filePath, JSON.stringify(parsed, null, 2) + '\n', 'utf-8');
-      }
-
       icons.push({
         name: parsed.name.trim(),
         category: (parsed.category || 'General').trim(),
