@@ -59,8 +59,11 @@
         </button>
         <button
           type="button"
-          @click="$emit('open-json-studio', 'embed')"
-          class="py-1 whitespace-nowrap shrink-0 border-b-2 border-transparent text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] transition-colors cursor-pointer"
+          @click="$emit('change-section', 'docs')"
+          class="py-1 whitespace-nowrap shrink-0 border-b-2 transition-colors cursor-pointer"
+          :class="activeSection === 'docs'
+            ? 'border-teal-600 dark:border-[#2DD4BF] text-slate-900 dark:text-[#F1F5F9]'
+            : 'border-transparent text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9]'"
         >
           Documentation
         </button>
@@ -94,7 +97,7 @@
         <!-- Use <gv-icon> button (Desktop & Tablet) -->
         <button
           type="button"
-          @click="$emit('open-json-studio', 'embed')"
+          @click="$emit('change-section', 'docs')"
           class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#090B0E]"
         >
           <Code2 class="w-3.5 h-3.5 shrink-0" />
@@ -144,16 +147,19 @@
         <span class="text-xs font-mono text-slate-400">Guide</span>
       </button>
 
-      <div class="my-1.5 border-t border-slate-200 dark:border-[#1D222B]/70" />
-
       <button
         type="button"
-        @click="handleJsonClick('embed')"
-        class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E] transition-colors cursor-pointer"
+        @click="handleNavClick('docs')"
+        class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors cursor-pointer"
+        :class="activeSection === 'docs'
+          ? 'bg-white dark:bg-[#151C24] text-teal-700 dark:text-[#2DD4BF] ring-1 ring-teal-500/30'
+          : 'text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E]'"
       >
-        <span>Documentation &amp; Embed</span>
-        <Code2 class="w-3.5 h-3.5 text-teal-600 dark:text-[#2DD4BF]" />
+        <span>Documentation</span>
+        <span class="text-xs font-mono text-slate-400">Integration</span>
       </button>
+
+      <div class="my-1.5 border-t border-slate-200 dark:border-[#1D222B]/70" />
 
       <button
         type="button"
@@ -172,14 +178,14 @@ import { ref } from 'vue';
 import { Code2, Sun, Moon, Menu, X, FlaskConical } from 'lucide-vue-next';
 
 interface Props {
-  activeSection: 'browse' | 'guide';
+  activeSection: 'browse' | 'guide' | 'docs';
   theme: 'dark' | 'light';
 }
 
 defineProps<Props>();
 
 const emit = defineEmits<{
-  'change-section': [section: 'browse' | 'guide'];
+  'change-section': [section: 'browse' | 'guide' | 'docs'];
   'open-json-studio': [tab?: 'guide' | 'import' | 'add' | 'embed'];
   'reset-all': [];
   'toggle-theme': [];
@@ -193,7 +199,7 @@ const handleBrandClick = () => {
   emit('reset-all');
 };
 
-const handleNavClick = (section: 'browse' | 'guide') => {
+const handleNavClick = (section: 'browse' | 'guide' | 'docs') => {
   mobileNavOpen.value = false;
   emit('change-section', section);
 };

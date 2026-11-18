@@ -1,0 +1,713 @@
+<template>
+  <div class="min-h-screen bg-slate-50 dark:bg-[#090B0E] text-slate-900 dark:text-[#F1F5F9] pb-24 transition-colors">
+    <!-- Header Hero Banner -->
+    <section class="border-b border-slate-200 dark:border-[#1D222B] bg-white/70 dark:bg-[#0C0F14]/70 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 space-y-6">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-teal-50 dark:bg-[#0F2926] text-teal-700 dark:text-[#2DD4BF] border border-teal-200 dark:border-[#1E4D47]">
+            <Sparkles class="w-3.5 h-3.5" />
+            <span>Developer &amp; Integration Guide</span>
+          </span>
+          <span class="text-xs font-mono text-slate-500 dark:text-[#64748B]">
+            v1.0 &middot; 88+ Vector Glyphs
+          </span>
+        </div>
+
+        <div class="space-y-3 max-w-3xl">
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9]">
+            Build Faster with <span class="text-teal-600 dark:text-[#2DD4BF]">&lt;gv-icon&gt;</span>
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+            GlyphVault offers four unified styles from a single SVG source. Integrate via modern zero-build Web Components, drop-in Vue 3 / React wrappers, or direct REST API data streaming.
+          </p>
+        </div>
+
+        <!-- Quick Jump Nav Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto pt-2 pb-1 text-xs font-medium no-scrollbar">
+          <button
+            v-for="tab in DOC_TABS"
+            :key="tab.id"
+            type="button"
+            @click="activeTab = tab.id"
+            class="px-3.5 py-1.5 rounded-lg whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5"
+            :class="activeTab === tab.id
+              ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] font-semibold shadow-xs'
+              : 'bg-slate-100 dark:bg-[#13171F] border border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#F1F5F9] hover:bg-slate-200/60 dark:hover:bg-[#1A202C]'"
+          >
+            <component :is="tab.icon" class="w-3.5 h-3.5 shrink-0" />
+            <span>{{ tab.label }}</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container with Sticky Side Navigation -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <!-- Sidebar Navigation (Desktop) -->
+        <aside class="hidden lg:block lg:col-span-3 sticky top-20 space-y-6">
+          <div class="p-4 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-1">
+            <div class="text-[11px] font-semibold tracking-wider uppercase text-slate-400 dark:text-[#64748B] px-3 pb-2 border-b border-slate-100 dark:border-[#181D26]">
+              Documentation Index
+            </div>
+            <button
+              v-for="tab in DOC_TABS"
+              :key="tab.id"
+              type="button"
+              @click="activeTab = tab.id"
+              class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium transition-colors text-left cursor-pointer"
+              :class="activeTab === tab.id
+                ? 'bg-teal-50 dark:bg-[#151C24] text-teal-700 dark:text-[#2DD4BF] font-semibold ring-1 ring-teal-500/20'
+                : 'text-slate-600 dark:text-[#94A3B8] hover:bg-slate-100 dark:hover:bg-[#13171E] hover:text-slate-900 dark:hover:text-[#F1F5F9]'"
+            >
+              <div class="flex items-center gap-2 truncate">
+                <component :is="tab.icon" class="w-3.5 h-3.5 shrink-0" />
+                <span class="truncate">{{ tab.label }}</span>
+              </div>
+              <ChevronRight v-if="activeTab === tab.id" class="w-3.5 h-3.5 shrink-0 text-teal-600 dark:text-[#2DD4BF]" />
+            </button>
+          </div>
+
+          <!-- Quick Action Card -->
+          <div class="p-4 rounded-xl bg-linear-to-br from-teal-500/10 to-transparent border border-teal-500/20 space-y-3">
+            <div class="text-xs font-semibold text-slate-900 dark:text-[#F1F5F9] flex items-center gap-1.5">
+              <Compass class="w-3.5 h-3.5 text-teal-600 dark:text-[#2DD4BF]" />
+              <span>Explore All Icons</span>
+            </div>
+            <p class="text-[11px] text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+              Looking for a specific glyph? Browse our complete 88+ icon catalog with instant copy &amp; search.
+            </p>
+            <button
+              type="button"
+              @click="$emit('navigate-to-browse')"
+              class="w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors cursor-pointer"
+            >
+              <span>Back to Library</span>
+              <ArrowRight class="w-3 h-3" />
+            </button>
+          </div>
+        </aside>
+
+        <!-- Main Tab Content Area -->
+        <main class="lg:col-span-9 min-w-0 space-y-12">
+          <!-- TAB 1: WEB COMPONENT (<gv-icon>) -->
+          <section v-if="activeTab === 'web-component'" class="space-y-10">
+            <div class="space-y-3">
+              <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
+                <Code2 class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>Zero-Build Web Component (&lt;gv-icon&gt;)</span>
+              </h2>
+              <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                The fastest way to use GlyphVault icons in any HTML page, CMS, Webflow, WordPress, or modern SPA. No bundler or package installation required.
+              </p>
+            </div>
+
+            <!-- Two Step Quickstart -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-teal-100 dark:bg-[#142927] text-teal-700 dark:text-[#2DD4BF] font-mono text-xs font-bold flex items-center justify-center">1</span>
+                    <h3 class="font-display text-sm font-semibold text-slate-900 dark:text-[#F1F5F9]">Include Loader Script</h3>
+                  </div>
+                  <p class="text-xs text-slate-500 dark:text-[#64748B] leading-relaxed">
+                    Paste this lightweight (~1.5 KB) loader module once before your closing <code class="font-mono text-teal-600">&lt;/body&gt;</code> tag.
+                  </p>
+                </div>
+                <div class="relative">
+                  <CodeBlock :code="LOADER_SCRIPT_SNIPPET" lang="html" @copied="$emit('notify', 'Copied loader script to clipboard')" />
+                </div>
+              </div>
+
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-teal-100 dark:bg-[#142927] text-teal-700 dark:text-[#2DD4BF] font-mono text-xs font-bold flex items-center justify-center">2</span>
+                    <h3 class="font-display text-sm font-semibold text-slate-900 dark:text-[#F1F5F9]">Render Any Icon</h3>
+                  </div>
+                  <p class="text-xs text-slate-500 dark:text-[#64748B] leading-relaxed">
+                    Place <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> wherever you need an icon. Select any of the 4 adaptive styles via <code class="font-mono text-teal-600">variant</code>.
+                  </p>
+                </div>
+                <div class="relative">
+                  <CodeBlock :code="CALL_TAGS_SNIPPET" lang="html" @copied="$emit('notify', 'Copied <gv-icon> tag example')" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Interactive Sandbox -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-6">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-[#181D26] pb-4">
+                <div>
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2">
+                    <Sliders class="w-4 h-4 text-teal-600 dark:text-[#2DD4BF]" />
+                    <span>Interactive &lt;gv-icon&gt; Sandbox</span>
+                  </h3>
+                  <p class="text-xs text-slate-500 dark:text-[#64748B] mt-0.5">
+                    Customize properties below and watch the live Web Component update immediately.
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <label class="text-xs text-slate-500 dark:text-[#64748B]">Select Icon:</label>
+                  <select
+                    v-model="sandboxIcon"
+                    class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-100 dark:bg-[#141822] border border-slate-200 dark:border-[#222B3A] text-slate-900 dark:text-[#F1F5F9] font-mono cursor-pointer focus:outline-teal-500"
+                  >
+                    <option v-for="name in SAMPLE_ICON_NAMES" :key="name" :value="name">{{ name }}</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Live Preview Stage & Code Side-by-side -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <!-- Visual Canvas -->
+                <div class="md:col-span-5 flex flex-col items-center justify-center p-8 rounded-xl bg-slate-100/70 dark:bg-[#080A0E] border border-slate-200 dark:border-[#181D26] min-h-[220px]">
+                  <div
+                    class="transition-transform duration-200"
+                    :style="{ color: sandboxColor === 'currentColor' ? (sandboxDark ? '#2DD4BF' : '#0D9488') : sandboxColor }"
+                  >
+                    <!-- Actual Live Web Component -->
+                    <gv-icon
+                      :name="sandboxIcon"
+                      :variant="sandboxVariant"
+                      :size="sandboxSize"
+                      :stroke="sandboxStroke"
+                    />
+                  </div>
+                  <div class="mt-4 font-mono text-[11px] text-slate-500 dark:text-[#64748B] text-center">
+                    &lt;gv-icon name="{{ sandboxIcon }}" variant="{{ sandboxVariant }}" size="{{ sandboxSize }}"&gt;
+                  </div>
+                </div>
+
+                <!-- Controls & Live Code Block -->
+                <div class="md:col-span-7 space-y-4">
+                  <!-- Variant Selector -->
+                  <div class="space-y-1.5">
+                    <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Style Variant (variant)</span>
+                    <div class="grid grid-cols-4 gap-2">
+                      <button
+                        v-for="v in VARIANTS"
+                        :key="v"
+                        type="button"
+                        @click="sandboxVariant = v"
+                        class="px-2 py-1.5 rounded-lg text-xs font-mono capitalize transition-all cursor-pointer text-center"
+                        :class="sandboxVariant === v
+                          ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] font-bold shadow-xs'
+                          : 'bg-slate-100 dark:bg-[#141822] text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#1B2230]'"
+                      >
+                        {{ v }}
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Size & Stroke Sliders -->
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-1.5">
+                      <div class="flex items-center justify-between text-xs text-slate-600 dark:text-[#94A3B8]">
+                        <span>Size: <strong class="font-mono text-slate-900 dark:text-[#F1F5F9]">{{ sandboxSize }}px</strong></span>
+                      </div>
+                      <input
+                        type="range"
+                        v-model.number="sandboxSize"
+                        min="16"
+                        max="64"
+                        step="4"
+                        class="w-full studio-slider"
+                      />
+                    </div>
+                    <div class="space-y-1.5">
+                      <div class="flex items-center justify-between text-xs text-slate-600 dark:text-[#94A3B8]">
+                        <span>Stroke: <strong class="font-mono text-slate-900 dark:text-[#F1F5F9]">{{ sandboxStroke }}px</strong></span>
+                      </div>
+                      <input
+                        type="range"
+                        v-model.number="sandboxStroke"
+                        min="1"
+                        max="3.5"
+                        step="0.25"
+                        class="w-full studio-slider"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Live Snippet Output -->
+                  <div class="space-y-1.5 pt-2">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Ready-to-Use Tag</span>
+                    </div>
+                    <CodeBlock :code="generatedTagSnippet" lang="html" @copied="$emit('notify', 'Copied tag from sandbox!')" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TAB 2: FRAMEWORKS (VUE, REACT, HTML) -->
+          <section v-else-if="activeTab === 'frameworks'" class="space-y-10">
+            <div class="space-y-3">
+              <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
+                <Layers class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>Modern Framework Integration</span>
+              </h2>
+              <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                Seamless drop-in recipes for your favorite frontend framework with full TypeScript support and reactive props.
+              </p>
+            </div>
+
+            <!-- Framework Tabs -->
+            <div class="flex items-center gap-2 border-b border-slate-200 dark:border-[#1D222B] pb-3">
+              <button
+                v-for="fw in ['vue', 'react', 'vanilla']"
+                :key="fw"
+                type="button"
+                @click="frameworkTab = fw"
+                class="px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
+                :class="frameworkTab === fw
+                  ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312]'
+                  : 'text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E]'"
+              >
+                {{ fw === 'vue' ? 'Vue 3 / Nuxt 3' : fw === 'react' ? 'React / Next.js' : 'Vanilla HTML / CMS' }}
+              </button>
+            </div>
+
+            <!-- Vue 3 / Nuxt 3 Guide -->
+            <div v-if="frameworkTab === 'vue'" class="space-y-6">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">1. Nuxt 3 Custom Element Configuration</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    In your <code class="font-mono text-teal-600">nuxt.config.ts</code>, tell the Vue compiler that <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> is a custom element:
+                  </p>
+                </div>
+                <CodeBlock :code="NUXT_CONFIG_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt config recipe')" />
+              </div>
+
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">2. Client Plugin Registration</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    Save this file as <code class="font-mono text-teal-600">plugins/gv-icon.client.ts</code> so the custom element loads seamlessly on the client:
+                  </p>
+                </div>
+                <CodeBlock :code="VUE_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Vue client plugin recipe')" />
+              </div>
+            </div>
+
+            <!-- React / Next.js Guide -->
+            <div v-else-if="frameworkTab === 'react'" class="space-y-6">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">React TSX Wrapper Component</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    Create a typed wrapper component <code class="font-mono text-teal-600">components/GlyphIcon.tsx</code> compatible with Next.js App Router:
+                  </p>
+                </div>
+                <CodeBlock :code="REACT_WRAPPER_SNIPPET" lang="tsx" @copied="$emit('notify', 'Copied React TSX wrapper recipe')" />
+              </div>
+            </div>
+
+            <!-- Vanilla HTML Guide -->
+            <div v-else class="space-y-6">
+              <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+                <div class="space-y-1">
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Full HTML Boilerplate</h3>
+                  <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
+                    A complete minimal HTML5 document illustrating zero-build integration:
+                  </p>
+                </div>
+                <CodeBlock :code="VANILLA_HTML_SNIPPET" lang="html" @copied="$emit('notify', 'Copied Vanilla HTML boilerplate')" />
+              </div>
+            </div>
+          </section>
+
+          <!-- TAB 3: ATTRIBUTES & API REFERENCE -->
+          <section v-else-if="activeTab === 'attributes'" class="space-y-10">
+            <div class="space-y-3">
+              <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
+                <BookOpen class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>Attributes &amp; Customization API</span>
+              </h2>
+              <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                Full reference of all attributes supported by the <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> element.
+              </p>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-[#1D222B] bg-white dark:bg-[#0D1016]">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-50 dark:bg-[#12161F] border-b border-slate-200 dark:border-[#1D222B] text-slate-700 dark:text-[#CBD5E1] font-semibold">
+                  <tr>
+                    <th class="px-4 py-3.5">Attribute</th>
+                    <th class="px-4 py-3.5">Type</th>
+                    <th class="px-4 py-3.5">Default</th>
+                    <th class="px-4 py-3.5">Description</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 dark:divide-[#181D26] text-slate-600 dark:text-[#94A3B8]">
+                  <tr v-for="attr in ATTRIBUTES_TABLE" :key="attr.name" class="hover:bg-slate-50/50 dark:hover:bg-[#11141B]/50 transition-colors">
+                    <td class="px-4 py-3 font-mono font-bold text-teal-700 dark:text-[#2DD4BF]">{{ attr.name }}</td>
+                    <td class="px-4 py-3 font-mono text-slate-500 dark:text-[#64748B]">{{ attr.type }}</td>
+                    <td class="px-4 py-3 font-mono text-amber-700 dark:text-amber-400">{{ attr.default }}</td>
+                    <td class="px-4 py-3 leading-relaxed">{{ attr.description }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Deep Dive: Color & CurrentColor -->
+            <div class="p-6 rounded-xl bg-slate-50 dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+              <h3 class="font-display text-sm font-bold text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2">
+                <Palette class="w-4 h-4 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>Automatic Color Inheritance (currentColor)</span>
+              </h3>
+              <p class="text-xs text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                By default, all GlyphVault icons inherit the text color of their parent container (<code class="font-mono text-teal-600">currentColor</code>). This means you can change the icon color simply using CSS or Tailwind text utilities like <code class="font-mono text-teal-600">class="text-indigo-600 hover:text-indigo-400"</code> without touching SVG markup.
+              </p>
+              <div class="p-4 rounded-lg bg-slate-100 dark:bg-[#07090D] border border-slate-200 dark:border-[#1D222B] flex flex-wrap items-center gap-6">
+                <div class="flex items-center gap-2 text-rose-500 font-semibold text-xs">
+                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <span>class="text-rose-500"</span>
+                </div>
+                <div class="flex items-center gap-2 text-teal-500 font-semibold text-xs">
+                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <span>class="text-teal-500"</span>
+                </div>
+                <div class="flex items-center gap-2 text-amber-500 font-semibold text-xs">
+                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <span>class="text-amber-500"</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TAB 4: JSON SCHEMA & API -->
+          <section v-else-if="activeTab === 'api'" class="space-y-10">
+            <div class="space-y-3">
+              <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
+                <FileJson class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>JSON Schema &amp; CDN Data Endpoint</span>
+              </h2>
+              <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                Every icon in GlyphVault is stored and served via a high-performance, single-file JSON catalog hosted on our edge CDN.
+              </p>
+            </div>
+
+            <!-- CDN Endpoint Card -->
+            <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Public CDN Endpoint</span>
+                <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded">HTTP GET · 200 OK</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
+                <span class="text-slate-900 dark:text-[#F1F5F9] truncate">https://glyphvault.conime.id/icons.json</span>
+                <a
+                  href="/icons.json"
+                  target="_blank"
+                  class="shrink-0 ml-2 px-2.5 py-1 rounded bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] text-[11px] font-semibold hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors"
+                >
+                  View JSON
+                </a>
+              </div>
+            </div>
+
+            <!-- TypeScript Schema Interface -->
+            <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
+              <h3 class="font-display text-sm font-bold text-slate-900 dark:text-[#F1F5F9]">TypeScript Interface</h3>
+              <CodeBlock :code="TS_INTERFACE_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied TypeScript interface')" />
+            </div>
+
+            <!-- JSON Schema Example -->
+            <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
+              <h3 class="font-display text-sm font-bold text-slate-900 dark:text-[#F1F5F9]">Payload Structure Example</h3>
+              <CodeBlock :code="JSON_PAYLOAD_EXAMPLE" lang="json" @copied="$emit('notify', 'Copied JSON payload example')" />
+            </div>
+          </section>
+
+          <!-- TAB 5: FIGMA GUIDELINES -->
+          <section v-else-if="activeTab === 'figma'" class="space-y-10">
+            <div class="space-y-3">
+              <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
+                <Figma class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>Figma &amp; Icon Design Guidelines</span>
+              </h2>
+              <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                Rules and best practices for authoring glyphs in Figma to ensure perfect rendering across all 4 style variants.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                v-for="guide in FIGMA_RULES"
+                :key="guide.title"
+                class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-2.5"
+              >
+                <div class="flex items-center gap-2 text-teal-600 dark:text-[#2DD4BF]">
+                  <CheckCircle2 class="w-4 h-4 shrink-0" />
+                  <h3 class="font-display text-sm font-bold text-slate-900 dark:text-[#F1F5F9]">{{ guide.title }}</h3>
+                </div>
+                <p class="text-xs text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                  {{ guide.description }}
+                </p>
+              </div>
+            </div>
+
+            <!-- Duotone Role Annotation Guide -->
+            <div class="p-6 rounded-xl bg-slate-50 dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
+              <h3 class="font-display text-sm font-bold text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2">
+                <Layers class="w-4 h-4 text-teal-600 dark:text-[#2DD4BF]" />
+                <span>How Duotone &amp; Cutout Layering Works</span>
+              </h3>
+              <p class="text-xs text-slate-600 dark:text-[#94A3B8] leading-relaxed">
+                GlyphVault automatically detects the base silhouette (closed outer path) and renders it at 25% opacity in duotone variants. For complex composite shapes with holes or inner lines, you can annotate SVG attributes directly:
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+                <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] space-y-1">
+                  <div class="text-teal-600 dark:text-[#2DD4BF] font-bold">data-duotone="base"</div>
+                  <div class="text-slate-500 dark:text-[#64748B] font-sans">Identifies the primary filled background shape.</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] space-y-1">
+                  <div class="text-teal-600 dark:text-[#2DD4BF] font-bold">data-cutout="true"</div>
+                  <div class="text-slate-500 dark:text-[#64748B] font-sans">Carves transparent negative space in Solid variant.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Clean Footer on Documentation Page -->
+      <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-[#1D222B] text-xs text-slate-500 dark:text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-medium text-slate-700 dark:text-[#94A3B8]">GlyphVault</span>
+          <span>&copy; {{ new Date().getFullYear() }}</span>
+          <span>&middot;</span>
+          <span>Open SVG Icon System</span>
+        </div>
+
+        <div class="flex items-center gap-4 text-xs">
+          <button
+            type="button"
+            @click="$emit('navigate-to-browse')"
+            class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors cursor-pointer"
+          >
+            Explore Icons
+          </button>
+          <a
+            href="/icons.json"
+            target="_blank"
+            class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
+          >
+            icons.json
+          </a>
+          <a
+            href="/admin/"
+            target="_blank"
+            class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
+          >
+            CMS Admin
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { computed, ref } from 'vue';
+import {
+  Code2,
+  Sliders,
+  Layers,
+  BookOpen,
+  FileJson,
+  Figma,
+  Sparkles,
+  ChevronRight,
+  Compass,
+  ArrowRight,
+  CheckCircle2,
+  Palette,
+} from 'lucide-vue-next';
+import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
+import CodeBlock from '~/components/CodeBlock.vue';
+
+interface Props {
+  icons?: IconEntry[];
+  settings?: IconSettings;
+}
+
+defineProps<Props>();
+
+defineEmits<{
+  'notify': [message: string];
+  'navigate-to-browse': [];
+}>();
+
+const activeTab = ref<'web-component' | 'frameworks' | 'attributes' | 'api' | 'figma'>('web-component');
+const frameworkTab = ref<'vue' | 'react' | 'vanilla'>('vue');
+
+const DOC_TABS = [
+  { id: 'web-component', label: 'Web Component (<gv-icon>)', icon: Code2 },
+  { id: 'frameworks', label: 'Framework Integration', icon: Layers },
+  { id: 'attributes', label: 'Attributes & API Reference', icon: BookOpen },
+  { id: 'api', label: 'JSON Schema & CDN', icon: FileJson },
+  { id: 'figma', label: 'Figma Design Guidelines', icon: Figma },
+] as const;
+
+// Interactive Sandbox State
+const SAMPLE_ICON_NAMES = ['circle-plus', 'apple', 'siren', 'ambulance', 'anchor', 'air-vent', 'alarm-clock-snooze', 'arrow-big-up-dash'];
+const VARIANTS: IconStyleVariant[] = ['linear', 'solid', 'duotone', 'duotone-linear'];
+
+const sandboxIcon = ref('circle-plus');
+const sandboxVariant = ref<IconStyleVariant>('duotone-linear');
+const sandboxSize = ref(36);
+const sandboxStroke = ref(2);
+const sandboxColor = ref('currentColor');
+const sandboxDark = ref(true);
+
+const generatedTagSnippet = computed(() => {
+  return `<gv-icon name="${sandboxIcon.value}" variant="${sandboxVariant.value}" size="${sandboxSize.value}" stroke="${sandboxStroke.value}"></gv-icon>`;
+});
+
+// Snippets
+const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this tiny loader once in your HTML -->
+<script type="module">
+  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const data = await res.json();
+  const list = Array.isArray(data) ? data : (data.icons || []);
+  const map = new Map(list.map(i => [i.name, i.svg]));
+
+  class GvIcon extends HTMLElement {
+    connectedCallback() {
+      const name = this.getAttribute('name');
+      const size = this.getAttribute('size') || '24';
+      const variant = (this.getAttribute('variant') || 'linear').trim();
+      const raw = map.get(name);
+      if (!raw) return;
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(raw, 'image/svg+xml');
+      const svg = doc.querySelector('svg');
+      if (!svg) return;
+      svg.setAttribute('width', size);
+      svg.setAttribute('height', size);
+      // ... variants & masks applied automatically ...
+      this.innerHTML = svg.outerHTML;
+      this.style.display = 'inline-flex';
+      this.style.verticalAlign = 'middle';
+    }
+  }
+  customElements.define('gv-icon', GvIcon);
+<\/script>`;
+
+const CALL_TAGS_SNIPPET = `<!-- 2. Call anywhere with your desired variant -->
+<gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
+<gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
+
+const NUXT_CONFIG_SNIPPET = `// nuxt.config.ts
+export default defineNuxtConfig({
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith('gv-')
+    }
+  }
+});`;
+
+const VUE_PLUGIN_SNIPPET = `// plugins/gv-icon.client.ts
+export default defineNuxtPlugin(async () => {
+  if (typeof window === 'undefined' || customElements.get('gv-icon')) return;
+
+  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const { icons } = await res.json();
+  const map = new Map(icons.map((i: any) => [i.name, i.svg]));
+
+  class GvIcon extends HTMLElement {
+    connectedCallback() {
+      // dynamically render svg with props
+    }
+  }
+  customElements.define('gv-icon', GvIcon);
+});`;
+
+const REACT_WRAPPER_SNIPPET = `// components/GlyphIcon.tsx
+'use client';
+import React from 'react';
+
+interface GlyphIconProps {
+  name: string;
+  variant?: 'linear' | 'solid' | 'duotone' | 'duotone-linear';
+  size?: number | string;
+  stroke?: number | string;
+  className?: string;
+}
+
+export function GlyphIcon({ name, variant = 'linear', size = 24, stroke = 2, className }: GlyphIconProps) {
+  // @ts-ignore
+  return <gv-icon name={name} variant={variant} size={size} stroke={stroke} class={className} />;
+}`;
+
+const VANILLA_HTML_SNIPPET = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GlyphVault Demo</title>
+</head>
+<body>
+  <div style="color: #0d9488;">
+    <gv-icon name="siren" variant="duotone-linear" size="32"></gv-icon>
+    <span>System Active</span>
+  </div>
+
+  <script type="module" src="https://glyphvault.conime.id/demo.html"><\/script>
+</body>
+</html>`;
+
+const ATTRIBUTES_TABLE = [
+  { name: 'name', type: 'string', default: 'Required', description: 'The semantic icon identifier matching icons.json (e.g. circle-plus, apple).' },
+  { name: 'variant', type: 'string', default: '"linear"', description: 'Styling mode: linear (outline), solid (fill), duotone (two-tone), or duotone-linear.' },
+  { name: 'size', type: 'number | string', default: '"24"', description: 'Pixel dimension applied to both SVG width and height.' },
+  { name: 'stroke', type: 'number | string', default: '"2"', description: 'Stroke thickness applied to paths, lines, and outlines.' },
+  { name: 'class', type: 'string', default: '—', description: 'Standard CSS class name. Colors inherit automatically via currentColor.' },
+  { name: 'opacity', type: 'number | string', default: '"0.25"', description: 'Secondary layer opacity for duotone and duotone-linear variants (0.0 to 1.0).' },
+];
+
+const FIGMA_RULES = [
+  { title: 'Strict 24×24 Frame', description: 'Every icon canvas must be exactly 24×24 pixels with 0,0 origin coordinates.' },
+  { title: '2px Default Stroke Weight', description: 'Design primary outlines at 2px weight with round line caps and round line joins.' },
+  { title: 'Closed Paths for Fills', description: 'Shapes intended to be filled in Solid or Duotone modes must terminate with a closed path (Z).' },
+  { title: 'Flatten Vector Networks', description: 'Combine compound vectors into clean single paths without redundant clip paths or group transforms.' },
+];
+
+const TS_INTERFACE_SNIPPET = `export interface IconEntry {
+  name: string;        // Unique identifier (e.g. "circle-plus")
+  category: string;    // Topic grouping (e.g. "Shapes & Badges")
+  tags: string[];      // Search keywords (e.g. ["add", "plus"])
+  svg: string;         // Raw 24x24 SVG markup string
+}
+
+export interface IconsJsonCatalog {
+  icons: IconEntry[];
+}`;
+
+const JSON_PAYLOAD_EXAMPLE = `{
+  "icons": [
+    {
+      "name": "circle-plus",
+      "category": "Shapes & Badges",
+      "tags": ["glyph", "circle", "plus", "add"],
+      "svg": "<svg width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\">...</svg>"
+    }
+  ]
+}`;
+</script>
+
+<style scoped>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>

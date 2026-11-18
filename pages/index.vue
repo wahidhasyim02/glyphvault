@@ -19,6 +19,16 @@
       />
     </main>
 
+    <!-- Full Documentation View -->
+    <main v-else-if="activeSection === 'docs'" class="flex-1">
+      <DocumentationView
+        :icons="icons"
+        :settings="settings"
+        @notify="notify"
+        @navigate-to-browse="activeSection = 'browse'"
+      />
+    </main>
+
     <!-- Browse Icon Library View -->
     <div v-else class="flex-1 flex items-start">
       <CategorySidebar
@@ -79,7 +89,7 @@
           <div class="flex items-center gap-4 text-xs">
             <button
               type="button"
-              @click="handleOpenJsonStudio('embed')"
+              @click="activeSection = 'docs'"
               class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors cursor-pointer"
             >
               Documentation
@@ -226,7 +236,7 @@ const loading = ref(true);
 const loadError = ref<string | null>(null);
 const isCustomDataset = ref(false);
 
-const activeSection = ref<'browse' | 'guide'>('browse');
+const activeSection = ref<'browse' | 'guide' | 'docs'>('browse');
 const selectedCategory = ref<string>('All');
 const searchQuery = ref<string>('');
 const styleVariant = ref<IconStyleVariant>('duotone-linear');
