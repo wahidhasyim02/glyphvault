@@ -112,5 +112,25 @@ const STYLE_CARDS: {
   },
 ];
 
-const previewSet = computed(() => props.sampleIcons.slice(0, 8));
+// Curated set of iconic, visually rich glyphs to showcase the 4 style variants
+const CURATED_SHOWCASE = [
+  'circle-plus',
+  'apple',
+  'siren',
+  'ambulance',
+  'anchor',
+  'alarm-clock-plus',
+  'circle-check',
+  'app-window-mac',
+];
+
+const previewSet = computed(() => {
+  if (!props.sampleIcons || props.sampleIcons.length === 0) return [];
+  const map = new Map(props.sampleIcons.map((i) => [i.name, i]));
+  const picked = CURATED_SHOWCASE.map((name) => map.get(name)).filter(Boolean) as IconEntry[];
+  if (picked.length >= 8) return picked.slice(0, 8);
+  // Fallback to top icons if any curated icons are missing
+  const remaining = props.sampleIcons.filter((i) => !picked.includes(i));
+  return [...picked, ...remaining].slice(0, 8);
+});
 </script>
