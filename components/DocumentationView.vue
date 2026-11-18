@@ -275,11 +275,11 @@
               <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
                 <div class="space-y-1">
                   <div class="flex items-center justify-between">
-                    <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Opsi 1: Otomatis via Remote Collection (Tanpa Copy File)</h3>
-                    <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Rekomendasi</span>
+                    <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Option 1: Automatic via Remote Collection (Zero Local Files)</h3>
+                    <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Recommended</span>
                   </div>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Cukup buat 1 file plugin <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> di project Nuxt Anda. Iconify otomatis memuat seluruh 100+ icon GlyphVault langsung dari endpoint <code class="font-mono text-teal-600">/glyph.json</code>:
+                    Create a single plugin file <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> in your Nuxt project. Iconify automatically loads all 130+ GlyphVault icons directly from the <code class="font-mono text-teal-600">/glyph.json</code> endpoint:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_UI_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt client plugin recipe')" />
@@ -287,9 +287,9 @@
 
               <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
                 <div class="space-y-1">
-                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Pemanggilan di Komponen &lt;UIcon&gt; Nuxt UI</h3>
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Usage in Nuxt UI &lt;UIcon&gt; Components</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Panggil icon apa pun dengan prefix <code class="font-mono text-teal-600">i-glyph-[name]</code>. Warna icon otomatis mengikuti class warna Tailwind CSS:
+                    Call any icon using the <code class="font-mono text-teal-600">i-glyph-[name]</code> prefix. The icon color automatically inherits standard Tailwind CSS text color classes:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_UI_USAGE_SNIPPET" lang="html" @copied="$emit('notify', 'Copied Nuxt UI usage snippet')" />
@@ -297,9 +297,9 @@
 
               <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-4">
                 <div class="space-y-1">
-                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Opsi 2: Offline via Nuxt customCollections</h3>
+                  <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Option 2: Offline via Nuxt customCollections</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Jika ingin menyimpan file SVG secara lokal di project Anda, gunakan konfigurasi bawaan <code class="font-mono text-teal-600">@nuxt/icon</code> di <code class="font-mono text-teal-600">nuxt.config.ts</code>:
+                    If you prefer keeping local SVG files within your project repository, configure the official <code class="font-mono text-teal-600">@nuxt/icon</code> module in <code class="font-mono text-teal-600">nuxt.config.ts</code>:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_CUSTOM_COLLECTION_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied customCollections snippet')" />
@@ -445,7 +445,7 @@
                   </a>
                 </div>
                 <p class="text-[11px] text-slate-500 dark:text-[#64748B]">
-                  Full dataset dengan kategori, tag pencarian, dan markup SVG mentah.
+                  Complete dataset containing categories, tags, and raw SVG vector markup.
                 </p>
               </div>
 
@@ -465,7 +465,7 @@
                   </a>
                 </div>
                 <p class="text-[11px] text-slate-500 dark:text-[#64748B]">
-                  Format standar Iconify dengan <code class="font-mono text-teal-600">currentColor</code> otomatis untuk Nuxt &amp; UIcon.
+                  Official Iconify collection format with automatic <code class="font-mono text-teal-600">currentColor</code> for Nuxt UI &amp; @nuxt/icon.
                 </p>
               </div>
             </div>
@@ -739,13 +739,13 @@ const CALL_TAGS_SNIPPET = `<!-- 2. Call anywhere with your desired variant -->
 <gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
 <gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
 
-const NUXT_UI_PLUGIN_SNIPPET = `// plugins/glyph.client.ts (di project Nuxt kantor Mas Reiza)
+const NUXT_UI_PLUGIN_SNIPPET = `// plugins/glyph.client.ts
 import { defineNuxtPlugin } from '#app';
 import { addCollection } from '@iconify/vue';
 
 export default defineNuxtPlugin(async () => {
   try {
-    // Memuat seluruh icon GlyphVault langsung dari endpoint CDN
+    // Load the GlyphVault collection from the live CDN endpoint
     const res = await fetch('https://glyphvault.conime.id/glyph.json');
     if (res.ok) {
       const collection = await res.json();
@@ -756,27 +756,27 @@ export default defineNuxtPlugin(async () => {
   }
 });`;
 
-const NUXT_UI_USAGE_SNIPPET = `<!-- Panggil di komponen Vue Nuxt UI mana pun -->
+const NUXT_UI_USAGE_SNIPPET = `<!-- Use inside any Nuxt UI template -->
 <template>
   <div class="flex items-center gap-4">
-    <!-- Menggunakan Nuxt UI <UIcon> dengan class Tailwind -->
+    <!-- Using Nuxt UI <UIcon> with Tailwind color classes -->
     <UIcon name="i-glyph-ambulance" class="w-6 h-6 text-red-500" />
     <UIcon name="i-glyph-save-pen" class="w-5 h-5 text-teal-400" />
     <UIcon name="i-glyph-pen" class="w-5 h-5 text-indigo-400" />
 
-    <!-- Menggunakan @nuxt/icon biasa -->
+    <!-- Or using standard @nuxt/icon <Icon> -->
     <Icon name="glyph:alarm-clock-check" size="24" class="text-emerald-400" />
   </div>
 </template>`;
 
-const NUXT_CUSTOM_COLLECTION_SNIPPET = `// nuxt.config.ts (Alternatif Offline via customCollections)
+const NUXT_CUSTOM_COLLECTION_SNIPPET = `// nuxt.config.ts (Offline customCollections Option)
 export default defineNuxtConfig({
   modules: ['@nuxt/icon'],
   icon: {
     customCollections: [
       {
         prefix: 'glyph',
-        dir: './assets/icons/glyph' // Letakkan SVG dari GlyphVault di sini
+        dir: './assets/icons/glyph' // Place GlyphVault SVGs here
       }
     ]
   }

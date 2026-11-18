@@ -213,11 +213,7 @@
                 ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
                 : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
             >
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="18" rx="2" />
-                <rect x="14" y="3" width="7" height="7" rx="2" />
-                <rect x="14" y="14" width="7" height="7" rx="2" />
-              </svg>
+              <LayoutGrid class="w-3.5 h-3.5" />
             </button>
             <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
               Flat grid (A-Z)
@@ -235,11 +231,7 @@
                 ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
                 : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
             >
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="15" y2="12" />
-                <line x1="4" y1="18" x2="9" y2="18" />
-              </svg>
+              <Layers class="w-3.5 h-3.5" />
             </button>
             <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
               Grouped by category
@@ -260,10 +252,7 @@
                 ? 'bg-white dark:bg-[#1E2430] text-teal-600 dark:text-[#2DD4BF] shadow-xs'
                 : 'text-slate-400 dark:text-[#64748B] hover:text-slate-700 dark:hover:text-[#CBD5E1]'"
             >
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-                <circle cx="7.5" cy="7.5" r=".75" fill="currentColor" />
-              </svg>
+              <Tag class="w-3.5 h-3.5" />
             </button>
             <div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-slate-900/95 dark:bg-[#1A222D] text-[10px] font-medium text-white dark:text-[#E2E8F0] shadow-md border border-slate-700/40 dark:border-[#2C3545] opacity-0 group-hover/tip:opacity-100 transition-opacity whitespace-nowrap z-50 select-none">
               {{ showLabels ? 'Hide icon names' : 'Show icon names' }}
@@ -326,11 +315,14 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import {
   CopyCheck,
+  Layers,
+  LayoutGrid,
   Moon,
   RotateCcw,
   Search,
   SlidersHorizontal,
   Sun,
+  Tag,
   X,
   ZoomIn,
 } from 'lucide-vue-next';
@@ -372,11 +364,11 @@ const SAMPLE_GLYPH_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle data-duotone="base" cx="12" cy="12" r="9"/><path data-duotone="accent" data-cutout="true" d="M8.5 12.5L11 15L15.5 9.5"/></svg>';
 
 const STYLE_OPTIONS: { id: IconStyleVariant; label: string }[] = [
-  { id: 'linear', label: 'Linear' },
-  { id: 'line-duotone', label: 'Line Duotone' },
-  { id: 'solid', label: 'Solid' },
   { id: 'duotone', label: 'Dualtone' },
   { id: 'duotone-linear', label: 'Dualtone Linear' },
+  { id: 'line-duotone', label: 'Line Duotone' },
+  { id: 'linear', label: 'Linear' },
+  { id: 'solid', label: 'Solid' },
 ];
 
 const isDuotoneMode = computed(

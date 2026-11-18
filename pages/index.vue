@@ -4,7 +4,7 @@
     <TopBar
       :active-section="activeSection"
       :theme="theme"
-      @change-section="activeSection = $event"
+      @change-section="handleSectionChange"
       @open-json-studio="handleOpenJsonStudio"
       @reset-all="handleResetAll"
       @toggle-theme="handleToggleTheme"
@@ -25,7 +25,7 @@
         :icons="icons"
         :settings="settings"
         @notify="notify"
-        @navigate-to-browse="activeSection = 'browse'"
+        @navigate-to-browse="handleSectionChange('browse')"
       />
     </main>
 
@@ -95,7 +95,7 @@
           <div class="flex items-center gap-4 text-xs">
             <button
               type="button"
-              @click="activeSection = 'docs'"
+              @click="handleSectionChange('docs')"
               class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors cursor-pointer"
             >
               Documentation
@@ -245,20 +245,64 @@ interface ToastState {
   tone: 'success' | 'info' | 'error';
 }
 
+interface PageProps {
+  initialSection?: 'browse' | 'guide' | 'docs';
+}
+
+const pageProps = withDefaults(defineProps<PageProps>(), {
+  initialSection: 'browse',
+});
+
+const route = useRoute();
+const router = useRouter();
+
+const getInitialSection = (): 'browse' | 'guide' | 'docs' => {
+  if (pageProps.initialSection && pageProps.initialSection !== 'browse') {
+    return pageProps.initialSection;
+  }
+  const p = (route.path || '').toLowerCase().replace(/\/$/, '');
+  if (p === '/docs' || p === '/documentation' || route.query.section === 'docs') return 'docs';
+  if (p === '/guide' || p === '/styles' || p === '/style-variants' || route.query.section === 'guide') return 'guide';
+  return 'browse';
+};
+
 const theme = ref<'dark' | 'light'>('dark');
 const icons = ref<IconEntry[]>([]);
 const loading = ref(true);
 const loadError = ref<string | null>(null);
 const isCustomDataset = ref(false);
 
-const activeSection = ref<'browse' | 'guide' | 'docs'>('browse');
+const activeSection = ref<'browse' | 'guide' | 'docs'>(getInitialSection());
+
+const handleSectionChange = (section: 'browse' | 'guide' | 'docs') => {
+  activeSection.value = section;
+  const targetPath = section === 'docs' ? '/docs' : section === 'guide' ? '/guide' : '/';
+  if (route.path !== targetPath) {
+    router.push(targetPath);
+  }
+};
+
+watch(
+  () => route.path,
+  (newPath) => {
+    const p = (newPath || '').toLowerCase().replace(/\/$/, '');
+    if (p === '/docs' || p === '/documentation') {
+      activeSection.value = 'docs';
+    } else if (p === '/guide' || p === '/styles' || p === '/style-variants') {
+      activeSection.value = 'guide';
+    } else {
+      activeSection.value = 'browse';
+    }
+  }
+);
+
 const selectedCategory = ref<string>('All');
 const searchQuery = ref<string>('');
-const styleVariant = ref<IconStyleVariant>('duotone-linear');
+const styleVariant = ref<IconStyleVariant>('duotone'); // Default: Dualtone
 const settings = ref<IconSettings>({ ...DARK_DEFAULT_SETTINGS });
 const gridZoom = ref<number>(2);
 const clickToCopy = ref<boolean>(true);
-const groupByCategory = ref<boolean>(false); // Default: flat alphabetical grid (campur urut abjad)
+const groupByCategory = ref<boolean>(false); // Default: flat alphabetical grid
 const showLabels = ref<boolean>(true); // Default: show icon name labels
 
 const selectedIcon = ref<IconEntry | null>(null);
@@ -375,7 +419,12 @@ const handleToggleTheme = () => {
 const handleResetSettings = () => {
   settings.value = theme.value === 'dark' ? { ...DARK_DEFAULT_SETTINGS } : { ...LIGHT_DEFAULT_SETTINGS };
   gridZoom.value = 2;
-  notify('Studio settings reset to defaults', 'info');
+  styleVariant.value = 'duotone';
+  groupByCategory.value = false;
+  showLabels.value = true;
+  selectedCategory.value = 'All';
+  searchQuery.value = '';
+  notify('Studio view & settings reset to defaults', 'info');
 };
 
 const handleResetFilters = () => {
