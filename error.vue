@@ -110,7 +110,7 @@
           class="font-sans text-sm sm:text-base text-slate-600 dark:text-[#94A3B8] max-w-md mx-auto mb-8 leading-relaxed">
           {{
             is404
-              ? 'Tautan yang Mas cari mungkin sudah dipindahkan, diubah namanya, atau belum tersedia di koleksi Iconix.'
+              ? 'Tautan yang Anda cari mungkin sudah dipindahkan, diubah namanya, atau belum tersedia di koleksi Iconix.'
               : (error?.message || 'Maaf, terjadi masalah saat memuat halaman ini.')
           }}
         </p>
