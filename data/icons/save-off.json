@@ -22,5 +22,5 @@
     "slash",
     "mute"
   ],
-  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4V18C3 19.6569 4.34315 21 6 21H20M8 3H14.5228C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16M6.5 20V16C6.5 14.8954 7.39543 14 8.5 14H13.5M17.5 20V18M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4V18C3 19.6569 4.34315 21 6 21H20M8 3H14.5228C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16M6.5 20V16C6.5 14.8954 7.39543 14 8.5 14H13.5M17.5 20V18M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2.00006 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }

@@ -94,6 +94,24 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 12.5H5.76711C6.20339 12.5 6.58932 12.2172 6.7207 11.8011L9.5 3L15 21L17.5865 13.1858C17.722 12.7764 18.1046 12.5 18.5358 12.5H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "ad",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "ad",
+        "advertisement",
+        "advertising",
+        "promo",
+        "sponsor",
+        "marketing",
+        "campaign",
+        "commercial",
+        "iklan",
+        "promosi"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14 16V8H16C17.6569 8 19 9.34315 19 11V13C19 14.6569 17.6569 16 16 16H14Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 4H22M22 20H2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11 16L9.96501 13.6343L7.5 8L5.03499 13.6343M9.96501 13.6343H5.03499M4 16L5.03499 13.6343\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "air-vent",
       "category": "Devices & Tech",
       "tags": [
@@ -898,7 +916,7 @@
         "exposure",
         "optic"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4.20577 6.5L9.53592 15.7321\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M12.866 2.49999L7.53589 11.7321\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.6603 8.00001L9.99997 8.00002\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M19.7942 17.5L14.4641 8.26791\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M11.134 21.5L16.4641 12.2679\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3.33981 16L14.0001 16\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4.2058 6.5L9.53595 15.7321\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M12.8661 2.49999L7.53595 11.7321\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.6603 8.00001L10 8.00002\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M19.7942 17.5L14.464 8.26791\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M11.134 21.5L16.4642 12.2679\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3.33984 16L14.0001 16\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "app-window",
@@ -960,7 +978,7 @@
         "nutrition",
         "snack"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0543 7.39025V3L13.3628 3.43902\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12.0544 7.39025C9.87362 5.78049 4.2051 3.87805 2.45909 8.70732C0.830841 13.2109 3.8899 17.8895 6.26035 20.2634C7.08409 21.0883 8.3451 21.084 9.45089 20.7148C10.9113 20.2273 12.8593 19.9575 14.7439 20.6924C15.5814 21.019 16.5255 21.2299 17.2661 20.7204C21.122 18.0673 24.2365 9.28598 19.905 6.5122C17.1036 4.71821 13.799 6.07318 12.0544 7.39025Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0543 7.39025V3L13.3628 3.43902\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12.0544 7.39025C9.87368 5.78049 4.20516 3.87805 2.45915 8.70732C0.830902 13.2109 3.88996 17.8895 6.26041 20.2634C7.08415 21.0883 8.34517 21.084 9.45095 20.7148C10.9114 20.2273 12.8594 19.9575 14.744 20.6924C15.5815 21.019 16.5256 21.2299 17.2661 20.7204C21.122 18.0673 24.2366 9.28598 19.9051 6.5122C17.1036 4.71821 13.799 6.07318 12.0544 7.39025Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "arrow-big-down",
@@ -1312,7 +1330,7 @@
         "turn-off",
         "slash"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.54995 7.23632C6.54249 7.48112 6.52977 7.7276 6.51179 7.9777C6.34255 10.3322 5.42493 12.5543 4.29455 14.6267C3.71122 15.6961 4.48526 17 5.70344 17H16.5M8 2.81273C8.07297 2.72373 8.15222 2.63592 8.23803 2.55103C8.67947 2.11429 9.32329 2 9.94427 2H13.2712C15.7408 2 17.5265 4.22918 17.5235 6.6988C17.5234 6.79023 17.5239 6.88165 17.525 6.97315C17.5631 9.98948 18.7373 12.8518 20.1818 15.5M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.54995 7.23632C6.54249 7.48112 6.52977 7.7276 6.51179 7.9777C6.34254 10.3322 5.42493 12.5543 4.29454 14.6267C3.71121 15.6961 4.48525 17 5.70343 17H16.5M7.99999 2.81273C8.07296 2.72373 8.15222 2.63592 8.23802 2.55103C8.67946 2.11429 9.32329 2 9.94427 2H13.2712C15.7408 2 17.5265 4.22918 17.5235 6.6988C17.5234 6.79023 17.5239 6.88165 17.525 6.97315C17.563 9.98948 18.7373 12.8518 20.1818 15.5M9.99999 20C9.99999 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "bell-plus",
@@ -1354,7 +1372,7 @@
         "vibrate",
         "active"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.554 7.83031C17.5332 7.44873 17.523 7.07392 17.5235 6.69879C17.5265 4.22918 15.7408 2 13.2712 2H10.8932C8.36447 2 6.57755 4.32335 6.55736 6.85205C6.55439 7.22332 6.53921 7.59612 6.51182 7.97732C6.34262 10.3319 5.42493 12.5543 4.29455 14.6267C3.71122 15.6961 4.48526 17 5.70344 17H18.4336C19.5901 17 20.3248 15.7622 19.7711 14.747C18.5985 12.5973 17.6871 10.2754 17.554 7.83031Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M2.08216 8.94353C1.90514 6.12691 2.22806 4.63204 3.89389 2.18205\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.8117 8.94352C21.9888 6.12689 21.6658 4.63202 20 2.18204\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.554 7.83031C17.5332 7.44873 17.523 7.07392 17.5235 6.69879C17.5265 4.22918 15.7408 2 13.2712 2H10.8932C8.36447 2 6.57755 4.32335 6.55736 6.85205C6.55439 7.22332 6.53921 7.59612 6.51182 7.97732C6.34262 10.3319 5.42493 12.5543 4.29455 14.6267C3.71122 15.6961 4.48526 17 5.70344 17H18.4336C19.5901 17 20.3248 15.7622 19.7711 14.747C18.5985 12.5973 17.6871 10.2754 17.554 7.83031Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M2.08219 8.94353C1.90517 6.12691 2.2281 4.63204 3.89392 2.18205\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.8117 8.94352C21.9888 6.12689 21.6658 4.63202 20 2.18204\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "case-sensitive",
@@ -1593,7 +1611,7 @@
         "dots",
         "menu"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 17L2 12L7 7\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17 17L22 12L17 7\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8.00012 12H8.00002\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12.0001 12H12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16.0001 12H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 17L2 12L7 7\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17 17L22 12L17 7\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 12H7.9999\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 12H11.9999\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 12H15.9999\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "chevrons-right",
@@ -1683,7 +1701,7 @@
         "ok",
         "completed"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.3333 9.77777L11.0196 14.2222L8.66663 11.798\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.3334 9.77777L11.0197 14.2222L8.66675 11.798\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "circle-dot",
@@ -2388,7 +2406,7 @@
         "country",
         "bendera"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.9206 14.8312L12.7573 12.3098C12.2719 12.1112 11.7281 12.1112 11.2427 12.3098L5.07938 14.8312C3.489 15.4818 3.40531 17.7027 4.94222 18.4711L11.1056 21.5528C11.6686 21.8343 12.3314 21.8343 12.8944 21.5528L19.0578 18.4711C20.5947 17.7027 20.511 15.4818 18.9206 14.8312Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.0662 5.94245L13.0146 3.18252C12.3588 2.92583 11.6501 3.40945 11.6501 4.11374V9.86524C11.6501 10.5816 12.3812 11.0656 13.0407 10.7858L20.0923 7.79424C20.9174 7.44421 20.9008 6.26911 20.0662 5.94245Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11.6501 2L11.6501 16.9697\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.9206 14.8312L12.7573 12.3098C12.2719 12.1112 11.7281 12.1112 11.2427 12.3098L5.07938 14.8312C3.489 15.4818 3.40531 17.7027 4.94222 18.4711L11.1056 21.5528C11.6686 21.8343 12.3314 21.8343 12.8944 21.5528L19.0578 18.4711C20.5947 17.7027 20.511 15.4818 18.9206 14.8312Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.066 5.94243L13.0144 3.18251C12.3586 2.92582 11.65 3.40944 11.65 4.11372V9.86523C11.65 10.5816 12.3811 11.0656 13.0405 10.7858L20.0921 7.79423C20.9172 7.44419 20.9006 6.26909 20.066 5.94243Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11.65 2L11.65 16.9697\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "flag-off",
@@ -2415,11 +2433,11 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 2.52464C11.3123 1.80645 13.308 6.15835 18.3938 3.8816C19.1159 3.55833 20 4.04049 20 4.83165V15.7602C20 15.9092 19.923 16.048 19.7947 16.1239M16.5 17.2657C13.2594 17.4067 11.63 14.107 5.31415 15.6324C4.65715 15.791 4 15.3114 4 14.6355V5L4 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "flag-triangel-right",
+      "name": "flag-triangle-right",
       "category": "General UI",
       "tags": [
         "iconix",
-        "flag-triangel-right",
+        "flag-triangle-right",
         "flag",
         "triangel",
         "right",
@@ -2456,6 +2474,21 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.16994 9.07942L18.1095 3.58993C18.7689 3.31016 19.5 3.79417 19.5 4.51051V15.4895C19.5 16.2058 18.7689 16.6898 18.1095 16.4101L5.16994 10.9206C4.35734 10.5758 4.35734 9.42416 5.16994 9.07942Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M19.5 2L19.5 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "flat-brush",
+      "category": "Design & Tools",
+      "tags": [
+        "iconix",
+        "flat-brush",
+        "flat",
+        "brush",
+        "paint",
+        "draw",
+        "kuas",
+        "lukis"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.5144 21.9494L16.6626 16.8862C17.314 16.091 17.2566 14.9314 16.5297 14.2045L9.74495 7.41974C9.01804 6.69283 7.85845 6.63537 7.06325 7.28686L2.00003 11.435L12.5144 21.9494Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16.7766 9.85587L20.6923 5.94015C21.4332 5.19928 21.4332 3.99808 20.6923 3.2572C19.9514 2.51633 18.7502 2.51633 18.0094 3.2572L14.0937 7.17291L16.7766 9.85587Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M8.58727 4.84783L8.76376 4.67133C9.54481 3.89028 10.8111 3.89028 11.5922 4.67133L19.2781 12.3573C20.0592 13.1383 20.0592 14.4047 19.2781 15.1857L19.1016 15.3622C18.7111 15.7527 18.0779 15.7527 17.6874 15.3622L8.58727 6.26204C8.19674 5.87152 8.19674 5.23835 8.58727 4.84783Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "group",
       "category": "General UI",
       "tags": [
@@ -2470,7 +2503,7 @@
         "kelompok",
         "tim"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 20.125C6 20.9534 6.67157 21.625 7.5 21.625H16.5C17.3284 21.625 18 20.9534 18 20.125C18 17.6397 15.9853 15.625 13.5 15.625H10.5C8.01472 15.625 6 17.6397 6 20.125Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9 10.375C9 12.0319 10.3431 13.375 12 13.375C13.6569 13.375 15 12.0319 15 10.375C15 8.71815 13.6569 7.375 12 7.375C10.3431 7.375 9 8.71815 9 10.375Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M19.5424 9.20877C21.0237 9.73231 22.0849 11.145 22.0849 12.8055C22.0849 13.0772 21.9996 13.3291 21.8544 13.5357C21.7062 13.7465 21.4957 13.9102 21.2495 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M16 4.5C16 5.88071 17.1193 7 18.5 7C19.8807 7 21 5.88071 21 4.5C21 3.11929 19.8807 2 18.5 2C17.1193 2 16 3.11929 16 4.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4.54247 9.20877C3.06124 9.73231 2 11.145 2 12.8055C2 13.0772 2.08528 13.3291 2.23053 13.5357C2.37869 13.7465 2.58926 13.9102 2.83538 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M8.08493 4.5C8.08493 5.88071 6.96564 7 5.58493 7C4.20422 7 3.08493 5.88071 3.08493 4.5C3.08493 3.11929 4.20422 2 5.58493 2C6.96564 2 8.08493 3.11929 8.08493 4.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 20.125C6 20.9534 6.67157 21.625 7.5 21.625H16.5C17.3284 21.625 18 20.9534 18 20.125C18 17.6397 15.9853 15.625 13.5 15.625H10.5C8.01472 15.625 6 17.6397 6 20.125ZM9 10.375C9 12.0319 10.3431 13.375 12 13.375C13.6569 13.375 15 12.0319 15 10.375C15 8.71815 13.6569 7.375 12 7.375C10.3431 7.375 9 8.71815 9 10.375Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M19.5424 9.20877C21.0236 9.73231 22.0849 11.145 22.0849 12.8055C22.0849 13.0772 21.9996 13.3291 21.8544 13.5357C21.7062 13.7465 21.4956 13.9102 21.2495 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M16 4.5C16 5.88071 17.1193 7 18.5 7C19.8807 7 21 5.88071 21 4.5C21 3.11929 19.8807 2 18.5 2C17.1193 2 16 3.11929 16 4.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4.54248 9.20877C3.06125 9.73231 2.00002 11.145 2.00002 12.8055C2.00002 13.0772 2.08529 13.3291 2.23054 13.5357C2.37871 13.7465 2.58927 13.9102 2.83539 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M8.08496 4.5C8.08496 5.88071 6.96567 7 5.58496 7C4.20425 7 3.08496 5.88071 3.08496 4.5C3.08496 3.11929 4.20425 2 5.58496 2C6.96567 2 8.08496 3.11929 8.08496 4.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "heart",
@@ -2490,6 +2523,73 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.9146 3.78742C20.4712 4.20255 20.854 4.64124 21.1244 5.1323C22.7598 8.10178 21.487 11.9559 19.5044 14.7057C17.8716 16.9704 15.9024 18.6332 13.1364 20.6719C12.4581 21.1719 11.5324 21.1857 10.8468 20.6957C8.50083 19.0191 6.79996 17.5216 5.3168 15.6406C2.74585 12.3801 0.848361 7.8663 3.49814 4.66952C4.80816 3.08907 7.76392 2.52503 9.50839 3.60707C10.0736 3.95762 10.5893 4.40321 11.1196 5.00354C11.5778 5.52228 12.4092 5.51328 12.86 4.98806C13.4845 4.26029 14.1008 3.75842 14.8233 3.37925C16.4283 2.53707 18.4617 2.70381 19.9146 3.78742Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "heart-crack",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "heart-crack",
+        "heart",
+        "crack",
+        "love",
+        "like",
+        "favorite",
+        "health",
+        "romance",
+        "suka",
+        "favorit",
+        "hati",
+        "broken",
+        "broken-heart",
+        "damage",
+        "split",
+        "patah",
+        "kecewa"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.9146 3.78742C20.4712 4.20255 20.854 4.64124 21.1244 5.1323C22.7598 8.10178 21.487 11.9559 19.5044 14.7057C17.8716 16.9704 15.9024 18.6332 13.1364 20.6719C12.4581 21.1719 11.5324 21.1857 10.8468 20.6957C8.50083 19.0191 6.79996 17.5216 5.3168 15.6406C2.74585 12.3801 0.848361 7.8663 3.49814 4.66952C4.80816 3.08907 7.76392 2.52503 9.50839 3.60707C10.0736 3.95762 10.5893 4.40321 11.1196 5.00354C11.5778 5.52228 12.4092 5.51328 12.86 4.98806C13.4845 4.26029 14.1008 3.75842 14.8233 3.37925C16.4283 2.53707 18.4617 2.70381 19.9146 3.78742Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 6L9 10L15.5 12.5L11.5 14.5L13.5 17L12 20.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "heart-pulse",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "heart-pulse",
+        "heart",
+        "pulse",
+        "love",
+        "like",
+        "favorite",
+        "health",
+        "romance",
+        "suka",
+        "favorit",
+        "hati",
+        "heartbeat",
+        "activity",
+        "ecg",
+        "cardio",
+        "vital",
+        "detak-jantung"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.9146 3.78742C20.4712 4.20255 20.854 4.64124 21.1244 5.1323C22.7598 8.10178 21.487 11.9559 19.5044 14.7057C17.8716 16.9704 15.9024 18.6332 13.1364 20.6719C12.4581 21.1719 11.5324 21.1857 10.8468 20.6957C8.50083 19.0191 6.79996 17.5216 5.3168 15.6406C2.74585 12.3801 0.848361 7.8663 3.49814 4.66952C4.80816 3.08907 7.76392 2.52503 9.50839 3.60707C10.0736 3.95762 10.5893 4.40321 11.1196 5.00354C11.5778 5.52228 12.4092 5.51328 12.86 4.98806C13.4845 4.26029 14.1008 3.75842 14.8233 3.37925C16.4283 2.53707 18.4617 2.70381 19.9146 3.78742Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M5 13H7L10.5 8.5L13.5 16L14.6547 13H19.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "highlighter",
+      "category": "Design & Tools",
+      "tags": [
+        "iconix",
+        "highlighter",
+        "marker",
+        "pen",
+        "draw",
+        "highlight",
+        "text",
+        "stabilo",
+        "mark",
+        "color"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.8621 13.1208L21.1054 7.87749C21.8865 7.09645 21.8865 5.83012 21.1054 5.04907L18.6078 2.55148C17.8268 1.77043 16.5604 1.77043 15.7794 2.55148L10.5361 7.79478L15.8621 13.1208Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.5361 7.79477L15.8621 13.1208L14.3253 14.6576C14.2404 14.7425 14.1481 14.8195 14.0495 14.8878L9.87038 17.781L5.87587 13.7865L8.7691 9.60742C8.8374 9.50877 8.91443 9.41647 8.99927 9.33163L10.5361 7.79477Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M5.87573 13.7866L2.2141 17.4482L7.36813 20.2832L9.87024 17.7811L5.87573 13.7866Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 22H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "house",
       "category": "General UI",
       "tags": [
@@ -2506,25 +2606,6 @@
         "beranda"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "house-1",
-      "category": "General UI",
-      "tags": [
-        "iconix",
-        "house-1",
-        "house",
-        "home",
-        "building",
-        "dashboard",
-        "homepage",
-        "estate",
-        "property",
-        "residence",
-        "rumah",
-        "beranda"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.5084 9.88513C14.9164 9.10249 13.5746 8.97817 12.8042 9.586C12.7018 9.66683 12.6031 9.75813 12.5053 9.86249C12.2341 10.1521 11.758 10.1576 11.484 9.87061C11.3603 9.74112 11.2363 9.63181 11.1069 9.5376C10.3751 9.00474 9.08383 9.24243 8.55245 9.9754C7.57379 11.3253 8.2851 13.112 9.2705 14.457C9.76693 15.1346 10.3216 15.6917 11.0374 16.271C11.5951 16.7223 12.395 16.709 12.9525 16.2574C13.6904 15.6597 14.2739 15.1118 14.7746 14.4538C15.7846 13.1264 16.5145 11.2154 15.5084 9.88513Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "house-cog",
@@ -2591,6 +2672,26 @@
         "beranda"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 17H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "house-heart",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-heart",
+        "house",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda",
+        "heart"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.5084 9.88513C14.9164 9.10249 13.5746 8.97817 12.8042 9.586C12.7018 9.66683 12.6031 9.75813 12.5053 9.86249C12.2341 10.1521 11.758 10.1576 11.484 9.87061C11.3603 9.74112 11.2363 9.63181 11.1069 9.5376C10.3751 9.00474 9.08383 9.24243 8.55245 9.9754C7.57379 11.3253 8.2851 13.112 9.2705 14.457C9.76693 15.1346 10.3216 15.6917 11.0374 16.271C11.5951 16.7223 12.395 16.709 12.9525 16.2574C13.6904 15.6597 14.2739 15.1118 14.7746 14.4538C15.7846 13.1264 16.5145 11.2154 15.5084 9.88513Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "house-minus",
@@ -2813,7 +2914,7 @@
         "sandi",
         "akses"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9.42162 12L3.04515 18.3765L3.3987 21.5585L6.93424 21.5585L6.93424 19.4372L9.05556 19.4372L9.05556 17.3159L11.5 14.8714\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.8839 4.88084C8.5408 7.22399 8.5408 11.023 10.8839 13.3661C13.2271 15.7093 17.0261 15.7093 19.3692 13.3661C21.7124 11.023 21.7124 7.22399 19.3692 4.88084C17.0261 2.5377 13.2271 2.5377 10.8839 4.88084Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14 8L16 10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9.42137 12L3.04491 18.3765L3.39846 21.5585L6.93399 21.5585L6.93399 19.4372L9.05531 19.4372L9.05531 17.3159L11.4998 14.8714\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.8838 4.88084C8.54068 7.22399 8.54068 11.023 10.8838 13.3661C13.227 15.7093 17.026 15.7093 19.3691 13.3661C21.7123 11.023 21.7123 7.22399 19.3691 4.88084C17.026 2.5377 13.227 2.5377 10.8838 4.88084Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M13.9998 8L15.9998 10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "key-down",
@@ -2889,7 +2990,7 @@
         "sandi",
         "akses"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.7573 11.7279L3.62561 19.8596M8.57536 14.9099L10.6967 17.0312M7.5147 21.6274L9.63602 19.506L7.5147 17.3847C7.12417 16.9942 6.49101 16.9942 6.10048 17.3847L5.39338 18.0918C5.00285 18.4824 5.00285 19.1155 5.39338 19.506L7.5147 21.6274Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M11.7574 3.24263C9.41421 5.58577 9.41421 9.38476 11.7574 11.7279C14.1005 14.0711 17.8995 14.0711 20.2426 11.7279C22.5858 9.38476 22.5858 5.58577 20.2426 3.24263C17.8995 0.899481 14.1005 0.899481 11.7574 3.24263Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.7575 11.7279L3.62573 19.8596M8.57548 14.9099L10.6968 17.0312M7.51482 21.6274L9.63614 19.506L7.51482 17.3847C7.1243 16.9942 6.49113 16.9942 6.10061 17.3847L5.3935 18.0918C5.00298 18.4824 5.00298 19.1155 5.3935 19.506L7.51482 21.6274Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M11.7574 3.24263C9.41421 5.58577 9.41421 9.38476 11.7574 11.7279C14.1005 14.0711 17.8995 14.0711 20.2426 11.7279C22.5858 9.38476 22.5858 5.58577 20.2426 3.24263C17.8995 0.899481 14.1005 0.899481 11.7574 3.24263Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "key-square",
@@ -2927,7 +3028,7 @@
         "sandi",
         "akses"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.4696 10.9519L3.04498 18.3765L3.39854 21.5585H6.93407V19.4372H9.05539V17.3158L12.9445 13.4268L10.4696 10.9519Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.7625 6.00215L12.5909 3.17372C13.7625 2.00215 15.662 2.00215 16.8336 3.17372L21.0762 7.41636C22.2478 8.58793 22.2478 10.4874 21.0762 11.659L18.2478 14.4874C17.0762 15.659 15.1767 15.659 14.0051 14.4874L9.7625 10.2448C8.59093 9.07322 8.59093 7.17372 9.7625 6.00215Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14.4194 7.83058L16.4194 9.83058\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.4697 10.9519L3.04511 18.3765L3.39866 21.5585H6.93419V19.4372H9.05551V17.3158L12.9446 13.4268L10.4697 10.9519Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.76275 6.00215L12.5912 3.17372C13.7627 2.00215 15.6622 2.00215 16.8338 3.17372L21.0765 7.41636C22.248 8.58793 22.248 10.4874 21.0765 11.659L18.248 14.4874C17.0765 15.659 15.177 15.659 14.0054 14.4874L9.76275 10.2448C8.59117 9.07322 8.59117 7.17372 9.76275 6.00215Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14.4194 7.83058L16.4194 9.83058\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "laptop",
@@ -3039,7 +3140,9 @@
         "safety",
         "auth",
         "terkunci",
-        "aman"
+        "aman",
+        "access",
+        "lubang-kunci"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"1\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.5 11V8.625C17.5 5.44936 14.9256 2.875 11.75 2.875C8.57436 2.875 6 5.44936 6 8.625V11\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10 17C10 18.1046 10.8954 19 12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15C10.8954 15 10 15.8954 10 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
@@ -3704,7 +3807,7 @@
         "hardware",
         "workstation"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.0435 3 20.9625 3.53275 21.5 4.3411\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6 21H10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 9V20C22 21.1046 21.1046 22 20 22H15C13.8954 22 13 21.1046 13 20V9C13 7.89543 13.8954 7 15 7H20C21.1046 7 22 7.89543 22 9Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16.75 19.5H18.25\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.0435 3 20.9625 3.53275 21.5 4.3411\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6 21H10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 9V20C22 21.1046 21.1045 22 20 22H15C13.8954 22 13 21.1046 13 20V9C13 7.89543 13.8954 7 15 7H20C21.1045 7 22 7.89543 22 9Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16.75 19.5H18.25\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "monitor-speaker",
@@ -3806,6 +3909,20 @@
         "monitor2"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "paint-brush",
+      "category": "Design & Tools",
+      "tags": [
+        "iconix",
+        "paint-brush",
+        "paint",
+        "brush",
+        "draw",
+        "kuas",
+        "lukis"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16.0213 12.237L21.6852 5.58243C22.3301 4.82476 22.2849 3.69882 21.5813 2.99528C20.8778 2.29173 19.7518 2.24653 18.9942 2.89142L12.3396 8.55533C11.895 8.93377 11.8678 9.61107 12.2807 10.0239L14.5527 12.2959C14.9655 12.7088 15.6428 12.6816 16.0213 12.237Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14.3124 13.7906L12.1005 15.3646C11.305 15.9307 10.2171 15.8397 9.52672 15.1493L9.42712 15.0497C8.73675 14.3593 8.64573 13.2714 9.2118 12.4759L10.7858 10.264C11.1445 9.75995 11.8702 9.69924 12.3077 10.1367L14.4397 12.2688C14.8772 12.7062 14.8165 13.4319 14.3124 13.7906Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M8.16413 13.8721L10.4622 16.1702C11.0861 19 6.50745 22.0644 1.91134 20.0947C2.67737 19.7664 4.01954 18.9668 4.55283 16.4834C5.08612 14 6.52263 14.4193 8.16413 13.8721Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "pc",
@@ -3918,7 +4035,7 @@
         "precision",
         "blueprint"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.5 12.125L2.60171 8.22672C1.82066 7.44567 1.82066 6.17934 2.60171 5.39829L5.58579 2.41421C6.36683 1.63317 7.63316 1.63316 8.41421 2.41421L12.5 6.5M18 12L21.0858 15.0858C21.8668 15.8668 21.8668 17.1332 21.0858 17.9142L18.1017 20.8983C17.3207 21.6794 16.0543 21.6794 15.2733 20.8983L12 17.625\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.2292 4.22917L7.32293 7.13542\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M19.2709 13.2708L16.3646 16.1771\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM6.57966 20.208L6.21526 19.2767L6.57966 20.208ZM6.51097 13.3316L7.21281 14.044L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L5.80912 12.6193L6.51097 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM21.3909 6.97742L20.6891 6.26509L9.92718 16.8687L10.629 17.581L11.3309 18.2933L22.0928 7.68975L21.3909 6.97742ZM6.57966 20.208L6.21526 19.2767L1.6356 21.0688L2 22L2.3644 22.9312L6.94406 21.1392L6.57966 20.208ZM2 22L2.93124 22.3644L4.68946 17.8712L3.75821 17.5068L2.82697 17.1424L1.06876 21.6356L2 22ZM10.629 17.581L9.92718 16.8687C8.86575 17.9145 7.6029 18.7337 6.21526 19.2767L6.57966 20.208L6.94406 21.1392C8.58399 20.4975 10.0765 19.5293 11.3309 18.2933L10.629 17.581ZM6.51097 13.3316L5.80912 12.6193C4.50845 13.9008 3.49234 15.442 2.82697 17.1424L3.75821 17.5068L4.68946 17.8712C5.25246 16.4324 6.11225 15.1283 7.21281 14.044L6.51097 13.3316Z\" fill=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.5 12.125L2.60171 8.22672C1.82066 7.44567 1.82066 6.17934 2.60171 5.39829L5.58579 2.41421C6.36683 1.63317 7.63316 1.63316 8.41421 2.41421L12.5 6.5M18 12L21.0858 15.0858C21.8668 15.8668 21.8668 17.1332 21.0858 17.9142L18.1017 20.8983C17.3207 21.6794 16.0543 21.6794 15.2733 20.8983L12 17.625\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.2291 4.22917L7.32287 7.13542\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M19.2709 13.2708L16.3646 16.1771\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.2068 2.79323L17.9087 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.391 6.97742L22.0929 7.68977L22.0981 7.68453L21.391 6.97742ZM2.00006 22L1.06882 21.6356C0.924042 22.0056 1.01202 22.4262 1.29295 22.7071C1.57389 22.988 1.99448 23.076 2.36446 22.9312L2.00006 22ZM6.57972 20.208L6.21532 19.2767L6.57972 20.208ZM6.51103 13.3316L7.21287 14.044L17.9087 3.50556L17.2068 2.79323L16.505 2.0809L5.80918 12.6193L6.51103 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5138 2.90049 19.4863 2.90049 20.0862 3.50034L20.7933 2.79323L21.5004 2.08613C20.1195 0.705232 17.8806 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7933 2.79323L20.0862 3.50034L20.6839 4.09808L21.391 3.39097L22.0981 2.68387L21.5004 2.08613L20.7933 2.79323ZM21.391 3.39097L20.6839 4.09808C21.2837 4.69793 21.2837 5.67047 20.6839 6.27031L21.391 6.97742L22.0981 7.68453C23.479 6.30363 23.479 4.06476 22.0981 2.68387L21.391 3.39097ZM21.391 6.97742L20.6892 6.26509L9.92724 16.8687L10.6291 17.581L11.3309 18.2933L22.0929 7.68975L21.391 6.97742ZM6.57972 20.208L6.21532 19.2767L1.63566 21.0688L2.00006 22L2.36446 22.9312L6.94412 21.1392L6.57972 20.208ZM2.00006 22L2.9313 22.3644L4.68952 17.8712L3.75827 17.5068L2.82703 17.1424L1.06882 21.6356L2.00006 22ZM10.6291 17.581L9.92724 16.8687C8.86581 17.9145 7.60296 18.7337 6.21532 19.2767L6.57972 20.208L6.94412 21.1392C8.58405 20.4975 10.0765 19.5293 11.3309 18.2933L10.6291 17.581ZM6.51103 13.3316L5.80918 12.6193C4.50851 13.9008 3.4924 15.442 2.82703 17.1424L3.75827 17.5068L4.68952 17.8712C5.25252 16.4324 6.11231 15.1283 7.21287 14.044L6.51103 13.3316Z\" fill=\"black\"/>\n</svg>"
     },
     {
       "name": "pen-sparkles",
@@ -4059,7 +4176,7 @@
         "precision",
         "blueprint"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.5 12.125L2.60171 8.22672C1.82066 7.44567 1.82066 6.17934 2.60171 5.39829L5.58579 2.41421C6.36683 1.63317 7.63316 1.63316 8.41421 2.41421L12.5 6.5M18 12L21.0858 15.0858C21.8668 15.8668 21.8668 17.1332 21.0858 17.9142L18.1017 20.8983C17.3207 21.6794 16.0543 21.6794 15.2733 20.8983L11.875 17.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.2292 4.22917L7.32293 7.13542\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M19.2709 13.2708L16.3646 16.1771\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM6.57966 20.208L6.21526 19.2767L6.57966 20.208ZM6.51097 13.3316L7.21281 14.044L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L5.80912 12.6193L6.51097 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM21.3909 6.97742L20.6891 6.26509L9.92718 16.8687L10.629 17.581L11.3309 18.2933L22.0928 7.68975L21.3909 6.97742ZM6.57966 20.208L6.21526 19.2767L1.6356 21.0688L2 22L2.3644 22.9312L6.94406 21.1392L6.57966 20.208ZM2 22L2.93124 22.3644L4.68946 17.8712L3.75821 17.5068L2.82697 17.1424L1.06876 21.6356L2 22ZM10.629 17.581L9.92718 16.8687C8.86575 17.9145 7.6029 18.7337 6.21526 19.2767L6.57966 20.208L6.94406 21.1392C8.58399 20.4975 10.0765 19.5293 11.3309 18.2933L10.629 17.581ZM6.51097 13.3316L5.80912 12.6193C4.50845 13.9008 3.49234 15.442 2.82697 17.1424L3.75821 17.5068L4.68946 17.8712C5.25246 16.4324 6.11225 15.1283 7.21281 14.044L6.51097 13.3316Z\" fill=\"black\"/>\n<path d=\"M14.8088 5.00696C16.1008 7.11454 17.0393 8.02778 19.0515 9.2496\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.5 12.125L2.60171 8.22672C1.82066 7.44567 1.82066 6.17934 2.60171 5.39829L5.58579 2.41421C6.36683 1.63317 7.63316 1.63316 8.41421 2.41421L12.5 6.5M18 12L21.0858 15.0858C21.8668 15.8668 21.8668 17.1332 21.0858 17.9142L18.1017 20.8983C17.3207 21.6794 16.0543 21.6794 15.2733 20.8983L11.875 17.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10.2291 4.22917L7.32287 7.13542\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M19.2709 13.2708L16.3646 16.1771\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.2068 2.79323L17.9087 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.391 6.97742L22.0929 7.68977L22.0981 7.68453L21.391 6.97742ZM2.00006 22L1.06882 21.6356C0.924042 22.0056 1.01202 22.4262 1.29295 22.7071C1.57389 22.988 1.99448 23.076 2.36446 22.9312L2.00006 22ZM6.57972 20.208L6.21532 19.2767L6.57972 20.208ZM6.51103 13.3316L7.21287 14.044L17.9087 3.50556L17.2068 2.79323L16.505 2.0809L5.80918 12.6193L6.51103 13.3316ZM17.2068 2.79323L17.9139 3.50034C18.5138 2.90049 19.4863 2.90049 20.0862 3.50034L20.7933 2.79323L21.5004 2.08613C20.1195 0.705232 17.8806 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7933 2.79323L20.0862 3.50034L20.6839 4.09808L21.391 3.39097L22.0981 2.68387L21.5004 2.08613L20.7933 2.79323ZM21.391 3.39097L20.6839 4.09808C21.2837 4.69793 21.2837 5.67047 20.6839 6.27031L21.391 6.97742L22.0981 7.68453C23.479 6.30363 23.479 4.06476 22.0981 2.68387L21.391 3.39097ZM21.391 6.97742L20.6892 6.26509L9.92724 16.8687L10.6291 17.581L11.3309 18.2933L22.0929 7.68975L21.391 6.97742ZM6.57972 20.208L6.21532 19.2767L1.63566 21.0688L2.00006 22L2.36446 22.9312L6.94412 21.1392L6.57972 20.208ZM2.00006 22L2.9313 22.3644L4.68952 17.8712L3.75827 17.5068L2.82703 17.1424L1.06882 21.6356L2.00006 22ZM10.6291 17.581L9.92724 16.8687C8.86581 17.9145 7.60296 18.7337 6.21532 19.2767L6.57972 20.208L6.94412 21.1392C8.58405 20.4975 10.0765 19.5293 11.3309 18.2933L10.6291 17.581ZM6.51103 13.3316L5.80918 12.6193C4.50851 13.9008 3.4924 15.442 2.82703 17.1424L3.75827 17.5068L4.68952 17.8712C5.25252 16.4324 6.11231 15.1283 7.21287 14.044L6.51103 13.3316Z\" fill=\"black\"/>\n<path d=\"M14.809 5.00696C16.1009 7.11454 17.0394 8.02778 19.0516 9.2496\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "pencil-sparkles",
@@ -4354,7 +4471,7 @@
         "slash",
         "mute"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4V18C3 19.6569 4.34315 21 6 21H20M8 3H14.5228C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16M6.5 20V16C6.5 14.8954 7.39543 14 8.5 14H13.5M17.5 20V18M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4V18C3 19.6569 4.34315 21 6 21H20M8 3H14.5228C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16M6.5 20V16C6.5 14.8954 7.39543 14 8.5 14H13.5M17.5 20V18M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2.00006 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "save-pen",
@@ -4551,7 +4668,7 @@
         "slash",
         "mute"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.34267 18C6.88839 19.2508 8.8567 20 11 20C15.9706 20 20 15.9706 20 11C20 8.8567 19.2508 6.88839 18 5.34267M15.7325 3.34324C14.3576 2.49162 12.7362 2 11 2C6.02944 2 2 6.02944 2 11C2 12.7362 2.49162 14.3576 3.34324 15.7325M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2.29285 21L20.6776 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.34267 18C6.88839 19.2508 8.8567 20 11 20C15.9706 20 20 15.9706 20 11C20 8.8567 19.2508 6.88839 18 5.34267M15.7325 3.34324C14.3576 2.49162 12.7362 2 11 2C6.02944 2 2 6.02944 2 11C2 12.7362 2.49162 14.3576 3.34324 15.7325M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2.29297 21L20.6777 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "search-plus",
@@ -4608,12 +4725,11 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 13.2426L13.2426 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "search-slash-1",
+      "name": "search",
       "category": "General UI",
       "tags": [
         "iconix",
-        "search-slash-1",
-        "search",
+        "search", 
         "slash",
         "find",
         "query",
@@ -4675,7 +4791,7 @@
         "tameng",
         "keamanan"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.99999 4.21277L2.95652 9.09643C2.91994 13.2059 4.16586 17.4355 7.6603 19.5984C8.9786 20.4143 10.4107 21.1492 12 22C13.8658 21.0297 15.5234 20.2303 16.9901 19.3005C20.1099 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6414 3.49442 16.0403 2.73756C13.5804 1.57476 10.5434 1.74282 8.05249 2.83746C6.55585 3.49515 4.90723 3.8738 2.99999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-ban",
@@ -4778,7 +4894,7 @@
         "edge",
         "sudut"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14.291 20.8201C13.5649 21.1978 12.8017 21.5831 12 22C10.4107 21.1492 8.9786 20.4143 7.6603 19.5984C4.16586 17.4355 2.91994 13.2059 2.95652 9.09643L2.99999 4.21277C4.90723 3.8738 6.55585 3.49515 8.05249 2.83746C10.5434 1.74282 13.5804 1.57476 16.0403 2.73756C17.6414 3.49442 19.2411 3.89571 21 4.21277L21.0738 12.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14.2911 20.8201C13.5649 21.1978 12.8017 21.5831 12 22C10.4107 21.1492 8.97863 20.4143 7.66033 19.5984C4.16589 17.4355 2.91997 13.2059 2.95655 9.09643L3.00002 4.21277C4.90726 3.8738 6.55588 3.49515 8.05252 2.83746C10.5435 1.74282 13.5805 1.57476 16.0404 2.73756C17.6415 3.49442 19.2411 3.89571 21 4.21277L21.0738 12.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-ellipsis",
@@ -4833,29 +4949,7 @@
         "mark",
         "peringatan"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 16.011V16.1M12 7V12.4505\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "shield-exclamation-point-1",
-      "category": "Security & System",
-      "tags": [
-        "iconix",
-        "shield-exclamation-point-1",
-        "shield",
-        "exclamation",
-        "point",
-        "security",
-        "protect",
-        "protection",
-        "guard",
-        "defense",
-        "safety",
-        "secure",
-        "safe",
-        "tameng",
-        "keamanan"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 12.5V16M12 12.5C10.8954 12.5 10 11.6046 10 10.5C10 9.39543 10.8954 8.5 12 8.5C13.1046 8.5 14 9.39543 14 10.5C14 11.6046 13.1046 12.5 12 12.5Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 16.011V16.1M12 7V12.4505\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-half",
@@ -4907,6 +5001,32 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.0738 10.5L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66032 19.5984C8.51235 20.1257 9.4119 20.6192 10.3707 21.132\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 21V15.9891C22 15.6805 21.8575 15.3892 21.6139 15.1997L18.1139 12.4775C17.7528 12.1966 17.2472 12.1966 16.8861 12.4775L13.3861 15.1997C13.1425 15.3892 13 15.6805 13 15.9891V21C13 21.5523 13.4477 22 14 22H21C21.5523 22 22 21.5523 22 21Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 22V19C16 18.4477 16.4477 18 17 18H18C18.5523 18 19 18.4477 19 19V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "shield-keyhole",
+      "category": "Security & System",
+      "tags": [
+        "iconix",
+        "shield-keyhole",
+        "shield",
+        "keyhole",
+        "security",
+        "protect",
+        "protection",
+        "guard",
+        "defense",
+        "safety",
+        "secure",
+        "safe",
+        "tameng",
+        "keamanan",
+        "lock",
+        "access",
+        "auth",
+        "lubang-kunci",
+        "kunci"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 12.5V16M12 12.5C10.8954 12.5 10 11.6046 10 10.5C10 9.39543 10.8954 8.5 12 8.5C13.1046 8.5 14 9.39543 14 10.5C14 11.6046 13.1046 12.5 12 12.5Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "shield-lock",
       "category": "Security & System",
       "tags": [
@@ -4951,7 +5071,7 @@
         "delete",
         "exclude"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 12H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 12H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-plus",
@@ -5003,7 +5123,7 @@
         "bantuan",
         "tanya"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10 9.57143V9.22686C10 8.88955 10.0766 8.55666 10.2241 8.25329C10.5968 7.48663 11.3744 7 12.2269 7H12.4371C13.8526 7 15 8.14744 15 9.56287V9.69198C15 10.6606 14.428 11.5379 13.5417 11.9286L12.8677 12.2257C12.391 12.4358 12.0833 12.9076 12.0833 13.4286M12.0833 16.8V17\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10 9.57143V9.22686C10 8.88955 10.0766 8.55666 10.2241 8.25329C10.5968 7.48663 11.3744 7 12.2269 7H12.4371C13.8526 7 15 8.14744 15 9.56287V9.69198C15 10.6606 14.428 11.5379 13.5417 11.9286L12.8677 12.2257C12.391 12.4358 12.0833 12.9076 12.0833 13.4286M12.0833 16.8V17\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-slash",
@@ -5051,7 +5171,7 @@
         "tameng",
         "keamanan"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17 18.4375V16.4375C17 14.7806 15.6569 13.4375 14 13.4375H10C8.34315 13.4375 7 14.7806 7 16.4375V18.4375\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.5 8.0625C9.5 9.44321 10.6193 10.5625 12 10.5625C13.3807 10.5625 14.5 9.44321 14.5 8.0625C14.5 6.68179 13.3807 5.5625 12 5.5625C10.6193 5.5625 9.5 6.68179 9.5 8.0625Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17 18.4375V16.4375C17 14.7806 15.6569 13.4375 14 13.4375H10C8.34315 13.4375 7 14.7806 7 16.4375V18.4375M9.5 8.0625C9.5 9.44321 10.6193 10.5625 12 10.5625C13.3807 10.5625 14.5 9.44321 14.5 8.0625C14.5 6.68179 13.3807 5.5625 12 5.5625C10.6193 5.5625 9.5 6.68179 9.5 8.0625Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-x",
@@ -5192,7 +5312,7 @@
         "touchscreen",
         "portable"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19 4C19 2.89543 18.1046 2 17 2H6C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H8.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21 9V20C21 21.1046 20.1046 22 19 22H14C12.8954 22 12 21.1046 12 20V9C12 7.89543 12.8954 7 14 7H19C20.1046 7 21 7.89543 21 9Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.75 19.5H17.25\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19 4C19 2.89543 18.1046 2 17 2H6C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H8.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21 9V20C21 21.1046 20.1045 22 19 22H14C12.8954 22 12 21.1046 12 20V9C12 7.89543 12.8954 7 14 7H19C20.1045 7 21 7.89543 21 9Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.75 19.5H17.25\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "trash",
@@ -5234,7 +5354,7 @@
         "turn-off",
         "mute"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 6L4.76559 18.2495C4.89735 20.3577 6.64555 22 8.7578 22H16.4951C17.5923 22 18.5421 21.3352 18.9496 20.3768C19.1746 19.8473 18.9226 19.2673 18.515 18.8614L5.6 6H4ZM4 6L2 6M10 6H20M20 6L19.4375 15M20 6L22 6M9.375 18L9 12M14.8125 15.3L14.625 18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.5 5V4C15.5 2.89543 14.6046 2 13.5 2H9.50001C8.94773 2 8.50001 2.44772 8.50001 3M21.2929 21.6152L2.29291 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 6L4.76559 18.2495C4.89735 20.3577 6.64555 22 8.7578 22H16.4951C17.5923 22 18.5421 21.3352 18.9496 20.3768C19.1746 19.8473 18.9226 19.2673 18.515 18.8614L5.6 6H4ZM4 6L2 6M10 6H20M20 6L19.4375 15M20 6L22 6M9.375 18L9 12M14.8125 15.3L14.625 18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.5 5V4C15.5 2.89543 14.6045 2 13.5 2H9.49995C8.94767 2 8.49995 2.44772 8.49995 3M21.2928 21.6152L2.29285 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "truck",
@@ -5765,7 +5885,7 @@
         "decrease",
         "countdown"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.7859 18.8569L19 22.0711L22.2141 18.8569M19 22.0711V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M22.2141 18.8569L19 22.0711L15.7859 18.8569M19 22.0711V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-arrow-left",
@@ -5792,7 +5912,7 @@
         "undo",
         "past"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18.6786 21.2141L15.4645 18L18.6786 14.7859M15.4645 18H22.5355\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18.6787 14.7859L15.4646 18L18.6787 21.2141M15.4646 18H22.5356\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-arrow-right",
@@ -5818,7 +5938,7 @@
         "next",
         "future"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18.8569 21.2141L22.0711 18L18.8569 14.7859M22.0711 18H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18.8569 14.7859L22.0711 18L18.8569 21.2141M22.0711 18H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-arrow-up",
@@ -5846,7 +5966,7 @@
         "increase",
         "fast-forward"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15.7859 18.2141L19 15L22.2141 18.2141M19 15V22.0711\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M22.2141 18.2141L19 15L15.7859 18.2141M19 15V22.0711\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-check",
@@ -5900,7 +6020,7 @@
         "options",
         "setup"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18H22M19 20.25C18.3787 20.25 17.8162 19.9982 17.4091 19.591M19 20.25V21M19 15.75C17.7574 15.75 16.75 16.7574 16.75 18M19 15.75L19.0001 15M17.4091 19.591C17.0019 19.1838 16.75 18.6213 16.75 18M17.4091 19.591L17.4091 19.591M17.4091 19.591L16.8787 20.1213M16.75 18H16M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-exclamation-point",
@@ -5960,7 +6080,7 @@
         "kunci",
         "sandi"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20 11.7317H18.6829C18.427 11.7317 18.2195 11.9392 18.2195 12.1951V12.6585C18.2195 12.9145 18.427 13.122 18.6829 13.122H19.5M18.2195 16.439V10.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M15.4389 19.2195C15.4389 17.6839 16.6838 16.439 18.2194 16.439C19.755 16.439 20.9999 17.6839 20.9999 19.2195C20.9999 20.7551 19.755 22 18.2194 22C16.6838 22 15.4389 20.7551 15.4389 19.2195Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20 11.7317H18.6829C18.427 11.7317 18.2195 11.9392 18.2195 12.1951V12.6585C18.2195 12.9145 18.427 13.122 18.6829 13.122H19.5M18.2195 16.439V10.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M15.439 19.2195C15.439 17.6839 16.6839 16.439 18.2195 16.439C19.7551 16.439 21 17.6839 21 19.2195C21 20.7551 19.7551 22 18.2195 22C16.6839 22 15.439 20.7551 15.439 19.2195Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-lock",
@@ -5986,7 +6106,7 @@
         "kunci",
         "gembok"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<rect x=\"14\" y=\"17\" width=\"8\" height=\"5\" rx=\"1\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20 17V15C20 13.8954 19.1046 13 18 13C16.8954 13 16 13.8954 16 15V17\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M15 17H21C21.5523 17 22 17.4477 22 18V21C22 21.5523 21.5523 22 21 22H15C14.4477 22 14 21.5523 14 21V18C14 17.4477 14.4477 17 15 17Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20 17V15C20 13.8954 19.1046 13 18 13C16.8954 13 16 13.8954 16 15V17\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-minus",
@@ -6088,7 +6208,7 @@
         "lookup",
         "cari"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<ellipse cx=\"18.7471\" cy=\"17.7471\" rx=\"2.74713\" ry=\"2.74713\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.7312 20.0364L21.6948 21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 22H5C3.89543 22 3 21.1046 3 20C3 16.6863 5.68629 14 9 14H14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M21.4943 17.7471C21.4943 19.2643 20.2643 20.4942 18.7471 20.4942C17.2299 20.4942 16 19.2643 16 17.7471C16 16.2299 17.2299 15 18.7471 15C20.2643 15 21.4943 16.2299 21.4943 17.7471Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.7312 20.0364L21.6948 21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-shield",
@@ -6143,7 +6263,7 @@
         "reset",
         "ban"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17 22H6C4.89543 22 4 21.1046 4 20C4 16.6863 6.68629 14 10 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M9.17618 4.16698C9.89967 3.44582 10.8978 3 12 3C14.2091 3 16 4.79086 16 7C16 8.10223 15.5542 9.10034 14.833 9.82383\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17 22H6C4.89543 22 4 21.1046 4 20C4 16.6863 6.68629 14 10 14M9.17617 4.16698C9.89966 3.44582 10.8978 3 12 3C14.2091 3 16 4.79086 16 7C16 8.10223 15.5542 9.10034 14.833 9.82383\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6778 21L2.29297 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "user-star",
@@ -6211,7 +6331,7 @@
         "community",
         "pengguna"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 20C2 21.1046 2.89543 22 4 22H16C17.1046 22 18 21.1046 18 20C18 16.6863 15.3137 14 12 14H8C4.68629 14 2 16.6863 2 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M6 7C6 9.20914 7.79086 11 10 11C12.2091 11 14 9.20914 14 7C14 4.79086 12.2091 3 10 3C7.79086 3 6 4.79086 6 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18 13.3414C20.3304 14.1651 22 16.3876 22 19C22 19.4276 21.8658 19.8238 21.6373 20.1489C21.4042 20.4805 21.0729 20.738 20.6857 20.8794\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M14 2C14.3453 2 14.6804 2.04375 15 2.12602C16.7252 2.57006 18 4.13616 18 6C18 7.42815 17.2515 8.68149 16.1255 9.38918\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 20C2 21.1046 2.89543 22 4 22H16C17.1046 22 18 21.1046 18 20C18 16.6863 15.3137 14 12 14H8C4.68629 14 2 16.6863 2 20ZM6 7C6 9.20914 7.79086 11 10 11C12.2091 11 14 9.20914 14 7C14 4.79086 12.2091 3 10 3C7.79086 3 6 4.79086 6 7Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18 13.3414C20.3304 14.1651 22 16.3876 22 19C22 19.4276 21.8658 19.8238 21.6373 20.1489C21.4042 20.4805 21.0729 20.738 20.6857 20.8794\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M14 2C14.3453 2 14.6804 2.04375 15 2.12602C16.7252 2.57006 18 4.13616 18 6C18 7.42815 17.2515 8.68149 16.1255 9.38918\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "users-collaboration",
@@ -6234,7 +6354,27 @@
         "cooperation",
         "kerjasama"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.45776 15C3.43458 18.1101 5.8899 20.5654 8.99996 21.5422M15 2.45781C18.11 3.43462 20.5653 5.88994 21.5422 9.00001\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M2 10.5C2 11.0523 2.44772 11.5 3 11.5H9C9.55228 11.5 10 11.0523 10 10.5C10 8.84315 8.65685 7.5 7 7.5H5C3.34315 7.5 2 8.84315 2 10.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4 4C4 5.10457 4.89543 6 6 6C7.10457 6 8 5.10457 8 4C8 2.89543 7.10457 2 6 2C4.89543 2 4 2.89543 4 4Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14 21C14 21.5523 14.4477 22 15 22H21C21.5523 22 22 21.5523 22 21C22 19.3431 20.6569 18 19 18H17C15.3431 18 14 19.3431 14 21Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 14.5C16 15.6046 16.8954 16.5 18 16.5C19.1046 16.5 20 15.6046 20 14.5C20 13.3954 19.1046 12.5 18 12.5C16.8954 12.5 16 13.3954 16 14.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.45776 15C3.43458 18.1101 5.8899 20.5654 8.99996 21.5422M15 2.45782C18.11 3.43463 20.5653 5.88995 21.5422 9.00002\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M2 10.5C2 11.0523 2.44772 11.5 3 11.5H9C9.55228 11.5 10 11.0523 10 10.5C10 8.84315 8.65685 7.5 7 7.5H5C3.34315 7.5 2 8.84315 2 10.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4 4C4 5.10457 4.89543 6 6 6C7.10457 6 8 5.10457 8 4C8 2.89543 7.10457 2 6 2C4.89543 2 4 2.89543 4 4Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14 21C14 21.5523 14.4477 22 15 22H21C21.5523 22 22 21.5523 22 21C22 19.3431 20.6569 18 19 18H17C15.3431 18 14 19.3431 14 21Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 14.5C16 15.6046 16.8954 16.5 18 16.5C19.1046 16.5 20 15.6046 20 14.5C20 13.3954 19.1046 12.5 18 12.5C16.8954 12.5 16 13.3954 16 14.5Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "van",
+      "category": "Objects & Geometry",
+      "tags": [
+        "iconix",
+        "van",
+        "vehicle",
+        "car",
+        "delivery",
+        "transport",
+        "cargo",
+        "shipping",
+        "automobile",
+        "mobil",
+        "kendaraan",
+        "kurir",
+        "ekspedisi"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 19H14M4 19C2.89543 19 2 18.1046 2 17V9C2 7.34315 3.34315 6 5 6H14M20 19H22V15C21.7913 14.0495 21.5145 13.5054 20.5 12.5M14 6V12.5H20.5M14 6H15.2528C16.9079 6 18.392 7.01932 18.9862 8.56408L20.5 12.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19ZM19 19C19 20.1046 18.1046 21 17 21C15.8954 21 15 20.1046 15 19C15 17.8954 15.8954 17 17 17C18.1046 17 19 17.8954 19 19Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "videocamera",

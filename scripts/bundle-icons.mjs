@@ -77,7 +77,14 @@ for (const svgFile of svgFiles) {
     else if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') category = 'Emergency & Alerts';
     else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'Shapes & Badges';
     else if (iconName.startsWith('save')) category = 'Files & Folders';
-    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design & Tools';
+    else if (
+      iconName.startsWith('pen') ||
+      iconName.startsWith('pencil') ||
+      iconName.includes('brush') ||
+      iconName === 'highlighter'
+    ) {
+      category = 'Design & Tools';
+    }
     else if (
       iconName.startsWith('monitor') ||
       iconName.startsWith('laptop') ||

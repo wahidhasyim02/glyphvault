@@ -122,10 +122,21 @@ const TAG_DICTIONARY = {
   // UI Elements & Badges
   heart: ['heart', 'love', 'like', 'favorite', 'health', 'romance', 'suka', 'favorit', 'hati'],
   flag: ['flag', 'mark', 'bookmark', 'report', 'banner', 'pennant', 'golf', 'triangle', 'country', 'bendera'],
+
+  // Art & Design
+  brush: ['brush', 'paint', 'draw', 'art', 'color', 'tool', 'kuas', 'lukis', 'design'],
+  highlighter: ['highlighter', 'marker', 'pen', 'draw', 'highlight', 'text', 'stabilo', 'mark', 'color'],
+
+  // Marketing & Commerce
+  ad: ['ad', 'advertisement', 'advertising', 'promo', 'sponsor', 'marketing', 'campaign', 'commercial', 'iklan', 'promosi'],
+
+  // Vehicles & Logistics
+  van: ['van', 'vehicle', 'car', 'delivery', 'transport', 'cargo', 'shipping', 'automobile', 'mobil', 'kendaraan', 'kurir', 'ekspedisi'],
 };
 
 // Suffix modifier tags
 const SUFFIX_DICTIONARY = {
+  keyhole: ['keyhole', 'lock', 'security', 'access', 'auth', 'lubang-kunci', 'kunci'],
   check: ['check', 'done', 'success', 'verified', 'approved', 'ok', 'completed'],
   plus: ['plus', 'add', 'create', 'new'],
   minus: ['minus', 'remove', 'delete', 'exclude'],
@@ -185,6 +196,9 @@ const SUFFIX_DICTIONARY = {
   search: ['search', 'find', 'query', 'explore', 'lookup', 'cari'],
   house: ['house', 'home', 'building', 'property', 'rumah'],
   plug: ['plug', 'power', 'connect', 'electric', 'colokan', 'listrik'],
+  crack: ['crack', 'broken', 'broken-heart', 'damage', 'split', 'patah', 'kecewa'],
+  pulse: ['pulse', 'heartbeat', 'activity', 'ecg', 'cardio', 'health', 'vital', 'detak-jantung'],
+  brush: ['brush', 'paint', 'draw', 'kuas', 'lukis'],
 };
 
 let enrichedCount = 0;

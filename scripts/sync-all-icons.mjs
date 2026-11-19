@@ -27,7 +27,14 @@ function resolveCategory(iconName) {
   if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') return 'Emergency & Alerts';
   if (iconName.startsWith('circle') || iconName.startsWith('check')) return 'Shapes & Badges';
   if (iconName.startsWith('save')) return 'Files & Folders';
-  if (iconName.startsWith('pen') || iconName.startsWith('pencil')) return 'Design & Tools';
+  if (
+    iconName.startsWith('pen') ||
+    iconName.startsWith('pencil') ||
+    iconName.includes('brush') ||
+    iconName === 'highlighter'
+  ) {
+    return 'Design & Tools';
+  }
   if (
     iconName.startsWith('monitor') ||
     iconName.startsWith('laptop') ||
