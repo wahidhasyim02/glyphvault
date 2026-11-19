@@ -151,9 +151,25 @@ for (const icon of icons) {
   };
 }
 
+let existingCollection = null;
+if (fs.existsSync(iconixJsonPath)) {
+  try {
+    existingCollection = JSON.parse(fs.readFileSync(iconixJsonPath, 'utf-8'));
+  } catch {}
+}
+
+const iconsUnchanged =
+  existingCollection &&
+  existingCollection.info?.total === icons.length &&
+  JSON.stringify(existingCollection.icons) === JSON.stringify(iconifyIcons);
+
+const lastModified = iconsUnchanged && existingCollection?.lastModified
+  ? existingCollection.lastModified
+  : Math.floor(Date.now() / 1000);
+
 const iconifyCollection = {
   prefix: 'iconix',
-  lastModified: Math.floor(Date.now() / 1000),
+  lastModified,
   width: 24,
   height: 24,
   icons: iconifyIcons,
