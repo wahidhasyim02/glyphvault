@@ -195,7 +195,7 @@
       </div>
 
       <!-- Right Controls: View Mode + Grid Zoom + Click-to-Copy + Theme Toggle + Reset -->
-      <div class="flex items-center gap-2.5 ml-auto">
+      <div class="flex items-center justify-between sm:justify-end gap-1.5 sm:gap-2.5 sm:ml-auto w-full sm:w-auto">
         <!-- View Mode & Label Toggle Pill: Flat Grid, Grouped by Category, Divider, Tag Toggle -->
         <div
           class="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-[#101319] border border-slate-200 dark:border-[#1D222B]"
@@ -275,9 +275,9 @@
           </div>
         </div>
 
-        <div class="h-4 w-px bg-slate-200 dark:border-[#1D222B] dark:bg-[#1D222B]" />
+        <div class="hidden sm:block h-4 w-px bg-slate-200 dark:border-[#1D222B] dark:bg-[#1D222B]" />
 
-        <label class="flex items-center gap-2 whitespace-nowrap" title="Zoom icon grid">
+        <label class="flex items-center gap-1.5 sm:gap-2 whitespace-nowrap" title="Zoom icon grid">
           <ZoomIn class="w-3.5 h-3.5 text-slate-500 dark:text-[#94A3B8]" />
           <span class="text-slate-600 dark:text-[#94A3B8] hidden sm:inline">Zoom</span>
           <input
@@ -287,7 +287,7 @@
             step="1"
             :value="gridZoom"
             @input="$emit('grid-zoom-change', Number(($event.target as HTMLInputElement).value))"
-            class="studio-slider w-16"
+            class="studio-slider w-12 sm:w-16"
           />
           <span class="font-mono tabular-nums text-slate-800 dark:text-[#E2E8F0] w-5 text-right">
             {{ gridZoom }}x
@@ -298,12 +298,12 @@
           type="button"
           @click="$emit('toggle-click-to-copy')"
           title="When active, clicking an icon copies its SVG code immediately and opens the preview panel"
-          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border text-xs font-medium whitespace-nowrap shrink-0 transition-colors cursor-pointer"
+          class="inline-flex items-center gap-1.5 px-2 py-1.5 sm:px-2.5 rounded-md border text-xs font-medium whitespace-nowrap shrink-0 transition-colors cursor-pointer"
           :class="clickToCopy
             ? 'bg-teal-50 dark:bg-[#2DD4BF]/10 border-teal-500/40 dark:border-[#2DD4BF]/40 text-teal-800 dark:text-[#5EEAD4]'
             : 'bg-slate-100 dark:bg-[#101319] border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#E2E8F0]'"
         >
-          <CopyCheck class="w-3.5 h-3.5" />
+          <CopyCheck class="hidden sm:inline-block w-3.5 h-3.5" />
           <span>Click to Copy</span>
         </button>
       </div>
