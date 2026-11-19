@@ -18,7 +18,7 @@ function cleanSvg(raw) {
   return cleaned;
 }
 
-// Category mapping helper
+// Category mapping helper adhering strictly to public/admin/config.yml
 function resolveCategory(iconName) {
   if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) return 'Arrows';
   if (iconName.startsWith('chevron')) return 'Navigation';
@@ -39,12 +39,21 @@ function resolveCategory(iconName) {
     iconName.startsWith('air-') ||
     iconName.startsWith('airplay') ||
     iconName.startsWith('video') ||
-    iconName.startsWith('camera')
+    iconName.startsWith('camera') ||
+    iconName.startsWith('plug')
   ) {
     return 'Devices & Tech';
   }
   if (
+    iconName.startsWith('shield') ||
+    iconName.startsWith('lock') ||
+    iconName.startsWith('key')
+  ) {
+    return 'Security & System';
+  }
+  if (
     iconName.startsWith('mirror') ||
+    iconName.startsWith('plane') ||
     ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
   ) {
     return 'Objects & Geometry';
@@ -58,7 +67,13 @@ function resolveCategory(iconName) {
   if (iconName === 'apple') {
     return 'Weather & Nature';
   }
-  if (iconName.startsWith('search') || iconName.startsWith('user') || iconName.startsWith('app-window')) {
+  if (
+    iconName.startsWith('search') ||
+    iconName.startsWith('user') ||
+    iconName.startsWith('house') ||
+    iconName.startsWith('flag') ||
+    ['group', 'heart', 'app-window', 'app-window-mac'].includes(iconName)
+  ) {
     return 'General UI';
   }
   return 'General UI';

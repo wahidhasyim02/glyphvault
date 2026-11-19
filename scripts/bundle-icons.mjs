@@ -72,16 +72,54 @@ for (const svgFile of svgFiles) {
     let category = 'General UI';
     if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) category = 'Arrows';
     else if (iconName.startsWith('chevron')) category = 'Navigation';
-    else if (iconName.startsWith('monitor') || iconName.startsWith('laptop') || iconName.startsWith('tv') || iconName.startsWith('tablet') || iconName.startsWith('smartphone') || iconName.startsWith('pc') || iconName.startsWith('speaker') || iconName.startsWith('air-') || iconName.startsWith('airplay')) category = 'Devices & Tech';
-    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design & Tools';
     else if (iconName.startsWith('align')) category = 'Alignment';
     else if (iconName.startsWith('alarm') || iconName.startsWith('clock')) category = 'Time & Alarms';
-    else if (iconName.startsWith('bell') || iconName.startsWith('ambulance') || iconName.startsWith('siren')) category = 'Emergency & Alerts';
+    else if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') category = 'Emergency & Alerts';
     else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'Shapes & Badges';
     else if (iconName.startsWith('save')) category = 'Files & Folders';
-    else if (iconName.startsWith('video') || iconName.startsWith('camera')) category = 'Devices & Tech';
-    else if (iconName.startsWith('mirror') || iconName.startsWith('amphora') || iconName.startsWith('anchor') || iconName.startsWith('anvil') || iconName.startsWith('angle') || iconName.startsWith('aperture')) category = 'Objects & Geometry';
-    else if (iconName.startsWith('search') || iconName.startsWith('user') || iconName.startsWith('app-window')) category = 'General UI';
+    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design & Tools';
+    else if (
+      iconName.startsWith('monitor') ||
+      iconName.startsWith('laptop') ||
+      iconName.startsWith('tv') ||
+      iconName.startsWith('tablet') ||
+      iconName.startsWith('smartphone') ||
+      iconName.startsWith('pc') ||
+      iconName.startsWith('speaker') ||
+      iconName.startsWith('air-') ||
+      iconName.startsWith('airplay') ||
+      iconName.startsWith('video') ||
+      iconName.startsWith('camera') ||
+      iconName.startsWith('plug')
+    ) {
+      category = 'Devices & Tech';
+    } else if (
+      iconName.startsWith('shield') ||
+      iconName.startsWith('lock') ||
+      iconName.startsWith('key')
+    ) {
+      category = 'Security & System';
+    } else if (
+      iconName.startsWith('mirror') ||
+      iconName.startsWith('plane') ||
+      ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
+    ) {
+      category = 'Objects & Geometry';
+    } else if (['a-large-small', 'ampersand', 'ampersands', 'case-sensitive'].includes(iconName)) {
+      category = 'Typography';
+    } else if (['accessibility', 'activity', 'trash', 'trash-off'].includes(iconName)) {
+      category = 'Interface & Health';
+    } else if (iconName === 'apple') {
+      category = 'Weather & Nature';
+    } else if (
+      iconName.startsWith('search') ||
+      iconName.startsWith('user') ||
+      iconName.startsWith('house') ||
+      iconName.startsWith('flag') ||
+      ['group', 'heart', 'app-window', 'app-window-mac'].includes(iconName)
+    ) {
+      category = 'General UI';
+    }
 
     jsonData = {
       name: iconName,

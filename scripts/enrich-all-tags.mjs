@@ -59,6 +59,69 @@ const TAG_DICTIONARY = {
 
   // Users & Profiles
   user: ['user', 'person', 'account', 'profile', 'member', 'avatar', 'human', 'people', 'individual', 'pengguna', 'akun'],
+  users: ['users', 'people', 'team', 'group', 'crowd', 'members', 'community', 'pengguna'],
+  group: ['group', 'team', 'users', 'people', 'community', 'organization', 'members', 'kelompok', 'tim'],
+
+  // Home & Architecture
+  house: ['house', 'home', 'building', 'dashboard', 'homepage', 'estate', 'property', 'residence', 'rumah', 'beranda'],
+  houses: ['houses', 'village', 'neighborhood', 'homes', 'community', 'residence', 'estate'],
+
+  // Security & Locks
+  shield: ['shield', 'security', 'protect', 'protection', 'guard', 'defense', 'safety', 'secure', 'safe', 'tameng', 'keamanan'],
+  lock: [
+    'lock',
+    'security',
+    'keyhole',
+    'secure',
+    'padlock',
+    'private',
+    'privacy',
+    'protect',
+    'protection',
+    'safety',
+    'auth',
+    'kunci',
+    'gembok',
+    'terkunci',
+    'aman',
+  ],
+  key: [
+    'key',
+    'lock',
+    'access',
+    'secret',
+    'password',
+    'passkey',
+    'passcode',
+    'pin',
+    'credential',
+    'token',
+    'security',
+    'auth',
+    'authentication',
+    'login',
+    'signin',
+    'unlock',
+    'permission',
+    'license',
+    'encryption',
+    'private-key',
+    'api-key',
+    'kata-sandi',
+    'sandi',
+    'kunci',
+    'akses',
+  ],
+
+  // Travel & Transport
+  plane: ['plane', 'airplane', 'aeroplane', 'flight', 'fly', 'airport', 'travel', 'transport', 'pesawat', 'terbang'],
+
+  // Power & Tech
+  plug: ['plug', 'power', 'cable', 'connect', 'connection', 'electric', 'energy', 'socket', 'colokan', 'listrik'],
+
+  // UI Elements & Badges
+  heart: ['heart', 'love', 'like', 'favorite', 'health', 'romance', 'suka', 'favorit', 'hati'],
+  flag: ['flag', 'mark', 'bookmark', 'report', 'banner', 'pennant', 'golf', 'triangle', 'country', 'bendera'],
 };
 
 // Suffix modifier tags
@@ -99,6 +162,29 @@ const SUFFIX_DICTIONARY = {
   'arrow-up': ['arrow-up', 'up', 'increase', 'fast-forward'],
   'arrow-left': ['arrow-left', 'left', 'rewind', 'back', 'undo', 'past'],
   'arrow-right': ['arrow-right', 'right', 'forward', 'next', 'future'],
+  landing: ['landing', 'arrive', 'arrival', 'mendarat'],
+  takeoff: ['takeoff', 'departure', 'depart', 'lepas-landas'],
+  taxi: ['taxi', 'runway', 'ground', 'roll'],
+  tilt: ['tilt', 'angle', 'maneuver', 'rotate'],
+  side: ['side', 'profile', 'horizontal'],
+  ban: ['ban', 'block', 'forbidden', 'prohibit', 'blokir'],
+  half: ['half', 'split', 'partial', 'separuh'],
+  corner: ['corner', 'edge', 'sudut'],
+  'question-mark': ['question', 'help', 'faq', 'ask', 'query', 'bantuan', 'tanya'],
+  ellipsis: ['ellipsis', 'more', 'options', 'dots', 'menu'],
+  open: ['open', 'unlocked', 'access', 'terbuka'],
+  collaboration: ['collaboration', 'collab', 'partnership', 'teamwork', 'cooperation', 'kerjasama'],
+  star: ['star', 'favorite', 'rating', 'vip', 'premium', 'bintang'],
+  golf: ['golf', 'sport', 'hole', 'green'],
+  triangle: ['triangle', 'triangel', 'delta', 'shape'],
+  triangel: ['triangle', 'triangel', 'delta', 'shape'],
+  pen: ['pen', 'write', 'edit', 'draw', 'sketch', 'design', 'tulis', 'edit-user'],
+  lock: ['lock', 'security', 'secure', 'protect', 'kunci', 'gembok'],
+  key: ['key', 'access', 'secret', 'password', 'passkey', 'credential', 'auth', 'token', 'kunci', 'sandi'],
+  shield: ['shield', 'security', 'protect', 'protection', 'guard', 'safety', 'tameng', 'keamanan'],
+  search: ['search', 'find', 'query', 'explore', 'lookup', 'cari'],
+  house: ['house', 'home', 'building', 'property', 'rumah'],
+  plug: ['plug', 'power', 'connect', 'electric', 'colokan', 'listrik'],
 };
 
 let enrichedCount = 0;

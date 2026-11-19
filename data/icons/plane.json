@@ -1,0 +1,18 @@
+{
+  "name": "plane",
+  "category": "Objects & Geometry",
+  "tags": [
+    "iconix",
+    "plane",
+    "airplane",
+    "aeroplane",
+    "flight",
+    "fly",
+    "airport",
+    "travel",
+    "transport",
+    "pesawat",
+    "terbang"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 11V5.7082C9 5.24247 9.10844 4.78313 9.31672 4.36656L9.55279 3.89443C9.84308 3.31384 10.3138 2.84308 10.8944 2.55279L11.5528 2.22361C11.8343 2.08284 12.1657 2.08284 12.4472 2.22361L13.1056 2.55279C13.6862 2.84308 14.1569 3.31384 14.4472 3.89443L14.6833 4.36656C14.8916 4.78313 15 5.24247 15 5.7082V11L21.5 14L22.5 17.5L15 15.5L14.5 19L18 21.5L16.5 23L12 21.5L7.5 23L6 21.5L9.5 19L9 15.5L1.5 17.5L2.5 14L9 11Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}
