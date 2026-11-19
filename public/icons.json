@@ -2351,6 +2351,64 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.685 14.5C21.8906 13.701 22 12.8632 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.6849 22 13.3538 21.9311 14 21.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M12 6V12L15.5 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 19H22M19 16V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "file",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "file",
+        "document",
+        "page",
+        "doc",
+        "paper",
+        "berkas",
+        "dokumen",
+        "sheet",
+        "draft"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 10.8151V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V6C3 3.79086 4.79086 2 7 2H11.4971C12.466 2 13.4019 2.35167 14.1311 2.98969L19.634 7.80477C20.5021 8.56432 21 9.66162 21 10.8151Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13 4V7C13 8.10457 13.8954 9 15 9H19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "file-text",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "file-text",
+        "document",
+        "page",
+        "doc",
+        "paper",
+        "berkas",
+        "dokumen",
+        "sheet",
+        "draft",
+        "file",
+        "text",
+        "lines",
+        "content",
+        "tulisan",
+        "teks",
+        "paragraf",
+        "write"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 10.8151V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V6C3 3.79086 4.79086 2 7 2H11.4971C12.466 2 13.4019 2.35167 14.1311 2.98969L19.634 7.80477C20.5021 8.56432 21 9.66162 21 10.8151Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13 4V7C13 8.10457 13.8954 9 15 9H19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7 14H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7 18H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "files",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "files",
+        "documents",
+        "pages",
+        "docs",
+        "papers",
+        "berkas",
+        "dokumen",
+        "collection"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.5 6.22226C3.22386 6.22226 3 6.44612 3 6.72226V18.2223C3 20.4314 4.79086 22.2223 7 22.2223H15.9999C16.7731 22.2223 17.3999 21.5955 17.3999 20.8223\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21 9.41507V14C21 16.2091 19.2091 18 17 18H10.6C8.39084 18 6.59998 16.2091 6.59998 14V6C6.59998 3.79086 8.39084 2 10.6 2H13.097C14.0659 2 15.0019 2.35167 15.7311 2.98969L19.634 6.40477C20.5021 7.16432 21 8.26162 21 9.41507Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M14.6 4V5.60001C14.6 6.70458 15.4954 7.60001 16.6 7.60001H19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "flag",
       "category": "General UI",
       "tags": [
@@ -2487,6 +2545,63 @@
         "lukis"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.5144 21.9494L16.6626 16.8862C17.314 16.091 17.2566 14.9314 16.5297 14.2045L9.74495 7.41974C9.01804 6.69283 7.85845 6.63537 7.06325 7.28686L2.00003 11.435L12.5144 21.9494Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16.7766 9.85587L20.6923 5.94015C21.4332 5.19928 21.4332 3.99808 20.6923 3.2572C19.9514 2.51633 18.7502 2.51633 18.0094 3.2572L14.0937 7.17291L16.7766 9.85587Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M8.58727 4.84783L8.76376 4.67133C9.54481 3.89028 10.8111 3.89028 11.5922 4.67133L19.2781 12.3573C20.0592 13.1383 20.0592 14.4047 19.2781 15.1857L19.1016 15.3622C18.7111 15.7527 18.0779 15.7527 17.6874 15.3622L8.58727 6.26204C8.19674 5.87152 8.19674 5.23835 8.58727 4.84783Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "folder",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "folder",
+        "directory",
+        "archive",
+        "storage",
+        "files",
+        "map",
+        "direktori",
+        "arsip"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.8 5.4L10.6 3.8C10.2223 3.29639 9.62951 3 9 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21H18C20.2091 21 22 19.2091 22 17V9C22 7.89543 21.1046 7 20 7H15C13.741 7 12.5554 6.40722 11.8 5.4Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M13 11H18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "folder-closed",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "folder-closed",
+        "folder",
+        "closed",
+        "directory",
+        "archive",
+        "storage",
+        "files",
+        "map",
+        "direktori",
+        "arsip",
+        "locked",
+        "tertutup"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.8 5.4L10.6 3.8C10.2223 3.29639 9.62951 3 9 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21H18C20.2091 21 22 19.2091 22 17V9C22 7.89543 21.1046 7 20 7H15C13.741 7 12.5554 6.40722 11.8 5.4Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M3 11L21 11\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "folder-open",
+      "category": "Files & Folders",
+      "tags": [
+        "iconix",
+        "folder-open",
+        "folder",
+        "open",
+        "directory",
+        "archive",
+        "storage",
+        "files",
+        "map",
+        "direktori",
+        "arsip",
+        "unlocked",
+        "access",
+        "terbuka"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.2798 11C20.573 11 20 10.427 20 9.72015V8.33333C20 7.59695 19.403 7 18.6667 7H15C13.741 7 12.5554 6.40722 11.8 5.4L10.6 3.8C10.2223 3.29639 9.62951 3 9 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21H17.0239C18.7903 21 20.3476 19.8413 20.8552 18.1494L22.5057 12.6476C22.7521 11.8264 22.1372 11 21.2798 11Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.11325 16L7.8453 13C8.55983 11.7624 9.88034 11 11.3094 11H20C21.4952 11 22.5676 12.4413 22.138 13.8735L21 17.6667\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "group",
@@ -4716,6 +4831,35 @@
         "new"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8.12134 11.1213H14.1213M11.1213 14.1213V8.12132\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "search-question-mark",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "search-question-mark",
+        "search",
+        "question",
+        "mark",
+        "find",
+        "query",
+        "magnifier",
+        "magnifying-glass",
+        "explore",
+        "lookup",
+        "seek",
+        "inspect",
+        "scan",
+        "filter",
+        "cari",
+        "temukan",
+        "help",
+        "faq",
+        "ask",
+        "bantuan",
+        "tanya"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 9.05714V8.78149C9 8.51164 9.0613 8.24532 9.17927 8.00263C9.47742 7.38931 10.0995 7 10.7815 7H10.9497C12.0821 7 13 7.91795 13 9.0503V9.15358C13 9.92849 12.5424 10.6303 11.8333 10.9429L11.2941 11.1806C10.9128 11.3487 10.6667 11.7261 10.6667 12.1429M10.6667 14.84V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "search-slash",

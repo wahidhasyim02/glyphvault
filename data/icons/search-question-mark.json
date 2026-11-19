@@ -1,0 +1,29 @@
+{
+  "name": "search-question-mark",
+  "category": "General UI",
+  "tags": [
+    "iconix",
+    "search-question-mark",
+    "search",
+    "question",
+    "mark",
+    "find",
+    "query",
+    "magnifier",
+    "magnifying-glass",
+    "explore",
+    "lookup",
+    "seek",
+    "inspect",
+    "scan",
+    "filter",
+    "cari",
+    "temukan",
+    "help",
+    "faq",
+    "ask",
+    "bantuan",
+    "tanya"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 9.05714V8.78149C9 8.51164 9.0613 8.24532 9.17927 8.00263C9.47742 7.38931 10.0995 7 10.7815 7H10.9497C12.0821 7 13 7.91795 13 9.0503V9.15358C13 9.92849 12.5424 10.6303 11.8333 10.9429L11.2941 11.1806C10.9128 11.3487 10.6667 11.7261 10.6667 12.1429M10.6667 14.84V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

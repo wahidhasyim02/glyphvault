@@ -26,7 +26,13 @@ function resolveCategory(iconName) {
   if (iconName.startsWith('alarm') || iconName.startsWith('clock')) return 'Time & Alarms';
   if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') return 'Emergency & Alerts';
   if (iconName.startsWith('circle') || iconName.startsWith('check')) return 'Shapes & Badges';
-  if (iconName.startsWith('save')) return 'Files & Folders';
+  if (
+    iconName.startsWith('save') ||
+    iconName.startsWith('file') ||
+    iconName.startsWith('folder')
+  ) {
+    return 'Files & Folders';
+  }
   if (
     iconName.startsWith('pen') ||
     iconName.startsWith('pencil') ||

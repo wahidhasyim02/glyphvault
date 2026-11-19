@@ -132,10 +132,17 @@ const TAG_DICTIONARY = {
 
   // Vehicles & Logistics
   van: ['van', 'vehicle', 'car', 'delivery', 'transport', 'cargo', 'shipping', 'automobile', 'mobil', 'kendaraan', 'kurir', 'ekspedisi'],
+
+  // Files & Folders
+  file: ['file', 'document', 'page', 'doc', 'paper', 'berkas', 'dokumen', 'sheet', 'draft'],
+  files: ['files', 'documents', 'pages', 'docs', 'papers', 'berkas', 'dokumen', 'collection'],
+  folder: ['folder', 'directory', 'archive', 'storage', 'files', 'map', 'direktori', 'arsip'],
 };
 
 // Suffix modifier tags
 const SUFFIX_DICTIONARY = {
+  text: ['text', 'lines', 'content', 'tulisan', 'teks', 'paragraf', 'write'],
+  closed: ['closed', 'locked', 'folder-closed', 'tertutup'],
   keyhole: ['keyhole', 'lock', 'security', 'access', 'auth', 'lubang-kunci', 'kunci'],
   check: ['check', 'done', 'success', 'verified', 'approved', 'ok', 'completed'],
   plus: ['plus', 'add', 'create', 'new'],

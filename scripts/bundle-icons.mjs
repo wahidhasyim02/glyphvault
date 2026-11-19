@@ -76,7 +76,13 @@ for (const svgFile of svgFiles) {
     else if (iconName.startsWith('alarm') || iconName.startsWith('clock')) category = 'Time & Alarms';
     else if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') category = 'Emergency & Alerts';
     else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'Shapes & Badges';
-    else if (iconName.startsWith('save')) category = 'Files & Folders';
+    else if (
+      iconName.startsWith('save') ||
+      iconName.startsWith('file') ||
+      iconName.startsWith('folder')
+    ) {
+      category = 'Files & Folders';
+    }
     else if (
       iconName.startsWith('pen') ||
       iconName.startsWith('pencil') ||

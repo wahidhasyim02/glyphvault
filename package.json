@@ -3,10 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "bundle": "node ./scripts/bundle-icons.mjs",
-    "dev": "node ./scripts/bundle-icons.mjs && nuxt dev --port 3000 --host 0.0.0.0",
-    "build": "node ./scripts/bundle-icons.mjs && nuxt build",
-    "generate": "node ./scripts/bundle-icons.mjs && nuxt generate",
+    "sync": "node ./scripts/sync-all-icons.mjs && node ./scripts/enrich-all-tags.mjs",
+    "bundle": "node ./scripts/sync-all-icons.mjs && node ./scripts/enrich-all-tags.mjs && node ./scripts/bundle-icons.mjs",
+    "dev": "npm run bundle && nuxt dev --port 3000 --host 0.0.0.0",
+    "build": "npm run bundle && nuxt build",
+    "generate": "npm run bundle && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "node ./scripts/use-rollup-wasm.js && nuxt prepare"
   },
