@@ -132,3 +132,9 @@ input[type="range"].studio-slider::-moz-range-thumb {
   background-image: radial-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px);
   background-size: 20px 20px;
 }
+
+/* Position top loading indicator right below the sticky navbar header (h-14 = 56px) */
+.nuxt-loading-indicator {
+  top: 56px !important;
+  box-shadow: 0 0 10px rgba(45, 212, 191, 0.4);
+}
