@@ -1,6 +1,6 @@
 {
   "name": "laptop-minimalis-check",
-  "category": "Devices",
+  "category": "Devices & Tech",
   "tags": [
     "laptop",
     "minimalis",
@@ -24,5 +24,5 @@
     "ok",
     "completed"
   ],
-  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\r\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M15 9L11.1176 13L9 10.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n</svg>"
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 9L11.1176 13L9 10.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }

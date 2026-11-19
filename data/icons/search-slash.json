@@ -1,0 +1,28 @@
+{
+  "name": "search-slash",
+  "category": "General UI",
+  "tags": [
+    "iconix",
+    "search-slash",
+    "search",
+    "slash",
+    "find",
+    "query",
+    "magnifier",
+    "magnifying-glass",
+    "explore",
+    "lookup",
+    "seek",
+    "inspect",
+    "scan",
+    "filter",
+    "cari",
+    "temukan",
+    "clear",
+    "cancel",
+    "empty",
+    "reset",
+    "ban"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 13.2426L13.2426 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

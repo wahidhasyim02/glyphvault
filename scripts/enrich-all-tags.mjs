@@ -53,6 +53,12 @@ const TAG_DICTIONARY = {
   activity: ['activity', 'pulse', 'heartbeat', 'ecg', 'cardio', 'fitness', 'health', 'vital', 'wave', 'monitor'],
   'app-window': ['window', 'application', 'browser', 'software', 'desktop', 'interface', 'ui', 'frame', 'screen'],
   'case-sensitive': ['case-sensitive', 'font', 'letter', 'caps', 'capital', 'typography', 'text', 'search', 'match'],
+
+  // Search & Exploration
+  search: ['search', 'find', 'query', 'magnifier', 'magnifying-glass', 'explore', 'lookup', 'seek', 'inspect', 'scan', 'filter', 'cari', 'temukan'],
+
+  // Users & Profiles
+  user: ['user', 'person', 'account', 'profile', 'member', 'avatar', 'human', 'people', 'individual', 'pengguna', 'akun'],
 };
 
 // Suffix modifier tags
@@ -85,6 +91,14 @@ const SUFFIX_DICTIONARY = {
   record: ['record', 'recording', 'dot', 'live', 'on-air'],
   'screen-share': ['screen-share', 'share', 'cast', 'stream', 'broadcast', 'airplay'],
   'screen-share-off': ['screen-share-off', 'stop-sharing', 'disabled'],
+  code: ['code', 'developer', 'coding', 'html', 'bracket', 'syntax', 'programming', 'dev', 'script', 'source'],
+  'exclamation-point': ['exclamation', 'alert', 'warning', 'important', 'caution', 'notice', 'attention', 'mark', 'point', 'peringatan'],
+  fading: ['fading', 'history', 'recent', 'countdown', 'expire', 'expired', 'temporary', 'fade', 'schedule'],
+  slash: ['slash', 'clear', 'filter', 'cancel', 'empty', 'reset', 'ban'],
+  'arrow-down': ['arrow-down', 'down', 'decrease', 'countdown'],
+  'arrow-up': ['arrow-up', 'up', 'increase', 'fast-forward'],
+  'arrow-left': ['arrow-left', 'left', 'rewind', 'back', 'undo', 'past'],
+  'arrow-right': ['arrow-right', 'right', 'forward', 'next', 'future'],
 };
 
 let enrichedCount = 0;
@@ -112,6 +126,29 @@ for (const file of files) {
   for (const [key, words] of Object.entries(TAG_DICTIONARY)) {
     if (iconName === key || iconName.startsWith(`${key}-`)) {
       words.forEach((w) => tags.add(w));
+    }
+  }
+
+  // Handle clock hour numbers (clock-1 to clock-12)
+  const clockHourMatch = iconName.match(/^clock-(\d+)$/);
+  if (clockHourMatch) {
+    const num = clockHourMatch[1];
+    const numberWords = {
+      '1': ['one', '1-oclock'],
+      '2': ['two', '2-oclock'],
+      '3': ['three', '3-oclock'],
+      '4': ['four', '4-oclock'],
+      '5': ['five', '5-oclock'],
+      '6': ['six', '6-oclock'],
+      '7': ['seven', '7-oclock'],
+      '8': ['eight', '8-oclock'],
+      '9': ['nine', '9-oclock'],
+      '10': ['ten', '10-oclock'],
+      '11': ['eleven', '11-oclock'],
+      '12': ['twelve', '12-oclock'],
+    };
+    if (numberWords[num]) {
+      numberWords[num].forEach((w) => tags.add(w));
     }
   }
 

@@ -69,21 +69,24 @@ for (const svgFile of svgFiles) {
       jsonData = { name: iconName, category: 'General', tags: [] };
     }
   } else {
-    let category = 'General';
-    if (iconName.startsWith('arrow') || iconName.startsWith('chevron')) category = 'Arrows';
-    else if (iconName.startsWith('monitor') || iconName.startsWith('laptop') || iconName.startsWith('tv') || iconName.startsWith('tablet') || iconName.startsWith('smartphone') || iconName.startsWith('pc')) category = 'Devices';
-    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design';
-    else if (iconName.startsWith('align')) category = 'Layout';
-    else if (iconName.startsWith('bell') || iconName.startsWith('alarm')) category = 'Notifications';
-    else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'System';
-    else if (iconName.startsWith('save')) category = 'Files';
-    else if (iconName.startsWith('video') || iconName.startsWith('camera') || iconName.startsWith('speaker')) category = 'Media';
-    else if (iconName.startsWith('mirror')) category = 'Objects & Geometry';
+    let category = 'General UI';
+    if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) category = 'Arrows';
+    else if (iconName.startsWith('chevron')) category = 'Navigation';
+    else if (iconName.startsWith('monitor') || iconName.startsWith('laptop') || iconName.startsWith('tv') || iconName.startsWith('tablet') || iconName.startsWith('smartphone') || iconName.startsWith('pc') || iconName.startsWith('speaker') || iconName.startsWith('air-') || iconName.startsWith('airplay')) category = 'Devices & Tech';
+    else if (iconName.startsWith('pen') || iconName.startsWith('pencil')) category = 'Design & Tools';
+    else if (iconName.startsWith('align')) category = 'Alignment';
+    else if (iconName.startsWith('alarm') || iconName.startsWith('clock')) category = 'Time & Alarms';
+    else if (iconName.startsWith('bell') || iconName.startsWith('ambulance') || iconName.startsWith('siren')) category = 'Emergency & Alerts';
+    else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'Shapes & Badges';
+    else if (iconName.startsWith('save')) category = 'Files & Folders';
+    else if (iconName.startsWith('video') || iconName.startsWith('camera')) category = 'Devices & Tech';
+    else if (iconName.startsWith('mirror') || iconName.startsWith('amphora') || iconName.startsWith('anchor') || iconName.startsWith('anvil') || iconName.startsWith('angle') || iconName.startsWith('aperture')) category = 'Objects & Geometry';
+    else if (iconName.startsWith('search') || iconName.startsWith('user') || iconName.startsWith('app-window')) category = 'General UI';
 
     jsonData = {
       name: iconName,
       category,
-      tags: iconName.split('-'),
+      tags: ['iconix', iconName, ...iconName.split('-')],
     };
   }
 

@@ -64,3 +64,36 @@ console.log(`public/icons.json contains: ${iconsJson.icons.length} icons`);
 // Also check public/iconix.json
 const iconixJson = JSON.parse(fs.readFileSync(iconixJsonPath, 'utf-8'));
 console.log(`public/iconix.json contains: ${Object.keys(iconixJson.icons).length} icons`);
+
+// Validate tag rules and CMS categories
+const configYml = fs.readFileSync(path.resolve(__dirname, '../public/admin/config.yml'), 'utf-8');
+const allowedCategories = configYml
+  .split('options:')[1]
+  .split('- {')[0]
+  .split('\n')
+  .filter((l) => l.includes('- "'))
+  .map((l) => l.replace(/.*- "([^"]+)".*/, '$1').trim());
+
+let tagRuleErrors = 0;
+let categoryErrors = 0;
+
+for (const icon of iconsJson.icons) {
+  if (!allowedCategories.includes(icon.category)) {
+    console.error(`⚠️ Invalid category for ${icon.name}: "${icon.category}"`);
+    categoryErrors++;
+  }
+  if (icon.name.includes('plus') && !icon.tags.includes('add')) {
+    console.error(`⚠️ Missing 'add' tag in plus icon: ${icon.name}`);
+    tagRuleErrors++;
+  }
+  if (icon.name.includes('minus') && !icon.tags.includes('remove')) {
+    console.error(`⚠️ Missing 'remove' tag in minus icon: ${icon.name}`);
+    tagRuleErrors++;
+  }
+}
+
+if (categoryErrors === 0 && tagRuleErrors === 0) {
+  console.log(`✅ All ${iconsJson.icons.length} icons strictly adhere to CMS categories & tag rules!`);
+} else {
+  console.error(`❌ Errors found: ${categoryErrors} category errors, ${tagRuleErrors} tag rule errors.`);
+}

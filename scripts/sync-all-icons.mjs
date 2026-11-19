@@ -18,150 +18,127 @@ function cleanSvg(raw) {
   return cleaned;
 }
 
-// 1. Existing icons to update from assets if modified
-const modifiedMap = {
-  'aperture.json': 'iconix_aperture.svg',
-  'arrow-big-left-dash.json': 'iconix_arrow-big-left-dash.svg',
-  'arrow-big-left.json': 'iconix_arrow-big-left.svg',
-  'arrow-big-right-dash.json': 'iconix_arrow-big-right-dash.svg',
-  'arrow-big-right.json': 'iconix_arrow-big-right.svg',
-  'case-sensitive.json': 'iconix_case-sensitive.svg',
-  'circle-check.json': 'iconix_circle-check.svg',
-  'save-all.json': 'iconix_save-all.svg',
-  'save-off.json': 'iconix_save-off.svg',
-  'siren.json': 'iconix_siren.svg',
-};
-
-for (const [jsonFile, assetSvg] of Object.entries(modifiedMap)) {
-  const jsonPath = path.join(dataIconsDir, jsonFile);
-  const svgPath = path.join(assetsDir, assetSvg);
-  if (fs.existsSync(jsonPath) && fs.existsSync(svgPath)) {
-    const rawSvg = fs.readFileSync(svgPath, 'utf8');
-    const cleaned = cleanSvg(rawSvg);
-    const item = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-    item.svg = cleaned;
-    fs.writeFileSync(jsonPath, JSON.stringify(item, null, 2) + '\n', 'utf8');
-    console.log(`Updated SVG in ${jsonFile}`);
+// Category mapping helper
+function resolveCategory(iconName) {
+  if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) return 'Arrows';
+  if (iconName.startsWith('chevron')) return 'Navigation';
+  if (iconName.startsWith('align')) return 'Alignment';
+  if (iconName.startsWith('alarm') || iconName.startsWith('clock')) return 'Time & Alarms';
+  if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') return 'Emergency & Alerts';
+  if (iconName.startsWith('circle') || iconName.startsWith('check')) return 'Shapes & Badges';
+  if (iconName.startsWith('save')) return 'Files & Folders';
+  if (iconName.startsWith('pen') || iconName.startsWith('pencil')) return 'Design & Tools';
+  if (
+    iconName.startsWith('monitor') ||
+    iconName.startsWith('laptop') ||
+    iconName.startsWith('tv') ||
+    iconName.startsWith('tablet') ||
+    iconName.startsWith('smartphone') ||
+    iconName.startsWith('pc') ||
+    iconName.startsWith('speaker') ||
+    iconName.startsWith('air-') ||
+    iconName.startsWith('airplay') ||
+    iconName.startsWith('video') ||
+    iconName.startsWith('camera')
+  ) {
+    return 'Devices & Tech';
   }
+  if (
+    iconName.startsWith('mirror') ||
+    ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
+  ) {
+    return 'Objects & Geometry';
+  }
+  if (['a-large-small', 'ampersand', 'ampersands', 'case-sensitive'].includes(iconName)) {
+    return 'Typography';
+  }
+  if (['accessibility', 'activity', 'trash', 'trash-off'].includes(iconName)) {
+    return 'Interface & Health';
+  }
+  if (iconName === 'apple') {
+    return 'Weather & Nature';
+  }
+  if (iconName.startsWith('search') || iconName.startsWith('user') || iconName.startsWith('app-window')) {
+    return 'General UI';
+  }
+  return 'General UI';
 }
 
-// 2. Map of all 48 new icons
-const newIconsDefinitions = [
-  // Bell family
-  { file: 'iconix_bell.svg', name: 'bell', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'notification', 'alert', 'alarm', 'reminder'] },
-  { file: 'iconix_bell-check.svg', name: 'bell-check', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'check', 'notification', 'alert', 'verified', 'done'] },
-  { file: 'iconix_bell-dot.svg', name: 'bell-dot', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'dot', 'notification', 'alert', 'unread', 'active', 'badge'] },
-  { file: 'iconix_bell-minus.svg', name: 'bell-minus', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'minus', 'notification', 'alert', 'remove', 'delete', 'unsubscribe'] },
-  { file: 'iconix_bell-off.svg', name: 'bell-off', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'off', 'notification', 'alert', 'mute', 'silent', 'disable'] },
-  { file: 'iconix_bell-plus.svg', name: 'bell-plus', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'plus', 'notification', 'alert', 'add', 'create', 'subscribe'] },
-  { file: 'iconix_bell-ring.svg', name: 'bell-ring', category: 'Emergency & Alerts', tags: ['iconix', 'bell', 'ring', 'ringing', 'notification', 'alert', 'alarm', 'sound'] },
+// 1. Scan and clean all SVG files in public/assets/icons/
+const svgFiles = fs.readdirSync(assetsDir).filter((f) => f.startsWith('iconix_') && f.endsWith('.svg'));
+console.log(`Scanning ${svgFiles.length} SVG icons in ${assetsDir}...`);
 
-  // Check & circle-slash
-  { file: 'iconix_check.svg', name: 'check', category: 'Interface & Health', tags: ['iconix', 'check', 'tick', 'mark', 'success', 'done', 'ok', 'confirm'] },
-  { file: 'iconix_check-check.svg', name: 'check-check', category: 'Interface & Health', tags: ['iconix', 'check', 'check-check', 'double-check', 'read', 'delivered', 'done'] },
-  { file: 'iconix_check-line.svg', name: 'check-line', category: 'Interface & Health', tags: ['iconix', 'check', 'check-line', 'line', 'confirm', 'verified'] },
-  { file: 'iconix_circle-slash.svg', name: 'circle-slash', category: 'Shapes & Badges', tags: ['iconix', 'circle', 'slash', 'ban', 'block', 'forbidden', 'empty', 'null'] },
-  { file: 'iconix_circle-slash-2.svg', name: 'circle-slash-2', category: 'Shapes & Badges', tags: ['iconix', 'circle', 'slash', 'circle-slash-2', 'ban', 'block', 'forbidden', 'diagonal'] },
-
-  // Devices: Laptops, PC, Phone, Tablet, Speaker
-  { file: 'iconix_laptop.svg', name: 'laptop', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'laptop', 'notebook', 'macbook', 'computer', 'device'] },
-  { file: 'iconix_laptop-minimalis.svg', name: 'laptop-minimal', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'laptop', 'laptop-minimal', 'laptop-minimalis', 'notebook', 'screen', 'device'] },
-  { file: 'iconix_laptop-minimalis2.svg', name: 'laptop-minimal-2', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'laptop', 'laptop-minimal-2', 'laptop-minimalis2', 'trackpad', 'notebook', 'device'] },
-  { file: 'iconix_laptop-minimalis-check.svg', name: 'laptop-minimal-check', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'laptop', 'laptop-minimal-check', 'laptop-minimalis-check', 'verified', 'done', 'success'] },
-  { file: 'iconix_pc.svg', name: 'pc', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'pc', 'tower', 'desktop', 'computer', 'cpu', 'workstation'] },
-  { file: 'iconix_smartphone.svg', name: 'smartphone', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'smartphone', 'phone', 'mobile', 'iphone', 'android', 'cellphone'] },
-  { file: 'iconix_tablet.svg', name: 'tablet', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tablet', 'ipad', 'touchscreen', 'pad', 'device'] },
-  { file: 'iconix_tablet-smartphone.svg', name: 'tablet-smartphone', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tablet', 'smartphone', 'devices', 'mobile', 'responsive', 'screen'] },
-  { file: 'iconix_speaker.svg', name: 'speaker', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'speaker', 'audio', 'sound', 'music', 'woofer', 'subwoofer'] },
-  { file: 'iconix_speaker-minimalis.svg', name: 'speaker-minimal', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'speaker', 'speaker-minimal', 'speaker-minimalis', 'audio', 'sound', 'music'] },
-
-  // Monitor additions
-  { file: 'iconix_monitor-camera.svg', name: 'monitor-camera', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'camera', 'webcam', 'video', 'conference', 'screen'] },
-  { file: 'iconix_monitor-cog.svg', name: 'monitor-cog', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'cog', 'gear', 'settings', 'display', 'screen'] },
-  { file: 'iconix_monitor-dot.svg', name: 'monitor-dot', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'dot', 'status', 'online', 'screen', 'display'] },
-  { file: 'iconix_monitor-minus.svg', name: 'monitor-minus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'minus', 'remove', 'delete', 'screen', 'display'] },
-  { file: 'iconix_monitor-off.svg', name: 'monitor-off', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'off', 'power', 'disabled', 'slash', 'screen'] },
-  { file: 'iconix_monitor-pc.svg', name: 'monitor-pc', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'pc', 'desktop', 'tower', 'computer', 'workstation'] },
-  { file: 'iconix_monitor-plus.svg', name: 'monitor-plus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'plus', 'add', 'create', 'new', 'screen'] },
-  { file: 'iconix_monitor-screen-share.svg', name: 'monitor-screen-share', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'screen-share', 'share', 'cast', 'stream', 'display'] },
-  { file: 'iconix_monitor-screen-share-off.svg', name: 'monitor-screen-share-off', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'screen-share-off', 'stop-sharing', 'disabled'] },
-  { file: 'iconix_monitor-smartphone.svg', name: 'monitor-smartphone', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'smartphone', 'mobile', 'responsive', 'cross-platform', 'devices'] },
-  { file: 'iconix_monitor-speaker.svg', name: 'monitor-speaker', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'monitor', 'speaker', 'audio', 'sound', 'multimedia', 'workstation'] },
-
-  // TV family additions
-  { file: 'iconix_tv.svg', name: 'tv', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'television', 'antenna', 'screen', 'broadcast', 'display'] },
-  { file: 'iconix_tv-minimal-cog.svg', name: 'tv-minimal-cog', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'tv-minimal', 'tv-minimal-cog', 'cog', 'gear', 'settings'] },
-  { file: 'iconix_tv-minimal-dot.svg', name: 'tv-minimal-dot', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'tv-minimal', 'tv-minimal-dot', 'dot', 'status', 'online'] },
-  { file: 'iconix_tv-minimal-minus.svg', name: 'tv-minimal-minus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'tv-minimal', 'tv-minimal-minus', 'minus', 'remove', 'delete'] },
-  { file: 'iconix_tv-minimal-off.svg', name: 'tv-minimal-off', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'tv-minimal', 'tv-minimal-off', 'off', 'power', 'disabled', 'slash'] },
-  { file: 'iconix_tv-minimal-plus.svg', name: 'tv-minimal-plus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'tv-minimal', 'tv-minimal-plus', 'plus', 'add', 'create'] },
-  { file: 'iconix_tv-screen-share.svg', name: 'tv-screen-share', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'screen-share', 'airplay', 'cast', 'stream', 'display'] },
-  { file: 'iconix_tv-screen-share-off.svg', name: 'tv-screen-share-off', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'tv', 'screen-share-off', 'stop-sharing', 'disabled'] },
-
-  // Videocamera family
-  { file: 'iconix_videocamera.svg', name: 'videocamera', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'video', 'videocamera', 'camera', 'recording', 'movie', 'film'] },
-  { file: 'iconix_videocamera-minus.svg', name: 'videocamera-minus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'video', 'videocamera', 'minus', 'remove', 'delete', 'camera'] },
-  { file: 'iconix_videocamera-off.svg', name: 'videocamera-off', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'video', 'videocamera', 'off', 'slash', 'mute', 'disabled', 'camera'] },
-  { file: 'iconix_videocamera-plus.svg', name: 'videocamera-plus', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'video', 'videocamera', 'plus', 'add', 'create', 'new', 'camera'] },
-  { file: 'iconix_videocamera-record.svg', name: 'videocamera-record', category: 'Devices & Tech', tags: ['iconix', 'devices & tech', 'video', 'videocamera', 'record', 'recording', 'dot', 'live', 'camera'] },
-
-  // Trash family
-  { file: 'iconix_trash.svg', name: 'trash', category: 'Interface & Health', tags: ['iconix', 'trash', 'bin', 'delete', 'remove', 'garbage', 'recycle'] },
-  { file: 'iconix_trash-off.svg', name: 'trash-off', category: 'Interface & Health', tags: ['iconix', 'trash', 'trash-off', 'bin', 'disabled', 'protected', 'undelete', 'slash'] },
-];
-
-for (const def of newIconsDefinitions) {
-  const svgPath = path.join(assetsDir, def.file);
-  const jsonPath = path.join(dataIconsDir, `${def.name}.json`);
-  if (!fs.existsSync(svgPath)) {
-    console.warn(`File not found: ${svgPath}`);
-    continue;
-  }
-  const rawSvg = fs.readFileSync(svgPath, 'utf8');
+let cleanedSvgCount = 0;
+for (const file of svgFiles) {
+  const filePath = path.join(assetsDir, file);
+  const rawSvg = fs.readFileSync(filePath, 'utf8');
   const cleaned = cleanSvg(rawSvg);
-  const iconEntry = {
-    name: def.name,
-    category: def.category,
-    tags: Array.from(new Set(def.tags.map(t => t.toLowerCase()))),
-    svg: cleaned,
-  };
-  fs.writeFileSync(jsonPath, JSON.stringify(iconEntry, null, 2) + '\n', 'utf8');
-  console.log(`Created data/icons/${def.name}.json`);
-}
-
-// 3. Apply the global tag rule:
-// "dan yg memiliki nama ada plusnya, tagsnya tambahkan add, yg minus, tambahkan remove"
-const allJsonFiles = fs.readdirSync(dataIconsDir).filter(f => f.endsWith('.json'));
-let plusCount = 0;
-let minusCount = 0;
-
-for (const file of allJsonFiles) {
-  const filePath = path.join(dataIconsDir, file);
-  const item = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  const tagsSet = new Set(item.tags || []);
-  let changed = false;
-
-  if (item.name.includes('plus')) {
-    if (!tagsSet.has('add')) {
-      tagsSet.add('add');
-      changed = true;
-      plusCount++;
-    }
-  }
-
-  if (item.name.includes('minus')) {
-    if (!tagsSet.has('remove')) {
-      tagsSet.add('remove');
-      changed = true;
-      minusCount++;
-    }
-  }
-
-  if (changed) {
-    item.tags = Array.from(tagsSet);
-    fs.writeFileSync(filePath, JSON.stringify(item, null, 2) + '\n', 'utf8');
+  if (rawSvg !== cleaned) {
+    fs.writeFileSync(filePath, cleaned + '\n', 'utf8');
+    cleanedSvgCount++;
   }
 }
+if (cleanedSvgCount > 0) {
+  console.log(`Cleaned ${cleanedSvgCount} SVGs in assets folder.`);
+}
 
-console.log(`\nTags update completed: added 'add' to ${plusCount} plus-icons, added 'remove' to ${minusCount} minus-icons.`);
-console.log(`Total icons now in data/icons: ${fs.readdirSync(dataIconsDir).filter(f => f.endsWith('.json')).length}`);
+// 2. Sync all SVGs into data/icons/*.json
+let createdCount = 0;
+let updatedCount = 0;
+
+for (const svgFile of svgFiles) {
+  const iconName = svgFile.replace(/^iconix_/, '').replace(/\.svg$/, '');
+  const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
+  const svgPath = path.join(assetsDir, svgFile);
+  const cleanedSvg = cleanSvg(fs.readFileSync(svgPath, 'utf8'));
+
+  let item;
+  if (fs.existsSync(jsonPath)) {
+    item = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+    let changed = false;
+
+    // Harmonize legacy categories if invalid or outdated
+    const legacyCategoryFixes = {
+      Notifications: 'Time & Alarms',
+      Layout: 'Alignment',
+      Devices: 'Devices & Tech',
+      General: 'Emergency & Alerts',
+      Media: 'Devices & Tech',
+    };
+    if (legacyCategoryFixes[item.category]) {
+      item.category = legacyCategoryFixes[item.category];
+      changed = true;
+    }
+
+    if (item.svg !== cleanedSvg) {
+      item.svg = cleanedSvg;
+      changed = true;
+    }
+
+    if (changed) {
+      fs.writeFileSync(jsonPath, JSON.stringify(item, null, 2) + '\n', 'utf8');
+      updatedCount++;
+    }
+  } else {
+    // Brand new icon definition
+    const category = resolveCategory(iconName);
+    const parts = iconName.split('-');
+    const tagSet = new Set(['iconix', iconName, ...parts]);
+
+    if (iconName.includes('plus')) tagSet.add('add');
+    if (iconName.includes('minus')) tagSet.add('remove');
+
+    item = {
+      name: iconName,
+      category,
+      tags: Array.from(tagSet),
+      svg: cleanedSvg,
+    };
+
+    fs.writeFileSync(jsonPath, JSON.stringify(item, null, 2) + '\n', 'utf8');
+    createdCount++;
+    console.log(`✨ Created data/icons/${iconName}.json [${category}]`);
+  }
+}
+
+console.log(`Sync status: ${createdCount} created, ${updatedCount} updated.`);

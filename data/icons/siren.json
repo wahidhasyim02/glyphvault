@@ -1,6 +1,6 @@
 {
   "name": "siren",
-  "category": "General",
+  "category": "Emergency & Alerts",
   "tags": [
     "sirine",
     "iconix",
@@ -16,5 +16,5 @@
     "flasher",
     "security"
   ],
-  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<path d=\"M2 22H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\r\n<path d=\"M4 22H20V15C20 11.134 16.866 8 13 8H11C7.13401 8 4 11.134 4 15V22Z\" stroke-width=\"2\" stroke=\"black\"/>\r\n<circle cx=\"12\" cy=\"16.5\" r=\"1.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M12 2V5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M12 18L12 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M20.1213 4.2384L18 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M3 4.2384L5.12132 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n<path d=\"M14 11.2875C14.3282 11.4193 14.5807 11.5315 14.8343 11.6627C15.3595 11.9344 15.832 12.3088 16.1896 12.7798C16.4767 13.158 16.6485 13.4996 16.8285 13.9801\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\r\n</svg>"
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 22H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M4 22H20V15C20 11.134 16.866 8 13 8H11C7.13401 8 4 11.134 4 15V22Z\" stroke-width=\"2\" stroke=\"black\"/>\n<circle cx=\"12\" cy=\"16.5\" r=\"1.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 2V5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 18L12 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.1213 4.2384L18 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 4.2384L5.12132 6.35972\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 11.2875C14.3282 11.4193 14.5807 11.5315 14.8343 11.6627C15.3595 11.9344 15.832 12.3088 16.1896 12.7798C16.4767 13.158 16.6485 13.4996 16.8285 13.9801\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }
