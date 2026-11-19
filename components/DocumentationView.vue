@@ -9,16 +9,16 @@
             <span>Developer &amp; Integration Guide</span>
           </span>
           <span class="text-xs font-mono text-slate-500 dark:text-[#64748B]">
-            v1.0 &middot; {{ milestoneCount }} Vector Glyphs
+            v1.0 &middot; {{ milestoneCount }} Vector Icons
           </span>
         </div>
 
         <div class="space-y-3 max-w-3xl">
           <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9]">
-            Build Faster with <span class="text-teal-600 dark:text-[#2DD4BF]">&lt;gv-icon&gt;</span>
+            Build Faster with <span class="text-teal-600 dark:text-[#2DD4BF]">&lt;ix-icon&gt;</span>
           </h1>
           <p class="text-base sm:text-lg text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-            GlyphVault offers four unified styles from a single SVG source. Integrate via modern zero-build Web Components, drop-in Vue 3 / React wrappers, or direct REST API data streaming.
+            Iconix offers four unified styles from a single SVG source. Integrate via modern zero-build Web Components, drop-in Vue 3 / React wrappers, or direct REST API data streaming.
           </p>
         </div>
 
@@ -75,7 +75,7 @@
               <span>Explore All Icons</span>
             </div>
             <p class="text-[11px] text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-              Looking for a specific glyph? Browse our complete {{ milestoneCount }} icon catalog ({{ totalCount }} glyphs) with instant copy &amp; search.
+              Looking for a specific icon? Browse our complete {{ milestoneCount }} icon catalog ({{ totalCount }} icons) with instant copy &amp; search.
             </p>
             <button
               type="button"
@@ -90,15 +90,15 @@
 
         <!-- Main Tab Content Area -->
         <main class="lg:col-span-9 min-w-0 space-y-12">
-          <!-- TAB 1: WEB COMPONENT (<gv-icon>) -->
+          <!-- TAB 1: WEB COMPONENT (<ix-icon>) -->
           <section v-if="activeTab === 'web-component'" class="space-y-10">
             <div class="space-y-3">
               <h2 class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2.5">
                 <Code2 class="w-6 h-6 text-teal-600 dark:text-[#2DD4BF]" />
-                <span>Zero-Build Web Component (&lt;gv-icon&gt;)</span>
+                <span>Zero-Build Web Component (&lt;ix-icon&gt;)</span>
               </h2>
               <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                The fastest way to use GlyphVault icons in any HTML page, CMS, Webflow, WordPress, or modern SPA. No bundler or package installation required.
+                The fastest way to use Iconix icons in any HTML page, CMS, Webflow, WordPress, or modern SPA. No bundler or package installation required.
               </p>
             </div>
 
@@ -126,11 +126,11 @@
                     <h3 class="font-display text-sm font-semibold text-slate-900 dark:text-[#F1F5F9]">Render Any Icon</h3>
                   </div>
                   <p class="text-xs text-slate-500 dark:text-[#64748B] leading-relaxed">
-                    Place <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> wherever you need an icon. Select any of the 4 adaptive styles via <code class="font-mono text-teal-600">variant</code>.
+                    Place <code class="font-mono text-teal-600">&lt;ix-icon&gt;</code> wherever you need an icon. Select any of the 4 adaptive styles via <code class="font-mono text-teal-600">variant</code>.
                   </p>
                 </div>
                 <div class="relative">
-                  <CodeBlock :code="CALL_TAGS_SNIPPET" lang="html" @copied="$emit('notify', 'Copied <gv-icon> tag example')" />
+                  <CodeBlock :code="CALL_TAGS_SNIPPET" lang="html" @copied="$emit('notify', 'Copied <ix-icon> tag example')" />
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@
                 <div>
                   <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9] flex items-center gap-2">
                     <Sliders class="w-4 h-4 text-teal-600 dark:text-[#2DD4BF]" />
-                    <span>Interactive &lt;gv-icon&gt; Sandbox</span>
+                    <span>Interactive &lt;ix-icon&gt; Sandbox</span>
                   </h3>
                   <p class="text-xs text-slate-500 dark:text-[#64748B] mt-0.5">
                     Customize properties below and watch the live Web Component update immediately.
@@ -167,7 +167,7 @@
                     :style="{ color: sandboxColor === 'currentColor' ? (sandboxDark ? '#2DD4BF' : '#0D9488') : sandboxColor }"
                   >
                     <!-- Actual Live Web Component -->
-                    <gv-icon
+                    <ix-icon
                       :name="sandboxIcon"
                       :variant="sandboxVariant"
                       :size="sandboxSize"
@@ -175,7 +175,7 @@
                     />
                   </div>
                   <div class="mt-4 font-mono text-[11px] text-slate-500 dark:text-[#64748B] text-center">
-                    &lt;gv-icon name="{{ sandboxIcon }}" variant="{{ sandboxVariant }}" size="{{ sandboxSize }}"&gt;
+                    &lt;ix-icon name="{{ sandboxIcon }}" variant="{{ sandboxVariant }}" size="{{ sandboxSize }}"&gt;
                   </div>
                 </div>
 
@@ -266,7 +266,7 @@
                   ? 'bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312]'
                   : 'text-slate-600 dark:text-[#94A3B8] hover:bg-slate-200/60 dark:hover:bg-[#13171E]'"
               >
-                {{ fw === 'nuxt' ? 'Nuxt UI & @nuxt/icon' : fw === 'vue' ? 'Vue 3 / <gv-icon>' : fw === 'react' ? 'React / Next.js' : 'Vanilla HTML / CMS' }}
+                {{ fw === 'nuxt' ? 'Nuxt UI & @nuxt/icon' : fw === 'vue' ? 'Vue 3 / <ix-icon>' : fw === 'react' ? 'React / Next.js' : 'Vanilla HTML / CMS' }}
               </button>
             </div>
 
@@ -279,7 +279,7 @@
                     <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Recommended</span>
                   </div>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Create a single plugin file <code class="font-mono text-teal-600">plugins/glyph.client.ts</code> in your Nuxt project. Iconify automatically loads all {{ milestoneCount }} GlyphVault icons directly from the <code class="font-mono text-teal-600">/glyph.json</code> endpoint:
+                    Create a single plugin file <code class="font-mono text-teal-600">plugins/iconix.client.ts</code> in your Nuxt project. Iconify automatically loads all {{ milestoneCount }} Iconix icons directly from the <code class="font-mono text-teal-600">/iconix.json</code> endpoint:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_UI_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt client plugin recipe')" />
@@ -289,7 +289,7 @@
                 <div class="space-y-1">
                   <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">Usage in Nuxt UI &lt;UIcon&gt; Components</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Call any icon using the <code class="font-mono text-teal-600">i-glyph-[name]</code> prefix. The icon color automatically inherits standard Tailwind CSS text color classes:
+                    Call any icon using the <code class="font-mono text-teal-600">i-iconix-[name]</code> prefix. The icon color automatically inherits standard Tailwind CSS text color classes:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_UI_USAGE_SNIPPET" lang="html" @copied="$emit('notify', 'Copied Nuxt UI usage snippet')" />
@@ -312,7 +312,7 @@
                 <div class="space-y-1">
                   <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">1. Nuxt 3 Custom Element Configuration</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    In your <code class="font-mono text-teal-600">nuxt.config.ts</code>, tell the Vue compiler that <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> is a custom element:
+                    In your <code class="font-mono text-teal-600">nuxt.config.ts</code>, tell the Vue compiler that <code class="font-mono text-teal-600">&lt;ix-icon&gt;</code> is a custom element:
                   </p>
                 </div>
                 <CodeBlock :code="NUXT_CONFIG_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Nuxt config recipe')" />
@@ -322,7 +322,7 @@
                 <div class="space-y-1">
                   <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">2. Client Plugin Registration</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Save this file as <code class="font-mono text-teal-600">plugins/gv-icon.client.ts</code> so the custom element loads seamlessly on the client:
+                    Save this file as <code class="font-mono text-teal-600">plugins/ix-icon.client.ts</code> so the custom element loads seamlessly on the client:
                   </p>
                 </div>
                 <CodeBlock :code="VUE_PLUGIN_SNIPPET" lang="typescript" @copied="$emit('notify', 'Copied Vue client plugin recipe')" />
@@ -335,7 +335,7 @@
                 <div class="space-y-1">
                   <h3 class="font-display text-base font-bold text-slate-900 dark:text-[#F1F5F9]">React TSX Wrapper Component</h3>
                   <p class="text-xs text-slate-600 dark:text-[#94A3B8]">
-                    Create a typed wrapper component <code class="font-mono text-teal-600">components/GlyphIcon.tsx</code> compatible with Next.js App Router:
+                    Create a typed wrapper component <code class="font-mono text-teal-600">components/IconixIcon.tsx</code> compatible with Next.js App Router:
                   </p>
                 </div>
                 <CodeBlock :code="REACT_WRAPPER_SNIPPET" lang="tsx" @copied="$emit('notify', 'Copied React TSX wrapper recipe')" />
@@ -364,7 +364,7 @@
                 <span>Attributes &amp; Customization API</span>
               </h2>
               <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                Full reference of all attributes supported by the <code class="font-mono text-teal-600">&lt;gv-icon&gt;</code> element.
+                Full reference of all attributes supported by the <code class="font-mono text-teal-600">&lt;ix-icon&gt;</code> element.
               </p>
             </div>
 
@@ -396,19 +396,19 @@
                 <span>Automatic Color Inheritance (currentColor)</span>
               </h3>
               <p class="text-xs text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                By default, all GlyphVault icons inherit the text color of their parent container (<code class="font-mono text-teal-600">currentColor</code>). This means you can change the icon color simply using CSS or Tailwind text utilities like <code class="font-mono text-teal-600">class="text-indigo-600 hover:text-indigo-400"</code> without touching SVG markup.
+                By default, all Iconix icons inherit the text color of their parent container (<code class="font-mono text-teal-600">currentColor</code>). This means you can change the icon color simply using CSS or Tailwind text utilities like <code class="font-mono text-teal-600">class="text-indigo-600 hover:text-indigo-400"</code> without touching SVG markup.
               </p>
               <div class="p-4 rounded-lg bg-slate-100 dark:bg-[#07090D] border border-slate-200 dark:border-[#1D222B] flex flex-wrap items-center gap-6">
                 <div class="flex items-center gap-2 text-rose-500 font-semibold text-xs">
-                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <ix-icon name="apple" variant="duotone-linear" size="24" />
                   <span>class="text-rose-500"</span>
                 </div>
                 <div class="flex items-center gap-2 text-teal-500 font-semibold text-xs">
-                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <ix-icon name="apple" variant="duotone-linear" size="24" />
                   <span>class="text-teal-500"</span>
                 </div>
                 <div class="flex items-center gap-2 text-amber-500 font-semibold text-xs">
-                  <gv-icon name="apple" variant="duotone-linear" size="24" />
+                  <ix-icon name="apple" variant="duotone-linear" size="24" />
                   <span>class="text-amber-500"</span>
                 </div>
               </div>
@@ -423,7 +423,7 @@
                 <span>JSON Schema &amp; CDN Data Endpoint</span>
               </h2>
               <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                Every icon in GlyphVault is stored and served via a high-performance, single-file JSON catalog hosted on our edge CDN.
+                Every icon in Iconix is stored and served via a high-performance, single-file JSON catalog hosted on our edge CDN.
               </p>
             </div>
 
@@ -431,7 +431,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="p-5 rounded-xl bg-white dark:bg-[#0D1016] border border-slate-200 dark:border-[#1D222B] space-y-3">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">GlyphVault Studio Endpoint</span>
+                  <span class="text-xs font-semibold text-slate-700 dark:text-[#CBD5E1]">Iconix Studio Endpoint</span>
                   <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Studio Data</span>
                 </div>
                 <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
@@ -455,9 +455,9 @@
                   <span class="text-[11px] font-mono text-teal-600 dark:text-[#2DD4BF] bg-teal-50 dark:bg-[#0F2926] px-2 py-0.5 rounded font-semibold">Iconify Spec</span>
                 </div>
                 <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] font-mono text-xs flex items-center justify-between">
-                  <span class="text-slate-900 dark:text-[#F1F5F9] truncate">/glyph.json</span>
+                  <span class="text-slate-900 dark:text-[#F1F5F9] truncate">/iconix.json</span>
                   <a
-                    href="/glyph.json"
+                    href="/iconix.json"
                     target="_blank"
                     class="shrink-0 ml-2 px-2.5 py-1 rounded bg-teal-600 dark:bg-[#2DD4BF] text-white dark:text-[#071312] text-[11px] font-semibold hover:bg-teal-700 dark:hover:bg-[#5EEAD4] transition-colors"
                   >
@@ -491,7 +491,7 @@
                 <span>Figma &amp; Icon Design Guidelines</span>
               </h2>
               <p class="text-sm text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                Rules and best practices for authoring glyphs in Figma to ensure perfect rendering across all 5 style variants.
+                Rules and best practices for authoring icons in Figma to ensure perfect rendering across all 5 style variants.
               </p>
             </div>
 
@@ -518,7 +518,7 @@
                 <span>How Duotone &amp; Cutout Layering Works</span>
               </h3>
               <p class="text-xs text-slate-600 dark:text-[#94A3B8] leading-relaxed">
-                GlyphVault automatically detects the base silhouette (closed outer path) and renders it at 25% opacity in duotone variants. For complex composite shapes with holes or inner lines, you can annotate SVG attributes directly:
+                Iconix automatically detects the base silhouette (closed outer path) and renders it at 25% opacity in duotone variants. For complex composite shapes with holes or inner lines, you can annotate SVG attributes directly:
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
                 <div class="p-3 rounded-lg bg-slate-100 dark:bg-[#080A0E] border border-slate-200 dark:border-[#1D222B] space-y-1">
@@ -538,7 +538,7 @@
       <!-- Clean Footer on Documentation Page -->
       <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-[#1D222B] text-xs text-slate-500 dark:text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-2">
-          <span class="font-medium text-slate-700 dark:text-[#94A3B8]">GlyphVault</span>
+          <span class="font-medium text-slate-700 dark:text-[#94A3B8]">Iconix</span>
           <span>&copy; {{ new Date().getFullYear() }}</span>
           <span>&middot;</span>
           <span>Open SVG Icon System</span>
@@ -611,7 +611,7 @@ const activeTab = ref<'web-component' | 'frameworks' | 'attributes' | 'api' | 'f
 const frameworkTab = ref<'nuxt' | 'vue' | 'react' | 'vanilla'>('nuxt');
 
 const DOC_TABS = [
-  { id: 'web-component', label: 'Web Component (<gv-icon>)', icon: Code2 },
+  { id: 'web-component', label: 'Web Component (<ix-icon>)', icon: Code2 },
   { id: 'frameworks', label: 'Framework Integration', icon: Layers },
   { id: 'attributes', label: 'Attributes & API Reference', icon: BookOpen },
   { id: 'api', label: 'JSON Schema & CDN', icon: FileJson },
@@ -630,20 +630,20 @@ const sandboxColor = ref('currentColor');
 const sandboxDark = ref(true);
 
 const generatedTagSnippet = computed(() => {
-  return `<gv-icon name="${sandboxIcon.value}" variant="${sandboxVariant.value}" size="${sandboxSize.value}" stroke="${sandboxStroke.value}"></gv-icon>`;
+  return `<ix-icon name="${sandboxIcon.value}" variant="${sandboxVariant.value}" size="${sandboxSize.value}" stroke="${sandboxStroke.value}"></ix-icon>`;
 });
 
 // Snippets
 const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this loader script once in your HTML -->
 <script type="module">
-  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const res = await fetch('https://iconix.conime.id/icons.json');
   const data = await res.json();
   const list = Array.isArray(data) ? data : (data.icons || []);
   const map = new Map(list.map(i => [i.name, i.svg]));
 
-  class GvIcon extends HTMLElement {
+  class IxIcon extends HTMLElement {
     connectedCallback() {
-      const name = this.getAttribute('name');
+      const name = (this.getAttribute('name') || '').replace(/^(iconix:|ix:|iconix:)/, '');
       const size = this.getAttribute('size') || '24';
       const stroke = this.getAttribute('stroke') || '2';
       const variant = (this.getAttribute('variant') || 'linear').trim();
@@ -663,7 +663,7 @@ const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this loader script once in your H
         const closed = Array.from(elements).find(isClosed);
         const cutouts = Array.from(elements).filter(e => e !== closed);
         if (closed && cutouts.length > 0) {
-          const mId = 'gv-m-' + Math.random().toString(36).slice(2, 8);
+          const mId = 'ix-m-' + Math.random().toString(36).slice(2, 8);
           const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
           mask.setAttribute('id', mId);
           mask.setAttribute('maskUnits', 'userSpaceOnUse');
@@ -729,30 +729,32 @@ const LOADER_SCRIPT_SNIPPET = `<!-- 1. Include this loader script once in your H
       this.style.verticalAlign = 'middle';
     }
   }
-  customElements.define('gv-icon', GvIcon);
+  customElements.define('ix-icon', IxIcon);
+  customElements.define('iconix-icon', class extends IxIcon {});
+  customElements.define('gv-icon', class extends IxIcon {});
 <\/script>`;
 
 const CALL_TAGS_SNIPPET = `<!-- 2. Call anywhere with your desired variant -->
-<gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="line-duotone" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
+<ix-icon name="circle-plus" variant="linear" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="line-duotone" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="solid" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="duotone" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="duotone-linear" size="24"></ix-icon>`;
 
-const NUXT_UI_PLUGIN_SNIPPET = `// plugins/glyph.client.ts
+const NUXT_UI_PLUGIN_SNIPPET = `// plugins/iconix.client.ts
 import { defineNuxtPlugin } from '#app';
 import { addCollection } from '@iconify/vue';
 
 export default defineNuxtPlugin(async () => {
   try {
-    // Load the GlyphVault collection from the live CDN endpoint
-    const res = await fetch('https://glyphvault.conime.id/glyph.json');
+    // Load the Iconix collection from the live CDN endpoint
+    const res = await fetch('https://iconix.conime.id/iconix.json');
     if (res.ok) {
       const collection = await res.json();
       addCollection(collection);
     }
   } catch (err) {
-    console.error('Failed to load GlyphVault collection:', err);
+    console.error('Failed to load Iconix collection:', err);
   }
 });`;
 
@@ -760,12 +762,12 @@ const NUXT_UI_USAGE_SNIPPET = `<!-- Use inside any Nuxt UI template -->
 <template>
   <div class="flex items-center gap-4">
     <!-- Using Nuxt UI <UIcon> with Tailwind color classes -->
-    <UIcon name="i-glyph-ambulance" class="w-6 h-6 text-red-500" />
-    <UIcon name="i-glyph-save-pen" class="w-5 h-5 text-teal-400" />
-    <UIcon name="i-glyph-pen" class="w-5 h-5 text-indigo-400" />
+    <UIcon name="i-iconix-ambulance" class="w-6 h-6 text-red-500" />
+    <UIcon name="i-iconix-save-pen" class="w-5 h-5 text-teal-400" />
+    <UIcon name="i-iconix-pen" class="w-5 h-5 text-indigo-400" />
 
     <!-- Or using standard @nuxt/icon <Icon> -->
-    <Icon name="glyph:alarm-clock-check" size="24" class="text-emerald-400" />
+    <Icon name="iconix:alarm-clock-check" size="24" class="text-emerald-400" />
   </div>
 </template>`;
 
@@ -775,8 +777,8 @@ export default defineNuxtConfig({
   icon: {
     customCollections: [
       {
-        prefix: 'glyph',
-        dir: './assets/icons/glyph' // Place GlyphVault SVGs here
+        prefix: 'iconix',
+        dir: './assets/icons/iconix' // Place Iconix SVGs here
       }
     ]
   }
@@ -786,32 +788,34 @@ const NUXT_CONFIG_SNIPPET = `// nuxt.config.ts
 export default defineNuxtConfig({
   vue: {
     compilerOptions: {
-      isCustomElement: (tag) => tag.startsWith('gv-')
+      isCustomElement: (tag) => tag.startsWith('ix-') || tag.startsWith('iconix-') || tag.startsWith('gv-')
     }
   }
 });`;
 
-const VUE_PLUGIN_SNIPPET = `// plugins/gv-icon.client.ts
+const VUE_PLUGIN_SNIPPET = `// plugins/ix-icon.client.ts
 export default defineNuxtPlugin(async () => {
-  if (typeof window === 'undefined' || customElements.get('gv-icon')) return;
+  if (typeof window === 'undefined' || customElements.get('ix-icon')) return;
 
-  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const res = await fetch('https://iconix.conime.id/icons.json');
   const { icons } = await res.json();
   const map = new Map(icons.map((i: any) => [i.name, i.svg]));
 
-  class GvIcon extends HTMLElement {
+  class IxIcon extends HTMLElement {
     connectedCallback() {
       // dynamically render svg with props
     }
   }
-  customElements.define('gv-icon', GvIcon);
+  customElements.define('ix-icon', IxIcon);
+  customElements.define('iconix-icon', class extends IxIcon {});
+  customElements.define('gv-icon', class extends IxIcon {});
 });`;
 
-const REACT_WRAPPER_SNIPPET = `// components/GlyphIcon.tsx
+const REACT_WRAPPER_SNIPPET = `// components/IconixIcon.tsx
 'use client';
 import React from 'react';
 
-interface GlyphIconProps {
+interface IconixIconProps {
   name: string;
   variant?: 'linear' | 'line-duotone' | 'solid' | 'duotone' | 'duotone-linear';
   size?: number | string;
@@ -819,24 +823,24 @@ interface GlyphIconProps {
   className?: string;
 }
 
-export function GlyphIcon({ name, variant = 'linear', size = 24, stroke = 2, className }: GlyphIconProps) {
+export function IconixIcon({ name, variant = 'linear', size = 24, stroke = 2, className }: IconixIconProps) {
   // @ts-ignore
-  return <gv-icon name={name} variant={variant} size={size} stroke={stroke} class={className} />;
+  return <ix-icon name={name} variant={variant} size={size} stroke={stroke} class={className} />;
 }`;
 
 const VANILLA_HTML_SNIPPET = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GlyphVault Demo</title>
+  <title>Iconix Demo</title>
 </head>
 <body>
   <div style="color: #0d9488;">
-    <gv-icon name="siren" variant="line-duotone" size="32"></gv-icon>
+    <ix-icon name="siren" variant="line-duotone" size="32"></ix-icon>
     <span>System Active</span>
   </div>
 
-  <script type="module" src="https://glyphvault.conime.id/demo.html"><\/script>
+  <script type="module" src="https://iconix.conime.id/demo.html"><\/script>
 </body>
 </html>`;
 
@@ -872,7 +876,7 @@ const JSON_PAYLOAD_EXAMPLE = `{
     {
       "name": "circle-plus",
       "category": "Shapes & Badges",
-      "tags": ["glyph", "circle", "plus", "add"],
+      "tags": ["iconix", "circle", "plus", "add"],
       "svg": "<svg width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\">...</svg>"
     }
   ]

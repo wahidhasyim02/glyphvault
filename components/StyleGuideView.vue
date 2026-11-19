@@ -5,7 +5,7 @@
         Five Coordinated Icon Variants from One Source
       </h1>
       <p class="text-sm text-slate-600 dark:text-[#94A3B8] max-w-2xl leading-relaxed">
-        Every glyph stored in
+        Every iconix stored in
         <code class="font-mono text-teal-700 dark:text-[#2DD4BF]">icons.json</code> renders
         dynamically across five coordinated styles, responding live to size, stroke width, primary color, secondary color, and tone opacity.
       </p>
@@ -35,7 +35,7 @@
             :key="`${card.id}-${item.name}`"
             class="flex flex-col items-center justify-center gap-1.5 py-2"
           >
-            <SvgGlyph
+            <SvgIconix
               :raw-svg="item.svg"
               :style-variant="card.id"
               :settings="settings"
@@ -63,7 +63,7 @@
 import { computed } from 'vue';
 import { ArrowRight } from 'lucide-vue-next';
 import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
-import SvgGlyph from '~/components/SvgGlyph.vue';
+import SvgIconix from '~/components/SvgIconix.vue';
 
 interface Props {
   sampleIcons: IconEntry[];
@@ -119,7 +119,7 @@ const STYLE_CARDS: {
   },
 ];
 
-// Curated set of iconic, visually rich glyphs to showcase the 5 style variants
+// Curated set of iconic, visually rich iconixs to showcase the 5 style variants
 const CURATED_SHOWCASE = [
   'circle-plus',
   'apple',

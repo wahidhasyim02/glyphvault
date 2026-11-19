@@ -6,12 +6,12 @@
 import IndexPage from './index.vue';
 
 useHead({
-  title: 'Style Variants Guide — GlyphVault SVG Icon Studio',
+  title: 'Style Variants Guide — Iconix SVG Icon Studio',
   meta: [
     {
       name: 'description',
       content:
-        'Explore the 5 adaptive visual styles of GlyphVault: Linear, Line Duotone, Solid, Dualtone, and Dualtone Linear.',
+        'Explore the 5 adaptive visual styles of Iconix: Linear, Line Duotone, Solid, Dualtone, and Dualtone Linear.',
     },
   ],
 });

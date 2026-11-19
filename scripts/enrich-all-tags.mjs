@@ -98,7 +98,7 @@ for (const file of files) {
   const tags = new Set(Array.isArray(icon.tags) ? icon.tags : []);
 
   // Always include the icon name and its parts
-  tags.add('glyph');
+  tags.add('iconix');
   tags.add(iconName);
   iconName.split('-').forEach((p) => tags.add(p));
 

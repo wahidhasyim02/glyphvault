@@ -52,7 +52,7 @@
       <div class="px-4 py-3 border-t border-slate-200 dark:border-[#1D222B] text-[11px] text-slate-500 dark:text-[#64748B] flex items-center justify-between">
         <span>24×24 Grid</span>
         <span aria-hidden="true">·</span>
-        <span class="font-mono tabular-nums">{{ totalCount }} glyphs</span>
+        <span class="font-mono tabular-nums">{{ totalCount }} icons</span>
       </div>
     </div>
   </aside>
@@ -124,7 +124,7 @@
           <div class="px-4 py-3 border-t border-slate-200 dark:border-[#1D222B] text-[11px] text-slate-500 dark:text-[#64748B] flex items-center justify-between">
             <span>24×24 Grid</span>
             <span aria-hidden="true">·</span>
-            <span class="font-mono tabular-nums">{{ totalCount }} glyphs</span>
+            <span class="font-mono tabular-nums">{{ totalCount }} icons</span>
           </div>
         </div>
       </div>

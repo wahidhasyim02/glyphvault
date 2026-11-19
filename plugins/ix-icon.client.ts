@@ -11,8 +11,8 @@ export default defineNuxtPlugin(async () => {
     const list = Array.isArray(data) ? data : data.icons || [];
     const map = new Map(list.map((i: any) => [i.name, i.svg]));
 
-    if (!customElements.get('gv-icon')) {
-      class GvIcon extends HTMLElement {
+    if (!customElements.get('ix-icon')) {
+      class IxIcon extends HTMLElement {
         private _rendering = false;
 
         static get observedAttributes() {
@@ -45,8 +45,9 @@ export default defineNuxtPlugin(async () => {
           this._rendering = true;
 
           try {
-            const name = this.getAttribute('name');
+            let name = this.getAttribute('name');
             if (!name) return;
+            name = name.replace(/^(iconix:|ix:|gv:)/, '');
             const raw = map.get(name);
             if (!raw) return;
 
@@ -95,9 +96,16 @@ export default defineNuxtPlugin(async () => {
           }
         }
       }
-      customElements.define('gv-icon', GvIcon);
+
+      customElements.define('ix-icon', IxIcon);
+      if (!customElements.get('iconix-icon')) {
+        customElements.define('iconix-icon', class extends IxIcon {});
+      }
+      if (!customElements.get('gv-icon')) {
+        customElements.define('gv-icon', class extends IxIcon {});
+      }
     }
   } catch (err) {
-    console.error('Failed to register <gv-icon>:', err);
+    console.error('Failed to register <ix-icon>:', err);
   }
 });

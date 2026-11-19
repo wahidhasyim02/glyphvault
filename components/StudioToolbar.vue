@@ -61,8 +61,8 @@
             ? 'bg-white dark:bg-[#1A222D] text-slate-900 dark:text-[#F1F5F9] ring-1 ring-teal-600/35 dark:ring-[#2DD4BF]/40 shadow-xs dark:shadow-none'
             : 'text-slate-600 dark:text-[#94A3B8] hover:text-slate-900 dark:hover:text-[#E2E8F0] hover:bg-white/60 dark:hover:bg-[#151A22]'"
         >
-          <SvgGlyph
-            :raw-svg="SAMPLE_GLYPH_SVG"
+          <SvgIconix
+            :raw-svg="SAMPLE_iconix_SVG"
             :style-variant="opt.id"
             :settings="{
               ...settings,
@@ -327,7 +327,7 @@ import {
   ZoomIn,
 } from 'lucide-vue-next';
 import type { IconSettings, IconStyleVariant } from '~/types/icon';
-import SvgGlyph from '~/components/SvgGlyph.vue';
+import SvgIconix from '~/components/SvgIconix.vue';
 
 interface Props {
   theme: 'dark' | 'light';
@@ -360,7 +360,7 @@ defineEmits<{
 
 const searchInputRef = ref<HTMLInputElement | null>(null);
 
-const SAMPLE_GLYPH_SVG =
+const SAMPLE_iconix_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle data-duotone="base" cx="12" cy="12" r="9"/><path data-duotone="accent" data-cutout="true" d="M8.5 12.5L11 15L15.5 9.5"/></svg>';
 
 const STYLE_OPTIONS: { id: IconStyleVariant; label: string }[] = [

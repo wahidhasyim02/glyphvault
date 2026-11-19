@@ -8,9 +8,9 @@ const __dirname = path.dirname(__filename);
 const svgDir = path.resolve(__dirname, '../public/assets/icons');
 const jsonDir = path.resolve(__dirname, '../data/icons');
 const iconsJsonPath = path.resolve(__dirname, '../public/icons.json');
-const glyphJsonPath = path.resolve(__dirname, '../public/glyph.json');
+const iconixJsonPath = path.resolve(__dirname, '../public/iconix.json');
 
-const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
+const svgFiles = fs.readdirSync(svgDir).filter((f) => (f.startsWith('iconix_') || f.startsWith('iconix_')) && f.endsWith('.svg'));
 console.log(`Checking ${svgFiles.length} SVGs from Figma folder...`);
 
 let mismatchCount = 0;
@@ -18,7 +18,7 @@ let matchCount = 0;
 const mismatches = [];
 
 for (const svgFile of svgFiles) {
-  const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
+  const iconName = svgFile.replace(/^(iconix_|iconix_)/, '').replace(/\.svg$/, '');
   const jsonPath = path.join(jsonDir, `${iconName}.json`);
 
   if (!fs.existsSync(jsonPath)) {
@@ -61,6 +61,6 @@ console.log(`❌ MISMATCH: ${mismatchCount}`);
 const iconsJson = JSON.parse(fs.readFileSync(iconsJsonPath, 'utf-8'));
 console.log(`public/icons.json contains: ${iconsJson.icons.length} icons`);
 
-// Also check public/glyph.json
-const glyphJson = JSON.parse(fs.readFileSync(glyphJsonPath, 'utf-8'));
-console.log(`public/glyph.json contains: ${Object.keys(glyphJson.icons).length} icons`);
+// Also check public/iconix.json
+const iconixJson = JSON.parse(fs.readFileSync(iconixJsonPath, 'utf-8'));
+console.log(`public/iconix.json contains: ${Object.keys(iconixJson.icons).length} icons`);

@@ -1,6 +1,6 @@
 {
-  "prefix": "glyph",
-  "lastModified": 1795058978,
+  "prefix": "iconix",
+  "lastModified": 1795065255,
   "width": 24,
   "height": 24,
   "icons": {
@@ -561,7 +561,7 @@
     }
   },
   "info": {
-    "name": "GlyphVault",
+    "name": "Iconix",
     "total": 185,
     "license": {
       "title": "MIT"

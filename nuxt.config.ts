@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   vue: {
     compilerOptions: {
-      isCustomElement: (tag) => tag.startsWith('gv-'),
+      isCustomElement: (tag) => tag.startsWith('ix-') || tag.startsWith('iconix-') || tag.startsWith('gv-'),
     },
   },
   tailwindcss: {
@@ -20,26 +20,27 @@ export default defineNuxtConfig({
         lang: 'id',
         class: 'dark',
       },
-      title: 'GlyphVault — SVG Icon Studio',
+      title: 'Iconix — SVG Icon Studio',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5' },
+        { name: 'robots', content: 'noindex, nofollow' },
         {
           name: 'description',
           content:
             'Studio icon SVG modern: Linear, Solid, Dualtone, dan Dualtone Linear dengan live stroke, opacity, color picker, zoom, dan export SVG/React/Vue/PNG instan.',
         },
         { name: 'theme-color', content: '#090B0E' },
-        { property: 'og:title', content: 'GlyphVault — SVG Icon Studio' },
+        { property: 'og:title', content: 'Iconix — SVG Icon Studio' },
         {
           property: 'og:description',
           content:
             'Studio icon SVG modern: Linear, Solid, Dualtone, dan Dualtone Linear dengan live stroke, opacity, dan export instan.',
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://glyphvault.conime.id' },
+        { property: 'og:url', content: 'https://iconix.conime.id' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'GlyphVault — SVG Icon Studio' },
+        { name: 'twitter:title', content: 'Iconix — SVG Icon Studio' },
         {
           name: 'twitter:description',
           content: 'Studio icon SVG modern dengan live styling Linear, Solid, Dualtone, dan export.',

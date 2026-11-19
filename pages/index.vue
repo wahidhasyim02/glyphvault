@@ -86,7 +86,7 @@
         <!-- Discreet Footer -->
         <footer class="mt-auto px-6 py-6 border-t border-slate-200 dark:border-[#1D222B] text-xs text-slate-500 dark:text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="flex items-center gap-2">
-            <span class="font-medium text-slate-700 dark:text-[#94A3B8]">GlyphVault</span>
+            <span class="font-medium text-slate-700 dark:text-[#94A3B8]">Iconix</span>
             <span>&copy; {{ new Date().getFullYear() }}</span>
             <span>&middot;</span>
             <span>Open SVG Icon System</span>
@@ -108,12 +108,12 @@
               icons.json
             </a>
             <a
-              href="/glyph.json"
+              href="/iconix.json"
               target="_blank"
               class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
               title="Official Iconify Collection for Nuxt UI & @nuxt/icon"
             >
-              glyph.json (Nuxt)
+              iconix.json (Nuxt)
             </a>
             <a
               href="/admin/"
@@ -187,14 +187,14 @@ import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
 import { buildStyledSvg, formatPrettySvg, validateIconsJson } from '~/utils/svgEngine';
 
 useHead({
-  title: 'GlyphVault — SVG Icon Studio',
+  title: 'Iconix — SVG Icon Studio',
   meta: [
     {
       name: 'description',
       content:
         'Dark-mode SVG icon browser supporting Linear, Solid, Dualtone, and Dualtone Linear styles with live stroke, opacity, color, zoom, and instant SVG/PNG export.',
     },
-    { property: 'og:title', content: 'GlyphVault — SVG Icon Studio' },
+    { property: 'og:title', content: 'Iconix — SVG Icon Studio' },
     {
       property: 'og:description',
       content:
@@ -267,7 +267,7 @@ const getInitialSection = (): 'browse' | 'guide' | 'docs' => {
 };
 
 const theme = ref<'dark' | 'light'>('dark');
-const icons = useState<IconEntry[]>('glyphvault-icons', () => []);
+const icons = useState<IconEntry[]>('iconix-icons', () => []);
 const loading = ref(icons.value.length === 0);
 const loadError = ref<string | null>(null);
 const isCustomDataset = ref(false);

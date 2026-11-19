@@ -80,17 +80,17 @@
           class="h-44 rounded-xl border flex items-center justify-center relative overflow-hidden transition-colors"
           :class="backdropClass"
         >
-          <SvgGlyph
+          <SvgIconix
             :raw-svg="icon.svg"
             :style-variant="styleVariant"
             :settings="settings"
-            :override-size="previewGlyphSize"
+            :override-size="previewiconixSize"
           />
           <span
             class="absolute bottom-2 right-2.5 font-mono text-[10px] tabular-nums"
             :class="backdrop === 'light' || (backdrop === 'checker' && theme === 'light') ? 'text-slate-500' : 'text-[#64748B]'"
           >
-            {{ previewGlyphSize }}×{{ previewGlyphSize }}px preview
+            {{ previewiconixSize }}×{{ previewiconixSize }}px preview
           </span>
         </div>
 
@@ -125,7 +125,7 @@
               ? 'bg-teal-50/70 dark:bg-[#141D26] border-teal-600/60 dark:border-[#2DD4BF]/60 text-slate-900 dark:text-[#F1F5F9]'
               : 'bg-slate-50 dark:bg-[#101319] border-slate-200 dark:border-[#1D222B] text-slate-600 dark:text-[#94A3B8] hover:border-slate-300 dark:hover:border-[#2B3342] hover:text-slate-900 dark:hover:text-[#E2E8F0]'"
           >
-            <SvgGlyph
+            <SvgIconix
               :raw-svg="icon.svg"
               :style-variant="variant.id"
               :settings="settings"
@@ -219,7 +219,7 @@
               ? 'bg-white dark:bg-[#1D2430] text-slate-900 dark:text-[#F1F5F9] shadow-2xs dark:shadow-none'
               : 'text-slate-500 dark:text-[#64748B] hover:text-slate-900 dark:hover:text-[#CBD5E1]'"
           >
-            {{ tab === 'svg' ? 'SVG' : tab === 'nuxt' ? 'Nuxt' : tab === 'vue' ? 'Vue 3' : tab === 'react' ? 'React' : '<gv-icon>' }}
+            {{ tab === 'svg' ? 'SVG' : tab === 'nuxt' ? 'Nuxt' : tab === 'vue' ? 'Vue 3' : tab === 'react' ? 'React' : '<ix-icon>' }}
           </button>
         </div>
 
@@ -228,7 +228,7 @@
           <div class="flex items-center justify-between px-3 py-1.5 bg-slate-800/50 dark:bg-[#11141A] border-b border-slate-800 dark:border-[#1A2029] text-[11px]">
             <div class="flex items-center gap-2">
               <span class="text-slate-400 dark:text-[#64748B] font-mono text-[10px] uppercase tracking-wider">
-                {{ codeTab === 'svg' ? 'SVG' : codeTab === 'nuxt' ? 'Nuxt Component' : codeTab === 'vue' ? 'Vue 3 Component' : codeTab === 'react' ? 'React TSX' : '<gv-icon>' }}
+                {{ codeTab === 'svg' ? 'SVG' : codeTab === 'nuxt' ? 'Nuxt Component' : codeTab === 'vue' ? 'Vue 3 Component' : codeTab === 'react' ? 'React TSX' : '<ix-icon>' }}
               </span>
               <div v-if="codeTab === 'nuxt'" class="inline-flex items-center p-0.5 rounded bg-slate-800 dark:bg-[#1A202A] text-[10px]">
                 <button
@@ -253,7 +253,7 @@
               type="button"
               @click="handleCopyCodeTab"
               class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800 hover:bg-teal-600 dark:bg-[#181D26] dark:hover:bg-[#2DD4BF] text-slate-200 dark:text-[#CBD5E1] hover:text-white dark:hover:text-[#090B0E] text-[11px] font-medium transition-all cursor-pointer shadow-xs"
-              :title="'Copy ' + (codeTab === 'svg' ? 'SVG' : codeTab === 'tag' ? '<gv-icon>' : codeTab === 'nuxt' ? (nuxtFlavor === 'uicon' ? '<UIcon>' : '<Icon>') : codeTab) + ' to clipboard'"
+              :title="'Copy ' + (codeTab === 'svg' ? 'SVG' : codeTab === 'tag' ? '<ix-icon>' : codeTab === 'nuxt' ? (nuxtFlavor === 'uicon' ? '<UIcon>' : '<Icon>') : codeTab) + ' to clipboard'"
             >
               <Check v-if="recentAction === 'copy-code'" class="w-3.5 h-3.5 text-teal-400 dark:text-[#090B0E]" />
               <Copy v-else class="w-3.5 h-3.5" />
@@ -313,7 +313,7 @@ import {
   isLightHexColor,
   svgToPngBlob,
 } from '~/utils/svgEngine';
-import SvgGlyph from '~/components/SvgGlyph.vue';
+import SvgIconix from '~/components/SvgIconix.vue';
 
 interface Props {
   theme: 'dark' | 'light';
@@ -360,9 +360,9 @@ const codeOutput = computed(() => {
   }
   if (codeTab.value === 'nuxt') {
     if (nuxtFlavor.value === 'uicon') {
-      return `<UIcon name="i-glyph-${props.icon.name}" class="w-6 h-6" />`;
+      return `<UIcon name="i-iconix-${props.icon.name}" class="w-6 h-6" />`;
     }
-    return `<Icon name="glyph:${props.icon.name}" size="${props.settings.size}" />`;
+    return `<Icon name="iconix:${props.icon.name}" size="${props.settings.size}" />`;
   }
   if (codeTab.value === 'vue') {
     return buildVueComponentCode(props.icon.name, styledSvg.value);
@@ -371,12 +371,12 @@ const codeOutput = computed(() => {
     return buildReactComponentCode(props.icon.name, styledSvg.value);
   }
   if (codeTab.value === 'tag') {
-    return `<gv-icon name="${props.icon.name}" variant="${props.styleVariant}" size="${props.settings.size}"></gv-icon>`;
+    return `<ix-icon name="${props.icon.name}" variant="${props.styleVariant}" size="${props.settings.size}"></ix-icon>`;
   }
   return `<!-- ${props.icon.name}.svg -->\n${formatPrettySvg(styledSvg.value)}`;
 });
 
-const previewGlyphSize = computed(() =>
+const previewiconixSize = computed(() =>
   Math.min(128, Math.max(32, Math.round(props.settings.size * previewZoom.value)))
 );
 
@@ -494,7 +494,7 @@ const handleShare = async () => {
   try {
     if (navigator.share) {
       await navigator.share({
-        title: `${props.icon.name} — GlyphVault`,
+        title: `${props.icon.name} — Iconix`,
         text: `Check out the "${props.icon.name}" (${props.styleVariant}) icon`,
         url: shareUrl,
       });

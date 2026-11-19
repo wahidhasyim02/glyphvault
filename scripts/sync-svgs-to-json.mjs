@@ -8,14 +8,14 @@ const __dirname = path.dirname(__filename);
 const svgDir = path.resolve(__dirname, '../public/assets/icons');
 const jsonDir = path.resolve(__dirname, '../data/icons');
 
-const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
+const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('iconix_') && f.endsWith('.svg'));
 console.log(`Found ${svgFiles.length} SVGs in ${svgDir}`);
 
 let updatedCount = 0;
 let newCount = 0;
 
 for (const svgFile of svgFiles) {
-  const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
+  const iconName = svgFile.replace(/^iconix_/, '').replace(/\.svg$/, '');
   const jsonPath = path.join(jsonDir, `${iconName}.json`);
 
   const rawSvg = fs.readFileSync(path.join(svgDir, svgFile), 'utf-8');

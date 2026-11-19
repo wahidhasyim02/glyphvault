@@ -461,7 +461,7 @@ export function buildStyledSvg(
   const hasBaseShape = shapes.some((s) => s.role === 'base' && s.isClosed && !s.isFilledOnly);
   const cutoutShapes = shapes.filter((s) => s.isCutout);
   const needsMask = style === 'solid' && hasBaseShape && cutoutShapes.length > 0;
-  const maskId = `gv-mask-${hashId(rawSvg)}-${options?.uniqueSuffix ?? 'export'}`;
+  const maskId = `ix-mask-${hashId(rawSvg)}-${options?.uniqueSuffix ?? 'export'}`;
 
   const parts: string[] = [];
 

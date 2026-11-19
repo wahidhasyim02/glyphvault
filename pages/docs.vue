@@ -6,12 +6,12 @@
 import IndexPage from './index.vue';
 
 useHead({
-  title: 'Documentation — GlyphVault SVG Icon Studio',
+  title: 'Documentation — Iconix SVG Icon Studio',
   meta: [
     {
       name: 'description',
       content:
-        'Official documentation, Web Component <gv-icon> API, Nuxt UI & @nuxt/icon integration recipes, and CDN endpoints.',
+        'Official documentation, Web Component <iconix-icon> API, Nuxt UI & @nuxt/icon integration recipes, and CDN endpoints.',
     },
   ],
 });

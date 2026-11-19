@@ -235,7 +235,7 @@
                 :key="v.id"
                 class="py-3 px-2 rounded-lg bg-slate-50 dark:bg-[#090B0E] border border-slate-200 dark:border-[#1B212B] flex flex-col items-center gap-1.5"
               >
-                <SvgGlyph
+                <SvgIconix
                   :raw-svg="newSvg"
                   :style-variant="v.id as IconStyleVariant"
                   :settings="settings"
@@ -276,7 +276,7 @@
             <p>
               To call icons anywhere by name like Google Fonts (e.g.
               <code class="font-mono text-teal-700 dark:text-[#2DD4BF]">
-                &lt;gv-icon name=&quot;home&quot;&gt;&lt;/gv-icon&gt;
+                &lt;ix-icon name=&quot;home&quot;&gt;&lt;/ix-icon&gt;
               </code>
               ), register a lightweight <strong>Custom Web Component</strong> that reads from your hosted
               <code class="font-mono">icons.json</code> (similar to Iconify or Lucide).
@@ -311,7 +311,7 @@ import { ref, watch } from 'vue';
 import { Check, Copy, Download, FileUp, Plus, RotateCcw, X } from 'lucide-vue-next';
 import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
 import { validateIconsJson } from '~/utils/svgEngine';
-import SvgGlyph from '~/components/SvgGlyph.vue';
+import SvgIconix from '~/components/SvgIconix.vue';
 
 interface Props {
   open: boolean;
@@ -352,14 +352,14 @@ const SCHEMA_EXAMPLE = `[
 
 const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML -->
 <script type="module">
-  const res = await fetch('https://glyphvault.conime.id/icons.json');
+  const res = await fetch('https://iconix.conime.id/icons.json');
   const data = await res.json();
   const list = Array.isArray(data) ? data : (data.icons || []);
   const map = new Map(list.map(i => [i.name, i.svg]));
 
-  class GvIcon extends HTMLElement {
+  class IxIcon extends HTMLElement {
     connectedCallback() {
-      const name = this.getAttribute('name');
+      const name = (this.getAttribute('name') || '').replace(/^(iconix:|ix:|glyph:)/, '');
       const size = this.getAttribute('size') || '24';
       const variant = (this.getAttribute('variant') || this.getAttribute('style') || 'linear').trim();
       const raw = map.get(name);
@@ -379,7 +379,7 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
         const cutouts = Array.from(elements).filter(e => e !== closed);
 
         if (closed && cutouts.length > 0) {
-          const mId = 'gv-m-' + Math.random().toString(36).slice(2, 8);
+          const mId = 'ix-m-' + Math.random().toString(36).slice(2, 8);
           const mask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
           mask.setAttribute('id', mId);
           mask.setAttribute('maskUnits', 'userSpaceOnUse');
@@ -441,15 +441,16 @@ const EMBED_TAG_EXAMPLE = `<!-- 1. Include this loader script once in your HTML 
       this.style.verticalAlign = 'middle';
     }
   }
-  customElements.define('gv-icon', GvIcon);
+  customElements.define('ix-icon', IxIcon);
+  customElements.define('iconix-icon', class extends IxIcon {});
 <\/script>
 
 <!-- 2. Call icons in any style: linear, line-duotone, solid, duotone, or duotone-linear! -->
-<gv-icon name="circle-plus" variant="linear" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="line-duotone" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="solid" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="duotone" size="24"></gv-icon>
-<gv-icon name="circle-plus" variant="duotone-linear" size="24"></gv-icon>`;
+<ix-icon name="circle-plus" variant="linear" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="line-duotone" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="solid" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="duotone" size="24"></ix-icon>
+<ix-icon name="circle-plus" variant="duotone-linear" size="24"></ix-icon>`;
 
 const SAMPLE_NEW_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><rect data-duotone="base" x="3" y="4" width="18" height="16" rx="4"/><path data-duotone="accent" data-cutout="true" d="M8.5 12L11 14.5L15.5 9.5"/></svg>';
@@ -483,7 +484,7 @@ const handleCopyEmbed = async () => {
     await navigator.clipboard.writeText(EMBED_TAG_EXAMPLE);
     copiedEmbed.value = true;
     window.setTimeout(() => (copiedEmbed.value = false), 1500);
-    emit('notify', 'Copied <gv-icon> Web Component snippet');
+    emit('notify', 'Copied <ix-icon> Web Component snippet');
   } catch {
     emit('notify', 'Clipboard access blocked', 'error');
   }

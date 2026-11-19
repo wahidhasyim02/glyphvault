@@ -74,7 +74,7 @@
               ]"
             >
               <div class="flex items-center justify-center transition-transform duration-150 group-hover:scale-105">
-                <SvgGlyph
+                <SvgIconix
                   :raw-svg="icon.svg"
                   :style-variant="styleVariant"
                   :settings="settings"
@@ -120,7 +120,7 @@
 import { computed } from 'vue';
 import { Check, Eye, SearchX } from 'lucide-vue-next';
 import type { IconEntry, IconSettings, IconStyleVariant } from '~/types/icon';
-import SvgGlyph from '~/components/SvgGlyph.vue';
+import SvgIconix from '~/components/SvgIconix.vue';
 
 interface Props {
   icons: IconEntry[];

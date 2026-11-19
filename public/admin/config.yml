@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: wahidhasyim02/glyphvault
+  repo: wahidhasyim02/iconix
   branch: main
 
 media_folder: "public/assets/icons"
@@ -48,5 +48,5 @@ collections:
           - "Time & Alarms"
           - "Typography"
           - "Weather & Nature"
-      - { label: "Tags", name: "tags", widget: "list", default: ["glyph"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["iconix"] }
       - { label: "SVG Markup", name: "svg", widget: "text", hint: "Paste kode SVG langsung dari Figma" }

@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const svgDir = path.resolve(__dirname, '../public/assets/icons');
 const dataIconsDir = path.resolve(__dirname, '../data/icons');
 const iconsJsonPath = path.resolve(__dirname, '../public/icons.json');
-const glyphJsonPath = path.resolve(__dirname, '../public/glyph.json');
+const iconixJsonPath = path.resolve(__dirname, '../public/iconix.json');
 
 if (!fs.existsSync(dataIconsDir)) {
   fs.mkdirSync(dataIconsDir, { recursive: true });
@@ -21,7 +21,7 @@ if (!fs.existsSync(svgDir)) {
 // Step 1: Two-Way Sync between public/assets/icons/ and data/icons/
 // ----------------------------------------------------
 
-// 1A. Sync from data/icons/*.json -> public/assets/icons/glyph_*.svg
+// 1A. Sync from data/icons/*.json -> public/assets/icons/iconix_*.svg
 // (Ensures icons added or edited in Decap CMS are exported as SVGs)
 const jsonFiles = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
 for (const jsonFile of jsonFiles) {
@@ -34,7 +34,7 @@ for (const jsonFile of jsonFiles) {
         .replace(/<rect\s+width="24"\s+height="24"[^>]*\/>\s*/gi, '')
         .trim();
 
-      const targetSvgPath = path.join(svgDir, `glyph_${iconName}.svg`);
+      const targetSvgPath = path.join(svgDir, `iconix_${iconName}.svg`);
       if (!fs.existsSync(targetSvgPath)) {
         fs.writeFileSync(targetSvgPath, cleanedSvg + '\n', 'utf-8');
         console.log(`✨ Generated SVG from CMS for ${iconName}`);
@@ -45,11 +45,11 @@ for (const jsonFile of jsonFiles) {
   }
 }
 
-// 1B. Sync from public/assets/icons/glyph_*.svg -> data/icons/*.json
+// 1B. Sync from public/assets/icons/iconix_*.svg -> data/icons/*.json
 // (Ensures SVGs copied from Figma are cataloged in data/icons/)
-const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('glyph_') && f.endsWith('.svg'));
+const svgFiles = fs.readdirSync(svgDir).filter((f) => (f.startsWith('iconix_') || f.startsWith('iconix_')) && f.endsWith('.svg'));
 for (const svgFile of svgFiles) {
-  const iconName = svgFile.replace(/^glyph_/, '').replace(/\.svg$/, '');
+  const iconName = svgFile.replace(/^(iconix_|iconix_)/, '').replace(/\.svg$/, '');
   const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
 
   const rawSvg = fs.readFileSync(path.join(svgDir, svgFile), 'utf-8');
@@ -100,7 +100,7 @@ for (const svgFile of svgFiles) {
 }
 
 // ----------------------------------------------------
-// Step 2: Bundle all data/icons/*.json into public/icons.json & public/glyph.json
+// Step 2: Bundle all data/icons/*.json into public/icons.json & public/iconix.json
 // ----------------------------------------------------
 const finalFiles = fs.readdirSync(dataIconsDir).filter((f) => f.endsWith('.json'));
 const icons = [];
@@ -126,11 +126,11 @@ for (const file of finalFiles) {
 
 icons.sort((a, b) => a.name.localeCompare(b.name));
 
-// 1. Write public/icons.json (GlyphVault Studio format)
+// 1. Write public/icons.json (Iconix Studio format)
 fs.writeFileSync(iconsJsonPath, JSON.stringify({ icons }, null, 2), 'utf-8');
 console.log(`✅ Bundled ${icons.length} individual icons into ${iconsJsonPath}`);
 
-// 2. Write public/glyph.json (Official Iconify Collection format for Nuxt & @nuxt/icon)
+// 2. Write public/iconix.json (Official Iconify Collection format for Nuxt & @nuxt/icon)
 const iconifyIcons = {};
 for (const icon of icons) {
   const body = icon.svg
@@ -149,13 +149,13 @@ for (const icon of icons) {
 }
 
 const iconifyCollection = {
-  prefix: 'glyph',
+  prefix: 'iconix',
   lastModified: Math.floor(Date.now() / 1000),
   width: 24,
   height: 24,
   icons: iconifyIcons,
   info: {
-    name: 'GlyphVault',
+    name: 'Iconix',
     total: icons.length,
     license: {
       title: 'MIT',
@@ -163,5 +163,5 @@ const iconifyCollection = {
   },
 };
 
-fs.writeFileSync(glyphJsonPath, JSON.stringify(iconifyCollection, null, 2), 'utf-8');
-console.log(`✅ Generated Iconify collection (${icons.length} icons) into ${glyphJsonPath}`);
+fs.writeFileSync(iconixJsonPath, JSON.stringify(iconifyCollection, null, 2), 'utf-8');
+console.log(`✅ Generated Iconify collection (${icons.length} icons) into ${iconixJsonPath}`);

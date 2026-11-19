@@ -1,4 +1,4 @@
-# GlyphVault — SVG Icon Studio (Nuxt 3 + Tailwind CSS)
+# Iconix — SVG Icon Studio (Nuxt 3 + Tailwind CSS)
 
 Studio browser dan kustomisasi ikon SVG interaktif dengan 4 varian gaya (*Linear*, *Solid*, *Dualtone*, *Dualtone Linear*), live stroke, opacity slider, color pickers, zoom control, serta ekspor instan SVG / PNG / Vue / React component.
 
@@ -74,7 +74,7 @@ Server akan mendengarkan di port `3000` (atau nilai variable environment `PORT`)
 ## 📁 Struktur Direktori Proyek
 
 ```text
-glyphvault/
+iconix/
 ├── assets/
 │   └── css/
 │       └── main.css             # Tailwind CSS & custom styling (sliders, dots, checkerboards)
@@ -85,7 +85,7 @@ glyphvault/
 │   ├── JsonStudioModal.vue      # Modal import, add custom icon, & web component usage
 │   ├── StudioToolbar.vue        # Search bar, style switcher, color pickers, sliders
 │   ├── StyleGuideView.vue       # Panduan 4 varian style ikon
-│   ├── SvgGlyph.vue             # Komponen renderer SVG live
+│   ├── SvgIconix.vue             # Komponen renderer SVG live
 │   └── TopBar.vue               # Navigasi utama & brand header
 ├── public/
 │   └── icons.json               # Database koleksi ikon SVG
