@@ -5,10 +5,10 @@ backend:
 
 media_folder: "public/assets/icons"
 public_folder: "/assets/icons"
-favicon: favicon.svg
+favicon: favicon-white.svg
 
 logo:
-  src: favicon.svg
+  src: favicon-white.svg
   show_in_header: true
 
 collections:
