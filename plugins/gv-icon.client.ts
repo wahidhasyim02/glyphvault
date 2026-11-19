@@ -13,12 +13,13 @@ export default defineNuxtPlugin(async () => {
 
     if (!customElements.get('gv-icon')) {
       class GvIcon extends HTMLElement {
+        private _rendering = false;
+
         static get observedAttributes() {
           return [
             'name',
             'size',
             'variant',
-            'style',
             'stroke',
             'stroke-width',
             'color',
@@ -33,58 +34,65 @@ export default defineNuxtPlugin(async () => {
           this.render();
         }
 
-        attributeChangedCallback() {
+        attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
+          if (oldValue === newValue) return;
+          if (name === 'style') return;
           this.render();
         }
 
         render() {
-          const name = this.getAttribute('name');
-          if (!name) return;
-          const raw = map.get(name);
-          if (!raw) return;
+          if (this._rendering) return;
+          this._rendering = true;
 
-          // Parse variant: support variant="...", mode="...", or style="..."
-          let variant: IconStyleVariant = 'linear';
-          const candidate = (
-            this.getAttribute('variant') ||
-            this.getAttribute('mode') ||
-            this.getAttribute('style') ||
-            ''
-          ).trim();
+          try {
+            const name = this.getAttribute('name');
+            if (!name) return;
+            const raw = map.get(name);
+            if (!raw) return;
 
-          if (candidate === 'solid' || candidate === 'bold') {
-            variant = 'solid';
-          } else if (candidate === 'line-duotone' || candidate === 'line-dualtone') {
-            variant = 'line-duotone';
-          } else if (candidate === 'duotone' || candidate === 'dualtone') {
-            variant = 'duotone';
-          } else if (candidate === 'duotone-linear' || candidate === 'dualtone-linear') {
-            variant = 'duotone-linear';
-          } else {
-            variant = 'linear';
+            let variant: IconStyleVariant = 'linear';
+            const candidate = (
+              this.getAttribute('variant') ||
+              this.getAttribute('mode') ||
+              ''
+            ).trim();
+
+            if (candidate === 'solid' || candidate === 'bold') {
+              variant = 'solid';
+            } else if (candidate === 'line-duotone' || candidate === 'line-dualtone') {
+              variant = 'line-duotone';
+            } else if (candidate === 'duotone' || candidate === 'dualtone') {
+              variant = 'duotone';
+            } else if (candidate === 'duotone-linear' || candidate === 'dualtone-linear') {
+              variant = 'duotone-linear';
+            } else {
+              variant = 'linear';
+            }
+
+            const size = parseInt(this.getAttribute('size') || '24', 10) || 24;
+            const strokeWidth =
+              parseFloat(this.getAttribute('stroke') || this.getAttribute('stroke-width') || '2') || 2;
+            const primaryColor = this.getAttribute('color') || 'currentColor';
+            const secondaryColor =
+              this.getAttribute('secondary') || this.getAttribute('secondary-color') || primaryColor;
+            const duotoneOpacity = parseFloat(this.getAttribute('opacity') || '0.25') || 0.25;
+
+            const styled = buildStyledSvg(raw, variant, {
+              size,
+              strokeWidth,
+              primaryColor,
+              secondaryColor,
+              duotoneOpacity,
+            });
+
+            this.innerHTML = styled;
+            this.style.display = 'inline-flex';
+            this.style.verticalAlign = 'middle';
+            this.style.width = `${size}px`;
+            this.style.height = `${size}px`;
+          } finally {
+            this._rendering = false;
           }
-
-          const size = parseInt(this.getAttribute('size') || '24', 10) || 24;
-          const strokeWidth =
-            parseFloat(this.getAttribute('stroke') || this.getAttribute('stroke-width') || '2') || 2;
-          const primaryColor = this.getAttribute('color') || 'currentColor';
-          const secondaryColor =
-            this.getAttribute('secondary') || this.getAttribute('secondary-color') || primaryColor;
-          const duotoneOpacity = parseFloat(this.getAttribute('opacity') || '0.25') || 0.25;
-
-          const styled = buildStyledSvg(raw, variant, {
-            size,
-            strokeWidth,
-            primaryColor,
-            secondaryColor,
-            duotoneOpacity,
-          });
-
-          this.innerHTML = styled;
-          this.style.display = 'inline-flex';
-          this.style.verticalAlign = 'middle';
-          this.style.width = `${size}px`;
-          this.style.height = `${size}px`;
         }
       }
       customElements.define('gv-icon', GvIcon);

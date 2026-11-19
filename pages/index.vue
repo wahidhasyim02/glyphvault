@@ -267,8 +267,8 @@ const getInitialSection = (): 'browse' | 'guide' | 'docs' => {
 };
 
 const theme = ref<'dark' | 'light'>('dark');
-const icons = ref<IconEntry[]>([]);
-const loading = ref(true);
+const icons = useState<IconEntry[]>('glyphvault-icons', () => []);
+const loading = ref(icons.value.length === 0);
 const loadError = ref<string | null>(null);
 const isCustomDataset = ref(false);
 
@@ -334,6 +334,10 @@ const notify = (message: string, tone: 'success' | 'info' | 'error' = 'success')
 };
 
 const fetchBuiltInIcons = async () => {
+  if (icons.value.length > 0) {
+    loading.value = false;
+    return icons.value;
+  }
   loading.value = true;
   loadError.value = null;
   try {

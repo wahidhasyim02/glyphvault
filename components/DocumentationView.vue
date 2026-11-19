@@ -619,7 +619,7 @@ const DOC_TABS = [
 ] as const;
 
 // Interactive Sandbox State
-const SAMPLE_ICON_NAMES = ['circle-plus', 'apple', 'siren', 'ambulance', 'anchor', 'air-vent', 'alarm-clock-snooze', 'arrow-big-up-dash'];
+const SAMPLE_ICON_NAMES = ['circle-plus', 'apple', 'siren', 'ambulance', 'anchor', 'air-vent', 'alarm-clock-sleep', 'arrow-big-up-dash'];
 const VARIANTS: IconStyleVariant[] = ['linear', 'line-duotone', 'solid', 'duotone', 'duotone-linear'];
 
 const sandboxIcon = ref('circle-plus');
