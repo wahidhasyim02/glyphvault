@@ -47,7 +47,13 @@ for (const jsonFile of jsonFiles) {
 
 // 1B. Sync from public/assets/icons/iconix_*.svg -> data/icons/*.json
 // (Ensures SVGs copied from Figma are cataloged in data/icons/)
-const svgFiles = fs.readdirSync(svgDir).filter((f) => (f.startsWith('iconix_') || f.startsWith('iconix_')) && f.endsWith('.svg'));
+for (const f of fs.readdirSync(svgDir)) {
+  if (f.startsWith('iconix-') && f.endsWith('.svg')) {
+    const fixed = f.replace(/^iconix-/, 'iconix_');
+    fs.renameSync(path.join(svgDir, f), path.join(svgDir, fixed));
+  }
+}
+const svgFiles = fs.readdirSync(svgDir).filter((f) => f.startsWith('iconix_') && f.endsWith('.svg'));
 for (const svgFile of svgFiles) {
   const iconName = svgFile.replace(/^(iconix_|iconix_)/, '').replace(/\.svg$/, '');
   const jsonPath = path.join(dataIconsDir, `${iconName}.json`);
@@ -71,11 +77,26 @@ for (const svgFile of svgFiles) {
   } else {
     let category = 'General UI';
     if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) category = 'Arrows';
-    else if (iconName.startsWith('chevron')) category = 'Navigation';
+    else if (iconName.startsWith('chevron') || iconName.startsWith('list-chevron')) category = 'Navigation';
     else if (iconName.startsWith('align')) category = 'Alignment';
     else if (iconName.startsWith('alarm') || iconName.startsWith('clock')) category = 'Time & Alarms';
-    else if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') category = 'Emergency & Alerts';
-    else if (iconName.startsWith('circle') || iconName.startsWith('check')) category = 'Shapes & Badges';
+    else if (
+      iconName.startsWith('bell') ||
+      iconName === 'ambulance' ||
+      iconName === 'siren' ||
+      iconName.includes('exclamation-point') ||
+      iconName.includes('question-mark')
+    ) {
+      category = 'Emergency & Alerts';
+    }
+    else if (
+      ['plus', 'minus', 'x', 'check'].includes(iconName) ||
+      iconName.startsWith('circle') ||
+      iconName.startsWith('check') ||
+      iconName.startsWith('triangle')
+    ) {
+      category = 'Shapes & Badges';
+    }
     else if (
       iconName.startsWith('save') ||
       iconName.startsWith('file') ||
@@ -119,11 +140,16 @@ for (const svgFile of svgFiles) {
       ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
     ) {
       category = 'Objects & Geometry';
-    } else if (['a-large-small', 'ampersand', 'ampersands', 'case-sensitive'].includes(iconName)) {
+    } else if (iconName.startsWith('code')) {
+      category = 'Development & Code';
+    } else if (
+      ['a-large-small', 'ampersand', 'ampersands', 'case-sensitive', 'line-height'].includes(iconName) ||
+      iconName.startsWith('list-indent')
+    ) {
       category = 'Typography';
     } else if (['accessibility', 'activity', 'trash', 'trash-off'].includes(iconName)) {
       category = 'Interface & Health';
-    } else if (iconName === 'apple') {
+    } else if (iconName.startsWith('cloud') || iconName === 'apple') {
       category = 'Weather & Nature';
     } else if (
       iconName.startsWith('search') ||

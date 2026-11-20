@@ -1,0 +1,18 @@
+{
+  "name": "chevrons-to-axis-dashed-horizontal",
+  "category": "Navigation",
+  "tags": [
+    "iconix",
+    "chevrons-to-axis-dashed-horizontal",
+    "chevrons",
+    "to",
+    "axis",
+    "dashed",
+    "horizontal",
+    "landscape",
+    "row",
+    "mendatar",
+    "baris"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 3L12 8L17 3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7 21L12 16L17 21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 12L20.3333 12M2 12L3.66667 12M17 12L13.6667 12M10.3333 12L7 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

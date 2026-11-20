@@ -398,12 +398,24 @@ const filteredIcons = computed(() => {
 
   for (const icon of baseList) {
     const name = icon.name.toLowerCase();
-    const nameWords = name.replace(/[-_]/g, ' ');
+    const nameSegments = name.split(/[-_]/);
+    const nameWords = nameSegments.join(' ');
     const cat = (icon.category || '').toLowerCase();
-    const tags = (icon.tags || []).map((t) => t.toLowerCase());
+    // Exclude brand prefix 'iconix' from tags so searching single letters like 'x', 'i', 'c', 'o', 'n' doesn't match every single icon!
+    const tags = (icon.tags || [])
+      .map((t) => t.toLowerCase())
+      .filter((t) => t !== 'iconix');
 
     // Check if EVERY token matches name, natural name words, category, or tags (AND-matching)
     const matchesAllTokens = tokens.every((token) => {
+      if (token.length === 1) {
+        // Single-character query (e.g. 'x'): match distinct segment or exact tag!
+        return (
+          nameSegments.includes(token) ||
+          cat.split(/\s+/).includes(token) ||
+          tags.includes(token)
+        );
+      }
       return (
         name.includes(token) ||
         nameWords.includes(token) ||

@@ -20,7 +20,14 @@
     "close",
     "error",
     "dismiss",
-    "reject"
+    "reject",
+    "remove",
+    "delete",
+    "clear",
+    "silang",
+    "batal",
+    "tutup",
+    "hapus"
   ],
   "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.87864 14.1213L14.1213 9.87868M9.87864 9.87868L14.1213 14.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }

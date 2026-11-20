@@ -1,0 +1,17 @@
+{
+  "name": "chevrons-from-axis-horizontal",
+  "category": "Navigation",
+  "tags": [
+    "iconix",
+    "chevrons-from-axis-horizontal",
+    "chevrons",
+    "from",
+    "axis",
+    "horizontal",
+    "landscape",
+    "row",
+    "mendatar",
+    "baris"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 8L12 3L17 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7 16L12 21L17 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 12L2 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

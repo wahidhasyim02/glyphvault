@@ -39,6 +39,20 @@ const TAG_DICTIONARY = {
   antenna: ['antenna', 'signal', 'radio', 'wireless', 'broadcast', 'receiver', 'transmission', 'connectivity', 'telecom'],
   aperture: ['aperture', 'camera', 'lens', 'photo', 'photography', 'shutter', 'focus', 'iris', 'exposure', 'optic'],
   apple: ['apple', 'fruit', 'food', 'healthy', 'diet', 'organic', 'nutrition', 'snack'],
+  cloud: ['cloud', 'clouds', 'weather', 'storage', 'server', 'sync', 'awan', 'cuaca', 'langit', 'mendung'],
+  clouds: ['cloud', 'clouds', 'weather', 'overcast', 'awan', 'cuaca', 'langit', 'mendung'],
+  rain: ['rain', 'rainfall', 'water', 'precipitation', 'weather', 'hujan', 'air', 'cuaca', 'gerimis'],
+  snow: ['snow', 'snowfall', 'cold', 'winter', 'ice', 'weather', 'salju', 'dingin', 'es', 'musim-dingin'],
+  fog: ['fog', 'mist', 'haze', 'weather', 'kabut', 'asap', 'cuaca'],
+  drizzle: ['drizzle', 'rain', 'light-rain', 'weather', 'gerimis', 'rintik', 'hujan'],
+  hail: ['hail', 'hailstorm', 'ice', 'weather', 'hujan-es', 'es', 'badai'],
+  lightning: ['lightning', 'thunder', 'storm', 'electricity', 'power', 'weather', 'petir', 'kilat', 'badai', 'guntur'],
+  wind: ['wind', 'breeze', 'storm', 'weather', 'angin', 'badai', 'hembusan'],
+  triangle: ['triangle', 'triangel', 'delta', 'shape', 'segitiga', 'bentuk', 'geometri'],
+  'exclamation-point': ['exclamation', 'alert', 'warning', 'important', 'caution', 'notice', 'attention', 'mark', 'point', 'tanda-seru', 'peringatan', 'perhatian', 'bahaya'],
+  'question-mark': ['question', 'help', 'faq', 'ask', 'query', 'support', 'info', 'tanda-tanya', 'bantuan', 'tanya'],
+  code: ['code', 'developer', 'coding', 'html', 'bracket', 'syntax', 'programming', 'dev', 'script', 'source', 'koding', 'pemrograman', 'kode', 'sumber'],
+  'line-height': ['line-height', 'leading', 'spacing', 'typography', 'text', 'font', 'jarak-baris', 'spasi-baris', 'teks'],
   'air-vent': ['air-vent', 'ac', 'hvac', 'cooling', 'ventilation', 'fan', 'airflow', 'climate', 'temperature'],
   truck: ['truck', 'delivery', 'cargo', 'shipping', 'logistics', 'freight', 'transport', 'vehicle', 'haul'],
 
@@ -156,9 +170,9 @@ const SUFFIX_DICTIONARY = {
   text: ['text', 'lines', 'content', 'tulisan', 'teks', 'paragraf', 'write'],
   closed: ['closed', 'locked', 'folder-closed', 'tertutup'],
   keyhole: ['keyhole', 'lock', 'security', 'access', 'auth', 'lubang-kunci', 'kunci'],
-  check: ['check', 'done', 'success', 'verified', 'approved', 'ok', 'completed'],
-  plus: ['plus', 'add', 'create', 'new'],
-  minus: ['minus', 'remove', 'delete', 'exclude'],
+  check: ['check', 'done', 'success', 'verified', 'approved', 'ok', 'completed', 'tick', 'confirm', 'centang', 'selesai', 'benar', 'sukses', 'setuju', 'checklist'],
+  plus: ['plus', 'add', 'create', 'new', 'insert', 'more', 'tambah', 'baru', 'buat'],
+  minus: ['minus', 'remove', 'delete', 'exclude', 'reduce', 'less', 'kurang', 'hapus'],
   off: ['off', 'slash', 'disabled', 'turn-off', 'inactive', 'mute', 'mati', 'nonaktif', 'garis-miring', 'strip'],
   off2: ['off', 'disabled', 'silent', 'slash'],
   dot: ['dot', 'status', 'indicator', 'online', 'badge'],
@@ -169,7 +183,7 @@ const SUFFIX_DICTIONARY = {
   cog: ['cog', 'gear', 'settings', 'configuration', 'preferences', 'options', 'setup'],
   up: ['up', 'upload', 'arrow', 'outbound', 'send'],
   down: ['down', 'download', 'arrow', 'inbound', 'receive'],
-  x: ['x', 'cancel', 'close', 'error', 'dismiss', 'reject'],
+  x: ['x', 'cancel', 'close', 'error', 'dismiss', 'reject', 'remove', 'delete', 'clear', 'silang', 'batal', 'tutup', 'hapus'],
   mac: ['mac', 'apple', 'imac', 'desktop', 'retina'],
   camera: ['camera', 'webcam', 'video', 'optic'],
   activity: ['activity', 'pulse', 'graph', 'health', 'vital'],
@@ -232,6 +246,22 @@ const SUFFIX_DICTIONARY = {
   crack: ['crack', 'broken', 'broken-heart', 'damage', 'split', 'patah', 'kecewa'],
   pulse: ['pulse', 'heartbeat', 'activity', 'ecg', 'cardio', 'health', 'vital', 'detak-jantung'],
   brush: ['brush', 'paint', 'draw', 'kuas', 'lukis'],
+  drizzle: ['drizzle', 'rain', 'weather', 'gerimis', 'rintik'],
+  fog: ['fog', 'mist', 'haze', 'weather', 'kabut'],
+  hail: ['hail', 'ice', 'weather', 'hujan-es'],
+  lightning: ['lightning', 'storm', 'petir', 'kilat', 'badai'],
+  snow: ['snow', 'cold', 'winter', 'ice', 'salju', 'dingin'],
+  rain: ['rain', 'water', 'weather', 'hujan', 'air'],
+  wind: ['wind', 'storm', 'weather', 'angin', 'badai'],
+  'rain-wind': ['rain', 'wind', 'storm', 'hujan-angin', 'badai'],
+  'cloud-lightning': ['lightning', 'storm', 'thunder', 'petir', 'kilat', 'badai'],
+  xml: ['xml', 'html', 'markup', 'code', 'syntax'],
+  indent: ['indent', 'tab', 'spacing', 'paragraph', 'paragraf'],
+  'indent-increase': ['indent', 'increase', 'margin', 'tab', 'geser-kanan'],
+  'indent-decrease': ['indent', 'decrease', 'margin', 'tab', 'geser-kiri'],
+  axis: ['axis', 'center', 'align', 'sumbu', 'pusat'],
+  'from-axis': ['from-axis', 'expand', 'diverge', 'luar', 'keluar'],
+  'to-axis': ['to-axis', 'collapse', 'converge', 'dalam', 'masuk'],
 };
 
 let enrichedCount = 0;
@@ -344,9 +374,41 @@ for (const file of files) {
     ['notification', 'flag', 'alert', 'bookmark', 'notice', 'mark', 'bendera', 'notifikasi', 'pemberitahuan'].forEach((w) => tags.add(w));
   }
 
-  // Ensure plus has add, minus has remove
-  if (iconName.includes('plus')) tags.add('add');
-  if (iconName.includes('minus')) tags.add('remove');
+  // Cross-reference plus <-> add
+  if (iconName.includes('plus')) {
+    ['add', 'create', 'new', 'tambah', 'baru', 'buat'].forEach((w) => tags.add(w));
+  }
+  if (iconName.includes('add')) {
+    ['plus', 'create', 'new', 'tambah', 'baru', 'buat'].forEach((w) => tags.add(w));
+  }
+
+  // Cross-reference minus <-> remove
+  if (iconName.includes('minus')) {
+    ['remove', 'delete', 'exclude', 'kurang', 'hapus'].forEach((w) => tags.add(w));
+  }
+  if (iconName.includes('remove')) {
+    ['minus', 'delete', 'exclude', 'kurang', 'hapus'].forEach((w) => tags.add(w));
+  }
+
+  // Cross-reference x <-> cancel / close / dismiss / delete
+  if (iconName.endsWith('-x') || iconName.includes('-x-') || iconName === 'x') {
+    ['cancel', 'close', 'dismiss', 'reject', 'remove', 'delete', 'clear', 'silang', 'batal', 'tutup', 'hapus'].forEach((w) => tags.add(w));
+  }
+
+  // Cross-reference check <-> tick / done / success / verified
+  if (iconName.includes('check')) {
+    ['tick', 'done', 'success', 'verified', 'approved', 'ok', 'completed', 'confirm', 'centang', 'selesai', 'benar', 'sukses', 'setuju'].forEach((w) => tags.add(w));
+  }
+
+  // Cross-reference screen-share
+  if (iconName.includes('screen-share')) {
+    ['screen-share', 'share', 'cast', 'stream', 'broadcast', 'airplay', 'bagikan-layar'].forEach((w) => tags.add(w));
+  }
+
+  // Cross-reference cog <-> gear / settings
+  if (iconName.includes('cog') || iconName.includes('gear')) {
+    ['cog', 'gear', 'settings', 'configuration', 'preferences', 'options', 'setup', 'pengaturan', 'setelan'].forEach((w) => tags.add(w));
+  }
 
   // Convert set back to array and clean up empty / numeric junk
   const cleanTags = Array.from(tags)

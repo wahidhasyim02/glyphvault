@@ -21,11 +21,26 @@ function cleanSvg(raw) {
 // Category mapping helper adhering strictly to public/admin/config.yml
 function resolveCategory(iconName) {
   if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) return 'Arrows';
-  if (iconName.startsWith('chevron')) return 'Navigation';
+  if (iconName.startsWith('chevron') || iconName.startsWith('list-chevron')) return 'Navigation';
   if (iconName.startsWith('align')) return 'Alignment';
   if (iconName.startsWith('alarm') || iconName.startsWith('clock')) return 'Time & Alarms';
-  if (iconName.startsWith('bell') || iconName === 'ambulance' || iconName === 'siren') return 'Emergency & Alerts';
-  if (iconName.startsWith('circle') || iconName.startsWith('check')) return 'Shapes & Badges';
+  if (
+    iconName.startsWith('bell') ||
+    iconName === 'ambulance' ||
+    iconName === 'siren' ||
+    iconName.includes('exclamation-point') ||
+    iconName.includes('question-mark')
+  ) {
+    return 'Emergency & Alerts';
+  }
+  if (
+    ['plus', 'minus', 'x', 'check'].includes(iconName) ||
+    iconName.startsWith('circle') ||
+    iconName.startsWith('check') ||
+    iconName.startsWith('triangle')
+  ) {
+    return 'Shapes & Badges';
+  }
   if (
     iconName.startsWith('save') ||
     iconName.startsWith('file') ||
@@ -72,13 +87,21 @@ function resolveCategory(iconName) {
   ) {
     return 'Objects & Geometry';
   }
-  if (['a-large-small', 'ampersand', 'ampersands', 'case-sensitive'].includes(iconName)) {
+  if (
+    iconName.startsWith('code')
+  ) {
+    return 'Development & Code';
+  }
+  if (
+    ['a-large-small', 'ampersand', 'ampersands', 'case-sensitive', 'line-height'].includes(iconName) ||
+    iconName.startsWith('list-indent')
+  ) {
     return 'Typography';
   }
   if (['accessibility', 'activity', 'trash', 'trash-off'].includes(iconName)) {
     return 'Interface & Health';
   }
-  if (iconName === 'apple') {
+  if (iconName.startsWith('cloud') || iconName === 'apple') {
     return 'Weather & Nature';
   }
   if (
@@ -93,7 +116,13 @@ function resolveCategory(iconName) {
   return 'General UI';
 }
 
-// 1. Scan and clean all SVG files in public/assets/icons/
+// 1. Scan and normalize any iconix-*.svg to iconix_*.svg
+for (const f of fs.readdirSync(assetsDir)) {
+  if (f.startsWith('iconix-') && f.endsWith('.svg')) {
+    const fixed = f.replace(/^iconix-/, 'iconix_');
+    fs.renameSync(path.join(assetsDir, f), path.join(assetsDir, fixed));
+  }
+}
 const svgFiles = fs.readdirSync(assetsDir).filter((f) => f.startsWith('iconix_') && f.endsWith('.svg'));
 console.log(`Scanning ${svgFiles.length} SVG icons in ${assetsDir}...`);
 
@@ -136,6 +165,12 @@ for (const svgFile of svgFiles) {
     };
     if (legacyCategoryFixes[item.category]) {
       item.category = legacyCategoryFixes[item.category];
+      changed = true;
+    }
+
+    const resolvedCat = resolveCategory(iconName);
+    if (item.category !== resolvedCat) {
+      item.category = resolvedCat;
       changed = true;
     }
 
