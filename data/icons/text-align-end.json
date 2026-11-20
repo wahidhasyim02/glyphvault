@@ -1,0 +1,23 @@
+{
+  "name": "text-align-end",
+  "category": "Typography",
+  "tags": [
+    "iconix",
+    "text-align-end",
+    "text",
+    "align",
+    "end",
+    "typography",
+    "font",
+    "paragraph",
+    "teks",
+    "tulisan",
+    "huruf",
+    "format",
+    "last",
+    "right",
+    "akhir",
+    "kanan"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 12L21 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 5L21 5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7 19L21 19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

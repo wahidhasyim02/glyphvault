@@ -20,6 +20,16 @@ function cleanSvg(raw) {
 
 // Category mapping helper adhering strictly to public/admin/config.yml
 function resolveCategory(iconName) {
+  if (
+    iconName.startsWith('message') ||
+    iconName.startsWith('send') ||
+    iconName === 'reply' ||
+    iconName.startsWith('share') ||
+    iconName.startsWith('mail') ||
+    iconName === 'phone'
+  ) {
+    return 'Communication & Social';
+  }
   if (iconName.startsWith('arrow') || iconName.startsWith('a-arrow-')) return 'Arrows';
   if (iconName.startsWith('chevron') || iconName.startsWith('list-chevron')) return 'Navigation';
   if (iconName.startsWith('align')) return 'Alignment';
@@ -75,7 +85,9 @@ function resolveCategory(iconName) {
   if (
     iconName.startsWith('shield') ||
     iconName.startsWith('lock') ||
-    iconName.startsWith('key')
+    iconName.startsWith('key') ||
+    iconName === 'log-in' ||
+    iconName === 'log-out'
   ) {
     return 'Security & System';
   }
@@ -93,15 +105,16 @@ function resolveCategory(iconName) {
     return 'Development & Code';
   }
   if (
-    ['a-large-small', 'ampersand', 'ampersands', 'case-sensitive', 'line-height'].includes(iconName) ||
-    iconName.startsWith('list-indent')
+    ['a-large-small', 'ampersand', 'ampersands', 'case-sensitive', 'line-height', 'text-initial', 'square-dashed-text'].includes(iconName) ||
+    iconName.startsWith('list-indent') ||
+    iconName.startsWith('text-align')
   ) {
     return 'Typography';
   }
   if (['accessibility', 'activity', 'trash', 'trash-off'].includes(iconName)) {
     return 'Interface & Health';
   }
-  if (iconName.startsWith('cloud') || iconName === 'apple') {
+  if (iconName.startsWith('cloud') || iconName === 'apple' || iconName === 'sun' || iconName.startsWith('moon')) {
     return 'Weather & Nature';
   }
   if (
@@ -109,7 +122,7 @@ function resolveCategory(iconName) {
     iconName.startsWith('user') ||
     iconName.startsWith('house') ||
     iconName.startsWith('flag') ||
-    ['group', 'heart', 'app-window', 'app-window-mac'].includes(iconName)
+    ['group', 'heart', 'app-window', 'app-window-mac', 'download', 'upload', 'menu', 'bookmark', 'star'].includes(iconName)
   ) {
     return 'General UI';
   }

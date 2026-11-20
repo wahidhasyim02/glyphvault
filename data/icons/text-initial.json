@@ -1,0 +1,19 @@
+{
+  "name": "text-initial",
+  "category": "Typography",
+  "tags": [
+    "iconix",
+    "text-initial",
+    "text",
+    "initial",
+    "typography",
+    "font",
+    "align",
+    "paragraph",
+    "teks",
+    "tulisan",
+    "huruf",
+    "format"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 12L21 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 19H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 5L21 5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M11 13L9.96501 10.6343L7.5 5L5.03499 10.6343M9.96501 10.6343H5.03499M4 13L5.03499 10.6343\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

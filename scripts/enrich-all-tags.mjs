@@ -163,6 +163,24 @@ const TAG_DICTIONARY = {
   file: ['file', 'document', 'page', 'doc', 'paper', 'berkas', 'dokumen', 'sheet', 'draft'],
   files: ['files', 'documents', 'pages', 'docs', 'papers', 'berkas', 'dokumen', 'collection'],
   folder: ['folder', 'directory', 'archive', 'storage', 'files', 'map', 'direktori', 'arsip'],
+
+  // Communication, Social & UI
+  message: ['message', 'chat', 'comment', 'bubble', 'conversation', 'talk', 'sms', 'pesan', 'obrolan', 'komentar', 'diskusi'],
+  mail: ['mail', 'email', 'envelope', 'letter', 'inbox', 'message', 'surat', 'pesan', 'surel', 'kirim', 'kontak'],
+  phone: ['phone', 'telephone', 'call', 'contact', 'dial', 'telepon', 'panggilan', 'hubungi', 'kontak', 'ring'],
+  send: ['send', 'paper-plane', 'flight', 'message', 'kirim', 'pesan', 'share'],
+  reply: ['reply', 'back', 'respond', 'arrow', 'balas', 'kembali', 'respon'],
+  share: ['share', 'sharing', 'connect', 'social', 'bagikan', 'sebar', 'network', 'tautan'],
+  download: ['download', 'unduh', 'save', 'get', 'arrow-down', 'file', 'ambil', 'simpan'],
+  upload: ['upload', 'unggah', 'send', 'arrow-up', 'file', 'kirim'],
+  menu: ['menu', 'hamburger', 'navigation', 'options', 'lines', 'navigasi', 'daftar', 'opsi'],
+  moon: ['moon', 'night', 'dark', 'dark-mode', 'crescent', 'malam', 'bulan', 'gelap', 'tidur'],
+  sun: ['sun', 'sunny', 'light', 'brightness', 'day', 'solar', 'warmth', 'matahari', 'siang', 'terang', 'cerah'],
+  star: ['star', 'favorite', 'rating', 'vip', 'premium', 'bintang', 'ulasan', 'favorit'],
+  bookmark: ['bookmark', 'save', 'favorite', 'ribbon', 'mark', 'tag', 'baca', 'tandai', 'simpan'],
+  charging: ['charging', 'charge', 'battery', 'power', 'electric', 'isi-daya', 'baterai', 'listrik'],
+  text: ['text', 'typography', 'font', 'align', 'paragraph', 'teks', 'tulisan', 'huruf', 'format'],
+  log: ['log', 'sign', 'account', 'auth', 'access', 'masuk', 'keluar'],
 };
 
 // Suffix modifier tags

@@ -8,7 +8,9 @@
     "rating",
     "vip",
     "premium",
-    "bintang"
+    "bintang",
+    "ulasan",
+    "favorit"
   ],
   "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 2L15.7083 7.40479L22 9.25724L17.9999 14.4501L18.1803 21L12 18.8046L5.81972 21L6.00006 14.4501L2 9.25724L8.29173 7.40479L12 2Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }
