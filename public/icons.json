@@ -153,9 +153,59 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"2\" y=\"6\" width=\"20\" height=\"13\" rx=\"4\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4 18C4 15.7909 5.79086 14 8 14H16C18.2091 14 20 15.7909 20 18\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M6 10H18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "airlines",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "airlines",
+        "airline",
+        "airplane",
+        "plane",
+        "flight",
+        "travel",
+        "aviation",
+        "wings",
+        "maskapai",
+        "pesawat",
+        "terbang",
+        "penerbangan",
+        "bandara",
+        "sayap"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.2229 19.0002V5C19.2229 3.89543 18.3275 3 17.2229 3H11.8111C11.0389 3 10.3356 3.44457 10.0044 4.14216L3.35694 18.1423C2.72685 19.4694 3.69459 21.0002 5.16362 21.0002H17.2229C18.3275 21.0002 19.2229 20.1047 19.2229 19.0002Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "airlines-2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "airlines-2",
+        "airlines",
+        "airline",
+        "airplane",
+        "plane",
+        "flight",
+        "travel",
+        "aviation",
+        "wings",
+        "maskapai",
+        "pesawat",
+        "terbang",
+        "penerbangan",
+        "bandara",
+        "sayap"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.2229 16.0001V19.0002C19.2229 20.1047 18.3275 21.0002 17.2229 21.0002H5.16362C3.69459 21.0002 2.72685 19.4694 3.35694 18.1423L10.0044 4.14216C10.3356 3.44457 11.0389 3 11.8111 3H17.2229C18.3275 3 19.2229 3.89543 19.2229 5V8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M19.9648 9.36429L20.9549 13.9753C21.0711 14.5168 20.7252 15.0497 20.1832 15.1638L10.5079 17.2014C10.2225 17.2615 9.93086 17.1306 9.78615 16.8773C9.62641 16.5978 9.68746 16.2442 9.9317 16.0344L18.3355 8.81565C18.9109 8.32138 19.8056 8.62264 19.9648 9.36429Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "airplay",
@@ -268,19 +318,24 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.7083 19C17.0604 20.8412 14.6655 22 12 22C7.02944 22 3 17.9706 3 13C3 10.3345 4.15875 7.93964 6 6.29168M9.03451 4.5C9.96308 4.17607 10.961 4 12 4C16.9706 4 21 8.02944 21 13C21 14.0519 20.8195 15.0617 20.4879 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 5.5L3.5 4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 5.5L18.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "alarm-clock-off2",
+      "name": "alarm-clock-off-2",
       "category": "Time & Alarms",
       "tags": [
+        "iconix",
+        "alarm-clock-off-2",
         "alarm",
         "clock",
-        "off2",
-        "iconix",
-        "alarm-clock-off2",
+        "off",
         "time",
         "timer",
         "wake",
@@ -289,10 +344,14 @@
         "bell",
         "morning",
         "schedule",
-        "off",
+        "slash",
         "disabled",
-        "silent",
-        "slash"
+        "turn-off",
+        "nonaktif",
+        "mati",
+        "inactive",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"13\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.17157 15.8284L12 13M12 13L14.8284 10.1716M12 13L9.17157 10.1716M12 13L14.8284 15.8284\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 5.5L5.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 5.5L18.5 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -456,7 +515,11 @@
         "center",
         "horizontal",
         "layout",
-        "align-center-horizontal"
+        "align-center-horizontal",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H8C9.10457 21 10 20.1046 10 19V5C10 3.89543 9.10457 3 8 3H6C4.89543 3 4 3.89543 4 5V19C4 20.1046 4.89543 21 6 21Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 18H18C19.1046 18 20 17.1046 20 16V8C20 6.89543 19.1046 6 18 6H16C14.8954 6 14 6.89543 14 8V16C14 17.1046 14.8954 18 16 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 12H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -470,7 +533,11 @@
         "center",
         "vertical",
         "layout",
-        "align-center-vertical"
+        "align-center-vertical",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 6V8C3 9.10457 3.89543 10 5 10H19C20.1046 10 21 9.10457 21 8V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M6 16V18C6 19.1046 6.89543 20 8 20H16C17.1046 20 18 19.1046 18 18V16C18 14.8954 17.1046 14 16 14H8C6.89543 14 6 14.8954 6 16Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M12 2V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -484,7 +551,11 @@
         "end",
         "horizontal",
         "layout",
-        "align-end-horizontal"
+        "align-end-horizontal",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 18H8C9.10457 18 10 17.1046 10 16V5C10 3.89543 9.10457 3 8 3H6C4.89543 3 4 3.89543 4 5V16C4 17.1046 4.89543 18 6 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 18H18C19.1046 18 20 17.1046 20 16V10C20 8.89543 19.1046 8 18 8H16C14.8954 8 14 8.89543 14 10V16C14 17.1046 14.8954 18 16 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 21H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -498,7 +569,11 @@
         "end",
         "vertical",
         "layout",
-        "align-end-vertical"
+        "align-end-vertical",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6V8C18 9.10457 17.1046 10 16 10H5C3.89543 10 3 9.10457 3 8L3 6C3 4.89543 3.89543 4 5 4L16 4C17.1046 4 18 4.89543 18 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M18 16V18C18 19.1046 17.1046 20 16 20H10C8.89543 20 8 19.1046 8 18V16C8 14.8954 8.89543 14 10 14H16C17.1046 14 18 14.8954 18 16Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M21 2V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -528,7 +603,11 @@
         "distribute",
         "end",
         "layout",
-        "align-horizontal-distribute-end"
+        "align-horizontal-distribute-end",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 20H8C9.10457 20 10 19.1046 10 18V6C10 4.89543 9.10457 4 8 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 17H18C19.1046 17 20 16.1046 20 15V9C20 7.89543 19.1046 7 18 7H16C14.8954 7 14 7.89543 14 9V15C14 16.1046 14.8954 17 16 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 2L10 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20 2L20 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -543,7 +622,12 @@
         "distribute",
         "start",
         "layout",
-        "align-horizontal-distribute-start"
+        "align-horizontal-distribute-start",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 20H8C9.10457 20 10 19.1046 10 18V6C10 4.89543 9.10457 4 8 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 17H18C19.1046 17 20 16.1046 20 15V9C20 7.89543 19.1046 7 18 7H16C14.8954 7 14 7.89543 14 9V15C14 16.1046 14.8954 17 16 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4 2L4 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 2L14 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -571,7 +655,11 @@
         "justify",
         "end",
         "layout",
-        "align-horizontal-justify-end"
+        "align-horizontal-justify-end",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 20H6C7.10457 20 8 19.1046 8 18V6C8 4.89543 7.10457 4 6 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14 17H16C17.1046 17 18 16.1046 18 15V9C18 7.89543 17.1046 7 16 7H14C12.8954 7 12 7.89543 12 9V15C12 16.1046 12.8954 17 14 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M22 2L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -586,7 +674,12 @@
         "justify",
         "start",
         "layout",
-        "align-horizontal-justify-start"
+        "align-horizontal-justify-start",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 20H18C16.8954 20 16 19.1046 16 18V6C16 4.89543 16.8954 4 18 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 17H8C6.89543 17 6 16.1046 6 15V9C6 7.89543 6.89543 7 8 7H10C11.1046 7 12 7.89543 12 9V15C12 16.1046 11.1046 17 10 17Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 2L2 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -630,7 +723,11 @@
         "start",
         "horizontal",
         "layout",
-        "align-start-horizontal"
+        "align-start-horizontal",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 6H8C9.10457 6 10 6.89543 10 8V19C10 20.1046 9.10457 21 8 21H6C4.89543 21 4 20.1046 4 19V8C4 6.89543 4.89543 6 6 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 6H18C19.1046 6 20 6.89543 20 8V14C20 15.1046 19.1046 16 18 16H16C14.8954 16 14 15.1046 14 14V8C14 6.89543 14.8954 6 16 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 3H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -644,7 +741,11 @@
         "start",
         "vertical",
         "layout",
-        "align-start-vertical"
+        "align-start-vertical",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 6V8C6 9.10457 6.89543 10 8 10H19C20.1046 10 21 9.10457 21 8V6C21 4.89543 20.1046 4 19 4H8C6.89543 4 6 4.89543 6 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M6 16V18C6 19.1046 6.89543 20 8 20H14C15.1046 20 16 19.1046 16 18V16C16 14.8954 15.1046 14 14 14H8C6.89543 14 6 14.8954 6 16Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M3 2V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -674,7 +775,11 @@
         "distribute",
         "end",
         "layout",
-        "align-vertical-distribute-end"
+        "align-vertical-distribute-end",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 18V16C20 14.8954 19.1046 14 18 14H6C4.89543 14 4 14.8954 4 16V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17 8V6C17 4.89543 16.1046 4 15 4H9C7.89543 4 7 4.89543 7 6V8C7 9.10457 7.89543 10 9 10H15C16.1046 10 17 9.10457 17 8Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 20L22 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 10L22 10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -689,7 +794,12 @@
         "distribute",
         "start",
         "layout",
-        "align-vertical-distribute-start"
+        "align-vertical-distribute-start",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 18V16C20 14.8954 19.1046 14 18 14H6C4.89543 14 4 14.8954 4 16V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17 8V6C17 4.89543 16.1046 4 15 4H9C7.89543 4 7 4.89543 7 6V8C7 9.10457 7.89543 10 9 10H15C16.1046 10 17 9.10457 17 8Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 14L22 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 4L22 4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -719,7 +829,11 @@
         "justify",
         "end",
         "layout",
-        "align-vertical-justify-end"
+        "align-vertical-justify-end",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 14V16C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16V14C4 12.8954 4.89543 12 6 12H18C19.1046 12 20 12.8954 20 14Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17 4V6C17 7.10457 16.1046 8 15 8H9C7.89543 8 7 7.10457 7 6V4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -734,7 +848,12 @@
         "justify",
         "start",
         "layout",
-        "align-vertical-justify-start"
+        "align-vertical-justify-start",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 20V18C4 16.8954 4.89543 16 6 16H18C19.1046 16 20 16.8954 20 18V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M7 10V8C7 6.89543 7.89543 6 9 6H15C16.1046 6 17 6.89543 17 8V10C17 11.1046 16.1046 12 15 12H9C7.89543 12 7 11.1046 7 10Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M22 2L2 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -1328,7 +1447,12 @@
         "ring",
         "disabled",
         "turn-off",
-        "slash"
+        "slash",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.54995 7.23632C6.54249 7.48112 6.52977 7.7276 6.51179 7.9777C6.34254 10.3322 5.42493 12.5543 4.29454 14.6267C3.71121 15.6961 4.48525 17 5.70343 17H16.5M7.99999 2.81273C8.07296 2.72373 8.15222 2.63592 8.23802 2.55103C8.67946 2.11429 9.32329 2 9.94427 2H13.2712C15.7408 2 17.5265 4.22918 17.5235 6.6988C17.5234 6.79023 17.5239 6.88165 17.525 6.97315C17.563 9.98948 18.7373 12.8518 20.1818 15.5M9.99999 20C9.99999 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -1766,7 +1890,15 @@
         "clear",
         "filter",
         "cancel",
-        "reset"
+        "reset",
+        "off",
+        "disabled",
+        "strip",
+        "garis-miring",
+        "nonaktif",
+        "batal",
+        "mati",
+        "inactive"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.17157 14.8284L14.8284 9.17158\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -1781,7 +1913,15 @@
         "ban",
         "block",
         "forbidden",
-        "diagonal"
+        "diagonal",
+        "off",
+        "disabled",
+        "nonaktif",
+        "mati",
+        "inactive",
+        "garis-miring",
+        "cancel",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"10\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2.26346 21.7365L22.2635 1.73654\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -2323,7 +2463,12 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4.69921 5.16633C3.02504 6.9542 2 9.35739 2 12C2 17.5228 6.47715 22 12 22C14.7255 22 17.1962 20.9097 19 19.1414M20.6622 17C21.513 15.5291 22 13.8214 22 12C22 6.47715 17.5228 2 12 2C12 2 8.47087 2.48697 7 3.33782\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M15.5 12H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 6V8.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -2349,6 +2494,101 @@
         "new"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.685 14.5C21.8906 13.701 22 12.8632 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.6849 22 13.3538 21.9311 14 21.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M12 6V12L15.5 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 19H22M19 16V22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "columns-2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "columns-2",
+        "columns",
+        "grid",
+        "vertical",
+        "split",
+        "divide",
+        "layout",
+        "kolom",
+        "tata-letak",
+        "pembagian",
+        "multi-kolom",
+        "2-columns",
+        "dua-kolom",
+        "half"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H12M12 3V21M12 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 3.79999V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "columns-3",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "columns-3",
+        "columns",
+        "grid",
+        "vertical",
+        "split",
+        "divide",
+        "layout",
+        "kolom",
+        "tata-letak",
+        "pembagian",
+        "multi-kolom",
+        "3-columns",
+        "tiga-kolom",
+        "three-columns"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H15M9 3V21M9 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H9M15 3V21M15 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H15M15 21H9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 3.79999V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 3.79999V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "columns-3-cog",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "columns-3-cog",
+        "columns",
+        "cog",
+        "gear",
+        "settings",
+        "configuration",
+        "preferences",
+        "options",
+        "setup",
+        "grid",
+        "vertical",
+        "split",
+        "divide",
+        "layout",
+        "kolom",
+        "tata-letak",
+        "pembagian",
+        "multi-kolom",
+        "3-columns",
+        "tiga-kolom",
+        "three-columns"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H15M9 3V21M9 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H9M15 3V11M15 3H18C19.6569 3 21 4.34315 21 6V12M15 3V12M9 21H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 3.79999V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 3.79999V12.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "columns-4",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "columns-4",
+        "columns",
+        "grid",
+        "vertical",
+        "split",
+        "divide",
+        "layout",
+        "kolom",
+        "tata-letak",
+        "pembagian",
+        "multi-kolom",
+        "4-columns",
+        "empat-kolom",
+        "four-columns"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7.5 3H12M7.5 3V21M7.5 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H7.5M12 3V21M12 3H16.5M12 21H7.5M12 21H16.5M16.5 3V21M16.5 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H16.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 3.79999V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16.5 4V20.4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M7.5 4V20.4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "file",
@@ -2447,14 +2687,14 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<ellipse cx=\"12\" cy=\"18\" rx=\"8\" ry=\"4\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.0662 5.94245L13.0146 3.18252C12.3588 2.92583 11.6501 3.40945 11.6501 4.11374V9.86524C11.6501 10.5816 12.3812 11.0656 13.0407 10.7858L20.0923 7.79424C20.9174 7.44421 20.9008 6.26911 20.0662 5.94245Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11.6501 2L11.6501 16.9697\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "flag-golf-right2",
+      "name": "flag-golf-right-2",
       "category": "General UI",
       "tags": [
         "iconix",
-        "flag-golf-right2",
+        "flag-golf-right-2",
         "flag",
         "golf",
-        "right2",
+        "right",
         "mark",
         "bookmark",
         "report",
@@ -2464,7 +2704,7 @@
         "country",
         "bendera"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.9206 14.8312L12.7573 12.3098C12.2719 12.1112 11.7281 12.1112 11.2427 12.3098L5.07938 14.8312C3.489 15.4818 3.40531 17.7027 4.94222 18.4711L11.1056 21.5528C11.6686 21.8343 12.3314 21.8343 12.8944 21.5528L19.0578 18.4711C20.5947 17.7027 20.511 15.4818 18.9206 14.8312Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.066 5.94243L13.0144 3.18251C12.3586 2.92582 11.65 3.40944 11.65 4.11372V9.86523C11.65 10.5816 12.3811 11.0656 13.0405 10.7858L20.0921 7.79423C20.9172 7.44419 20.9006 6.26909 20.066 5.94243Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11.65 2L11.65 16.9697\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.9206 14.8312L12.7573 12.3098C12.2719 12.1112 11.7281 12.1112 11.2427 12.3098L5.07938 14.8312C3.489 15.4818 3.40531 17.7027 4.94222 18.4711L11.1056 21.5528C11.6686 21.8343 12.3314 21.8343 12.8944 21.5528L19.0578 18.4711C20.5947 17.7027 20.511 15.4818 18.9206 14.8312Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.0662 5.94245L13.0146 3.18252C12.3588 2.92583 11.6501 3.40945 11.6501 4.11374V9.86524C11.6501 10.5816 12.3812 11.0656 13.0407 10.7858L20.0923 7.79424C20.9174 7.44421 20.9008 6.26911 20.0662 5.94245Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11.6501 2L11.6501 16.9697\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "flag-off",
@@ -2486,7 +2726,12 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 2.52464C11.3123 1.80645 13.308 6.15835 18.3938 3.8816C19.1159 3.55833 20 4.04049 20 4.83165V15.7602C20 15.9092 19.923 16.048 19.7947 16.1239M16.5 17.2657C13.2594 17.4067 11.63 14.107 5.31415 15.6324C4.65715 15.791 4 15.3114 4 14.6355V5L4 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -2602,6 +2847,610 @@
         "terbuka"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.2798 11C20.573 11 20 10.427 20 9.72015V8.33333C20 7.59695 19.403 7 18.6667 7H15C13.741 7 12.5554 6.40722 11.8 5.4L10.6 3.8C10.2223 3.29639 9.62951 3 9 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21H17.0239C18.7903 21 20.3476 19.8413 20.8552 18.1494L22.5057 12.6476C22.7521 11.8264 22.1372 11 21.2798 11Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6.11325 16L7.8453 13C8.55983 11.7624 9.88034 11 11.3094 11H20C21.4952 11 22.5676 12.4413 22.138 13.8735L21 17.6667\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-horizontal",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-horizontal",
+        "gallery",
+        "horizontal",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"6\" y=\"3\" width=\"12\" height=\"18\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 3V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 3V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-horizontal-end",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-horizontal-end",
+        "gallery",
+        "horizontal",
+        "end",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"10\" y=\"3\" width=\"12\" height=\"18\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 6L2 18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M6 3V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-horizontal-start",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-horizontal-start",
+        "gallery",
+        "horizontal",
+        "start",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"2\" y=\"3\" width=\"12\" height=\"18\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6L22 18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M18 3V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-thumbnails",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-thumbnails",
+        "gallery",
+        "thumbnails",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "preview",
+        "grid",
+        "foto-kecil"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"14\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 21H20M3 21H4M16 21H14M10 21H8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-vertical",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-vertical",
+        "gallery",
+        "vertical",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 2H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 22H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-vertical-end",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-vertical-end",
+        "gallery",
+        "vertical",
+        "end",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "last",
+        "right",
+        "akhir",
+        "kanan"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"10\" width=\"18\" height=\"12\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M18 2L6 2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 6H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gallery-vertical-start",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gallery-vertical-start",
+        "gallery",
+        "vertical",
+        "start",
+        "images",
+        "photos",
+        "media",
+        "carousel",
+        "slider",
+        "thumbnails",
+        "showcase",
+        "galeri",
+        "gambar",
+        "foto",
+        "pratinjau",
+        "portofolio",
+        "first",
+        "left",
+        "beginning",
+        "awal",
+        "kiri"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"2\" width=\"18\" height=\"12\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M18 22L6 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 18H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gap-horizontal",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gap-horizontal",
+        "gap",
+        "horizontal",
+        "spacing",
+        "margin",
+        "padding",
+        "space",
+        "distance",
+        "jarak",
+        "spasi",
+        "renggang",
+        "pemisah",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 3H19C17.3431 3 16 4.34315 16 6V18C16 19.6569 17.3431 21 19 21H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 3H5C6.65685 3 8 4.34315 8 6V18C8 19.6569 6.65685 21 5 21H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 2V3.66667M12 22V20.3333M12 7V10.3333M12 13.6667V17\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "gap-vertical",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "gap-vertical",
+        "gap",
+        "vertical",
+        "spacing",
+        "margin",
+        "padding",
+        "space",
+        "distance",
+        "jarak",
+        "spasi",
+        "renggang",
+        "pemisah",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 21V19C21 17.3431 19.6569 16 18 16H6C4.34315 16 3 17.3431 3 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 3V5C21 6.65685 19.6569 8 18 8H6C4.34315 8 3 6.65685 3 5V3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 12H20.3333M2 12H3.66667M17 12H13.6667M10.3333 12H7\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2",
+        "grid",
+        "2x2",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 21H18C19.6569 21 21 19.6569 21 18V12M12 21V12M12 21H6C4.34315 21 3 19.6569 3 18V12M21 12H12M21 12V6C21 4.34315 19.6569 3 18 3H12M12 12V3M12 12H3M12 3H6C4.34315 3 3 4.34315 3 6V12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2001 12H12M12 12V3.79999M12 12H3.80005M12 12V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2-check",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2-check",
+        "grid",
+        "2x2",
+        "check",
+        "done",
+        "success",
+        "verified",
+        "approved",
+        "ok",
+        "completed",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H18C19.6569 3 21 4.34315 21 6V12H12M12 3V12M12 3H6C4.34315 3 3 4.34315 3 6V12M12 12H3M12 12V21H6C4.34315 21 3 19.6569 3 18V12M12 12L20.2001 12M12 12L12 3.79999M12 12L3.80005 12M12 12L12 20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 15L17.1176 19L15 16.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2-minus",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2-minus",
+        "grid",
+        "2x2",
+        "minus",
+        "remove",
+        "delete",
+        "exclude",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H18C19.6569 3 21 4.34315 21 6V12H12M12 3V12M12 3H6C4.34315 3 3 4.34315 3 6V12M12 12H3M12 12V21H6C4.34315 21 3 19.6569 3 18V12M12 12L20.2001 12M12 12L12 3.79999M12 12L3.80005 12M12 12L12 20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 18H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2-off",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2-off",
+        "grid",
+        "2x2",
+        "off",
+        "disabled",
+        "turn-off",
+        "slash",
+        "mute",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H19C20.1046 3 21 3.89543 21 5V12M12 3H8.5M12 3V6.5M21 12V15.5M21 12H17.5M3 12V5C3 4.63571 3.09739 4.29417 3.26756 4M3 12V19C3 20.1046 3.89543 21 5 21H12M3 12H11.2676M12 21H19C19.3643 21 19.7058 20.9026 20 20.7324M12 21V12.7324\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.2928 21.6152L2.29285 2.61523\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2-plus",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2-plus",
+        "grid",
+        "2x2",
+        "plus",
+        "add",
+        "create",
+        "new",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H18C19.6569 3 21 4.34315 21 6V12H12M12 3V12M12 3H6C4.34315 3 3 4.34315 3 6V12M12 12H3M12 12V21H6C4.34315 21 3 19.6569 3 18V12M12 12L20.2001 12M12 12L12 3.79999M12 12L3.80005 12M12 12L12 20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 18H21M18 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-2x2-x",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-2x2-x",
+        "grid",
+        "2x2",
+        "x",
+        "cancel",
+        "close",
+        "error",
+        "dismiss",
+        "reject",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "4-cells",
+        "empat-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 3H18C19.6569 3 21 4.34315 21 6V12H12M12 3V12M12 3H6C4.34315 3 3 4.34315 3 6V12M12 12H3M12 12V21H6C4.34315 21 3 19.6569 3 18V12M12 12L20.2001 12M12 12L12 3.79999M12 12L3.80005 12M12 12L12 20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.8786 20.1213L20.1213 15.8787M15.8786 15.8787L20.1213 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-3x2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-3x2",
+        "grid",
+        "3x2",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "6-cells",
+        "enam-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H15M9 3V21M9 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H9M9 3V12M15 3V21M15 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H15M15 3V12M15 21H9M15 21V12M9 21V12M15 12H9M15 12H21M9 12H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 3.79999V12M15 12H9.00005M15 12H20.2001M15 12V20.2M9.00005 12V3.79999M9.00005 12H3.80005M9.00005 12V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-3x2-off",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-3x2-off",
+        "grid",
+        "3x2",
+        "off",
+        "disabled",
+        "turn-off",
+        "slash",
+        "mute",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip",
+        "6-cells",
+        "enam-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H15M9 3H8M9 3V3.5M15 3H19C20.1046 3 21 3.89543 21 5V12M15 3V9M9 12H3M9 12V21M9 12V11M3 12V5M3 12V19C3 20.1046 3.89543 21 5 21H9M21 12V15.5M21 12H17.5M15 21H9M15 21H19C19.2983 21 19.5814 20.9347 19.8357 20.8176M15 21V16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.2928 21.6152L2.29285 2.61523\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-3x3",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-3x3",
+        "grid",
+        "3x3",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "9-cells",
+        "sembilan-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H15M9 3V21M9 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H9M9 3V9M15 3V21M15 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H15M15 3V9M15 21H9M15 21V15M9 21V15M15 9H9M15 9H21V15H15M15 9V15M9 9H3V15H9M9 9V15M9 15H15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00005 3.79999V8.99999M15 3.79999V8.99999M15 8.99999H9.00005M15 8.99999H20.2001M15 8.99999V15M9.00005 8.99999H3.80005M9.00005 8.99999V15M9.00005 15H15M9.00005 15V20.2M9.00005 15H3.80005M15 15V20.2M15 15H20.2001\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grid-3x3-off",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grid-3x3-off",
+        "grid",
+        "3x3",
+        "off",
+        "disabled",
+        "turn-off",
+        "slash",
+        "mute",
+        "layout",
+        "table",
+        "matrix",
+        "cells",
+        "kotak",
+        "susunan",
+        "tabel",
+        "petak",
+        "spreadsheet",
+        "baris-kolom",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip",
+        "9-cells",
+        "sembilan-kotak",
+        "widget"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 3H9H8M15 3V9H21M15 3H19C20.1046 3 21 3.89543 21 5V9M9 15V21M9 15H3M9 15V10M9 15H14M15 21H9M15 21H19C19.2841 21 19.5543 20.9408 19.799 20.834M15 21V16M9 21H5C3.89543 21 3 20.1046 3 19V15M3 9V5C3 4.71593 3.05922 4.4457 3.16599 4.20097M3 9V15M3 9H8M21 9V15V16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.2928 21.6152L2.29285 2.61523\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grip",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grip",
+        "drag",
+        "handle",
+        "reorder",
+        "move",
+        "grab",
+        "sort",
+        "dots",
+        "geser",
+        "tarik",
+        "pegangan",
+        "urutkan"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"19\" y=\"3\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"11\" y=\"3\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"11\" y=\"11\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"19\" y=\"11\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"11\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"11\" y=\"19\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"19\" y=\"19\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"19\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grip-horizontal",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grip-horizontal",
+        "grip",
+        "horizontal",
+        "drag",
+        "handle",
+        "reorder",
+        "move",
+        "grab",
+        "sort",
+        "dots",
+        "geser",
+        "tarik",
+        "pegangan",
+        "urutkan",
+        "landscape",
+        "row",
+        "mendatar",
+        "baris"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"19\" y=\"7\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"11\" y=\"7\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"7\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"11\" y=\"15\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"19\" y=\"15\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"15\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "grip-vertical",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "grip-vertical",
+        "grip",
+        "vertical",
+        "drag",
+        "handle",
+        "reorder",
+        "move",
+        "grab",
+        "sort",
+        "dots",
+        "geser",
+        "tarik",
+        "pegangan",
+        "urutkan",
+        "portrait",
+        "column",
+        "tegak",
+        "vertikal"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"15\" y=\"19\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"15\" y=\"11\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"15\" y=\"3\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"7\" y=\"11\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"7\" y=\"19\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"7\" y=\"3\" width=\"2\" height=\"2\" rx=\"1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "group",
@@ -2723,6 +3572,110 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "house-2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-2",
+        "house",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H14C15.1046 13 16 13.8954 16 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "house-3",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-3",
+        "house",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 17H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "house-check",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-check",
+        "house",
+        "check",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda",
+        "done",
+        "success",
+        "verified",
+        "approved",
+        "ok",
+        "completed"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 16L18.1176 20L16 17.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "house-check-2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-check-2",
+        "house",
+        "check",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 16L18.1176 20L16 17.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "house-check-3",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "house-check-3",
+        "house",
+        "check",
+        "home",
+        "building",
+        "dashboard",
+        "homepage",
+        "estate",
+        "property",
+        "residence",
+        "rumah",
+        "beranda"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 17H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 16L18.1176 20L16 17.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "house-cog",
       "category": "General UI",
       "tags": [
@@ -2749,13 +3702,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-cog2",
+      "name": "house-cog-2",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-cog2",
+        "house-cog-2",
         "house",
-        "cog2",
+        "cog",
         "home",
         "building",
         "dashboard",
@@ -2769,13 +3722,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21.25 18C21.25 19.2426 20.2427 20.25 19 20.25M21.25 18C21.25 16.7574 20.2427 15.75 19 15.75M21.25 18L22 18M19 20.25C17.7574 20.25 16.75 19.2426 16.75 18M19 20.25L19 21M16.75 18C16.75 16.7574 17.7574 15.75 19 15.75M16.75 18L16 18M19 15.75L19.0001 15M17.409 16.409L16.8787 15.8787M21.1213 15.8787L20.591 16.409M21.1213 20.1213L20.591 19.591M17.4091 19.591L16.8787 20.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-cog3",
+      "name": "house-cog-3",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-cog3",
+        "house-cog-3",
         "house",
-        "cog3",
+        "cog",
         "home",
         "building",
         "dashboard",
@@ -2832,13 +3785,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-minus2",
+      "name": "house-minus-2",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-minus2",
+        "house-minus-2",
         "house",
-        "minus2",
+        "minus",
         "remove",
         "home",
         "building",
@@ -2853,13 +3806,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H15C15.5523 13 16 13.4477 16 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-minus3",
+      "name": "house-minus-3",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-minus3",
+        "house-minus-3",
         "house",
-        "minus3",
+        "minus",
         "remove",
         "home",
         "building",
@@ -2922,13 +3875,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H22M19 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-plus2",
+      "name": "house-plus-2",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-plus2",
+        "house-plus-2",
         "house",
-        "plus2",
+        "plus",
         "add",
         "home",
         "building",
@@ -2943,13 +3896,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H15C15.5523 13 16 13.4477 16 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H22M19 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "house-plus3",
+      "name": "house-plus-3",
       "category": "General UI",
       "tags": [
         "iconix",
-        "house-plus3",
+        "house-plus-3",
         "house",
-        "plus3",
+        "plus",
         "add",
         "home",
         "building",
@@ -2962,24 +3915,6 @@
         "beranda"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 13V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H13.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 17H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H22M19 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "house2",
-      "category": "General UI",
-      "tags": [
-        "iconix",
-        "house2"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 21V15C8 13.8954 8.89543 13 10 13H14C15.1046 13 16 13.8954 16 15V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "house3",
-      "category": "General UI",
-      "tags": [
-        "iconix",
-        "house3"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 17V9.95634C21 8.72197 20.4301 7.55675 19.4558 6.79893L14.4558 2.91004C13.0113 1.78658 10.9887 1.78658 9.54424 2.91004L4.54424 6.79893C3.56989 7.55675 3 8.72197 3 9.95633V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 17H16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "houses",
@@ -3186,6 +4121,27 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "laptop-minimalis-2",
+      "category": "Devices & Tech",
+      "tags": [
+        "iconix",
+        "laptop-minimalis-2",
+        "laptop",
+        "minimalis",
+        "notebook",
+        "computer",
+        "pc",
+        "macbook",
+        "portable",
+        "device",
+        "screen",
+        "hardware",
+        "work",
+        "minimal"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 16L15 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "laptop-minimalis-check",
       "category": "Devices & Tech",
       "tags": [
@@ -3214,26 +4170,400 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 9L11.1176 13L9 10.8182\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "laptop-minimalis2",
-      "category": "Devices & Tech",
+      "name": "layout-arrow-down",
+      "category": "General UI",
       "tags": [
-        "laptop",
-        "minimalis2",
         "iconix",
-        "laptop-minimalis2",
-        "notebook",
-        "computer",
-        "pc",
-        "macbook",
-        "portable",
-        "device",
-        "screen",
-        "hardware",
-        "work",
-        "minimalis",
-        "minimal"
+        "layout-arrow-down",
+        "layout",
+        "arrow",
+        "down",
+        "download",
+        "inbound",
+        "receive",
+        "arrow-down",
+        "decrease",
+        "countdown",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 5V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 22L22 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 16L15 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14.5641 17.8569L17.7782 21.0711L20.9923 17.8569M17.7782 21.0711V3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-arrow-right",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-arrow-right",
+        "layout",
+        "arrow",
+        "right",
+        "arrow-right",
+        "forward",
+        "next",
+        "future",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.8569 14.5641L21.0711 17.7782L17.8569 20.9923M21.0711 17.7782H3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-dashboard",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-dashboard",
+        "layout",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "admin",
+        "panel",
+        "overview",
+        "ringkasan",
+        "dasbor",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"5\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"12\" width=\"7\" height=\"9\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"16\" width=\"7\" height=\"5\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"9\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-freeform",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-freeform",
+        "layout",
+        "freeform",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "canvas",
+        "board",
+        "bebas",
+        "kanvas",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"4\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"5\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid",
+        "layout",
+        "grid",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid-circles",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid-circles",
+        "layout",
+        "grid",
+        "circles",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "round",
+        "geometric",
+        "lingkaran",
+        "bulat",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid-clover",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid-clover",
+        "layout",
+        "grid",
+        "clover",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "flower",
+        "leaf",
+        "shape",
+        "daun",
+        "kelopak",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14 6.5V9.99986C14 9.99994 14.0001 10 14.0001 10H17.5C19.433 10 21 8.433 21 6.5C21 4.567 19.433 3 17.5 3C15.567 3 14 4.567 14 6.5Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5V9.99986C10 9.99994 9.99994 10 9.99986 10H6.5C4.567 10 3 8.433 3 6.5Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 14.0001V17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14H14.0001C14.0001 14 14 14.0001 14 14.0001Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3 17.5C3 15.567 4.567 14 6.5 14H9.99986C9.99994 14 10 14.0001 10 14.0001V17.5C10 19.433 8.433 21 6.5 21C4.567 21 3 19.433 3 17.5Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid-plus",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid-plus",
+        "layout",
+        "grid",
+        "plus",
+        "add",
+        "create",
+        "new",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14.5 17.5H20.5M17.5 14.5V20.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid-plus-2",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid-plus-2",
+        "layout",
+        "grid",
+        "plus",
+        "add",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14.5 6.5H20.5M17.5 9.5V3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-grid-squares-circles",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-grid-squares-circles",
+        "layout",
+        "grid",
+        "squares",
+        "circles",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "round",
+        "geometric",
+        "lingkaran",
+        "bulat",
+        "shapes",
+        "kotak-lingkaran",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"3.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-list",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-list",
+        "layout",
+        "list",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 4H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 9.33334H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 14.6667H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 20H21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-panel-left",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-panel-left",
+        "layout",
+        "panel",
+        "left",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"7\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-panel-top",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-panel-top",
+        "layout",
+        "panel",
+        "top",
+        "dashboard",
+        "template",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "layout-template",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "layout-template",
+        "layout",
+        "template",
+        "dashboard",
+        "view",
+        "workspace",
+        "interface",
+        "structure",
+        "tata-letak",
+        "kerangka",
+        "struktur",
+        "wireframe",
+        "desain",
+        "preset",
+        "boilerplate",
+        "cetak-biru",
+        "panel",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"16\" y=\"14\" width=\"5\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<rect x=\"3\" y=\"14\" width=\"9\" height=\"7\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "lock-keyhole",
@@ -3415,6 +4745,23 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "monitor-2",
+      "category": "Devices & Tech",
+      "tags": [
+        "iconix",
+        "monitor-2",
+        "monitor",
+        "screen",
+        "display",
+        "desktop",
+        "computer",
+        "pc",
+        "hardware",
+        "workstation"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "monitor-activity",
       "category": "Devices & Tech",
       "tags": [
@@ -3461,13 +4808,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H11\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20 3V7C20 7.55228 19.5523 8 19 8H15C14.4477 8 14 7.55228 14 7V3C14 2.44772 14.4477 2 15 2H19C19.5523 2 20 2.44772 20 3Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M22.5 3.5V6.5L20.625 6.125V3.875L22.5 3.5Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor-camera2",
+      "name": "monitor-camera-2",
       "category": "Devices & Tech",
       "tags": [
         "iconix",
-        "monitor-camera2",
+        "monitor-camera-2",
         "monitor",
-        "camera2",
+        "camera",
         "screen",
         "display",
         "desktop",
@@ -3553,13 +4900,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M22.0001 6C22.0001 7.65685 20.6569 9 19.0001 9M22.0001 6C22.0001 4.34315 20.6569 3 19.0001 3M22.0001 6L23 5.99998M19.0001 9C17.3432 9 16.0001 7.65685 16.0001 6M19.0001 9L19.0001 10M16.0001 6C16.0001 4.34315 17.3432 3 19.0001 3M16.0001 6L15 5.99998M19.0001 3L19.0001 2M16.8787 3.87868L16.1716 3.17154M21.8285 3.1716L21.1213 3.8787M21.8284 8.82839L21.1213 8.12132M16.8787 8.12132L16.1716 8.82845\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor-cog2",
+      "name": "monitor-cog-2",
       "category": "Devices & Tech",
       "tags": [
         "iconix",
-        "monitor-cog2",
+        "monitor-cog-2",
         "monitor",
-        "cog2",
+        "cog",
         "screen",
         "display",
         "desktop",
@@ -3594,13 +4941,13 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<circle cx=\"19\" cy=\"6\" r=\"3\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor-dot2",
+      "name": "monitor-dot-2",
       "category": "Devices & Tech",
       "tags": [
         "iconix",
-        "monitor-dot2",
+        "monitor-dot-2",
         "monitor",
-        "dot2",
+        "dot",
         "screen",
         "display",
         "desktop",
@@ -3697,18 +5044,23 @@
         "hardware",
         "workstation",
         "turn-off",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H12M12 21H18M12 21V19M8 3H19C20.6569 3 22 4.34315 22 6V15C22 15.3791 21.9297 15.7417 21.8014 16.0756M17 18H5C3.34315 18 2 16.6569 2 15V6C2 5.1115 2.38625 4.31321 3 3.76389\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor-off2",
+      "name": "monitor-off-2",
       "category": "Devices & Tech",
       "tags": [
         "iconix",
-        "monitor-off2",
+        "monitor-off-2",
         "monitor",
-        "off2",
+        "off",
         "screen",
         "display",
         "desktop",
@@ -3716,10 +5068,14 @@
         "pc",
         "hardware",
         "workstation",
-        "off",
+        "slash",
         "disabled",
-        "silent",
-        "slash"
+        "turn-off",
+        "nonaktif",
+        "mati",
+        "inactive",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H12M12 21H18M12 21V17M15 16H5C3.34315 16 2 14.6569 2 13V6C2 5.1115 2.38625 4.31321 3 3.76389M8 3H19C20.6569 3 22 4.34315 22 6V13C22 14.0435 21.4672 14.9625 20.6589 15.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -3835,6 +5191,24 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17.4545 3H22V7.54545M22 3L17 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
+      "name": "monitor-screen-share-2",
+      "category": "Devices & Tech",
+      "tags": [
+        "iconix",
+        "monitor-screen-share-2",
+        "monitor",
+        "screen",
+        "share",
+        "display",
+        "desktop",
+        "computer",
+        "pc",
+        "hardware",
+        "workstation"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13L2 6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17.4545 3H22V7.54545M22 3L17 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
       "name": "monitor-screen-share-off",
       "category": "Devices & Tech",
       "tags": [
@@ -3856,50 +5230,41 @@
         "workstation",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17.1716 7.83157L19.5016 5.50157M19.5016 5.50157L21.8316 3.17157M19.5016 5.50157L17.1716 3.17157M19.5016 5.50157L21.8316 7.83157\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor-screen-share-off2",
+      "name": "monitor-screen-share-off-2",
       "category": "Devices & Tech",
       "tags": [
         "iconix",
-        "monitor-screen-share-off2",
+        "monitor-screen-share-off-2",
         "monitor",
         "screen",
         "share",
-        "off2",
+        "off",
         "display",
         "desktop",
         "computer",
         "pc",
         "hardware",
         "workstation",
-        "off",
+        "slash",
         "disabled",
-        "silent",
-        "slash"
+        "turn-off",
+        "nonaktif",
+        "mati",
+        "inactive",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13L2 6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17.1716 7.83157L19.5016 5.50157M19.5016 5.50157L21.8316 3.17157M19.5016 5.50157L17.1716 3.17157M19.5016 5.50157L21.8316 7.83157\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
-    },
-    {
-      "name": "monitor-screen-share2",
-      "category": "Devices & Tech",
-      "tags": [
-        "iconix",
-        "monitor-screen-share2",
-        "monitor",
-        "screen",
-        "share2",
-        "display",
-        "desktop",
-        "computer",
-        "pc",
-        "hardware",
-        "workstation"
-      ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 11.5V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13L2 6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17.4545 3H22V7.54545M22 3L17 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "monitor-smartphone",
@@ -4017,13 +5382,25 @@
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 19V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M9.17157 13.3284L12 10.5M12 10.5L14.8284 7.67157M12 10.5L9.17157 7.67157M12 10.5L14.8284 13.3284\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
-      "name": "monitor2",
-      "category": "Devices & Tech",
+      "name": "notification-flag",
+      "category": "General UI",
       "tags": [
         "iconix",
-        "monitor2"
+        "notification-flag",
+        "notification",
+        "flag",
+        "alert",
+        "notice",
+        "reminder",
+        "bell",
+        "pemberitahuan",
+        "notifikasi",
+        "pengingat",
+        "bookmark",
+        "mark",
+        "bendera"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H18M12 17V21\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M22 6V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14.9552 10.2761L19.814 14.2239C20.5447 14.8176 20.1249 16 19.1834 16H5C4.44772 16 4 15.5523 4 15V4C4 3.44772 4.44772 3 5 3L19.1834 3C20.1249 3 20.5447 4.18242 19.814 4.77611L14.9552 8.72389C14.4627 9.12408 14.4627 9.87592 14.9552 10.2761Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M4 2L4 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "paint-brush",
@@ -4038,6 +5415,590 @@
         "lukis"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16.0213 12.237L21.6852 5.58243C22.3301 4.82476 22.2849 3.69882 21.5813 2.99528C20.8778 2.29173 19.7518 2.24653 18.9942 2.89142L12.3396 8.55533C11.895 8.93377 11.8678 9.61107 12.2807 10.0239L14.5527 12.2959C14.9655 12.7088 15.6428 12.6816 16.0213 12.237Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M14.3124 13.7906L12.1005 15.3646C11.305 15.9307 10.2171 15.8397 9.52672 15.1493L9.42712 15.0497C8.73675 14.3593 8.64573 13.2714 9.2118 12.4759L10.7858 10.264C11.1445 9.75995 11.8702 9.69924 12.3077 10.1367L14.4397 12.2688C14.8772 12.7062 14.8165 13.4319 14.3124 13.7906Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M8.16413 13.8721L10.4622 16.1702C11.0861 19 6.50745 22.0644 1.91134 20.0947C2.67737 19.7664 4.01954 18.9668 4.55283 16.4834C5.08612 14 6.52263 14.4193 8.16413 13.8721Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-bottom",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-bottom",
+        "panel",
+        "bottom",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H3.80005\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-bottom-close",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-bottom-close",
+        "panel",
+        "bottom",
+        "close",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "hide",
+        "collapse",
+        "tutup",
+        "sembunyikan",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H3.80006\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 8L12 11L9 8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-bottom-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-bottom-dashed",
+        "panel",
+        "bottom",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H18.15M3.80006 15H5.85005M14.05 15H9.95004\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-bottom-open",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-bottom-open",
+        "panel",
+        "bottom",
+        "open",
+        "unlocked",
+        "access",
+        "terbuka",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H3.80006\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 10L12 7L9 10\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-left",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-left",
+        "panel",
+        "left",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00005 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-left-close",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-left-close",
+        "panel",
+        "left",
+        "close",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "hide",
+        "collapse",
+        "tutup",
+        "sembunyikan",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00006 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M16 15L13 12L16 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-left-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-left-dashed",
+        "panel",
+        "left",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00006 20.2V18.15M9.00006 3.8V5.84999M9.00006 14.05V9.94998\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-left-open",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-left-open",
+        "panel",
+        "left",
+        "open",
+        "unlocked",
+        "access",
+        "terbuka",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00006 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14 15L17 12L14 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-left-right-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-left-right-dashed",
+        "panel",
+        "left",
+        "right",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 20.2V18.15M15 3.8V5.84999M15 14.05V9.94998\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 20.2V18.15M9 3.8V5.84999M9 14.05V9.94998\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-right",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-right",
+        "panel",
+        "right",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.0001 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-right-close",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-right-close",
+        "panel",
+        "right",
+        "close",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "hide",
+        "collapse",
+        "tutup",
+        "sembunyikan",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.0001 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M8 15L11 12L8 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-right-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-right-dashed",
+        "panel",
+        "right",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 20.2V18.15M15 3.8V5.84999M15 14.05V9.94998\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-right-open",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-right-open",
+        "panel",
+        "right",
+        "open",
+        "unlocked",
+        "access",
+        "terbuka",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.0001 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10 15L7 12L10 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-top",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-top",
+        "panel",
+        "top",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H3.80005\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-top-bottom-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-top-bottom-dashed",
+        "panel",
+        "top",
+        "bottom",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H18.15M3.80006 9H5.85005M14.05 9H9.95004\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H18.15M3.8 15H5.84999M14.05 15H9.94998\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-top-close",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-top-close",
+        "panel",
+        "top",
+        "close",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "hide",
+        "collapse",
+        "tutup",
+        "sembunyikan",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H3.80006\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 16L12 13L9 16\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-top-dashed",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-top-dashed",
+        "panel",
+        "top",
+        "dashed",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "dotted",
+        "placeholder",
+        "border",
+        "garis-putus",
+        "putus-putus",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H18.15M3.80006 9H5.85005M14.05 9H9.95004\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panel-top-open",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panel-top-open",
+        "panel",
+        "top",
+        "open",
+        "unlocked",
+        "access",
+        "terbuka",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "window",
+        "bilah",
+        "jendela",
+        "kompartemen",
+        "kolom",
+        "layout",
+        "widget",
+        "kontainer"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H3.80006\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 14L12 17L9 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panels-left-bottom",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panels-left-bottom",
+        "panels",
+        "left",
+        "bottom",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "windows",
+        "bilah",
+        "jendela",
+        "multi-panel",
+        "kompartemen",
+        "layout",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.00006 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.80005 15H20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panels-left-top",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panels-left-top",
+        "panels",
+        "left",
+        "top",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "windows",
+        "bilah",
+        "jendela",
+        "multi-panel",
+        "kompartemen",
+        "layout",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M3.80011 9H20.2001\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 9.80005V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panels-right-bottom",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panels-right-bottom",
+        "panels",
+        "right",
+        "bottom",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "windows",
+        "bilah",
+        "jendela",
+        "multi-panel",
+        "kompartemen",
+        "layout",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.0001 20.2V3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M14.2 15H3.8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "panels-right-top",
+      "category": "General UI",
+      "tags": [
+        "iconix",
+        "panels-right-top",
+        "panels",
+        "right",
+        "top",
+        "sidebar",
+        "drawer",
+        "sheet",
+        "dock",
+        "windows",
+        "bilah",
+        "jendela",
+        "multi-panel",
+        "kompartemen",
+        "layout",
+        "widget",
+        "modul"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 9H3.80006\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 9.80005V20.2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "pc",
@@ -4123,7 +6084,12 @@
         "compose",
         "disabled",
         "turn-off",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM10.3938 10.9098C10.7872 10.5222 10.7919 9.88903 10.4043 9.49562C10.0167 9.10221 9.38351 9.09752 8.9901 9.48514L9.69195 10.1975L10.3938 10.9098ZM14.578 15.094C14.9714 14.7064 14.9761 14.0732 14.5885 13.6798C14.2008 13.2864 13.5677 13.2817 13.1743 13.6693L13.8761 14.3817L14.578 15.094ZM11.7279 6.78767C11.3344 7.17529 11.3298 7.80844 11.7174 8.20185C12.105 8.59525 12.7381 8.59995 13.1315 8.21233L12.4297 7.5L11.7279 6.78767ZM15.912 10.9719C15.5186 11.3595 15.5139 11.9926 15.9016 12.386C16.2892 12.7794 16.9223 12.7841 17.3157 12.3965L16.6139 11.6842L15.912 10.9719ZM6.57966 20.208L6.21526 19.2767L6.57966 20.208ZM10.629 17.581L9.92718 16.8687L10.629 17.581ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM6.57966 20.208L6.21526 19.2767L1.6356 21.0688L2 22L2.3644 22.9312L6.94406 21.1392L6.57966 20.208ZM2 22L2.93124 22.3644L4.68946 17.8712L3.75821 17.5068L2.82697 17.1424L1.06876 21.6356L2 22ZM6.51097 13.3316L7.21281 14.044L10.3938 10.9098L9.69195 10.1975L8.9901 9.48514L5.80912 12.6193L6.51097 13.3316ZM13.8761 14.3817L13.1743 13.6693L9.92718 16.8687L10.629 17.581L11.3309 18.2933L14.578 15.094L13.8761 14.3817ZM12.4297 7.5L13.1315 8.21233L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L11.7279 6.78767L12.4297 7.5ZM21.3909 6.97742L20.6891 6.26509L15.912 10.9719L16.6139 11.6842L17.3157 12.3965L22.0928 7.68975L21.3909 6.97742ZM6.57966 20.208L6.94406 21.1392C8.58399 20.4975 10.0765 19.5293 11.3309 18.2933L10.629 17.581L9.92718 16.8687C8.86575 17.9145 7.6029 18.7337 6.21526 19.2767L6.57966 20.208ZM3.75821 17.5068L4.68946 17.8712C5.25246 16.4324 6.11225 15.1283 7.21281 14.044L6.51097 13.3316L5.80912 12.6193C4.50845 13.9008 3.49234 15.442 2.82697 17.1424L3.75821 17.5068Z\" fill=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -4265,7 +6231,12 @@
         "draft",
         "disabled",
         "turn-off",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.2068 2.79323L17.9086 3.50558L17.9139 3.50034L17.2068 2.79323ZM21.3909 6.97742L22.0928 7.68977L22.0981 7.68453L21.3909 6.97742ZM2 22L1.06876 21.6356C0.923981 22.0056 1.01196 22.4262 1.29289 22.7071C1.57382 22.988 1.99442 23.076 2.3644 22.9312L2 22ZM10.2071 11.0229C10.5976 10.6324 10.5976 9.99923 10.2071 9.60871C9.81658 9.21818 9.18342 9.21818 8.79289 9.60871L9.5 10.3158L10.2071 11.0229ZM14.3913 15.2071C14.7818 14.8166 14.7818 14.1834 14.3913 13.7929C14.0008 13.4024 13.3676 13.4024 12.9771 13.7929L13.6842 14.5L14.3913 15.2071ZM15.7982 11.0841C15.4047 11.4717 15.4001 12.1048 15.7877 12.4982C16.1753 12.8917 16.8084 12.8963 17.2018 12.5087L16.5 11.7964L15.7982 11.0841ZM11.614 6.89988C11.2206 7.2875 11.2159 7.92065 11.6035 8.31406C11.9911 8.70746 12.6243 8.71216 13.0177 8.32454L12.3158 7.61221L11.614 6.89988ZM17.2068 2.79323L17.9139 3.50034C18.5137 2.90049 19.4863 2.90049 20.0861 3.50034L20.7932 2.79323L21.5003 2.08613C20.1194 0.705232 17.8805 0.705232 16.4997 2.08613L17.2068 2.79323ZM20.7932 2.79323L20.0861 3.50034L20.6838 4.09808L21.3909 3.39097L22.0981 2.68387L21.5003 2.08613L20.7932 2.79323ZM21.3909 3.39097L20.6838 4.09808C21.2837 4.69793 21.2837 5.67047 20.6838 6.27031L21.3909 6.97742L22.0981 7.68453C23.4789 6.30363 23.4789 4.06476 22.0981 2.68387L21.3909 3.39097ZM6.53647 20.2249L6.17207 19.2936L1.6356 21.0688L2 22L2.3644 22.9312L6.90087 21.1561L6.53647 20.2249ZM2 22L2.93124 22.3644L4.70638 17.8279L3.77514 17.4635L2.8439 17.0991L1.06876 21.6356L2 22ZM6.46477 13.351L7.17188 14.0581L10.2071 11.0229L9.5 10.3158L8.79289 9.60871L5.75767 12.6439L6.46477 13.351ZM13.6842 14.5L12.9771 13.7929L9.94185 16.8281L10.649 17.5352L11.3561 18.2423L14.3913 15.2071L13.6842 14.5ZM21.3909 6.97742L20.6891 6.26509L15.7982 11.0841L16.5 11.7964L17.2018 12.5087L22.0928 7.68975L21.3909 6.97742ZM12.3158 7.61221L13.0177 8.32454L17.9086 3.50556L17.2068 2.79323L16.5049 2.0809L11.614 6.89988L12.3158 7.61221ZM6.53647 20.2249L6.90087 21.1561C8.57103 20.5026 10.0879 19.5105 11.3561 18.2423L10.649 17.5352L9.94185 16.8281C8.86878 17.9012 7.58528 18.7406 6.17207 19.2936L6.53647 20.2249ZM3.77514 17.4635L4.70638 17.8279C5.25938 16.4147 6.09881 15.1312 7.17188 14.0581L6.46477 13.351L5.75767 12.6439C4.48949 13.9121 3.49744 15.429 2.8439 17.0991L3.77514 17.4635Z\" fill=\"black\"/>\n<path d=\"M14.8088 5.00696C16.1008 7.11454 17.0393 8.02778 19.0515 9.2496\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -4426,7 +6397,15 @@
         "terbang",
         "departure",
         "depart",
-        "lepas-landas"
+        "lepas-landas",
+        "slash",
+        "disabled",
+        "turn-off",
+        "nonaktif",
+        "mati",
+        "inactive",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M1.88685 13.9134L5.2084 17.1396C5.82224 17.7358 6.74738 17.8754 7.50985 17.4869L21.582 10.3168C21.7648 10.2237 21.9146 10.0765 22.0109 9.89532L22.2886 9.37314C22.5344 8.91084 22.382 8.33719 21.9392 8.05785L20.6742 7.25992C19.3913 6.45067 17.761 6.4367 16.4644 7.22385L12.9581 9.35247C12.6862 9.51752 12.352 9.5434 12.058 9.42217L6.11759 6.97308L4.12395 8.57958L8.04111 11.8198C8.52863 12.2231 8.52383 12.972 8.03118 13.369L7.4731 13.8187C7.17785 14.0566 6.77344 14.1071 6.42878 13.949L3.39144 12.5561L1.88685 13.9134Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 21H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -4493,6 +6472,44 @@
         "listrik"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 22L12 19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 15.5V16C9 17.1046 9.89543 18 11 18H13C14.1046 18 15 17.1046 15 16V15.5\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M10 15H14C16.7614 15 19 12.7614 19 10C19 8.34315 17.6569 7 16 7H8C6.34315 7 5 8.34315 5 10C5 12.7614 7.23858 15 10 15Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "plug-2",
+      "category": "Devices & Tech",
+      "tags": [
+        "iconix",
+        "plug-2",
+        "plug",
+        "power",
+        "cable",
+        "connect",
+        "connection",
+        "electric",
+        "energy",
+        "socket",
+        "colokan",
+        "listrik"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 22L12 19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M10 18H14C16.7614 18 19 15.7614 19 13V10C19 8.34315 17.6569 7 16 7H8C6.34315 7 5 8.34315 5 10V13C5 15.7614 7.23858 18 10 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n</svg>"
+    },
+    {
+      "name": "plug-3",
+      "category": "Devices & Tech",
+      "tags": [
+        "iconix",
+        "plug-3",
+        "plug",
+        "power",
+        "cable",
+        "connect",
+        "connection",
+        "electric",
+        "energy",
+        "socket",
+        "colokan",
+        "listrik"
+      ],
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 22L12 19\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15 6.5V2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M12 18C8.13401 18 5 14.866 5 11V8C5 7.44771 5.44772 7 6 7H18C18.5523 7 19 7.44772 19 8V11C19 14.866 15.866 18 12 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M4 7H20\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "save",
@@ -4584,7 +6601,12 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 4V18C3 19.6569 4.34315 21 6 21H20M8 3H14.5228C15.4542 3 16.3328 3.43261 16.9007 4.17087L20.3779 8.69123C20.7813 9.21566 21 9.85873 21 10.5204V16M6.5 20V16C6.5 14.8954 7.39543 14 8.5 14H13.5M17.5 20V18M11 7H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M21.6777 22L2.00006 2.32233\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -4802,7 +6824,12 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.34267 18C6.88839 19.2508 8.8567 20 11 20C15.9706 20 20 15.9706 20 11C20 8.8567 19.2508 6.88839 18 5.34267M15.7325 3.34324C14.3576 2.49162 12.7362 2 11 2C6.02944 2 2 6.02944 2 11C2 12.7362 2.49162 14.3576 3.34324 15.7325M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2.29297 21L20.6777 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -4885,7 +6912,15 @@
         "cancel",
         "empty",
         "reset",
-        "ban"
+        "ban",
+        "off",
+        "disabled",
+        "strip",
+        "garis-miring",
+        "nonaktif",
+        "batal",
+        "mati",
+        "inactive"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"11\" cy=\"11\" r=\"9\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17.5 18.5L20.6569 21.6569\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 13.2426L13.2426 9\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -5238,7 +7273,7 @@
         "create",
         "new"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 12H15M12 9V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9 12H15M12 9V15\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "shield-question-mark",
@@ -5291,7 +7326,15 @@
         "cancel",
         "empty",
         "reset",
-        "ban"
+        "ban",
+        "off",
+        "disabled",
+        "strip",
+        "garis-miring",
+        "nonaktif",
+        "batal",
+        "mati",
+        "inactive"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.1 15.4468L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74279 8.05256 2.83744C7.87069 2.91736 7.68658 2.99316 7.50003 3.06527M18.154 18.5C16.4168 19.8048 14.3775 20.7636 12 22C10.4107 21.1492 8.97863 20.4143 7.66033 19.5984C4.16589 17.4355 2.91997 13.2059 2.95655 9.09643L3.00002 4.21277C3.24828 4.16864 3.49216 4.12385 3.73188 4.07786\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -5340,7 +7383,7 @@
         "dismiss",
         "reject"
       ],
-      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 4.21277L2.95655 9.09643C2.91997 13.2059 4.16589 17.4355 7.66033 19.5984C8.97863 20.4143 10.4107 21.1492 12 22C13.8659 21.0297 15.5234 20.2303 16.9902 19.3005C20.11 17.3228 21.0824 13.4655 21.0495 9.77181L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74282 8.05252 2.83746C6.55588 3.49515 4.90726 3.8738 3.00002 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.87864 14.1213L14.1213 9.87868M9.87864 9.87868L14.1213 14.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+      "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.9999 4.21277L2.95643 9.09643C2.91985 13.2059 4.16577 17.4355 7.66021 19.5984C8.97851 20.4143 10.4106 21.1492 11.9999 22C13.8658 21.0297 15.5233 20.2303 16.99 19.3005C20.1098 17.3228 21.0823 13.4655 21.0494 9.77181L20.9999 4.21277C19.241 3.89571 17.6414 3.49442 16.0402 2.73756C13.5804 1.57476 10.5433 1.74282 8.05239 2.83746C6.55575 3.49515 4.90713 3.8738 2.9999 4.21277Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M9.87864 14.1213L14.1213 9.87868M9.87864 9.87868L14.1213 14.1213\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
     {
       "name": "siren",
@@ -5495,7 +7538,12 @@
         "clear",
         "recycle",
         "turn-off",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 6L4.76559 18.2495C4.89735 20.3577 6.64555 22 8.7578 22H16.4951C17.5923 22 18.5421 21.3352 18.9496 20.3768C19.1746 19.8473 18.9226 19.2673 18.515 18.8614L5.6 6H4ZM4 6L2 6M10 6H20M20 6L19.4375 15M20 6L22 6M9.375 18L9 12M14.8125 15.3L14.625 18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M15.5 5V4C15.5 2.89543 14.6045 2 13.5 2H9.49995C8.94767 2 8.49995 2.44772 8.49995 3M21.2928 21.6152L2.29285 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -5781,7 +7829,12 @@
         "disabled",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 3H19C20.6569 3 22 4.34315 22 6V15C22 15.3791 21.9297 15.7417 21.8014 16.0756M17 18H5C3.34315 18 2 16.6569 2 15V6C2 5.1115 2.38625 4.31321 3 3.76389M6 21H18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -5979,7 +8032,12 @@
         "video",
         "turn-off",
         "slash",
-        "mute"
+        "mute",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 11.5V15C22 16.6569 20.6569 18 19 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H13\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M6 21H18\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M17.17 7.83L19.5 5.5M19.5 5.5L21.83 3.17M19.5 5.5L17.17 3.17M19.5 5.5L21.83 7.83\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -6404,7 +8462,15 @@
         "cancel",
         "empty",
         "reset",
-        "ban"
+        "ban",
+        "off",
+        "disabled",
+        "strip",
+        "garis-miring",
+        "nonaktif",
+        "batal",
+        "mati",
+        "inactive"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17 22H6C4.89543 22 4 21.1046 4 20C4 16.6863 6.68629 14 10 14M9.17617 4.16698C9.89966 3.44582 10.8978 3 12 3C14.2091 3 16 4.79086 16 7C16 8.10223 15.5542 9.10034 14.833 9.82383\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M20.6778 21L2.29297 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -6584,7 +8650,12 @@
         "cinema",
         "broadcast",
         "stream",
-        "turn-off"
+        "turn-off",
+        "inactive",
+        "mati",
+        "nonaktif",
+        "garis-miring",
+        "strip"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17 8V16C17 18.2091 15.2091 20 13 20H6C3.79086 20 2 18.2091 2 16V8C2 5.79086 3.79086 4 6 4H13C15.2091 4 17 5.79086 17 8Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M17 11.4594V12.5406C17 13.9706 18.0094 15.2019 19.4117 15.4823L20.8039 15.7608C21.4227 15.8845 22 15.4112 22 14.7802V9.2198C22 8.58876 21.4227 8.11547 20.8039 8.23922L19.4117 8.51767C18.0094 8.79812 17 10.0294 17 11.4594Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M7.5 14L9.5 12M9.5 12L11.5 10M9.5 12L7.5 10M9.5 12L11.5 14\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     },
@@ -6658,7 +8729,15 @@
         "cancel",
         "empty",
         "reset",
-        "ban"
+        "ban",
+        "off",
+        "disabled",
+        "strip",
+        "garis-miring",
+        "nonaktif",
+        "batal",
+        "mati",
+        "inactive"
       ],
       "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 4H13C15.2091 4 17 5.79086 17 8V13M16.7973 17.2608C16.2692 18.8521 14.7686 20 13 20H6C3.79086 20 2 18.2091 2 16V8C2 6.49399 2.83229 5.18236 4.062 4.5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M17 11.4594V12.5406C17 13.9706 18.0094 15.2019 19.4117 15.4823L20.8039 15.7608C21.4227 15.8845 22 15.4112 22 14.7802V9.2198C22 8.58876 21.4227 8.11547 20.8039 8.23922L19.4117 8.51767C18.0094 8.79812 17 10.0294 17 11.4594Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.2929 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
     }

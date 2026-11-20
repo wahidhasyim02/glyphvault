@@ -115,6 +115,18 @@ const TAG_DICTIONARY = {
 
   // Travel & Transport
   plane: ['plane', 'airplane', 'aeroplane', 'flight', 'fly', 'airport', 'travel', 'transport', 'pesawat', 'terbang'],
+  airlines: ['airlines', 'airline', 'airplane', 'plane', 'flight', 'travel', 'aviation', 'wings', 'maskapai', 'pesawat', 'terbang', 'penerbangan', 'bandara', 'sayap'],
+
+  // Layout, Grid & UI Containers
+  grid: ['grid', 'layout', 'table', 'matrix', 'cells', 'kotak', 'susunan', 'tabel', 'petak', 'spreadsheet', 'baris-kolom', 'widget'],
+  layout: ['layout', 'dashboard', 'template', 'view', 'workspace', 'interface', 'structure', 'tata-letak', 'kerangka', 'struktur', 'wireframe', 'desain', 'panel', 'widget', 'modul'],
+  panel: ['panel', 'sidebar', 'drawer', 'sheet', 'dock', 'window', 'bilah', 'jendela', 'kompartemen', 'kolom', 'layout', 'widget', 'kontainer'],
+  panels: ['panels', 'sidebar', 'drawer', 'sheet', 'dock', 'windows', 'bilah', 'jendela', 'multi-panel', 'kompartemen', 'layout', 'widget', 'modul'],
+  columns: ['columns', 'grid', 'vertical', 'split', 'divide', 'layout', 'kolom', 'tata-letak', 'pembagian', 'multi-kolom'],
+  gallery: ['gallery', 'images', 'photos', 'media', 'carousel', 'slider', 'thumbnails', 'showcase', 'galeri', 'gambar', 'foto', 'pratinjau', 'portofolio'],
+  grip: ['grip', 'drag', 'handle', 'reorder', 'move', 'grab', 'sort', 'dots', 'geser', 'tarik', 'pegangan', 'urutkan'],
+  gap: ['gap', 'spacing', 'margin', 'padding', 'space', 'distance', 'jarak', 'spasi', 'renggang', 'pemisah'],
+  notification: ['notification', 'alert', 'notice', 'reminder', 'bell', 'pemberitahuan', 'notifikasi', 'pengingat'],
 
   // Power & Tech
   plug: ['plug', 'power', 'cable', 'connect', 'connection', 'electric', 'energy', 'socket', 'colokan', 'listrik'],
@@ -147,7 +159,7 @@ const SUFFIX_DICTIONARY = {
   check: ['check', 'done', 'success', 'verified', 'approved', 'ok', 'completed'],
   plus: ['plus', 'add', 'create', 'new'],
   minus: ['minus', 'remove', 'delete', 'exclude'],
-  off: ['off', 'disabled', 'turn-off', 'slash', 'mute'],
+  off: ['off', 'slash', 'disabled', 'turn-off', 'inactive', 'mute', 'mati', 'nonaktif', 'garis-miring', 'strip'],
   off2: ['off', 'disabled', 'silent', 'slash'],
   dot: ['dot', 'status', 'indicator', 'online', 'badge'],
   play: ['play', 'start', 'resume', 'video', 'player'],
@@ -175,7 +187,21 @@ const SUFFIX_DICTIONARY = {
   code: ['code', 'developer', 'coding', 'html', 'bracket', 'syntax', 'programming', 'dev', 'script', 'source'],
   'exclamation-point': ['exclamation', 'alert', 'warning', 'important', 'caution', 'notice', 'attention', 'mark', 'point', 'peringatan'],
   fading: ['fading', 'history', 'recent', 'countdown', 'expire', 'expired', 'temporary', 'fade', 'schedule'],
-  slash: ['slash', 'clear', 'filter', 'cancel', 'empty', 'reset', 'ban'],
+  slash: ['slash', 'off', 'disabled', 'clear', 'cancel', 'strip', 'garis-miring', 'nonaktif', 'batal', 'mati', 'inactive'],
+  dashed: ['dashed', 'dotted', 'placeholder', 'border', 'garis-putus', 'putus-putus'],
+  close: ['close', 'hide', 'collapse', 'tutup', 'sembunyikan'],
+  open: ['open', 'show', 'expand', 'buka', 'tampilkan'],
+  start: ['start', 'first', 'left', 'beginning', 'awal', 'kiri'],
+  end: ['end', 'last', 'right', 'akhir', 'kanan'],
+  horizontal: ['horizontal', 'landscape', 'row', 'mendatar', 'baris', 'horizontal'],
+  vertical: ['vertical', 'portrait', 'column', 'tegak', 'vertikal'],
+  thumbnails: ['thumbnails', 'preview', 'grid', 'gallery', 'pratinjau', 'foto-kecil'],
+  circles: ['circles', 'round', 'geometric', 'lingkaran', 'bulat'],
+  'squares-circles': ['squares', 'circles', 'geometric', 'shapes', 'kotak-lingkaran'],
+  clover: ['clover', 'flower', 'leaf', 'shape', 'daun', 'kelopak'],
+  freeform: ['freeform', 'canvas', 'board', 'bebas', 'kanvas'],
+  dashboard: ['dashboard', 'admin', 'panel', 'overview', 'ringkasan', 'dasbor'],
+  template: ['template', 'preset', 'boilerplate', 'layout', 'cetak-biru'],
   'arrow-down': ['arrow-down', 'down', 'decrease', 'countdown'],
   'arrow-up': ['arrow-up', 'up', 'increase', 'fast-forward'],
   'arrow-left': ['arrow-left', 'left', 'rewind', 'back', 'undo', 'past'],
@@ -281,6 +307,41 @@ for (const file of files) {
     if (iconName.endsWith(`-${suffix}`) || iconName === suffix) {
       words.forEach((w) => tags.add(w));
     }
+  }
+
+  // Cross-reference off and slash (e.g. disabled, nonaktif, mati, cancel)
+  if (iconName.includes('slash')) {
+    ['off', 'disabled', 'nonaktif', 'mati', 'inactive', 'garis-miring', 'cancel', 'strip'].forEach((w) => tags.add(w));
+  }
+  if (iconName.includes('off')) {
+    ['slash', 'disabled', 'turn-off', 'nonaktif', 'mati', 'inactive', 'garis-miring', 'strip'].forEach((w) => tags.add(w));
+  }
+
+  // Handle grid dimensions & shapes
+  if (iconName.includes('2x2')) {
+    ['2x2', 'matrix', '4-cells', 'empat-kotak', 'grid'].forEach((w) => tags.add(w));
+  }
+  if (iconName.includes('3x2')) {
+    ['3x2', 'matrix', '6-cells', 'enam-kotak', 'grid'].forEach((w) => tags.add(w));
+  }
+  if (iconName.includes('3x3')) {
+    ['3x3', 'matrix', '9-cells', 'sembilan-kotak', 'grid'].forEach((w) => tags.add(w));
+  }
+
+  // Handle column splits
+  if (iconName.startsWith('columns-2')) {
+    ['2-columns', 'dua-kolom', 'split', 'half', 'kolom'].forEach((w) => tags.add(w));
+  }
+  if (iconName.startsWith('columns-3')) {
+    ['3-columns', 'tiga-kolom', 'three-columns', 'kolom'].forEach((w) => tags.add(w));
+  }
+  if (iconName.startsWith('columns-4')) {
+    ['4-columns', 'empat-kolom', 'four-columns', 'kolom'].forEach((w) => tags.add(w));
+  }
+
+  // Handle notification-flag
+  if (iconName === 'notification-flag') {
+    ['notification', 'flag', 'alert', 'bookmark', 'notice', 'mark', 'bendera', 'notifikasi', 'pemberitahuan'].forEach((w) => tags.add(w));
   }
 
   // Ensure plus has add, minus has remove

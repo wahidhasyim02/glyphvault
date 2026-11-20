@@ -1,0 +1,29 @@
+{
+  "name": "panel-bottom-dashed",
+  "category": "General UI",
+  "tags": [
+    "iconix",
+    "panel-bottom-dashed",
+    "panel",
+    "bottom",
+    "dashed",
+    "sidebar",
+    "drawer",
+    "sheet",
+    "dock",
+    "window",
+    "bilah",
+    "jendela",
+    "kompartemen",
+    "kolom",
+    "dotted",
+    "placeholder",
+    "border",
+    "garis-putus",
+    "putus-putus",
+    "layout",
+    "widget",
+    "kontainer"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.2 15H18.15M3.80006 15H5.85005M14.05 15H9.95004\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

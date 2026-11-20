@@ -18,7 +18,12 @@
     "disabled",
     "turn-off",
     "slash",
-    "mute"
+    "mute",
+    "inactive",
+    "mati",
+    "nonaktif",
+    "garis-miring",
+    "strip"
   ],
   "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 2.52464C11.3123 1.80645 13.308 6.15835 18.3938 3.8816C19.1159 3.55833 20 4.04049 20 4.83165V15.7602C20 15.9092 19.923 16.048 19.7947 16.1239M16.5 17.2657C13.2594 17.4067 11.63 14.107 5.31415 15.6324C4.65715 15.791 4 15.3114 4 14.6355V5L4 22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }

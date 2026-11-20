@@ -364,9 +364,9 @@ const SAMPLE_iconix_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle data-duotone="base" cx="12" cy="12" r="9"/><path data-duotone="accent" data-cutout="true" d="M8.5 12.5L11 15L15.5 9.5"/></svg>';
 
 const STYLE_OPTIONS: { id: IconStyleVariant; label: string }[] = [
+  { id: 'line-duotone', label: 'Line Duotone' },
   { id: 'duotone', label: 'Dualtone' },
   { id: 'duotone-linear', label: 'Dualtone Linear' },
-  { id: 'line-duotone', label: 'Line Duotone' },
   { id: 'linear', label: 'Linear' },
   { id: 'solid', label: 'Solid' },
 ];

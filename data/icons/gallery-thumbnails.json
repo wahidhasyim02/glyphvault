@@ -1,0 +1,25 @@
+{
+  "name": "gallery-thumbnails",
+  "category": "General UI",
+  "tags": [
+    "iconix",
+    "gallery-thumbnails",
+    "gallery",
+    "thumbnails",
+    "images",
+    "photos",
+    "media",
+    "carousel",
+    "slider",
+    "showcase",
+    "galeri",
+    "gambar",
+    "foto",
+    "pratinjau",
+    "portofolio",
+    "preview",
+    "grid",
+    "foto-kecil"
+  ],
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"3\" y=\"3\" width=\"18\" height=\"14\" rx=\"3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M21 21H20M3 21H4M16 21H14M10 21H8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+}

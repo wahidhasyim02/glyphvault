@@ -267,7 +267,7 @@
       <!-- Unboxed Tags Metadata -->
       <div class="pt-2 border-t border-slate-200 dark:border-[#1D222B] space-y-1.5">
         <div class="text-xs font-medium text-slate-600 dark:text-[#94A3B8]">
-          Search Tags
+          Tags
         </div>
         <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-400 dark:text-[#64748B]">
           <span v-for="(tag, idx) in icon.tags" :key="tag" class="inline-flex items-center gap-2">

@@ -115,6 +115,7 @@ for (const svgFile of svgFiles) {
     } else if (
       iconName.startsWith('mirror') ||
       iconName.startsWith('plane') ||
+      iconName.startsWith('airlines') ||
       ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
     ) {
       category = 'Objects & Geometry';

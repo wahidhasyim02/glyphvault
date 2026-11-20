@@ -41,7 +41,7 @@
         @open-json-studio="handleOpenJsonStudio"
       />
 
-      <main class="flex-1 min-w-0 flex flex-col">
+      <main class="flex-1 min-w-0 flex flex-col min-h-[calc(100vh-3.5rem)]">
         <StudioToolbar
           :theme="theme"
           :search-query="searchQuery"
@@ -298,7 +298,7 @@ watch(
 
 const selectedCategory = ref<string>('All');
 const searchQuery = ref<string>('');
-const styleVariant = ref<IconStyleVariant>('duotone'); // Default: Dualtone
+const styleVariant = ref<IconStyleVariant>('line-duotone'); // Default: Line Dualtone
 const settings = ref<IconSettings>({ ...DARK_DEFAULT_SETTINGS });
 const gridZoom = ref<number>(2);
 const clickToCopy = ref<boolean>(true);
@@ -375,23 +375,69 @@ const categories = computed(() => {
 });
 
 const filteredIcons = computed(() => {
-  const q = searchQuery.value.trim().toLowerCase();
-  const list = icons.value.filter((icon) => {
-    if (selectedCategory.value !== 'All' && icon.category !== selectedCategory.value) {
+  const rawQ = searchQuery.value.trim().toLowerCase();
+  const activeCategory = selectedCategory.value;
+
+  // 1. Filter by active category first
+  const baseList = icons.value.filter((icon) => {
+    if (activeCategory !== 'All' && icon.category !== activeCategory) {
       return false;
     }
-    if (!q) {
-      return true;
-    }
-    if (icon.name.toLowerCase().includes(q)) {
-      return true;
-    }
-    if (icon.category.toLowerCase().includes(q)) {
-      return true;
-    }
-    return icon.tags.some((t) => t.toLowerCase().includes(q));
+    return true;
   });
-  return list.sort((a, b) => a.name.localeCompare(b.name));
+
+  if (!rawQ) {
+    return baseList.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  // 2. Tokenize search query (supports multi-word e.g. "camera off", "arrow down", etc.)
+  const tokens = rawQ.replace(/[-_]/g, ' ').split(/\s+/).filter(Boolean);
+  const hyphenQ = rawQ.replace(/\s+/g, '-');
+
+  const scoredList: { icon: IconEntry; score: number }[] = [];
+
+  for (const icon of baseList) {
+    const name = icon.name.toLowerCase();
+    const nameWords = name.replace(/[-_]/g, ' ');
+    const cat = (icon.category || '').toLowerCase();
+    const tags = (icon.tags || []).map((t) => t.toLowerCase());
+
+    // Check if EVERY token matches name, natural name words, category, or tags (AND-matching)
+    const matchesAllTokens = tokens.every((token) => {
+      return (
+        name.includes(token) ||
+        nameWords.includes(token) ||
+        cat.includes(token) ||
+        tags.some((t) => t.includes(token))
+      );
+    });
+
+    if (!matchesAllTokens) continue;
+
+    // Relevance scoring for best search ordering
+    let score = 0;
+    if (name === rawQ || name === hyphenQ) {
+      score += 100; // Exact full match
+    } else if (name.startsWith(rawQ) || name.startsWith(hyphenQ)) {
+      score += 60; // Name starts with query
+    } else if (nameWords.startsWith(rawQ)) {
+      score += 50; // Natural words start with query
+    } else if (name.includes(rawQ) || name.includes(hyphenQ)) {
+      score += 40; // Name contains query as a single chunk
+    } else if (tokens.every((t) => name.includes(t))) {
+      score += 30; // All tokens exist in name
+    } else if (tokens.some((t) => name.includes(t))) {
+      score += 20; // Some tokens in name, rest in tags
+    } else {
+      score += 10; // Matched entirely via tags / category
+    }
+
+    scoredList.push({ icon, score });
+  }
+
+  return scoredList
+    .sort((a, b) => b.score - a.score || a.icon.name.localeCompare(b.icon.name))
+    .map((item) => item.icon);
 });
 
 const handleUpdateSettings = (patch: Partial<IconSettings>) => {

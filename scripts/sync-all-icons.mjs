@@ -67,6 +67,7 @@ function resolveCategory(iconName) {
   if (
     iconName.startsWith('mirror') ||
     iconName.startsWith('plane') ||
+    iconName.startsWith('airlines') ||
     ['amphora', 'anchor', 'anvil', 'angle', 'aperture'].includes(iconName)
   ) {
     return 'Objects & Geometry';

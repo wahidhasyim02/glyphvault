@@ -21,7 +21,15 @@
     "cancel",
     "empty",
     "reset",
-    "ban"
+    "ban",
+    "off",
+    "disabled",
+    "strip",
+    "garis-miring",
+    "nonaktif",
+    "batal",
+    "mati",
+    "inactive"
   ],
   "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.1 15.4468L21 4.21277C19.2411 3.89571 17.6415 3.49442 16.0404 2.73756C13.5805 1.57476 10.5435 1.74279 8.05256 2.83744C7.87069 2.91736 7.68658 2.99316 7.50003 3.06527M18.154 18.5C16.4168 19.8048 14.3775 20.7636 12 22C10.4107 21.1492 8.97863 20.4143 7.66033 19.5984C4.16589 17.4355 2.91997 13.2059 2.95655 9.09643L3.00002 4.21277C3.24828 4.16864 3.49216 4.12385 3.73188 4.07786\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M20.6777 21L2.29296 2.61522\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }
