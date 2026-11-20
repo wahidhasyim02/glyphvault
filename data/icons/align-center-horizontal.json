@@ -14,5 +14,5 @@
     "mendatar",
     "baris"
   ],
-  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H8C9.10457 21 10 20.1046 10 19V5C10 3.89543 9.10457 3 8 3H6C4.89543 3 4 3.89543 4 5V19C4 20.1046 4.89543 21 6 21Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M16 18H18C19.1046 18 20 17.1046 20 16V8C20 6.89543 19.1046 6 18 6H16C14.8954 6 14 6.89543 14 8V16C14 17.1046 14.8954 18 16 18Z\" stroke-width=\"2\" stroke=\"black\"/>\n<path d=\"M2 12H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 21H8C9.10457 21 10 20.1046 10 19V5C10 3.89543 9.10457 3 8 3H6C4.89543 3 4 3.89543 4 5V19C4 20.1046 4.89543 21 6 21Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M16 18H18C19.1046 18 20 17.1046 20 16V8C20 6.89543 19.1046 6 18 6H16C14.8954 6 14 6.89543 14 8V16C14 17.1046 14.8954 18 16 18Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M2 12H22\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }

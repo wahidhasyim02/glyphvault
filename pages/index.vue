@@ -111,9 +111,9 @@
               href="/iconix.json"
               target="_blank"
               class="hover:text-teal-600 dark:hover:text-[#2DD4BF] transition-colors"
-              title="Official Iconify Collection for Nuxt UI & @nuxt/icon"
+              title="Official Universal Iconify Collection for Nuxt UI (@nuxt/icon), Next.js (@iconify/react), and Svelte"
             >
-              iconix.json (Nuxt)
+              iconix.json (Nuxt & Next.js)
             </a>
             <a
               href="/admin/"

@@ -137,7 +137,7 @@
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.35-4.35" />
             </svg>
-            Jelajahi 439 Ikon
+            Jelajahi 443 Ikon
           </button>
         </div>
 
@@ -171,7 +171,7 @@
     <!-- Footer -->
     <footer
       class="border-t border-slate-200 dark:border-[#1D222B] py-4 text-center text-xs text-slate-500 dark:text-slate-400">
-      <p>Iconix — 439 Open-Source Vector Icons for Modern Interfaces.</p>
+      <p>Iconix — 438 Open-Source Vector Icons for Modern Interfaces.</p>
     </footer>
   </div>
 </template>

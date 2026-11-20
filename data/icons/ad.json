@@ -14,5 +14,5 @@
     "iklan",
     "promosi"
   ],
-  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14 16V8H16C17.6569 8 19 9.34315 19 11V13C19 14.6569 17.6569 16 16 16H14Z\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 4H22M22 20H2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11 16L9.96501 13.6343L7.5 8L5.03499 13.6343M9.96501 13.6343H5.03499M4 16L5.03499 13.6343\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
+  "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14 16V8H16C17.6569 8 19 9.34315 19 11V13C19 14.6569 17.6569 16 16 16H14Z\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n<path d=\"M2 4H22M22 20H2\" stroke-width=\"2\" stroke-linecap=\"round\" stroke=\"black\"/>\n<path d=\"M11 16L9.96501 13.6343L7.5 8L5.03499 13.6343M9.96501 13.6343H5.03499M4 16L5.03499 13.6343\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"black\"/>\n</svg>"
 }
